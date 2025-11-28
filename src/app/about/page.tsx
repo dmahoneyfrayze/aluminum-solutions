@@ -25,10 +25,12 @@ export default function AboutPage() {
                         <div className="flex flex-col md:flex-row items-center gap-16">
                             <div className="w-full md:w-1/2 relative">
                                 <div className="aspect-[4/5] bg-slate-100 rounded-lg overflow-hidden relative shadow-2xl">
-                                    {/* Placeholder for Founder Image - crucial for trust */}
-                                    <div className="absolute inset-0 bg-slate-200 flex items-center justify-center text-slate-400">
-                                        [Founder Portrait]
-                                    </div>
+                                    <Image
+                                        src="/images/generated/founder_portrait_1764313198224.png"
+                                        alt="Max Catreau, Owner of Aluminum Solutions"
+                                        fill
+                                        className="object-cover"
+                                    />
                                 </div>
                                 <div className="absolute -bottom-6 -right-6 bg-brand-navy text-white p-8 rounded-lg shadow-xl max-w-xs hidden md:block">
                                     <p className="font-serif italic text-lg">"We build every piece as if it were for our own home."</p>
@@ -53,8 +55,8 @@ export default function AboutPage() {
                                         I invite you to visit our factory, meet our team, and see the difference for yourself.
                                     </p>
                                     <div className="pt-6">
-                                        <p className="font-serif font-bold text-xl text-slate-900">Denis Mahoney</p>
-                                        <p className="text-slate-500">Founder, Aluminum Solutions</p>
+                                        <p className="font-serif font-bold text-xl text-slate-900">Max Catreau</p>
+                                        <p className="text-slate-500">Owner, Aluminum Solutions</p>
                                     </div>
                                 </div>
                             </div>
@@ -117,19 +119,55 @@ export default function AboutPage() {
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                            {[1, 2, 3, 4].map((i) => (
-                                <div key={i} className="group">
-                                    <div className="aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden mb-4 relative">
-                                        <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
-                                        {/* Placeholder for Team Photos */}
-                                        <div className="absolute inset-0 flex items-center justify-center text-slate-400 text-sm">
-                                            [Team Member {i}]
-                                        </div>
-                                    </div>
-                                    <h3 className="font-bold text-slate-900">Expert Installer</h3>
-                                    <p className="text-sm text-slate-500">Senior Technician</p>
+                            {/* Team Member 1 - Generated */}
+                            <div className="group">
+                                <div className="aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden mb-4 relative shadow-md">
+                                    <Image
+                                        src="/images/generated/team_member_1_installer_1764313211230.png"
+                                        alt="Expert Aluminum Railing Installer"
+                                        fill
+                                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                    />
                                 </div>
-                            ))}
+                                <h3 className="font-bold text-slate-900">Lead Installer</h3>
+                                <p className="text-sm text-slate-500">Senior Technician</p>
+                            </div>
+
+                            {/* Team Member 2 - Placeholder */}
+                            <div className="group">
+                                <div className="aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden mb-4 relative shadow-md">
+                                    <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
+                                    <div className="absolute inset-0 flex items-center justify-center text-slate-400 text-sm">
+                                        [Project Manager]
+                                    </div>
+                                </div>
+                                <h3 className="font-bold text-slate-900">Project Manager</h3>
+                                <p className="text-sm text-slate-500">Operations</p>
+                            </div>
+
+                            {/* Team Member 3 - Placeholder */}
+                            <div className="group">
+                                <div className="aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden mb-4 relative shadow-md">
+                                    <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
+                                    <div className="absolute inset-0 flex items-center justify-center text-slate-400 text-sm">
+                                        [Fabricator]
+                                    </div>
+                                </div>
+                                <h3 className="font-bold text-slate-900">Master Fabricator</h3>
+                                <p className="text-sm text-slate-500">Manufacturing</p>
+                            </div>
+
+                            {/* Team Member 4 - Placeholder */}
+                            <div className="group">
+                                <div className="aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden mb-4 relative shadow-md">
+                                    <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
+                                    <div className="absolute inset-0 flex items-center justify-center text-slate-400 text-sm">
+                                        [Customer Support]
+                                    </div>
+                                </div>
+                                <h3 className="font-bold text-slate-900">Customer Support</h3>
+                                <p className="text-sm text-slate-500">Service</p>
+                            </div>
                         </div>
                     </div>
                 </section>

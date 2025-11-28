@@ -17,7 +17,7 @@ export default function PoolFencesPage() {
                     subtitle="Secure your outdoor oasis with high-quality, durable railings that meet all local safety codes without compromising on style."
                     ctaText="Get a Free Estimate"
                     ctaLink="/contact"
-                    backgroundImage="/images/pool-fences-hero.jpg"
+                    backgroundImage="/images/generated/pool_fence_hero_1764312796756.png"
                 />
 
                 {/* Intro / Safety First */}
@@ -45,10 +45,12 @@ export default function PoolFencesPage() {
                             </div>
                             <div className="w-full md:w-1/2">
                                 <div className="aspect-square bg-slate-100 rounded-xl overflow-hidden relative shadow-lg">
-                                    {/* Placeholder for Pool Image */}
-                                    <div className="absolute inset-0 flex items-center justify-center text-slate-400 bg-slate-200">
-                                        [Pool Fence Image]
-                                    </div>
+                                    <Image
+                                        src="/images/generated/pool_fence_hero_1764312796756.png"
+                                        alt="Safe and stylish pool enclosure"
+                                        fill
+                                        className="object-cover"
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -70,9 +72,12 @@ export default function PoolFencesPage() {
                         {/* Option 1 */}
                         <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group">
                             <div className="h-64 bg-slate-200 relative">
-                                <div className="absolute inset-0 flex items-center justify-center text-slate-400">
-                                    [Frameless Glass Image]
-                                </div>
+                                <Image
+                                    src="/images/generated/pool_fence_glass_detail_1764312810331.png"
+                                    alt="Frameless glass pool fencing detail"
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                />
                             </div>
                             <div className="p-8">
                                 <h3 className="text-2xl font-bold text-slate-900 mb-4">Frameless Glass</h3>
@@ -93,9 +98,12 @@ export default function PoolFencesPage() {
                         {/* Option 2 */}
                         <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group">
                             <div className="h-64 bg-slate-200 relative">
-                                <div className="absolute inset-0 flex items-center justify-center text-slate-400">
-                                    [Aluminum Picket Image]
-                                </div>
+                                <Image
+                                    src="/images/generated/pool_fence_picket_detail_1764312823826.png"
+                                    alt="Aluminum picket pool fence detail"
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                />
                             </div>
                             <div className="p-8">
                                 <h3 className="text-2xl font-bold text-slate-900 mb-4">Aluminum Picket</h3>

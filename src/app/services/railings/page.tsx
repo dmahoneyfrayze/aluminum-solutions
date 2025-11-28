@@ -2,6 +2,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default function RailingsPage() {
                     subtitle="The perfect blend of safety, style, and durability. Maintenance-free solutions for your porch, deck, or balcony."
                     ctaText="Get a Quote"
                     ctaLink="/contact"
-                    backgroundImage="/images/migrated/hero-commercial.jpg"
+                    backgroundImage="/images/generated/railing_hero_detail_1764312850877.png"
                 />
 
                 {/* Overview */}
@@ -48,11 +49,12 @@ export default function RailingsPage() {
                             </div>
                         </div>
                         <div className="h-[500px] bg-slate-100 relative rounded-sm overflow-hidden shadow-2xl">
-                            {/* Image Placeholder */}
-                            <div className="absolute inset-0 bg-slate-200" />
-                            <div className="absolute inset-0 flex items-center justify-center text-slate-400 font-medium">
-                                [High-Quality Railing Image]
-                            </div>
+                            <Image
+                                src="/images/generated/railing_hero_detail_1764312850877.png"
+                                alt="High-quality aluminum railing installation"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
                     </div>
                 </section>

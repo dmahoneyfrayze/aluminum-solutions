@@ -2,6 +2,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default function EnclosuresPage() {
                     subtitle="Seamlessly blend indoor comfort with outdoor views. Custom-manufactured frameless and semi-frameless systems."
                     ctaText="Request Design Consultation"
                     ctaLink="/contact"
-                    backgroundImage="/images/migrated/manufacturing-glass.jpg"
+                    backgroundImage="/images/generated/glass_enclosure_project_1764312838961.png"
                 />
 
                 {/* Overview */}
@@ -48,11 +49,12 @@ export default function EnclosuresPage() {
                             </div>
                         </div>
                         <div className="h-[500px] bg-slate-100 relative rounded-sm overflow-hidden shadow-2xl">
-                            {/* Image Placeholder - To be replaced with real project */}
-                            <div className="absolute inset-0 bg-slate-200" />
-                            <div className="absolute inset-0 flex items-center justify-center text-slate-400 font-medium">
-                                [Glass Enclosure Project Image]
-                            </div>
+                            <Image
+                                src="/images/generated/glass_enclosure_project_1764312838961.png"
+                                alt="Custom glass porch enclosure in winter"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
                     </div>
                 </section>
