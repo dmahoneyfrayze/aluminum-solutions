@@ -17,7 +17,7 @@ export default function PrivacyScreensPage() {
                     subtitle="Create a secluded oasis in your urban backyard with our stylish, durable privacy solutions."
                     ctaText="Get a Free Estimate"
                     ctaLink="/contact"
-                    backgroundImage="/images/generated/pool_fence_glass_detail_1764312810331.png"
+                    backgroundImage="/images/projects/privacy-screen-black-aluminum.jpg"
                 />
 
                 {/* Intro */}
@@ -44,8 +44,8 @@ export default function PrivacyScreensPage() {
                             <div className="w-full md:w-1/2">
                                 <div className="aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden relative shadow-lg">
                                     <Image
-                                        src="/images/generated/pool_fence_glass_detail_1764312810331.png"
-                                        alt="Privacy Screen Detail"
+                                        src="/images/projects/privacy-screen-frosted-glass.jpg"
+                                        alt="Frosted glass privacy screen on a modern deck"
                                         fill
                                         className="object-cover"
                                     />

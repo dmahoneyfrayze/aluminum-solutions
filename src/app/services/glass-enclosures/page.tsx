@@ -46,7 +46,7 @@ export default function EnclosuresPage() {
                     subtitle="Seamlessly blend indoor comfort with outdoor views. Custom-manufactured frameless and semi-frameless systems."
                     ctaText="Request Design Consultation"
                     ctaLink="/contact"
-                    backgroundImage="/images/generated/glass_enclosure_project_1764312838961.png"
+                    backgroundImage="/images/projects/glass-enclosure-porch-front.jpg"
                 />
 
                 {/* Design Considerations */}
@@ -200,13 +200,15 @@ export default function EnclosuresPage() {
                                 </Link>
                             </div>
                         </div>
-                        <div className="h-[500px] bg-slate-100 relative rounded-sm overflow-hidden shadow-2xl">
-                            <Image
-                                src="/images/generated/glass_enclosure_project_1764312838961.png"
-                                alt="Custom glass porch enclosure in winter"
-                                fill
-                                className="object-cover"
-                            />
+                        <div className="w-full md:w-1/2">
+                            <div className="aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden relative shadow-lg">
+                                <Image
+                                    src="/images/projects/glass-enclosure-porch-side.jpg"
+                                    alt="Modern glass porch enclosure"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
                         </div>
                     </div>
                 </section>
