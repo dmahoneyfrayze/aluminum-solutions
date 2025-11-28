@@ -131,7 +131,7 @@ export default function BuildersPage() {
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
-                                    <h3 className="text-white font-bold text-xl">High-Rise Condos</h3>
+                                    <h3 className="text-white font-bold text-xl"><Link href="/services/glass-railings" className="hover:underline">High-Rise Condos</Link></h3>
                                     <p className="text-slate-300 text-sm">Balcony railings & dividers</p>
                                 </div>
                             </div>
@@ -143,7 +143,7 @@ export default function BuildersPage() {
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
-                                    <h3 className="text-white font-bold text-xl">Subdivisions</h3>
+                                    <h3 className="text-white font-bold text-xl"><Link href="/services/porch-enclosures" className="hover:underline">Subdivisions</Link></h3>
                                     <p className="text-slate-300 text-sm">Volume porch railings</p>
                                 </div>
                             </div>
@@ -155,7 +155,7 @@ export default function BuildersPage() {
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
-                                    <h3 className="text-white font-bold text-xl">Commercial Interiors</h3>
+                                    <h3 className="text-white font-bold text-xl"><Link href="/services/glass-walls" className="hover:underline">Commercial Interiors</Link></h3>
                                     <p className="text-slate-300 text-sm">Office partitions & gyms</p>
                                 </div>
                             </div>
@@ -201,47 +201,47 @@ export default function BuildersPage() {
                 </section>
 
                 {/* B2B Contact Form */}
-                <section id="contact-form" className="py-24 bg-slate-900 text-white">
+                <section id="contact-form" className="py-24 bg-slate-50 text-slate-900">
                     <div className="container mx-auto px-6">
                         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
                             <div>
-                                <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
+                                <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
                                     Let's Discuss Your Project
                                 </h2>
-                                <p className="text-slate-300 mb-8 leading-relaxed">
+                                <p className="text-slate-600 mb-8 leading-relaxed">
                                     Whether you need a bid for a multi-unit development or specs for a custom home, our commercial team is ready to assist.
                                 </p>
-                                <ul className="space-y-4 text-slate-300">
+                                <ul className="space-y-4 text-slate-600">
                                     <li className="flex items-center">✓ Priority Estimating Service</li>
                                     <li className="flex items-center">✓ Dedicated Project Manager</li>
                                     <li className="flex items-center">✓ Volume Pricing Available</li>
                                 </ul>
                             </div>
 
-                            <form className="bg-white p-8 rounded-lg text-slate-900">
+                            <form className="bg-white p-8 rounded-lg text-slate-900 border border-slate-200 shadow-sm">
                                 <div className="grid grid-cols-2 gap-4 mb-4">
                                     <div>
                                         <label className="block text-sm font-bold mb-2">First Name</label>
-                                        <input className="w-full p-3 border border-slate-300 rounded bg-slate-50" placeholder="John" />
+                                        <input className="w-full p-3 border border-slate-300 rounded bg-slate-50 focus:bg-white focus:outline-none focus:border-brand-navy transition-colors" placeholder="John" />
                                     </div>
                                     <div>
                                         <label className="block text-sm font-bold mb-2">Last Name</label>
-                                        <input className="w-full p-3 border border-slate-300 rounded bg-slate-50" placeholder="Smith" />
+                                        <input className="w-full p-3 border border-slate-300 rounded bg-slate-50 focus:bg-white focus:outline-none focus:border-brand-navy transition-colors" placeholder="Smith" />
                                     </div>
                                 </div>
                                 <div className="mb-4">
                                     <label className="block text-sm font-bold mb-2">Company Name</label>
-                                    <input className="w-full p-3 border border-slate-300 rounded bg-slate-50" placeholder="Acme Construction" />
+                                    <input className="w-full p-3 border border-slate-300 rounded bg-slate-50 focus:bg-white focus:outline-none focus:border-brand-navy transition-colors" placeholder="Acme Construction" />
                                 </div>
                                 <div className="mb-4">
                                     <label className="block text-sm font-bold mb-2">Email</label>
-                                    <input className="w-full p-3 border border-slate-300 rounded bg-slate-50" placeholder="john@acme.com" />
+                                    <input className="w-full p-3 border border-slate-300 rounded bg-slate-50 focus:bg-white focus:outline-none focus:border-brand-navy transition-colors" placeholder="john@acme.com" />
                                 </div>
                                 <div className="mb-6">
                                     <label className="block text-sm font-bold mb-2">Project Details</label>
-                                    <textarea className="w-full p-3 border border-slate-300 rounded bg-slate-50" rows={3} placeholder="Tell us about the scope..." />
+                                    <textarea className="w-full p-3 border border-slate-300 rounded bg-slate-50 focus:bg-white focus:outline-none focus:border-brand-navy transition-colors" rows={3} placeholder="Tell us about the scope..." />
                                 </div>
-                                <button className="w-full py-4 bg-blue-600 text-white font-bold rounded hover:bg-blue-700 transition-colors">
+                                <button className="w-full py-4 bg-brand-navy text-white font-bold rounded hover:bg-slate-800 transition-colors">
                                     Request Builder Package
                                 </button>
                             </form>

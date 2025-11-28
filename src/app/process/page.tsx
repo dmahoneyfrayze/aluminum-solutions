@@ -130,22 +130,22 @@ export default function ProcessPage() {
                             </div>
                             <div className="bg-white p-6 rounded-lg shadow-sm">
                                 <h3 className="font-bold text-lg text-slate-900 mb-2">What kind of warranty do you offer?</h3>
-                                <p className="text-slate-600">We offer a lifetime warranty on our aluminum products against rust and defects, and a 5-year warranty on installation workmanship.</p>
+                                <p className="text-slate-600">We offer a <Link href="/resources#warranty" className="text-brand-copper hover:underline">lifetime warranty</Link> on our aluminum products against rust and defects, and a 5-year warranty on installation workmanship.</p>
                             </div>
                         </div>
                     </div>
                 </section>
 
                 {/* CTA */}
-                <section className="py-24 bg-brand-navy text-white text-center">
+                <section className="py-24 bg-slate-50 text-center">
                     <div className="container mx-auto px-6">
-                        <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6">
+                        <h2 className="text-3xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
                             Ready to Get Started?
                         </h2>
-                        <p className="text-slate-300 max-w-2xl mx-auto mb-10 text-lg">
+                        <p className="text-slate-600 max-w-2xl mx-auto mb-10 text-lg">
                             The first step is easy. Request your free quote today.
                         </p>
-                        <Link href="/contact" className="inline-block px-10 py-4 bg-brand-copper text-white font-bold tracking-wide hover:bg-orange-700 transition-colors shadow-lg rounded-sm">
+                        <Link href="/contact" className="inline-block px-10 py-4 bg-brand-navy text-white font-bold tracking-wide hover:bg-slate-800 transition-colors shadow-lg rounded-sm">
                             Get My Free Quote
                         </Link>
                     </div>

@@ -90,15 +90,15 @@ export default function FAQPage() {
                 </section>
 
                 {/* CTA */}
-                <section className="py-24 bg-brand-navy text-white text-center">
+                <section className="py-24 bg-slate-50 text-center">
                     <div className="container mx-auto px-6">
-                        <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6">
+                        <h2 className="text-3xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
                             Still Have Questions?
                         </h2>
-                        <p className="text-slate-300 max-w-2xl mx-auto mb-10 text-lg">
+                        <p className="text-slate-600 max-w-2xl mx-auto mb-10 text-lg">
                             Our team is happy to help. Give us a call or send us a message.
                         </p>
-                        <Link href="/contact" className="inline-block px-10 py-4 bg-brand-copper text-white font-bold tracking-wide hover:bg-orange-700 transition-colors shadow-lg rounded-sm">
+                        <Link href="/contact" className="inline-block px-10 py-4 bg-brand-navy text-white font-bold tracking-wide hover:bg-slate-800 transition-colors shadow-lg rounded-sm">
                             Contact Us
                         </Link>
                     </div>

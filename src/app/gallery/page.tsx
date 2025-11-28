@@ -122,15 +122,15 @@ export default function GalleryPage() {
                 <ReputationWidget />
 
                 {/* CTA Section */}
-                <section className="py-24 bg-brand-navy text-white text-center">
+                <section className="py-24 bg-slate-50 text-center">
                     <div className="container mx-auto px-6">
-                        <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6 text-white">
+                        <h2 className="text-3xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
                             Inspired by our work?
                         </h2>
-                        <p className="text-slate-300 max-w-2xl mx-auto mb-10 text-lg">
+                        <p className="text-slate-600 max-w-2xl mx-auto mb-10 text-lg">
                             Let's discuss how we can bring similar quality and style to your home.
                         </p>
-                        <Link href="/contact" className="inline-block px-10 py-4 bg-white text-brand-navy font-bold tracking-wide hover:bg-slate-100 transition-colors shadow-lg rounded-sm">
+                        <Link href="/contact" className="inline-block px-10 py-4 bg-brand-navy text-white font-bold tracking-wide hover:bg-slate-800 transition-colors shadow-lg rounded-sm">
                             Start Your Project
                         </Link>
                     </div>

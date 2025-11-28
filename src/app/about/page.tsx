@@ -83,7 +83,7 @@ export default function AboutPage() {
                             </div>
                             <h3 className="text-xl font-bold text-slate-900 mb-4">Direct Manufacturer</h3>
                             <p className="text-slate-600">
-                                We take the reins in directly manufacturing an extensive array of aluminum railings, glass showers, and office partitions. Our fabrication expertise enables us to craft systems that cater to virtually every homeowner’s need.
+                                We take the reins in directly <Link href="/process" className="text-brand-copper hover:underline">manufacturing</Link> an extensive array of aluminum railings, glass showers, and office partitions. Our fabrication expertise enables us to craft systems that cater to virtually every homeowner’s need.
                             </p>
                         </div>
                         <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
@@ -92,7 +92,7 @@ export default function AboutPage() {
                             </div>
                             <h3 className="text-xl font-bold text-slate-900 mb-4">Your Local Specialists</h3>
                             <p className="text-slate-600">
-                                Our service ambit covers Toronto, Mississauga, Brampton, Vaughan, and Markham. With a deep understanding of the GTA’s unique architectural styles and stringent building requirements, we position ourselves as your first choice.
+                                Our service ambit covers <Link href="/locations" className="text-brand-copper hover:underline">Toronto, Mississauga, Brampton, Vaughan, and Markham</Link>. With a deep understanding of the GTA’s unique architectural styles and stringent building requirements, we position ourselves as your first choice.
                             </p>
                         </div>
                         <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
@@ -174,15 +174,15 @@ export default function AboutPage() {
                 </section>
 
                 {/* CTA */}
-                <section className="py-24 bg-brand-navy text-white text-center">
+                <section className="py-24 bg-slate-50 text-center">
                     <div className="container mx-auto px-6">
-                        <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6">
+                        <h2 className="text-3xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
                             Ready to Work with the Best?
                         </h2>
-                        <p className="text-slate-300 max-w-2xl mx-auto mb-10 text-lg">
+                        <p className="text-slate-600 max-w-2xl mx-auto mb-10 text-lg">
                             Experience the Aluminum Solutions difference. Book your free consultation today.
                         </p>
-                        <Link href="/contact" className="inline-block px-10 py-4 bg-brand-copper text-white font-bold tracking-wide hover:bg-orange-700 transition-colors shadow-lg rounded-sm">
+                        <Link href="/contact" className="inline-block px-10 py-4 bg-brand-navy text-white font-bold tracking-wide hover:bg-slate-800 transition-colors shadow-lg rounded-sm">
                             Get My Free Quote
                         </Link>
                     </div>
