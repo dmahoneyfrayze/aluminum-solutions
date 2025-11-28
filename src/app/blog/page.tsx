@@ -34,7 +34,7 @@ export default function BlogIndexPage() {
                                         {post.imageUrl ? (
                                             <Image
                                                 src={post.imageUrl}
-                                                alt={post.title}
+                                                alt={post.altText || post.title}
                                                 fill
                                                 className="object-cover"
                                             />

@@ -5,6 +5,7 @@ export interface BlogPost {
   date: string;
   category: string;
   imageUrl: string;
+  altText: string;
   content: string; // HTML or Markdown string
 }
 
@@ -15,7 +16,8 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Why aluminum is the superior choice for Canadian homes: No rust, low maintenance, and high durability.",
     date: "July 5, 2023",
     category: "Product Info",
-    imageUrl: "/images/migrated/blog-aluminum-advantages.jpg",
+    imageUrl: "/images/projects/aluminum-railing-pickets-black.png",
+    altText: "Black aluminum picket railings on a residential deck",
     content: `
       <p><strong>No Rusting or Rotting</strong><br>
       Aluminum is naturally resistant to rust and corrosion, making it an ideal choice for outdoor use in various climatic conditions. With <a href="/services/railings" class="text-brand-copper hover:underline">aluminum railings</a>, homeowners can be confident that they won’t have to worry about their bars rusting or deteriorating due to exposure to moisture. This durability ensures the barriers maintain their structural integrity and appearance over time.</p>
@@ -42,7 +44,8 @@ export const blogPosts: BlogPost[] = [
     excerpt: "See how we transformed a windy waterfront patio into a usable 3-season space.",
     date: "November 2, 2024",
     category: "Case Studies",
-    imageUrl: "/images/blog/oakville-project.jpg", // Placeholder
+    imageUrl: "/images/projects/glass-enclosure-porch-front.jpg",
+    altText: "Custom glass enclosure on a waterfront patio in Oakville",
     content: `
       <p>The owners of a beautiful property in Oakville loved their view of Lake Ontario but rarely used their patio due to the strong winds coming off the water. They needed a solution that would block the wind without blocking the view.</p>
       
@@ -68,7 +71,8 @@ export const blogPosts: BlogPost[] = [
     excerpt: "First impressions matter. Here is how upgrading your front porch railings can offer a high ROI.",
     date: "November 20, 2024",
     category: "Tips",
-    imageUrl: "/images/blog/curb-appeal.jpg", // Placeholder
+    imageUrl: "/images/projects/porch-railing-glass-aluminum.jpg",
+    altText: "Modern aluminum and glass porch railings increasing curb appeal",
     content: `
       <p>Real estate agents agree: curb appeal sells homes. Potential buyers form an opinion within the first 7 seconds of seeing a property. One of the most cost-effective ways to boost your home's exterior look is by replacing old, rotting wood railings with modern <a href="/services/railings" class="text-brand-copper hover:underline">aluminum railings</a>.</p>
       
@@ -96,7 +100,8 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Planning to sell? Focus your renovation budget on these high-ROI exterior upgrades.",
     date: "November 25, 2024",
     category: "Real Estate",
-    imageUrl: "/images/generated/custom_gate_modern_1764314098362.png", // Reusing gate image
+    imageUrl: "/images/generated/custom_gate_modern_1764314098362.png",
+    altText: "Modern custom aluminum gate adding value to a property",
     content: `
       <p>When preparing your home for sale, not all renovations are created equal. While a new kitchen is nice, exterior upgrades often provide a higher return on investment (ROI) because they improve curb appeal—the very first thing a buyer sees.</p>
       
@@ -119,7 +124,8 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Don't let budget constraints delay your dream project. Explore smart financing options for Canadian homeowners.",
     date: "November 28, 2024",
     category: "Financing",
-    imageUrl: "/images/generated/founder_portrait_1764313198224.png", // Reusing founder image (consultation vibe)
+    imageUrl: "/images/generated/process_consultation_blueprint_1764350167105.png",
+    altText: "Consultation with blueprints for an outdoor renovation project",
     content: `
       <p>Investing in high-quality aluminum railings or a glass enclosure is a smart decision for your home's value, but it is also a significant financial commitment. Fortunately, there are several ways to finance your project without draining your savings.</p>
       
@@ -142,7 +148,8 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Did you know certain energy-efficient upgrades can qualify for CMHC premium refunds? Here is the scoop.",
     date: "November 29, 2024",
     category: "Tips",
-    imageUrl: "/images/generated/glass_enclosure_project_1764312838961.png", // Reusing enclosure image
+    imageUrl: "/images/projects/porch-enclosure-glass-black.jpg",
+    altText: "Glass porch enclosure improving home energy efficiency",
     content: `
       <p>If you purchased your home with less than a 20% down payment, you likely paid for CMHC mortgage loan insurance. But did you know that the <strong>CMHC Eco Plus</strong> program offers a partial premium refund of up to 25% for energy-efficient renovations?</p>
       
@@ -170,6 +177,7 @@ export const blogPosts: BlogPost[] = [
     date: "December 1, 2024",
     category: "Maintenance",
     imageUrl: "/images/generated/pool_fence_glass_detail_1764312810331.png",
+    altText: "Close-up of clean, streak-free glass railing",
     content: `
       <p>One of the biggest myths about <a href="/services/glass-railings" class="text-brand-copper hover:underline">glass railings</a> is that they are hard to keep clean. In reality, tempered glass is much lower maintenance than wood (which needs staining) or iron (which needs painting). Here is how to keep your glass railings looking brand new with minimal effort.</p>
       
@@ -203,6 +211,7 @@ export const blogPosts: BlogPost[] = [
     date: "December 5, 2024",
     category: "Design",
     imageUrl: "/images/projects/black-aluminum-railing-stone.png",
+    altText: "Trendy black aluminum railing with stone accents",
     content: `
       <p>As we look ahead to 2025, outdoor living spaces are becoming more sophisticated, mirroring the interior design trends of "quiet luxury" and minimalism. Here are the top trends we are seeing in Toronto and the GTA.</p>
       
@@ -226,6 +235,7 @@ export const blogPosts: BlogPost[] = [
     date: "December 10, 2024",
     category: "Safety",
     imageUrl: "/images/generated/railing_hero_detail_1764312850877.png",
+    altText: "Detailed view of railing construction meeting safety codes",
     content: `
       <p>Navigating the Ontario Building Code (OBC) can be confusing for homeowners. However, compliance is non-negotiable for safety and insurance purposes. Here is a simplified breakdown of the key rules for residential railings (guards).</p>
       
@@ -254,7 +264,8 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Did you know we do custom interiors? Elevate your home spa or gym with premium tempered glass.",
     date: "December 12, 2024",
     category: "Interiors",
-    imageUrl: "/images/generated/glass_enclosure_project_1764312838961.png", // Placeholder
+    imageUrl: "/images/projects/frameless-glass-shower-custom.jpg",
+    altText: "Custom frameless glass shower and sauna enclosure",
     content: `
       <p>While we are known for our exterior railings, Aluminum Solutions also specializes in high-end <strong>interior glass applications</strong>. If you are renovating a basement or building a home spa, custom glass is the ultimate finishing touch.</p>
       
@@ -274,7 +285,8 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Wobbly railings are a lawsuit waiting to happen. Learn about our Emergency Safety Proofing services for landlords.",
     date: "December 15, 2024",
     category: "Rental Safety",
-    imageUrl: "/images/generated/railing_hero_detail_1764312850877.png", // Placeholder
+    imageUrl: "/images/projects/railing-balcony-apartment-replacement.jpg",
+    altText: "Old balcony railing being replaced for safety",
     content: `
       <p>As a landlord in Ontario, you have a legal duty to ensure your property is safe. One of the most common—and dangerous—liabilities in older rental units is <strong>unsafe railings</strong> on balconies, porches, and stairways.</p>
       
@@ -298,7 +310,8 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Interior or exterior, your stairs need to be safe. We break down handrail continuity, height rules, and modern styles.",
     date: "December 18, 2024",
     category: "Safety",
-    imageUrl: "/images/projects/black-aluminum-railing-stone.png", // Placeholder
+    imageUrl: "/images/projects/aluminum-columns-glass-railing.jpg",
+    altText: "Modern interior glass railing on a staircase",
     content: `
       <p>Stairways are the #1 location for falls in the home. Whether it's your front steps or your main interior staircase, having a proper handrail isn't just about code—it's about keeping your family safe.</p>
       
