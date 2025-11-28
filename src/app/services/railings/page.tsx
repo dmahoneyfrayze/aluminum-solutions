@@ -84,6 +84,213 @@ export default function RailingsPage() {
                     </div>
                 </section>
 
+                {/* Explore Our Products */}
+                <section className="py-24 bg-slate-50">
+                    <div className="container mx-auto px-6">
+                        <div className="text-center max-w-3xl mx-auto mb-16">
+                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-dark mb-6">
+                                Explore Our Aluminum Products
+                            </h2>
+                            <p className="text-slate-600 text-lg leading-relaxed">
+                                From decks to balconies, we have a solution for every part of your home.
+                            </p>
+                        </div>
+
+                        <div className="space-y-20">
+                            {/* Deck Railings */}
+                            <div className="flex flex-col md:flex-row gap-12 items-center">
+                                <div className="w-full md:w-1/2">
+                                    <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg">
+                                        <Image src="/images/projects/deck-glass-railing-pergola.jpg" alt="Aluminum Deck Railings" fill className="object-cover" />
+                                    </div>
+                                </div>
+                                <div className="w-full md:w-1/2">
+                                    <h3 className="text-2xl font-bold text-brand-dark mb-4">Toronto Aluminum Deck Railings</h3>
+                                    <p className="text-slate-600 mb-6 leading-relaxed">
+                                        Elevate your outdoor living experience with our premium Aluminum Deck Railings. Crafted from high-grade aluminum, they are designed to withstand harsh weather conditions, ensuring durability and longevity. Our deck railings come in a variety of designs and finishes, allowing you to customize them to match your home’s aesthetic.
+                                    </p>
+                                    <Link href="/contact" className="text-brand-copper font-bold hover:underline">
+                                        Get a Quote for Deck Railings &rarr;
+                                    </Link>
+                                </div>
+                            </div>
+
+                            {/* Porch Railings */}
+                            <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
+                                <div className="w-full md:w-1/2">
+                                    <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg">
+                                        <Image src="/images/generated/railing_hero_detail_1764312850877.png" alt="Aluminum Porch Railings" fill className="object-cover" />
+                                    </div>
+                                </div>
+                                <div className="w-full md:w-1/2">
+                                    <h3 className="text-2xl font-bold text-brand-dark mb-4">Toronto Aluminum Porch Railings</h3>
+                                    <p className="text-slate-600 mb-6 leading-relaxed">
+                                        Our Aluminum Porch Railings are the perfect blend of functionality and curb appeal. Designed to enhance safety and accessibility, these railings add an elegant touch that can significantly increase your home’s value. Made from top-quality aluminum, they are resistant to rust and corrosion.
+                                    </p>
+                                    <Link href="/contact" className="text-brand-copper font-bold hover:underline">
+                                        Get a Quote for Porch Railings &rarr;
+                                    </Link>
+                                </div>
+                            </div>
+
+                            {/* Balcony Railings */}
+                            <div className="flex flex-col md:flex-row gap-12 items-center">
+                                <div className="w-full md:w-1/2">
+                                    <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg">
+                                        <Image src="/images/projects/deck-glass-railing-privacy.jpg" alt="Aluminum Balcony Railings" fill className="object-cover" />
+                                    </div>
+                                </div>
+                                <div className="w-full md:w-1/2">
+                                    <h3 className="text-2xl font-bold text-brand-dark mb-4">Toronto Aluminum Balcony Railings</h3>
+                                    <p className="text-slate-600 mb-6 leading-relaxed">
+                                        Transform your balcony into a safe and stylish sanctuary. These railings are designed to provide optimal safety without obstructing your view, making them perfect for high-rise apartments and residential homes alike.
+                                    </p>
+                                    <Link href="/contact" className="text-brand-copper font-bold hover:underline">
+                                        Get a Quote for Balcony Railings &rarr;
+                                    </Link>
+                                </div>
+                            </div>
+
+                            {/* Privacy Screens */}
+                            <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
+                                <div className="w-full md:w-1/2">
+                                    <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg">
+                                        <Image src="/images/generated/pool_fence_glass_detail_1764312810331.png" alt="Aluminum Privacy Screens" fill className="object-cover" />
+                                    </div>
+                                </div>
+                                <div className="w-full md:w-1/2">
+                                    <h3 className="text-2xl font-bold text-brand-dark mb-4">Toronto Aluminum Privacy Screens</h3>
+                                    <p className="text-slate-600 mb-6 leading-relaxed">
+                                        Our Aluminum Privacy Screens offer an ideal solution for homeowners seeking both privacy and style. Shield your outdoor spaces from prying eyes, creating a private haven in your backyard or patio.
+                                    </p>
+                                    <Link href="/services/privacy-screens" className="text-brand-copper font-bold hover:underline">
+                                        Learn More About Privacy Screens &rarr;
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Comparison Table */}
+                <section className="py-24 bg-white">
+                    <div className="container mx-auto px-6">
+                        <div className="text-center mb-16">
+                            <h2 className="text-3xl font-serif font-bold text-brand-dark mb-4">Is Aluminum The Best Material?</h2>
+                            <p className="text-slate-600">See how aluminum stacks up against the competition.</p>
+                        </div>
+                        <div className="overflow-x-auto">
+                            <table className="w-full border-collapse text-left text-sm md:text-base">
+                                <thead>
+                                    <tr className="bg-brand-navy text-white">
+                                        <th className="p-4 border border-slate-700">Aspect</th>
+                                        <th className="p-4 border border-slate-700 bg-brand-copper">Aluminum Railings</th>
+                                        <th className="p-4 border border-slate-700">PVC (Vinyl)</th>
+                                        <th className="p-4 border border-slate-700">Steel Railings</th>
+                                        <th className="p-4 border border-slate-700">Wood Railings</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="text-slate-700">
+                                    <tr>
+                                        <td className="p-4 border border-slate-200 font-bold">Maintenance</td>
+                                        <td className="p-4 border border-slate-200 bg-orange-50 font-bold text-brand-dark">Minimal (Cleaning only)</td>
+                                        <td className="p-4 border border-slate-200">Low</td>
+                                        <td className="p-4 border border-slate-200">Moderate (Repainting)</td>
+                                        <td className="p-4 border border-slate-200">High (Staining/Sealing)</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="p-4 border border-slate-200 font-bold">Longevity</td>
+                                        <td className="p-4 border border-slate-200 bg-orange-50 font-bold text-brand-dark">High (No Rust)</td>
+                                        <td className="p-4 border border-slate-200">Moderate (Can Crack)</td>
+                                        <td className="p-4 border border-slate-200">High (If maintained)</td>
+                                        <td className="p-4 border border-slate-200">Low to Moderate (Rot)</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="p-4 border border-slate-200 font-bold">Aesthetics</td>
+                                        <td className="p-4 border border-slate-200 bg-orange-50 font-bold text-brand-dark">Modern & Sleek</td>
+                                        <td className="p-4 border border-slate-200">Plastic Look</td>
+                                        <td className="p-4 border border-slate-200">Industrial</td>
+                                        <td className="p-4 border border-slate-200">Natural / Rustic</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="p-4 border border-slate-200 font-bold">Cost</td>
+                                        <td className="p-4 border border-slate-200 bg-orange-50 font-bold text-brand-dark">Best Long-Term Value</td>
+                                        <td className="p-4 border border-slate-200">Low Upfront</td>
+                                        <td className="p-4 border border-slate-200">High</td>
+                                        <td className="p-4 border border-slate-200">Varies</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Styles & Colors */}
+                <section className="py-24 bg-slate-50">
+                    <div className="container mx-auto px-6">
+                        <h2 className="text-3xl font-serif font-bold text-center text-brand-dark mb-16">Styles & Colors</h2>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-16">
+                            <div>
+                                <h3 className="text-xl font-bold mb-6 border-b border-slate-200 pb-2">Picket Styles</h3>
+                                <ul className="space-y-4">
+                                    <li className="flex items-center justify-between p-4 bg-white rounded shadow-sm">
+                                        <span className="font-bold">Cascade</span>
+                                        <span className="text-sm text-slate-500">Classic Top Rail</span>
+                                    </li>
+                                    <li className="flex items-center justify-between p-4 bg-white rounded shadow-sm">
+                                        <span className="font-bold">Milena</span>
+                                        <span className="text-sm text-slate-500">Modern Profile</span>
+                                    </li>
+                                    <li className="flex items-center justify-between p-4 bg-white rounded shadow-sm">
+                                        <span className="font-bold">Evolution</span>
+                                        <span className="text-sm text-slate-500">Sleek & Minimal</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 className="text-xl font-bold mb-6 border-b border-slate-200 pb-2">Glass Styles</h3>
+                                <ul className="space-y-4">
+                                    <li className="flex items-center justify-between p-4 bg-white rounded shadow-sm">
+                                        <span className="font-bold">Aqua</span>
+                                        <span className="text-sm text-slate-500">Clear View</span>
+                                    </li>
+                                    <li className="flex items-center justify-between p-4 bg-white rounded shadow-sm">
+                                        <span className="font-bold">Argo</span>
+                                        <span className="text-sm text-slate-500">Tinted Options</span>
+                                    </li>
+                                    <li className="flex items-center justify-between p-4 bg-white rounded shadow-sm">
+                                        <span className="font-bold">Rapsody</span>
+                                        <span className="text-sm text-slate-500">Frosted Privacy</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="text-center">
+                            <h3 className="text-xl font-bold mb-8">Available Colors</h3>
+                            <div className="flex flex-wrap justify-center gap-6">
+                                {[
+                                    { name: 'Black', hex: '#000000' },
+                                    { name: 'White', hex: '#FFFFFF', border: true },
+                                    { name: 'Brown', hex: '#5D4037' },
+                                    { name: 'Gunmetal', hex: '#455A64' },
+                                    { name: 'Sandstone', hex: '#D7CCC8' },
+                                    { name: 'Tan', hex: '#A1887F' },
+                                ].map((color) => (
+                                    <div key={color.name} className="flex flex-col items-center gap-2">
+                                        <div
+                                            className={`w-16 h-16 rounded-full shadow-md ${color.border ? 'border border-slate-200' : ''}`}
+                                            style={{ backgroundColor: color.hex }}
+                                        />
+                                        <span className="text-sm font-medium text-slate-600">{color.name}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 {/* Aluminum Deck Railings Content */}
                 <section className="py-24 bg-slate-50">
                     <div className="container mx-auto px-6">
@@ -124,8 +331,13 @@ export default function RailingsPage() {
                             </div>
                         </div>
 
-                        {/* Portfolio / Gallery Preview */}
-                        <h3 className="text-2xl font-serif font-bold text-center text-brand-dark mb-10">Recent Projects</h3>
+                    </div>
+                </section>
+
+                {/* Portfolio / Gallery Preview */}
+                <section className="py-24 bg-white">
+                    <div className="container mx-auto px-6">
+                        <h3 className="text-3xl font-serif font-bold text-center text-brand-dark mb-12">Recent Projects</h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div className="aspect-square relative rounded-lg overflow-hidden shadow-md group">
                                 <Image
@@ -151,6 +363,64 @@ export default function RailingsPage() {
                                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                                 />
                             </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Clients */}
+                <section className="py-16 bg-white border-b border-slate-100">
+                    <div className="container mx-auto px-6 text-center">
+                        <h3 className="text-xl font-bold text-slate-400 uppercase tracking-widest mb-10">Our Toronto Aluminum Railings Clients Who Trust Us</h3>
+                        <div className="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                            <div className="relative h-12 w-32">
+                                <Image src="/images/clients/university-waterloo.png" alt="University of Waterloo" fill className="object-contain" />
+                            </div>
+                            <div className="relative h-12 w-32">
+                                <Image src="/images/clients/downsview-group.png" alt="The Downsview Group" fill className="object-contain" />
+                            </div>
+                            <div className="relative h-12 w-32">
+                                <Image src="/images/clients/scotiabank.png" alt="Scotiabank" fill className="object-contain" />
+                            </div>
+                            <div className="relative h-12 w-32">
+                                <Image src="/images/clients/sunny-morning.png" alt="Sunny Morning" fill className="object-contain" />
+                            </div>
+                            <div className="relative h-12 w-32">
+                                <Image src="/images/clients/savaria.png" alt="Savaria" fill className="object-contain" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Testimonials */}
+                <section className="py-20 bg-brand-copper/5">
+                    <div className="container mx-auto px-6">
+                        <h2 className="text-3xl font-serif font-bold text-center text-brand-dark mb-12">Why Our Clients Choose Us</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                            <div className="bg-white p-8 shadow-sm rounded-xl border border-slate-100">
+                                <div className="flex text-brand-copper mb-4">★★★★★</div>
+                                <p className="text-slate-600 italic mb-6">"Val and his team installed glass panel aluminum railings at my house. I was blown away by how professional and quick they were... They were very reasonably priced and super professional. I would highly recommend!"</p>
+                                <div className="font-bold text-brand-navy">- Milos Radicevic</div>
+                            </div>
+                            <div className="bg-white p-8 shadow-sm rounded-xl border border-slate-100">
+                                <div className="flex text-brand-copper mb-4">★★★★★</div>
+                                <p className="text-slate-600 italic mb-6">"I wasn't sure about getting glass railings for our deck as we have a young child... but I'm so glad I was able to find this company. Vlad and his team worked and installed the deck rails efficiently this week... Highly recommend!"</p>
+                                <div className="font-bold text-brand-navy">- Graham Diana</div>
+                            </div>
+                            <div className="bg-white p-8 shadow-sm rounded-xl border border-slate-100">
+                                <div className="flex text-brand-copper mb-4">★★★★★</div>
+                                <p className="text-slate-600 italic mb-6">"Exceptional experience working with Global Aluminum Solutions. Everything was done in such a professional manner and exceeded expectations."</p>
+                                <div className="font-bold text-brand-navy">- Saleem Akhtar</div>
+                            </div>
+                            <div className="bg-white p-8 shadow-sm rounded-xl border border-slate-100">
+                                <div className="flex text-brand-copper mb-4">★★★★★</div>
+                                <p className="text-slate-600 italic mb-6">"Global Aluminum was very professional and expedient. From their quotation accuracy, to on-site measure and final installation, time spanned less thank 2 weeks. Most importantly amazing quality and value."</p>
+                                <div className="font-bold text-brand-navy">- Steve Sottile</div>
+                            </div>
+                        </div>
+                        <div className="text-center mt-10">
+                            <Link href="/reviews" className="text-brand-navy font-bold hover:underline">
+                                Read More Reviews &rarr;
+                            </Link>
                         </div>
                     </div>
                 </section>
