@@ -16,6 +16,10 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Aluminum Solutions | Premium Railings & Enclosures in Toronto & GTA",
   description: "Transform your home with high-end aluminum railings, glass enclosures, and custom gates. Serving Toronto, Mississauga, Oakville, and the GTA.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 import ChatWidget from "@/components/ui/ChatWidget";

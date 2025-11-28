@@ -100,7 +100,12 @@ export default function Footer() {
 
             {/* Copyright */}
             <div className="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
-                <p>&copy; {new Date().getFullYear()} Aluminum Solutions. All rights reserved.</p>
+                <p className="mb-2">&copy; {new Date().getFullYear()} Aluminum Solutions. All rights reserved.</p>
+                <div className="flex justify-center gap-4">
+                    <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+                    <span>|</span>
+                    <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+                </div>
             </div>
         </footer>
     );
