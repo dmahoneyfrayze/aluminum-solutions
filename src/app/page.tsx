@@ -201,7 +201,7 @@ export default function Home() {
         {/* Final CTA */}
         <section className="py-24 bg-brand-navy text-white text-center">
           <div className="container mx-auto px-6">
-            <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6">
+            <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6 text-white">
               Get a Quote in 24 Hours
             </h2>
             <p className="text-slate-300 max-w-2xl mx-auto mb-10 text-lg">

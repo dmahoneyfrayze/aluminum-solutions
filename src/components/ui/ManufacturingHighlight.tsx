@@ -12,9 +12,9 @@ export default function ManufacturingHighlight() {
                         <span className="text-blue-400 font-bold tracking-widest uppercase text-sm mb-2 block">
                             Factory Direct
                         </span>
-                        <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6 leading-tight">
+                        <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6 text-white">
                             We Don't Just Install.<br />
-                            <span className="text-slate-400">We Manufacture.</span>
+                            We Fabricate.
                         </h2>
                         <p className="text-slate-300 text-lg mb-8 leading-relaxed">
                             Most contractors buy generic kits. We extrude, cut, and powder-coat our own aluminum profiles in our GTA facility. This gives us total control over quality, timelines, and customization.
