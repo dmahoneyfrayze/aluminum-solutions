@@ -127,7 +127,7 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/generated/railing_hero_detail_1764312850877.png"
+                    src="/images/projects/railing-aluminum-deck-toronto.jpg"
                     alt="Aluminum Railings"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -143,7 +143,7 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/generated/glass_enclosure_project_1764312838961.png"
+                    src="/images/projects/glass-enclosure-porch-front.jpg"
                     alt="Glass Enclosures"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"

@@ -152,13 +152,11 @@ export default function RailingsPage() {
                             </div>
 
                             {/* Privacy Screens */}
-                            <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
-                                <div className="w-full md:w-1/2">
-                                    <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg">
-                                        <Image src="/images/generated/pool_fence_glass_detail_1764312810331.png" alt="Aluminum Privacy Screens" fill className="object-cover" />
-                                    </div>
+                            <div className="group bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-md transition-all">
+                                <div className="h-64 bg-slate-200 relative">
+                                    <Image src="/images/projects/privacy-screen-black-aluminum.jpg" alt="Aluminum Privacy Screens" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                                 </div>
-                                <div className="w-full md:w-1/2">
+                                <div className="p-8">
                                     <h3 className="text-2xl font-bold text-brand-dark mb-4">Toronto Aluminum Privacy Screens</h3>
                                     <p className="text-slate-600 mb-6 leading-relaxed">
                                         Our Aluminum Privacy Screens offer an ideal solution for homeowners seeking both privacy and style. Shield your outdoor spaces from prying eyes, creating a private haven in your backyard or patio.

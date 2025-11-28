@@ -19,20 +19,20 @@ const services = [
         description: "Durable, maintenance-free railings in a variety of modern styles and colors. Perfect for porches, balconies, and decks.",
         link: "/services/railings",
         features: ["Rust-free", "Powder-coated finish", "Multiple color options"],
-        image: "/images/generated/railing_hero_detail_1764312850877.png"
+        image: "/images/projects/railing-aluminum-deck-toronto.jpg"
     },
     {
         title: "Glass Enclosures",
         description: "Frameless and framed glass solutions that provide wind protection without sacrificing your view.",
         link: "/services/glass-enclosures",
         features: ["Tempered safety glass", "Custom sizing", "Wind protection"],
-        image: "/images/generated/glass_enclosure_project_1764312838961.png"
+        image: "/images/projects/glass-enclosure-porch-front.jpg"
     },
     {
         title: "Glass Railings",
         description: "Elegant frameless and post systems for unobstructed views.",
         link: "/services/glass-railings",
-        image: "/images/projects/deck-glass-railing-privacy.jpg"
+        image: "/images/projects/railing-aluminum-brown-glass.jpg"
     },
     {
         title: "Custom Gates",
@@ -46,21 +46,21 @@ const services = [
         description: "Structural and decorative aluminum columns to replace rotting wood and add curb appeal.",
         link: "/services/columns",
         features: ["Load-bearing options", "Classic & modern styles", "Maintenance-free"],
-        image: "/images/generated/railing_hero_detail_1764312850877.png" // Temporary: Railing detail
+        image: "/images/projects/glass-enclosure-porch-side.jpg"
     },
     {
         title: "Pool Fences",
         description: "Safe, code-compliant glass and aluminum pool enclosures that don't obstruct your view.",
         link: "/services/pool-fences",
         features: ["Self-closing gates", "Climb-resistant", "12mm safety glass"],
-        image: "/images/generated/pool_fence_hero_1764312796756.png"
+        image: "/images/projects/pool-fence-glass-guards.jpg"
     },
     {
         title: "Privacy Screens",
         description: "Acid-etched glass and aluminum screens to create a private oasis in urban settings.",
         link: "/services/privacy-screens",
         features: ["Frosted glass", "Custom heights", "Wind reduction"],
-        image: "/images/generated/pool_fence_glass_detail_1764312810331.png" // Temporary: Glass detail
+        image: "/images/projects/privacy-screen-black-aluminum.jpg"
     }
 ];
 
