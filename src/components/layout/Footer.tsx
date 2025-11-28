@@ -75,8 +75,9 @@ export default function Footer() {
                         <h4 className="font-bold mb-6">Our Services</h4>
                         <ul className="space-y-4 text-slate-400">
                             <li><Link href="/services/railings" className="hover:text-white transition-colors">Aluminum Railings</Link></li>
-                            <li><Link href="/services/glass-enclosures" className="hover:text-white transition-colors">Glass Enclosures</Link></li>
-                            <li><Link href="/services/porch-enclosures" className="hover:text-white transition-colors">Porch Enclosures</Link></li>
+                            <li><Link href="/services/glass-enclosures" className="text-slate-400 hover:text-brand-copper transition-colors">Glass Enclosures</Link></li>
+                            <li><Link href="/services/glass-walls" className="text-slate-400 hover:text-brand-copper transition-colors">Glass Walls</Link></li>
+                            <li><Link href="/services/glass-railings" className="text-slate-400 hover:text-brand-copper transition-colors">Glass Railings</Link></li>
                             <li><Link href="/services/pool-fences" className="hover:text-white transition-colors">Pool Fences</Link></li>
                             <li><Link href="/services/privacy-screens" className="hover:text-white transition-colors">Privacy Screens</Link></li>
                             <li><Link href="/services/showers" className="hover:text-white transition-colors">Frameless Showers</Link></li>

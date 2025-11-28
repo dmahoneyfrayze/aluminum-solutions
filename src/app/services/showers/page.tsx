@@ -34,6 +34,9 @@ export default function ShowersPage() {
                                 <p className="text-slate-600 mb-6 leading-relaxed text-lg">
                                     Off-the-shelf shower doors rarely fit perfectly. Our custom frameless systems are laser-measured to fit your specific space, ensuring a watertight seal and a sleek, modern look.
                                 </p>
+                                <p className="text-slate-600 mb-6 leading-relaxed text-lg">
+                                    Proudly incorporating the expertise of <strong>Easy Glass GTA</strong>, a leader in custom glass fabrication, we bring over a decade of specialized experience to every shower project.
+                                </p>
                                 <ul className="space-y-4 mb-10">
                                     <li className="flex items-center">
                                         <span className="w-6 h-6 bg-brand-navy text-white rounded-full flex items-center justify-center mr-3 font-bold text-xs">✓</span>
@@ -75,7 +78,7 @@ export default function ShowersPage() {
                             <p className="text-slate-600">From simple doors to complex steam showers, we do it all.</p>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                             {/* Style 1 */}
                             <div className="bg-white p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow">
                                 <div className="h-48 bg-slate-200 mb-6 rounded-sm" />
@@ -93,6 +96,14 @@ export default function ShowersPage() {
                                 <div className="h-48 bg-slate-200 mb-6 rounded-sm" />
                                 <h3 className="text-xl font-bold mb-2 text-brand-dark">Sliding Barn Door</h3>
                                 <p className="text-slate-600 text-sm mb-4">Smooth rolling hardware for a modern industrial look.</p>
+                            </div>
+                            {/* Style 4 */}
+                            <div className="bg-white p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow">
+                                <div className="h-48 bg-slate-200 mb-6 rounded-sm relative overflow-hidden">
+                                    <div className="absolute inset-0 flex items-center justify-center text-4xl">🧖</div>
+                                </div>
+                                <h3 className="text-xl font-bold mb-2 text-brand-dark">Steam Showers</h3>
+                                <p className="text-slate-600 text-sm mb-4">Floor-to-ceiling glass with operable transoms for steam control.</p>
                             </div>
                         </div>
                     </div>

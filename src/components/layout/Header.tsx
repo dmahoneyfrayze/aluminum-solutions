@@ -33,6 +33,9 @@ export default function Header() {
                     <Link href="/gallery" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">
                         Gallery
                     </Link>
+                    <Link href="/services/glass-enclosures" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">Glass Enclosures</Link>
+                    <Link href="/services/glass-walls" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">Glass Walls & Partitions</Link>
+                    <Link href="/services/glass-railings" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">Glass Railings</Link>
                     <Link href="/about" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">
                         About
                     </Link>

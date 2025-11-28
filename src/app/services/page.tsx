@@ -56,6 +56,13 @@ const services = [
         image: "/images/projects/pool-fence-glass-guards.jpg"
     },
     {
+        title: "Glass Walls",
+        description: "Modern glass partitions for offices, gyms, and wine cellars. Create separation without losing light.",
+        link: "/services/glass-walls",
+        features: ["Acoustic privacy", "Frameless design", "Custom hardware"],
+        image: "/images/generated/glass_office_partition_hero_1764346564712.png"
+    },
+    {
         title: "Privacy Screens",
         description: "Acid-etched glass and aluminum screens to create a private oasis in urban settings.",
         link: "/services/privacy-screens",
