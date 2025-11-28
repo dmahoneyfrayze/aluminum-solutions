@@ -87,6 +87,7 @@ export default async function LocationPage({ params }: Props) {
                     subtitle={`Transform your ${location.name} home with our high-end glass enclosures, custom gates, and durable aluminum solutions.`}
                     ctaText="Get a Free Estimate"
                     ctaLink="/contact"
+                    backgroundImage={location.heroImage}
                 />
 
                 {/* Localized Intro */}
