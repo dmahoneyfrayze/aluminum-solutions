@@ -13,7 +13,7 @@ export default function PrivacyScreensPage() {
 
             <main className="flex-grow">
                 <Hero
-                    title="Aluminum & Glass Privacy Screens"
+                    title="Custom Privacy Screens for Decks & Patios"
                     subtitle="Create a secluded oasis in your urban backyard with our stylish, durable privacy solutions."
                     ctaText="Get a Free Estimate"
                     ctaLink="/contact"

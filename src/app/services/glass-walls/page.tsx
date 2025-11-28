@@ -6,6 +6,13 @@ import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 import Image from "next/image";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Glass Walls & Office Partitions Toronto | Custom Glass Dividers",
+    description: "Modern frameless glass walls for offices, home gyms, and wine cellars. Custom designed and installed in Toronto & GTA. Create bright, open spaces.",
+};
+
 export default function GlassWallsPage() {
     return (
         <div className="min-h-screen flex flex-col bg-white">

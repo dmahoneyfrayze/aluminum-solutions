@@ -13,7 +13,7 @@ export default function PoolFencesPage() {
 
             <main className="flex-grow">
                 <Hero
-                    title="Enhance Safety with Aluminum & Glass Pool Railings"
+                    title="Aluminum & Glass Pool Fences & Railings"
                     subtitle="Secure your outdoor oasis with high-quality, durable railings that meet all local safety codes without compromising on style."
                     ctaText="Get a Free Estimate"
                     ctaLink="/contact"

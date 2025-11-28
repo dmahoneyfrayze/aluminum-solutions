@@ -42,13 +42,24 @@ export default function ExitIntentPopup() {
 
     if (!isVisible) return null;
 
+    if (!isVisible) return null;
+
     return (
-        <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-sm animate-fade-in">
-            <div className="relative w-full max-w-lg bg-white rounded-xl shadow-2xl overflow-hidden animate-fade-in-up border-4 border-red-700">
+        <div
+            className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-sm animate-fade-in cursor-pointer"
+            onClick={() => setIsVisible(false)}
+        >
+            <div
+                className="relative w-full max-w-lg bg-white rounded-xl shadow-2xl overflow-hidden animate-fade-in-up border-4 border-red-700 cursor-default"
+                onClick={(e) => e.stopPropagation()}
+            >
                 {/* Close Button */}
                 <button
-                    onClick={() => setIsVisible(false)}
-                    className="absolute top-3 right-3 p-1 bg-white/80 rounded-full hover:bg-slate-100 transition-colors z-10"
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        setIsVisible(false);
+                    }}
+                    className="absolute top-3 right-3 p-2 bg-white/90 rounded-full hover:bg-slate-100 transition-colors z-20 shadow-sm"
                     aria-label="Close popup"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-slate-500">

@@ -42,7 +42,7 @@ export default function EnclosuresPage() {
 
             <main className="flex-grow">
                 <Hero
-                    title="Architectural Glass Enclosures"
+                    title="Custom Glass Porch Enclosures"
                     subtitle="Seamlessly blend indoor comfort with outdoor views. Custom-manufactured frameless and semi-frameless systems."
                     ctaText="Request Design Consultation"
                     ctaLink="/contact"

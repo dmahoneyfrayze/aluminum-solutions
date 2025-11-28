@@ -42,7 +42,7 @@ export default function RailingsPage() {
 
             <main className="flex-grow">
                 <Hero
-                    title="Custom Aluminum Railings"
+                    title="Custom Aluminum Railings in Toronto"
                     subtitle="The perfect blend of safety, style, and durability. Maintenance-free solutions for your porch, deck, or balcony."
                     ctaText="Get a Quote"
                     ctaLink="/contact"

@@ -6,6 +6,13 @@ import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 import Image from "next/image";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Custom Frameless Glass Showers Toronto | Luxury Bathroom Enclosures",
+    description: "Premium custom glass shower enclosures, steam showers, and tub shields. Measured and installed by experts in Toronto. 10mm tempered safety glass.",
+};
+
 export default function ShowersPage() {
     return (
         <div className="min-h-screen flex flex-col bg-white">
@@ -17,7 +24,7 @@ export default function ShowersPage() {
                     subtitle="Transform your bathroom into a spa with our premium 10mm tempered glass enclosures. Measured, manufactured, and installed by experts."
                     ctaText="Get a Free Estimate"
                     ctaLink="/contact"
-                    backgroundImage="/images/generated/pool_fence_glass_detail_1764312810331.png"
+                    backgroundImage="/images/generated/frameless_glass_shower_modern_1764347088164.png"
                 />
 
                 {/* Intro / Value Prop */}

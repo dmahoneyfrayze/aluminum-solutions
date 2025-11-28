@@ -83,7 +83,7 @@ export default function AboutPage() {
                             </div>
                             <h3 className="text-xl font-bold text-slate-900 mb-4">Direct Manufacturer</h3>
                             <p className="text-slate-600">
-                                We take the reins in directly manufacturing an extensive array of aluminum railings and superior-quality stairs. Our fabrication expertise enables us to craft railing systems that cater to virtually every homeowner’s need.
+                                We take the reins in directly manufacturing an extensive array of aluminum railings, glass showers, and office partitions. Our fabrication expertise enables us to craft systems that cater to virtually every homeowner’s need.
                             </p>
                         </div>
                         <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">

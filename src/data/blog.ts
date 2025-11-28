@@ -262,7 +262,7 @@ export const blogPosts: BlogPost[] = [
       <p>A cedar sauna is beautiful, but a solid wood door can make it feel claustrophobic. Replacing the front wall or door with <strong>10mm or 12mm tempered safety glass</strong> opens up the space, allowing light to flow while retaining heat. We use specialized hardware designed to withstand high heat and humidity.</p>
       
       <h3>Home Gym Mirrors & Partitions</h3>
-      <p>Create a professional gym atmosphere with wall-to-wall mirrors or glass partitions to separate your workout zone from the rest of the basement. Glass partitions reduce noise without sacrificing visual openness.</p>
+      <p>Create a professional gym atmosphere with wall-to-wall mirrors or <a href="/services/glass-walls" class="text-brand-copper font-bold hover:underline">glass partitions</a> to separate your workout zone from the rest of the basement. Glass partitions reduce noise without sacrificing visual openness.</p>
       
       <h3>Wine Cellars</h3>
       <p>Don't hide your collection behind a solid door. <a href="/services/glass-enclosures" class="text-brand-copper hover:underline">Frameless glass wine cellars</a> are a massive trend in luxury homes. We provide thermally sealed glass units to ensure your climate control remains efficient while showcasing your vintage bottles.</p>
