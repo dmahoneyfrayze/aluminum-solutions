@@ -50,8 +50,9 @@ export default function Header() {
                 {/* Mobile Menu Button */}
                 <button
                     className="md:hidden p-2 text-slate-900"
-                    aria-label="Open mobile menu"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                    aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+                    aria-expanded={isMobileMenuOpen}
                 >
                     {isMobileMenuOpen ? (
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -90,6 +91,15 @@ export default function Header() {
                         >
                             Gallery
                         </Link>
+                        <button
+                            className="absolute top-4 right-4 text-slate-500 hover:text-slate-900 p-2"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            aria-label="Close menu"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
                         <Link
                             href="/about"
                             className="text-lg font-bold text-slate-800 hover:text-brand-copper transition-colors border-b border-slate-50 pb-2"

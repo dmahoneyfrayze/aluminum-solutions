@@ -157,7 +157,13 @@ export default async function LocationPage({ params }: Props) {
                                 <div className="p-8">
                                     <h3 className="text-xl font-bold mb-3 font-serif text-slate-900">Glass Railings</h3>
                                     <p className="text-slate-600 mb-6 text-sm">Modern, unobstructed views for your {location.name} property. Perfect for decks and balconies.</p>
-                                    <Link href="/services/glass-railings" className="text-brand-copper font-bold uppercase text-sm tracking-wider hover:text-brand-dark transition-colors">View Details &rarr;</Link>
+                                    <Link
+                                        href="/services/glass-railings"
+                                        className="text-brand-copper font-bold uppercase text-sm tracking-wider hover:text-brand-dark transition-colors"
+                                        aria-label="View details about Glass Railings"
+                                    >
+                                        View Details &rarr;
+                                    </Link>
                                 </div>
                             </div>
 
@@ -170,7 +176,13 @@ export default async function LocationPage({ params }: Props) {
                                 <div className="p-8">
                                     <h3 className="text-xl font-bold mb-3 font-serif text-slate-900">Porch Enclosures</h3>
                                     <p className="text-slate-600 mb-6 text-sm">Keep the snow and wind out of your {location.name} front entrance with a custom glass enclosure.</p>
-                                    <Link href="/services/porch-enclosures" className="text-brand-copper font-bold uppercase text-sm tracking-wider hover:text-brand-dark transition-colors">View Details &rarr;</Link>
+                                    <Link
+                                        href="/services/porch-enclosures"
+                                        className="text-brand-copper font-bold uppercase text-sm tracking-wider hover:text-brand-dark transition-colors"
+                                        aria-label="View details about Porch Enclosures"
+                                    >
+                                        View Details &rarr;
+                                    </Link>
                                 </div>
                             </div>
 
@@ -183,7 +195,13 @@ export default async function LocationPage({ params }: Props) {
                                 <div className="p-8">
                                     <h3 className="text-xl font-bold mb-3 font-serif text-slate-900">Aluminum Columns</h3>
                                     <p className="text-slate-600 mb-6 text-sm">Replace rotting wood columns with durable, load-bearing aluminum columns.</p>
-                                    <Link href="/services/columns" className="text-brand-copper font-bold uppercase text-sm tracking-wider hover:text-brand-dark transition-colors">View Details &rarr;</Link>
+                                    <Link
+                                        href="/services/columns"
+                                        className="text-brand-copper font-bold uppercase text-sm tracking-wider hover:text-brand-dark transition-colors"
+                                        aria-label="View details about Aluminum Columns"
+                                    >
+                                        View Details &rarr;
+                                    </Link>
                                 </div>
                             </div>
                         </div>

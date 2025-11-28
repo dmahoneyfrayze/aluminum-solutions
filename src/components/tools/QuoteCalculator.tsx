@@ -67,6 +67,7 @@ export default function QuoteCalculator() {
                                                     ? "border-blue-600 bg-blue-50 text-blue-900"
                                                     : "border-slate-200 hover:border-slate-300 text-slate-600"
                                                     }`}
+                                                aria-pressed={product === p.id}
                                             >
                                                 <span className="font-bold block">{p.name}</span>
                                             </button>
@@ -75,17 +76,19 @@ export default function QuoteCalculator() {
                                 </div>
 
                                 <div>
-                                    <label className="block text-sm font-bold text-slate-900 mb-3">
+                                    <label htmlFor="linear-feet-range" className="block text-sm font-bold text-slate-900 mb-3">
                                         2. Approximate Linear Feet?
                                     </label>
                                     <input
                                         type="range"
+                                        id="linear-feet-range"
                                         min="10"
                                         max="200"
                                         step="5"
                                         value={feet}
                                         onChange={(e) => setFeet(parseInt(e.target.value))}
                                         className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-blue-600"
+                                        aria-label="Approximate Linear Feet"
                                     />
                                     <div className="mt-2 text-right font-bold text-blue-600 text-lg">
                                         {feet} ft
@@ -105,15 +108,17 @@ export default function QuoteCalculator() {
                         {step === 2 && (
                             <div className="space-y-6">
                                 <div>
-                                    <label className="block text-sm font-bold text-slate-900 mb-3">
+                                    <label htmlFor="location-input" className="block text-sm font-bold text-slate-900 mb-3">
                                         3. Project Location (City)
                                     </label>
                                     <input
                                         type="text"
+                                        id="location-input"
                                         value={location}
                                         onChange={(e) => setLocation(e.target.value)}
                                         placeholder="e.g. Toronto, Mississauga"
                                         className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-slate-900 focus:ring-1 focus:ring-slate-900 outline-none"
+                                        aria-label="Project Location City"
                                     />
                                 </div>
 
@@ -128,6 +133,7 @@ export default function QuoteCalculator() {
                                 <button
                                     onClick={() => setStep(1)}
                                     className="w-full py-2 text-slate-500 font-bold text-sm hover:text-slate-700"
+                                    aria-label="Go to previous step"
                                 >
                                     &larr; Back
                                 </button>

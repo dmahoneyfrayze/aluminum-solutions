@@ -116,7 +116,11 @@ export default function ServicesPage() {
                                                 </span>
                                             ))}
                                         </div>
-                                        <Link href={service.link} className="inline-block w-full text-center py-3 bg-white border border-slate-900 text-slate-900 font-bold text-sm uppercase tracking-wider hover:bg-slate-900 hover:text-white transition-colors rounded-sm">
+                                        <Link
+                                            href={service.link}
+                                            className="inline-block w-full text-center py-3 bg-white border border-slate-900 text-slate-900 font-bold text-sm uppercase tracking-wider hover:bg-slate-900 hover:text-white transition-colors rounded-sm"
+                                            aria-label={`View details about ${service.title}`}
+                                        >
                                             View Details
                                         </Link>
                                     </div>
@@ -156,7 +160,11 @@ export default function ServicesPage() {
                                                 </span>
                                             ))}
                                         </div>
-                                        <Link href={service.link} className="inline-block w-full text-center py-3 bg-white border border-slate-900 text-slate-900 font-bold text-sm uppercase tracking-wider hover:bg-slate-900 hover:text-white transition-colors rounded-sm">
+                                        <Link
+                                            href={service.link}
+                                            className="inline-block w-full text-center py-3 bg-white border border-slate-900 text-slate-900 font-bold text-sm uppercase tracking-wider hover:bg-slate-900 hover:text-white transition-colors rounded-sm"
+                                            aria-label={`View details about ${service.title}`}
+                                        >
                                             View Details
                                         </Link>
                                     </div>

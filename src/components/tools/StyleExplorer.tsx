@@ -60,6 +60,7 @@ export default function StyleExplorer() {
                                     ? "bg-brand-navy text-white border-brand-navy shadow-lg scale-105 z-10"
                                     : "bg-white text-slate-600 border-slate-200 hover:border-brand-copper hover:shadow-md"
                                     }`}
+                                aria-pressed={activeStyle.id === style.id}
                             >
                                 <div className="relative z-10">
                                     <h3 className={`font-bold text-lg mb-1 ${activeStyle.id === style.id ? "text-white" : "text-slate-900"}`}>

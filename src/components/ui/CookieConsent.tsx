@@ -53,12 +53,14 @@ export default function CookieConsent() {
                     <button
                         onClick={handleDecline}
                         className="px-4 py-2 text-sm font-bold text-slate-400 hover:text-white transition-colors border border-transparent hover:border-slate-600 rounded"
+                        aria-label="Decline cookies"
                     >
                         Decline
                     </button>
                     <button
                         onClick={handleAccept}
                         className="px-6 py-2 text-sm font-bold bg-brand-copper text-white rounded hover:bg-orange-700 transition-colors shadow-lg"
+                        aria-label="Accept cookies"
                     >
                         Accept
                     </button>

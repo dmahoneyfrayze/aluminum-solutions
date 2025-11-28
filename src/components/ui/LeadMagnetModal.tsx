@@ -42,7 +42,8 @@ export default function LeadMagnetModal({ isOpen, onClose, resourceName }: LeadM
             <div className="bg-white rounded-xl shadow-2xl max-w-md w-full overflow-hidden relative animate-fade-in-up">
                 <button
                     onClick={onClose}
-                    className="absolute top-4 right-4 text-slate-400 hover:text-slate-600"
+                    className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 transition-colors"
+                    aria-label="Close modal"
                 >
                     ✕
                 </button>
@@ -67,9 +68,12 @@ export default function LeadMagnetModal({ isOpen, onClose, resourceName }: LeadM
                                     <label htmlFor="lead-name" className="block text-sm font-bold text-slate-700 mb-1">Name</label>
                                     <input
                                         id="lead-name"
+                                        type="text"
                                         {...register("name")}
-                                        className="w-full px-4 py-2 border border-slate-300 rounded focus:border-brand-navy focus:ring-1 focus:ring-brand-navy outline-none"
-                                        placeholder="Your Name"
+                                        className="w-full p-3 border border-slate-300 rounded focus:ring-2 focus:ring-brand-copper focus:border-transparent"
+                                        placeholder="First Name"
+                                        required
+                                        aria-label="First Name"
                                     />
                                     {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name.message}</p>}
                                 </div>
@@ -78,9 +82,12 @@ export default function LeadMagnetModal({ isOpen, onClose, resourceName }: LeadM
                                     <label htmlFor="lead-email" className="block text-sm font-bold text-slate-700 mb-1">Email</label>
                                     <input
                                         id="lead-email"
+                                        type="email"
                                         {...register("email")}
-                                        className="w-full px-4 py-2 border border-slate-300 rounded focus:border-brand-navy focus:ring-1 focus:ring-brand-navy outline-none"
-                                        placeholder="your@email.com"
+                                        className="w-full p-3 border border-slate-300 rounded focus:ring-2 focus:ring-brand-copper focus:border-transparent"
+                                        placeholder="Email Address"
+                                        required
+                                        aria-label="Email Address"
                                     />
                                     {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
                                 </div>

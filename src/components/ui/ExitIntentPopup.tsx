@@ -59,7 +59,7 @@ export default function ExitIntentPopup() {
                         e.stopPropagation();
                         setIsVisible(false);
                     }}
-                    className="absolute top-3 right-3 p-2 bg-white/90 rounded-full hover:bg-slate-100 transition-colors z-20 shadow-sm"
+                    className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 transition-colors z-50 p-2"
                     aria-label="Close popup"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-slate-500">
