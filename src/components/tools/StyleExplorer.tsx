@@ -3,36 +3,34 @@
 import { useState } from "react";
 import Image from "next/image";
 
-const styles = [
-    {
-        id: "glass-spigot",
+{
+    id: "glass-spigot",
         name: "Frameless Glass (Spigot)",
-        description: "Minimalist luxury. 12mm tempered glass held by stainless steel spigots.",
-        image: "/images/generated/pool_fence_glass_detail_1764312810331.png",
-        features: ["Unobstructed Views", "Modern Aesthetic", "Pool Safe"]
-    },
-    {
-        id: "glass-rail",
+            description: "Minimalist luxury. 12mm tempered glass held by stainless steel spigots.",
+                image: "/images/projects/pool-fence-glass-guards.jpg",
+                    features: ["Unobstructed Views", "Modern Aesthetic", "Pool Safe"]
+},
+{
+    id: "glass-rail",
         name: "Glass with Top Rail",
-        description: "Contemporary safety. Glass panels with a sleek aluminum top rail.",
-        image: "/images/generated/railing_hero_detail_1764312850877.png",
-        features: ["Added Stability", "Lean-friendly", "Custom Colors"]
-    },
-    {
-        id: "picket",
+            description: "Contemporary safety. Glass panels with a sleek aluminum top rail.",
+                image: "/images/projects/railing-aluminum-deck-toronto.jpg",
+                    features: ["Added Stability", "Lean-friendly", "Custom Colors"]
+},
+{
+    id: "picket",
         name: "Aluminum Picket",
-        description: "Classic durability. Maintenance-free aluminum pickets in various colors.",
-        image: "/images/generated/pool_fence_picket_detail_1764312823826.png",
-        features: ["Cost Effective", "Traditional Look", "Airflow"]
-    },
-    {
-        id: "privacy",
+            description: "Classic durability. Maintenance-free aluminum pickets in various colors.",
+                image: "/images/projects/black-aluminum-railing-stone.png",
+                    features: ["Cost Effective", "Traditional Look", "Airflow"]
+},
+{
+    id: "privacy",
         name: "Privacy Screen",
-        description: "Secluded comfort. Acid-etched glass to block views but let light in.",
-        image: "/images/generated/pool_fence_glass_detail_1764312810331.png",
-        features: ["Maximum Privacy", "Wind Protection", "Soft Light"]
-    }
-];
+            description: "Secluded comfort. Acid-etched glass to block views but let light in.",
+                image: "/images/projects/privacy-screen-frosted-glass.jpg",
+                    features: ["Maximum Privacy", "Wind Protection", "Soft Light"]
+}
 
 export default function StyleExplorer() {
     const [activeStyle, setActiveStyle] = useState(styles[0]);
