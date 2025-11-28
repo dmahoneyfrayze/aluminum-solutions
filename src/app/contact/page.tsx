@@ -35,12 +35,28 @@ export default function ContactPage() {
 
     const onSubmit = async (data: FormData) => {
         setIsSubmitting(true);
-        // Simulate API call
-        await new Promise((resolve) => setTimeout(resolve, 1500));
-        console.log("Form Data:", data);
-        setIsSuccess(true);
-        setIsSubmitting(false);
-        reset();
+
+        try {
+            const formData = new URLSearchParams();
+            formData.append("form-name", "contact");
+            Object.keys(data).forEach((key) => {
+                formData.append(key, data[key as keyof FormData] || "");
+            });
+
+            await fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: formData.toString(),
+            });
+
+            setIsSuccess(true);
+            reset();
+        } catch (error) {
+            console.error("Form submission error:", error);
+            alert("Something went wrong. Please try again.");
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -123,7 +139,14 @@ export default function ContactPage() {
                                     </button>
                                 </div>
                             ) : (
-                                <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+                                <form
+                                    onSubmit={handleSubmit(onSubmit)}
+                                    className="space-y-6"
+                                    data-netlify="true"
+                                    name="contact"
+                                    method="POST"
+                                >
+                                    <input type="hidden" name="form-name" value="contact" />
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div>
                                             <label className="block text-sm font-bold text-slate-700 mb-2">Name</label>

@@ -82,9 +82,9 @@ export default function Home() {
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg">
                   <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
                 </div>
-                <h3 className="text-xl font-bold mb-2 font-serif">Aluminum Columns</h3>
-                <p className="text-slate-600 text-sm mb-4">Structural elegance.</p>
-                <Link href="/services/columns" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                <h3 className="text-xl font-bold mb-2 font-serif">Frameless Showers</h3>
+                <p className="text-slate-600 text-sm mb-4">Spa-like luxury glass.</p>
+                <Link href="/services/showers" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
                   Learn More
                 </Link>
               </div>
