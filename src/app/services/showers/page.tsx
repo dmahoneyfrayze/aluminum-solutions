@@ -20,64 +20,173 @@ export default function ShowersPage() {
 
             <main className="flex-grow">
                 <Hero
-                    title="Custom Frameless Glass Showers"
-                    subtitle="Transform your bathroom into a spa with our premium 10mm tempered glass enclosures. Measured, manufactured, and installed by experts."
+                    title="Custom Glass Showers & Interiors Toronto"
+                    subtitle="Bespoke frameless showers, glass partitions, and custom mirrors. Precision-measured and professionally installed."
                     ctaText="Get a Free Estimate"
                     ctaLink="/contact"
                     backgroundImage="/images/generated/frameless_glass_shower_modern_1764347088164.png"
                 />
 
-                {/* Intro / Value Prop */}
+                {/* Trust Signals Strip */}
+                <section className="py-12 bg-slate-50 border-b border-slate-200">
+                    <div className="container mx-auto px-6">
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                            <div className="flex flex-col items-center">
+                                <span className="text-3xl mb-2">💎</span>
+                                <span className="font-bold text-brand-dark">10mm Safety Glass</span>
+                            </div>
+                            <div className="flex flex-col items-center">
+                                <span className="text-3xl mb-2">📏</span>
+                                <span className="font-bold text-brand-dark">Laser Precision</span>
+                            </div>
+                            <div className="flex flex-col items-center">
+                                <span className="text-3xl mb-2">🛡️</span>
+                                <span className="font-bold text-brand-dark">Leak-Proof Guarantee</span>
+                            </div>
+                            <div className="flex flex-col items-center">
+                                <span className="text-3xl mb-2">⏱️</span>
+                                <span className="font-bold text-brand-dark">Fast Turnaround</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Product Silos */}
                 <section className="py-24 bg-white">
                     <div className="container mx-auto px-6">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                            <div>
-                                <span className="text-brand-copper font-bold tracking-widest uppercase text-sm mb-2 block">
-                                    Spa-Like Luxury
-                                </span>
-                                <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-dark mb-6">
-                                    The Centerpiece of Your Bathroom
-                                </h2>
-                                <p className="text-slate-600 mb-6 leading-relaxed text-lg">
-                                    Off-the-shelf shower doors rarely fit perfectly. Our custom frameless systems are laser-measured to fit your specific space, ensuring a watertight seal and a sleek, modern look.
+                        <div className="text-center max-w-3xl mx-auto mb-16">
+                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-dark mb-6">
+                                Complete Interior Glass Solutions
+                            </h2>
+                            <p className="text-slate-600 text-lg leading-relaxed">
+                                We don't just do showers. We transform your entire home with custom architectural glass.
+                            </p>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                            {/* Frameless Showers */}
+                            <div className="group">
+                                <div className="aspect-[4/5] relative rounded-lg overflow-hidden shadow-lg mb-6">
+                                    <Image
+                                        src="/images/generated/frameless_glass_shower_modern_1764347088164.png"
+                                        alt="Custom Frameless Glass Shower Toronto"
+                                        fill
+                                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                    />
+                                </div>
+                                <h3 className="text-2xl font-bold text-brand-dark mb-3">Frameless Showers</h3>
+                                <p className="text-slate-600 mb-4">
+                                    From inline sliders to corner units and steam enclosures. We use heavy 10mm tempered glass and premium hardware for a spa-like feel.
                                 </p>
-                                <p className="text-slate-600 mb-6 leading-relaxed text-lg">
-                                    Proudly incorporating the expertise of <strong>Easy Glass GTA</strong>, a leader in custom glass fabrication, we bring over a decade of specialized experience to every shower project.
-                                </p>
-                                <ul className="space-y-4 mb-10">
-                                    <li className="flex items-center">
-                                        <span className="w-6 h-6 bg-brand-navy text-white rounded-full flex items-center justify-center mr-3 font-bold text-xs">✓</span>
-                                        <span className="text-slate-700 font-medium">10mm or 12mm Tempered Safety Glass</span>
-                                    </li>
-                                    <li className="flex items-center">
-                                        <span className="w-6 h-6 bg-brand-navy text-white rounded-full flex items-center justify-center mr-3 font-bold text-xs">✓</span>
-                                        <span className="text-slate-700 font-medium">Premium Hardware (Matte Black, Chrome, Gold)</span>
-                                    </li>
-                                    <li className="flex items-center">
-                                        <span className="w-6 h-6 bg-brand-navy text-white rounded-full flex items-center justify-center mr-3 font-bold text-xs">✓</span>
-                                        <span className="text-slate-700 font-medium">Treated Glass (Easy-Clean Coating)</span>
-                                    </li>
+                                <ul className="text-sm text-slate-500 space-y-2 mb-6">
+                                    <li>✓ Custom sizing for any layout</li>
+                                    <li>✓ Steam-tight sealing options</li>
+                                    <li>✓ Matte Black, Gold, & Chrome hardware</li>
                                 </ul>
-                                <Link href="/contact" className="inline-block px-8 py-4 bg-brand-dark text-white font-bold rounded-sm hover:bg-brand-navy transition-colors">
-                                    Request a Quote
+                                <Link href="/contact" className="text-brand-copper font-bold hover:underline">
+                                    Design Your Shower &rarr;
                                 </Link>
                             </div>
-                            <div className="h-[500px] bg-slate-200 rounded-sm relative overflow-hidden shadow-2xl">
-                                <Image
-                                    src="/images/generated/pool_fence_glass_detail_1764312810331.png"
-                                    alt="Custom Corner Enclosure"
-                                    fill
-                                    className="object-cover"
-                                />
-                                <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-4 py-2 rounded shadow text-sm font-bold text-brand-dark">
-                                    Custom Corner Enclosure
+
+                            {/* Glass Walls & Partitions */}
+                            <div className="group">
+                                <div className="aspect-[4/5] relative rounded-lg overflow-hidden shadow-lg mb-6">
+                                    <Image
+                                        src="/images/generated/glass_office_partition_hero_1764346564712.png"
+                                        alt="Glass Office Partitions & Gym Walls"
+                                        fill
+                                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                    />
+                                </div>
+                                <h3 className="text-2xl font-bold text-brand-dark mb-3">Glass Walls & Partitions</h3>
+                                <p className="text-slate-600 mb-4">
+                                    Define your space without blocking light. Perfect for home offices, wine cellars, and home gyms.
+                                </p>
+                                <ul className="text-sm text-slate-500 space-y-2 mb-6">
+                                    <li>✓ Acoustic sound dampening</li>
+                                    <li>✓ Floor-to-ceiling installation</li>
+                                    <li>✓ Sliding or pivot door integration</li>
+                                </ul>
+                                <Link href="/services/glass-walls" className="text-brand-copper font-bold hover:underline">
+                                    Explore Glass Walls &rarr;
+                                </Link>
+                            </div>
+
+                            {/* Custom Mirrors */}
+                            <div className="group">
+                                <div className="aspect-[4/5] relative rounded-lg overflow-hidden shadow-lg mb-6">
+                                    <Image
+                                        src="/images/generated/glass_enclosure_project_1764312838961.png"
+                                        alt="Custom Wall Mirrors"
+                                        fill
+                                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                    />
+                                </div>
+                                <h3 className="text-2xl font-bold text-brand-dark mb-3">Custom Mirrors</h3>
+                                <p className="text-slate-600 mb-4">
+                                    The perfect finishing touch. Wall-to-wall vanity mirrors, gym walls, and decorative feature mirrors cut to any shape.
+                                </p>
+                                <ul className="text-sm text-slate-500 space-y-2 mb-6">
+                                    <li>✓ Polished or beveled edges</li>
+                                    <li>✓ LED backlight integration ready</li>
+                                    <li>✓ Safety backing available</li>
+                                </ul>
+                                <Link href="/contact" className="text-brand-copper font-bold hover:underline">
+                                    Get a Mirror Quote &rarr;
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* The Custom Process */}
+                <section className="py-24 bg-slate-900 text-white">
+                    <div className="container mx-auto px-6">
+                        <div className="flex flex-col md:flex-row items-center gap-16">
+                            <div className="w-full md:w-1/2">
+                                <h2 className="text-3xl font-serif font-bold mb-6">The Custom Fit Difference</h2>
+                                <p className="text-slate-300 text-lg mb-8 leading-relaxed">
+                                    Big box store kits never fit quite right. Our process ensures a watertight seal and a flawless finish that adds real value to your home.
+                                </p>
+                                <div className="space-y-8">
+                                    <div className="flex gap-4">
+                                        <div className="w-12 h-12 bg-brand-copper rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">1</div>
+                                        <div>
+                                            <h3 className="font-bold text-xl mb-2">Laser Measurement</h3>
+                                            <p className="text-slate-400">We measure your finished tile to the millimeter, accounting for any walls that aren't perfectly plumb.</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <div className="w-12 h-12 bg-brand-copper rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">2</div>
+                                        <div>
+                                            <h3 className="font-bold text-xl mb-2">CNC Fabrication</h3>
+                                            <p className="text-slate-400">Your glass is cut and tempered specifically for your opening. No shims, no gaps.</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <div className="w-12 h-12 bg-brand-copper rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">3</div>
+                                        <div>
+                                            <h3 className="font-bold text-xl mb-2">Expert Installation</h3>
+                                            <p className="text-slate-400">Our specialists install your glass using mildew-resistant silicone and heavy-duty hardware.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="w-full md:w-1/2">
+                                <div className="relative h-[600px] rounded-lg overflow-hidden shadow-2xl border-4 border-slate-800">
+                                    <Image
+                                        src="/images/projects/frameless-shower-black-hardware.jpg"
+                                        alt="Custom Shower Installation Process"
+                                        fill
+                                        className="object-cover"
+                                    />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                {/* Styles Grid */}
+                {/* Popular Configurations (Updated Grid) */}
                 <section className="py-24 bg-slate-50">
                     <div className="container mx-auto px-6">
                         <div className="text-center mb-16">
