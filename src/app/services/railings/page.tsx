@@ -59,28 +59,72 @@ export default function RailingsPage() {
                     </div>
                 </section>
 
-                {/* Styles / Options */}
+                {/* Aluminum Deck Railings Content */}
                 <section className="py-24 bg-slate-50">
                     <div className="container mx-auto px-6">
-                        <h2 className="text-3xl font-serif font-bold mb-12 text-center text-brand-dark">Popular Railing Styles</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            {/* Style 1 */}
-                            <div className="bg-white p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                                <div className="h-48 bg-slate-200 mb-6 rounded-sm" />
-                                <h3 className="text-xl font-bold mb-2 text-brand-dark">Standard Picket</h3>
-                                <p className="text-slate-600 text-sm">Classic vertical pickets suitable for any architectural style. Safe, secure, and timeless.</p>
+                        <div className="text-center max-w-3xl mx-auto mb-16">
+                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-dark mb-6">
+                                Aluminum Deck Railings: Elegance & Durability
+                            </h2>
+                            <p className="text-slate-600 text-lg leading-relaxed">
+                                Your deck is more than just an outdoor space; it’s a sanctuary. Elevate its charm with our Aluminum Deck Railings, crafted from premium aluminum and tempered glass. These railings offer a seamless blend of style and functionality, allowing you to enjoy an uninterrupted view of your lush garden.
+                            </p>
+                        </div>
+
+                        {/* Features Grid */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+                            <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-100">
+                                <h3 className="text-xl font-bold text-brand-dark mb-4">Weather Resistance</h3>
+                                <p className="text-slate-600">
+                                    Aluminum railings excel in weather resistance, enduring harsh Canadian climates without rusting or corroding. This resilience ensures lasting beauty and functionality.
+                                </p>
                             </div>
-                            {/* Style 2 */}
-                            <div className="bg-white p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                                <div className="h-48 bg-slate-200 mb-6 rounded-sm" />
-                                <h3 className="text-xl font-bold mb-2 text-brand-dark">Glass Panel</h3>
-                                <p className="text-slate-600 text-sm">Tempered glass panels with aluminum frames for an unobstructed view and wind protection.</p>
+                            <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-100">
+                                <h3 className="text-xl font-bold text-brand-dark mb-4">Low Maintenance</h3>
+                                <p className="text-slate-600">
+                                    Enjoy the convenience of low maintenance. They require just simple cleaning, no repainting or pest control, saving time and effort.
+                                </p>
                             </div>
-                            {/* Style 3 */}
-                            <div className="bg-white p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                                <div className="h-48 bg-slate-200 mb-6 rounded-sm" />
-                                <h3 className="text-xl font-bold mb-2 text-brand-dark">Double Top Rail</h3>
-                                <p className="text-slate-600 text-sm">Adds an extra horizontal bar at the top for a unique, sophisticated look.</p>
+                            <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-100">
+                                <h3 className="text-xl font-bold text-brand-dark mb-4">Versatility</h3>
+                                <p className="text-slate-600">
+                                    Whether for modern or traditional aesthetics, they can be customized to fit any setting, including homes, offices, or cottages.
+                                </p>
+                            </div>
+                            <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-100">
+                                <h3 className="text-xl font-bold text-brand-dark mb-4">Increased Property Value</h3>
+                                <p className="text-slate-600">
+                                    Installing aluminum railings enhances your property’s market value. Their sleek design and durability appeal to potential buyers.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Portfolio / Gallery Preview */}
+                        <h3 className="text-2xl font-serif font-bold text-center text-brand-dark mb-10">Recent Projects</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div className="aspect-square relative rounded-lg overflow-hidden shadow-md group">
+                                <Image
+                                    src="/images/projects/deck-glass-railing-pergola.jpg"
+                                    alt="Deck with glass railing and pergola"
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                />
+                            </div>
+                            <div className="aspect-square relative rounded-lg overflow-hidden shadow-md group">
+                                <Image
+                                    src="/images/projects/deck-glass-railing-privacy.jpg"
+                                    alt="Deck with privacy screen"
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                />
+                            </div>
+                            <div className="aspect-square relative rounded-lg overflow-hidden shadow-md group">
+                                <Image
+                                    src="/images/projects/black-aluminum-railing-stone.png"
+                                    alt="Black aluminum railing on stone steps"
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                />
                             </div>
                         </div>
                     </div>

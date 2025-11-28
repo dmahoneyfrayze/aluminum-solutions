@@ -2,6 +2,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default function ColumnsPage() {
                     subtitle="Add elegance and structural integrity to your porch. The permanent, load-bearing solution to rotting wood columns."
                     ctaText="Get a Quote"
                     ctaLink="/contact"
-                    backgroundImage="/images/migrated/hero-commercial.jpg"
+                    backgroundImage="/images/generated/railing_hero_detail_1764312850877.png"
                 />
 
                 {/* Overview */}
@@ -48,11 +49,12 @@ export default function ColumnsPage() {
                             </div>
                         </div>
                         <div className="h-[500px] bg-slate-100 relative rounded-sm overflow-hidden shadow-2xl">
-                            {/* Image Placeholder */}
-                            <div className="absolute inset-0 bg-slate-200" />
-                            <div className="absolute inset-0 flex items-center justify-center text-slate-400 font-medium">
-                                [Aluminum Column Project Image]
-                            </div>
+                            <Image
+                                src="/images/generated/railing_hero_detail_1764312850877.png"
+                                alt="Aluminum Column Project"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
                     </div>
                 </section>

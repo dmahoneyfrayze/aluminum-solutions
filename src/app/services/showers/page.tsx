@@ -4,6 +4,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ShowersPage() {
     return (
@@ -16,7 +17,7 @@ export default function ShowersPage() {
                     subtitle="Transform your bathroom into a spa with our premium 10mm tempered glass enclosures. Measured, manufactured, and installed by experts."
                     ctaText="Get a Free Estimate"
                     ctaLink="/contact"
-                    backgroundImage="/images/migrated/manufacturing-glass.jpg"
+                    backgroundImage="/images/generated/pool_fence_glass_detail_1764312810331.png"
                 />
 
                 {/* Intro / Value Prop */}
@@ -52,8 +53,12 @@ export default function ShowersPage() {
                                 </Link>
                             </div>
                             <div className="h-[500px] bg-slate-200 rounded-sm relative overflow-hidden shadow-2xl">
-                                {/* Placeholder for Shower Image */}
-                                <div className="absolute inset-0 bg-slate-300" />
+                                <Image
+                                    src="/images/generated/pool_fence_glass_detail_1764312810331.png"
+                                    alt="Custom Corner Enclosure"
+                                    fill
+                                    className="object-cover"
+                                />
                                 <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-4 py-2 rounded shadow text-sm font-bold text-brand-dark">
                                     Custom Corner Enclosure
                                 </div>

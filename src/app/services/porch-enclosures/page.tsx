@@ -2,6 +2,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default function PorchEnclosuresPage() {
                     subtitle="Protect your front entrance from snow, rain, and wind. Create a vestibule that adds value and comfort to your home."
                     ctaText="Get a Free Estimate"
                     ctaLink="/contact"
-                    backgroundImage="/images/migrated/manufacturing-glass.jpg"
+                    backgroundImage="/images/generated/glass_enclosure_project_1764312838961.png"
                 />
 
                 {/* Benefits Section */}
@@ -56,8 +57,12 @@ export default function PorchEnclosuresPage() {
                                 </Link>
                             </div>
                             <div className="h-[500px] bg-slate-200 rounded-sm relative overflow-hidden shadow-2xl">
-                                {/* Placeholder for Porch Image */}
-                                <div className="absolute inset-0 bg-slate-300" />
+                                <Image
+                                    src="/images/generated/glass_enclosure_project_1764312838961.png"
+                                    alt="Newmarket Porch Enclosure"
+                                    fill
+                                    className="object-cover"
+                                />
                                 <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-4 py-2 rounded shadow text-sm font-bold text-brand-dark">
                                     Newmarket Porch Enclosure
                                 </div>

@@ -17,6 +17,7 @@ export default function AboutPage() {
                     subtitle="We are a family-owned manufacturer dedicated to elevating Toronto homes with premium aluminum and glass solutions."
                     ctaText="Visit Our Showroom"
                     ctaLink="/contact"
+                    backgroundImage="/images/generated/railing_hero_detail_1764312850877.png"
                 />
 
                 {/* Founder's Note - The "Personal" Touch */}
@@ -135,11 +136,11 @@ export default function AboutPage() {
 
                             {/* Team Member 2 - Placeholder */}
                             <div className="group">
-                                <div className="aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden mb-4 relative shadow-md">
+                                <div className="aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden mb-4 relative shadow-md flex items-center justify-center">
                                     <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
-                                    <div className="absolute inset-0 flex items-center justify-center text-slate-400 text-sm">
-                                        [Project Manager]
-                                    </div>
+                                    <svg className="w-20 h-20 text-slate-300 relative z-10" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                                    </svg>
                                 </div>
                                 <h3 className="font-bold text-slate-900">Project Manager</h3>
                                 <p className="text-sm text-slate-500">Operations</p>
@@ -147,11 +148,11 @@ export default function AboutPage() {
 
                             {/* Team Member 3 - Placeholder */}
                             <div className="group">
-                                <div className="aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden mb-4 relative shadow-md">
+                                <div className="aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden mb-4 relative shadow-md flex items-center justify-center">
                                     <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
-                                    <div className="absolute inset-0 flex items-center justify-center text-slate-400 text-sm">
-                                        [Fabricator]
-                                    </div>
+                                    <svg className="w-20 h-20 text-slate-300 relative z-10" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                                    </svg>
                                 </div>
                                 <h3 className="font-bold text-slate-900">Master Fabricator</h3>
                                 <p className="text-sm text-slate-500">Manufacturing</p>
@@ -159,11 +160,11 @@ export default function AboutPage() {
 
                             {/* Team Member 4 - Placeholder */}
                             <div className="group">
-                                <div className="aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden mb-4 relative shadow-md">
+                                <div className="aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden mb-4 relative shadow-md flex items-center justify-center">
                                     <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
-                                    <div className="absolute inset-0 flex items-center justify-center text-slate-400 text-sm">
-                                        [Customer Support]
-                                    </div>
+                                    <svg className="w-20 h-20 text-slate-300 relative z-10" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                                    </svg>
                                 </div>
                                 <h3 className="font-bold text-slate-900">Customer Support</h3>
                                 <p className="text-sm text-slate-500">Service</p>

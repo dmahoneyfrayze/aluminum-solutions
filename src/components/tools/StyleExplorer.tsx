@@ -8,28 +8,28 @@ const styles = [
         id: "glass-spigot",
         name: "Frameless Glass (Spigot)",
         description: "Minimalist luxury. 12mm tempered glass held by stainless steel spigots.",
-        image: "/images/styles/glass-spigot.jpg",
+        image: "/images/generated/pool_fence_glass_detail_1764312810331.png",
         features: ["Unobstructed Views", "Modern Aesthetic", "Pool Safe"]
     },
     {
         id: "glass-rail",
         name: "Glass with Top Rail",
         description: "Contemporary safety. Glass panels with a sleek aluminum top rail.",
-        image: "/images/styles/glass-rail.jpg",
+        image: "/images/generated/railing_hero_detail_1764312850877.png",
         features: ["Added Stability", "Lean-friendly", "Custom Colors"]
     },
     {
         id: "picket",
         name: "Aluminum Picket",
         description: "Classic durability. Maintenance-free aluminum pickets in various colors.",
-        image: "/images/styles/picket.jpg",
+        image: "/images/generated/pool_fence_picket_detail_1764312823826.png",
         features: ["Cost Effective", "Traditional Look", "Airflow"]
     },
     {
         id: "privacy",
         name: "Privacy Screen",
         description: "Secluded comfort. Acid-etched glass to block views but let light in.",
-        image: "/images/styles/privacy.jpg",
+        image: "/images/generated/pool_fence_glass_detail_1764312810331.png",
         features: ["Maximum Privacy", "Wind Protection", "Soft Light"]
     }
 ];
@@ -74,13 +74,13 @@ export default function StyleExplorer() {
                     {/* Preview */}
                     <div className="w-full lg:w-2/3">
                         <div className="relative aspect-[16/9] bg-slate-100 rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
-                            {/* In a real app, these would be real images. Using a placeholder for now. */}
-                            <div className="absolute inset-0 flex items-center justify-center bg-slate-200 text-slate-400">
-                                <div className="text-center">
-                                    <p className="text-2xl font-bold mb-2">[Preview Image: {activeStyle.name}]</p>
-                                    <p className="text-sm">Image Path: {activeStyle.image}</p>
-                                </div>
-                            </div>
+                            <Image
+                                key={activeStyle.id} // Force re-render on change for animation if we added it, but good for keying
+                                src={activeStyle.image}
+                                alt={activeStyle.name}
+                                fill
+                                className="object-cover"
+                            />
 
                             {/* Overlay Info */}
                             <div className="absolute bottom-0 left-0 right-0 bg-white/90 backdrop-blur-md p-6 border-t border-white/20">

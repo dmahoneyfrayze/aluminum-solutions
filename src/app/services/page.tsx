@@ -29,8 +29,14 @@ const services = [
         image: "/images/generated/glass_enclosure_project_1764312838961.png"
     },
     {
+        title: "Glass Railings",
+        description: "Elegant frameless and post systems for unobstructed views.",
+        link: "/services/glass-railings",
+        image: "/images/projects/deck-glass-railing-privacy.jpg"
+    },
+    {
         title: "Custom Gates",
-        description: "Secure and stylish entry gates custom fabricated to match your property's aesthetic.",
+        description: "Secure and stylish aluminum gates for driveways and gardens.",
         link: "/services/gates",
         features: ["Heavy-duty hardware", "Custom designs", "Security focused"],
         image: "/images/generated/custom_gate_modern_1764314098362.png"
@@ -88,14 +94,13 @@ export default function ServicesPage() {
                                     <div className="p-8">
                                         <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">{service.title}</h3>
                                         <p className="text-slate-600 mb-6 leading-relaxed">{service.description}</p>
-                                        <ul className="mb-8 space-y-2">
-                                            {service.features.map((feature, i) => (
-                                                <li key={i} className="flex items-center text-sm text-slate-500">
-                                                    <span className="w-2 h-2 bg-slate-900 rounded-full mr-3" />
+                                        <div className="mb-8 flex flex-wrap gap-2">
+                                            {service.features?.map((feature, i) => (
+                                                <span key={i} className="text-sm bg-slate-100 text-slate-600 px-2 py-1 rounded">
                                                     {feature}
-                                                </li>
+                                                </span>
                                             ))}
-                                        </ul>
+                                        </div>
                                         <Link href={service.link} className="inline-block px-6 py-3 bg-white border border-slate-900 text-slate-900 font-bold text-sm uppercase tracking-wider hover:bg-slate-900 hover:text-white transition-colors">
                                             View Details
                                         </Link>

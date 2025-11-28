@@ -2,6 +2,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
+import Image from "next/image";
 import { blogPosts } from "@/data/blog";
 import { Metadata } from "next";
 
@@ -21,6 +22,7 @@ export default function BlogIndexPage() {
                     subtitle="Tips on design, installation, and maintenance from the GTA's railing experts."
                     ctaText="View Our Gallery"
                     ctaLink="/gallery"
+                    backgroundImage="/images/generated/railing_hero_detail_1764312850877.png"
                 />
 
                 <section className="py-20">
@@ -28,11 +30,19 @@ export default function BlogIndexPage() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                             {blogPosts.map((post) => (
                                 <article key={post.slug} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-100 flex flex-col">
-                                    {/* Image Placeholder */}
                                     <div className="h-56 bg-slate-200 relative">
-                                        <div className="absolute inset-0 flex items-center justify-center text-slate-400 font-bold text-sm uppercase tracking-widest">
-                                            {post.category}
-                                        </div>
+                                        {post.imageUrl ? (
+                                            <Image
+                                                src={post.imageUrl}
+                                                alt={post.title}
+                                                fill
+                                                className="object-cover"
+                                            />
+                                        ) : (
+                                            <div className="absolute inset-0 flex items-center justify-center text-slate-400 font-bold text-sm uppercase tracking-widest">
+                                                {post.category}
+                                            </div>
+                                        )}
                                     </div>
 
                                     <div className="p-8 flex-grow flex flex-col">

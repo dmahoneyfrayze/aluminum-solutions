@@ -116,28 +116,80 @@ export default async function LocationPage({ params }: Props) {
                     </div>
                 </section>
 
-                {/* Dynamic Services Grid (Could be filtered by popularity in that city if we had data) */}
+                {/* Dynamic Services Grid */}
                 <section className="py-20 bg-slate-50">
                     <div className="container mx-auto px-6">
                         <h2 className="text-3xl font-serif font-bold mb-12 text-center text-slate-900">
                             Our Services in {location.name}
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            {/* Reusing the service card structure - ideally this would be a component */}
-                            <div className="bg-white p-8 shadow-lg hover:shadow-xl transition-all">
-                                <h3 className="text-xl font-bold mb-3 font-serif">Glass Railings</h3>
-                                <p className="text-slate-600 mb-6 text-sm">Modern, unobstructed views for your {location.name} property.</p>
-                                <Link href="/services/glass-railings" className="text-slate-900 font-bold uppercase text-sm">View Details &rarr;</Link>
+                            {/* Glass Railings */}
+                            <div className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                                <div className="h-48 relative overflow-hidden">
+                                    <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/0 transition-colors z-10" />
+                                    {/* Using a generic image for now, ideally dynamic */}
+                                    <div className="absolute inset-0 bg-[url('/images/projects/deck-glass-railing-privacy.jpg')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700" />
+                                </div>
+                                <div className="p-8">
+                                    <h3 className="text-xl font-bold mb-3 font-serif text-slate-900">Glass Railings</h3>
+                                    <p className="text-slate-600 mb-6 text-sm">Modern, unobstructed views for your {location.name} property. Perfect for decks and balconies.</p>
+                                    <Link href="/services/glass-railings" className="text-brand-copper font-bold uppercase text-sm tracking-wider hover:text-brand-dark transition-colors">View Details &rarr;</Link>
+                                </div>
                             </div>
-                            <div className="bg-white p-8 shadow-lg hover:shadow-xl transition-all">
-                                <h3 className="text-xl font-bold mb-3 font-serif">Porch Enclosures</h3>
-                                <p className="text-slate-600 mb-6 text-sm">Keep the snow and wind out of your {location.name} front entrance.</p>
-                                <Link href="/services/porch-enclosures" className="text-slate-900 font-bold uppercase text-sm">View Details &rarr;</Link>
+
+                            {/* Porch Enclosures */}
+                            <div className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                                <div className="h-48 relative overflow-hidden">
+                                    <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/0 transition-colors z-10" />
+                                    <div className="absolute inset-0 bg-[url('/images/generated/glass_enclosure_project_1764312838961.png')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700" />
+                                </div>
+                                <div className="p-8">
+                                    <h3 className="text-xl font-bold mb-3 font-serif text-slate-900">Porch Enclosures</h3>
+                                    <p className="text-slate-600 mb-6 text-sm">Keep the snow and wind out of your {location.name} front entrance with a custom glass enclosure.</p>
+                                    <Link href="/services/porch-enclosures" className="text-brand-copper font-bold uppercase text-sm tracking-wider hover:text-brand-dark transition-colors">View Details &rarr;</Link>
+                                </div>
                             </div>
-                            <div className="bg-white p-8 shadow-lg hover:shadow-xl transition-all">
-                                <h3 className="text-xl font-bold mb-3 font-serif">Aluminum Columns</h3>
-                                <p className="text-slate-600 mb-6 text-sm">Replace rotting wood columns with durable aluminum.</p>
-                                <Link href="/services/columns" className="text-slate-900 font-bold uppercase text-sm">View Details &rarr;</Link>
+
+                            {/* Aluminum Columns */}
+                            <div className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                                <div className="h-48 relative overflow-hidden">
+                                    <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/0 transition-colors z-10" />
+                                    <div className="absolute inset-0 bg-[url('/images/generated/railing_hero_detail_1764312850877.png')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700" />
+                                </div>
+                                <div className="p-8">
+                                    <h3 className="text-xl font-bold mb-3 font-serif text-slate-900">Aluminum Columns</h3>
+                                    <p className="text-slate-600 mb-6 text-sm">Replace rotting wood columns with durable, load-bearing aluminum columns.</p>
+                                    <Link href="/services/columns" className="text-brand-copper font-bold uppercase text-sm tracking-wider hover:text-brand-dark transition-colors">View Details &rarr;</Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Local FAQ Section */}
+                <section className="py-20 bg-white border-t border-slate-100">
+                    <div className="container mx-auto px-6 max-w-4xl">
+                        <h2 className="text-3xl font-serif font-bold mb-12 text-center text-slate-900">
+                            Common Questions from {location.name} Homeowners
+                        </h2>
+                        <div className="space-y-6">
+                            <div className="bg-slate-50 p-6 rounded-lg">
+                                <h3 className="font-bold text-lg mb-2 text-brand-dark">Do I need a permit for railings in {location.name}?</h3>
+                                <p className="text-slate-600">
+                                    Generally, if you are replacing existing railings with the same height and layout, a permit might not be required. However, for new decks or structural changes, {location.name} building codes usually require a permit. We can help guide you through this process.
+                                </p>
+                            </div>
+                            <div className="bg-slate-50 p-6 rounded-lg">
+                                <h3 className="font-bold text-lg mb-2 text-brand-dark">Are your railings suitable for the {location.name} winter?</h3>
+                                <p className="text-slate-600">
+                                    Absolutely. Our aluminum products are designed specifically for the Canadian climate. They will not rust, rot, or crack even in the harshest winter conditions common in {location.name}.
+                                </p>
+                            </div>
+                            <div className="bg-slate-50 p-6 rounded-lg">
+                                <h3 className="font-bold text-lg mb-2 text-brand-dark">How long does installation take in {location.name}?</h3>
+                                <p className="text-slate-600">
+                                    Since we manufacture locally, our lead times are often shorter than competitors. Once your custom railings are ready, installation in {location.name} typically takes 1-2 days depending on the project size.
+                                </p>
                             </div>
                         </div>
                     </div>

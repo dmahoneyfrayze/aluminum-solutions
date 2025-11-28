@@ -4,6 +4,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function PrivacyScreensPage() {
     return (
@@ -16,7 +17,7 @@ export default function PrivacyScreensPage() {
                     subtitle="Create a secluded oasis in your urban backyard with our stylish, durable privacy solutions."
                     ctaText="Get a Free Estimate"
                     ctaLink="/contact"
-                    backgroundImage="/images/privacy-screens-hero.jpg"
+                    backgroundImage="/images/generated/pool_fence_glass_detail_1764312810331.png"
                 />
 
                 {/* Intro */}
@@ -42,10 +43,12 @@ export default function PrivacyScreensPage() {
                             </div>
                             <div className="w-full md:w-1/2">
                                 <div className="aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden relative shadow-lg">
-                                    {/* Placeholder for Privacy Screen Image */}
-                                    <div className="absolute inset-0 flex items-center justify-center text-slate-400 bg-slate-200">
-                                        [Privacy Screen Image]
-                                    </div>
+                                    <Image
+                                        src="/images/generated/pool_fence_glass_detail_1764312810331.png"
+                                        alt="Privacy Screen Detail"
+                                        fill
+                                        className="object-cover"
+                                    />
                                 </div>
                             </div>
                         </div>

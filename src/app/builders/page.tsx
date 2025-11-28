@@ -4,6 +4,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function BuildersPage() {
     return (
@@ -16,6 +17,7 @@ export default function BuildersPage() {
                     subtitle="Reliable supply and installation for builders, architects, and developers. We control the timeline because we control the production."
                     ctaText="Request Builder Package"
                     ctaLink="#contact-form"
+                    backgroundImage="/images/generated/railing_hero_detail_1764312850877.png"
                 />
 
                 {/* Value Props */}
@@ -87,16 +89,34 @@ export default function BuildersPage() {
                         <h2 className="text-3xl font-serif font-bold text-slate-900 mb-12 text-center">Recent Commercial Projects</h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div className="h-64 bg-slate-200 rounded-lg relative overflow-hidden group">
+                                <Image
+                                    src="/images/generated/glass_enclosure_project_1764312838961.png"
+                                    alt="Condo Balconies"
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                />
                                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                                     <span className="text-white font-bold">Condo Balconies - Etobicoke</span>
                                 </div>
                             </div>
                             <div className="h-64 bg-slate-300 rounded-lg relative overflow-hidden group">
+                                <Image
+                                    src="/images/generated/railing_hero_detail_1764312850877.png"
+                                    alt="Office Staircase"
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                />
                                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                                     <span className="text-white font-bold">Office Staircase - Toronto</span>
                                 </div>
                             </div>
                             <div className="h-64 bg-slate-400 rounded-lg relative overflow-hidden group">
+                                <Image
+                                    src="/images/generated/pool_fence_glass_detail_1764312810331.png"
+                                    alt="Restaurant Patio"
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                />
                                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                                     <span className="text-white font-bold">Restaurant Patio - Yorkville</span>
                                 </div>

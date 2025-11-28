@@ -66,6 +66,7 @@ export default function FAQPage() {
                     subtitle="Answers to common questions about our products, installation process, and warranty."
                     ctaText="Ask a Question"
                     ctaLink="/contact"
+                    backgroundImage="/images/generated/custom_gate_modern_1764314098362.png"
                 />
 
                 <section className="py-20">

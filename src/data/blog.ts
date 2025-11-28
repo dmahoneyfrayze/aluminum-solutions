@@ -163,6 +163,159 @@ export const blogPosts: BlogPost[] = [
       <p><em>Note: Program details change. Always check the official CMHC website for the latest eligibility criteria.</em></p>
     `,
   },
+  {
+    slug: "cleaning-maintaining-glass-railings",
+    title: "The Ultimate Guide to Cleaning & Maintaining Glass Railings",
+    excerpt: "Keep your views crystal clear with these simple, professional maintenance tips.",
+    date: "December 1, 2024",
+    category: "Maintenance",
+    imageUrl: "/images/generated/pool_fence_glass_detail_1764312810331.png",
+    content: `
+      <p>One of the biggest myths about glass railings is that they are hard to keep clean. In reality, tempered glass is much lower maintenance than wood (which needs staining) or iron (which needs painting). Here is how to keep your glass railings looking brand new with minimal effort.</p>
+      
+      <h3>The Golden Rule: Squeegee is King</h3>
+      <p>The secret to streak-free glass isn't a fancy chemical—it's a good quality squeegee. After washing, a quick pass with a squeegee removes water droplets before they can dry into mineral spots.</p>
+      
+      <h3>DIY Cleaning Solution</h3>
+      <p>Skip the expensive store-bought cleaners. The most effective solution for outdoor glass is likely already in your kitchen:</p>
+      <ul>
+        <li>1 part white vinegar</li>
+        <li>4 parts warm water</li>
+        <li>A few drops of dish soap</li>
+      </ul>
+      
+      <h3>Step-by-Step Cleaning Routine</h3>
+      <ol>
+        <li><strong>Rinse:</strong> Hose down the glass to remove loose dirt and pollen.</li>
+        <li><strong>Scrub:</strong> Use a soft sponge or microfiber cloth with your vinegar solution. Never use abrasive pads (like steel wool) which can scratch the glass.</li>
+        <li><strong>Squeegee:</strong> Wipe from top to bottom.</li>
+        <li><strong>Detail:</strong> Use a dry microfiber cloth to wipe the edges and the aluminum hardware.</li>
+      </ol>
+      
+      <h3>Winter Care</h3>
+      <p>In Canada, salt spray can be an issue. We recommend a quick rinse on warmer winter days to prevent salt buildup on the aluminum posts, which helps preserve the powder-coated finish for decades.</p>
+    `,
+  },
+  {
+    slug: "2025-outdoor-design-trends",
+    title: "2025 Outdoor Design Trends: Black Aluminum & Frameless Glass",
+    excerpt: "What's hot in landscape design for 2025? We explore the shift towards minimalism and high-contrast aesthetics.",
+    date: "December 5, 2024",
+    category: "Design",
+    imageUrl: "/images/projects/black-aluminum-railing-stone.png",
+    content: `
+      <p>As we look ahead to 2025, outdoor living spaces are becoming more sophisticated, mirroring the interior design trends of "quiet luxury" and minimalism. Here are the top trends we are seeing in Toronto and the GTA.</p>
+      
+      <h3>1. The "Tuxedo" Look</h3>
+      <p>High contrast is in. We are seeing a massive surge in <strong>Matte Black Aluminum</strong> railings paired with light natural stone or white composite decking. This "tuxedo" look is timeless, sharp, and frames the outdoor view like a photograph.</p>
+      
+      <h3>2. Invisible Barriers</h3>
+      <p>Homeowners want safety without obstruction. <strong>Frameless Glass Railings</strong> (using spigots or base shoes) are becoming the standard for lakefront properties and backyard pools. The goal is to make the safety barrier disappear entirely.</p>
+      
+      <h3>3. Integrated Lighting</h3>
+      <p>Railings are no longer just structural; they are part of the lighting scheme. LED strip lighting integrated into the handrail or small cap lights on posts are huge for 2025, adding ambiance and safety for evening entertaining.</p>
+      
+      <h3>4. Biophilic Design</h3>
+      <p>This trend focuses on connecting with nature. We're seeing railings that incorporate planter boxes or are designed to let vines grow through specific sections (for privacy screens), blending the hardscape with the softscape.</p>
+    `,
+  },
+  {
+    slug: "ontario-building-code-railing-safety",
+    title: "Ontario Building Code 101: Railing Heights & Safety",
+    excerpt: "Planning a renovation? Make sure your new railings meet the latest SB-13 requirements to avoid costly inspection failures.",
+    date: "December 10, 2024",
+    category: "Safety",
+    imageUrl: "/images/generated/railing_hero_detail_1764312850877.png",
+    content: `
+      <p>Navigating the Ontario Building Code (OBC) can be confusing for homeowners. However, compliance is non-negotiable for safety and insurance purposes. Here is a simplified breakdown of the key rules for residential railings (guards).</p>
+      
+      <h3>When Do You Need a Railing?</h3>
+      <p>In general, if a deck, porch, or balcony is more than <strong>60cm (24 inches)</strong> above the adjacent ground, a guard is required by law.</p>
+      
+      <h3>Height Requirements</h3>
+      <ul>
+        <li><strong>Exterior (Decks/Porches):</strong> If the drop is less than 1.8m (5'11"), the minimum height is usually <strong>900mm (36 inches)</strong>.</li>
+        <li><strong>High Drops:</strong> If the drop is more than 1.8m, the minimum height increases to <strong>1070mm (42 inches)</strong>.</li>
+        <li><strong>Pool Enclosures:</strong> These have their own specific bylaws, often requiring a minimum height of 1.2m (48 inches) and non-climbable features.</li>
+      </ul>
+      
+      <h3>The "Climbability" Rule</h3>
+      <p>For residential guards, the code prohibits horizontal elements that could facilitate climbing (like a ladder) between 140mm and 900mm off the floor. This is why horizontal cable railings are often restricted in Ontario unless they meet very specific testing standards. Vertical pickets or glass panels are the safest, most compliant options.</p>
+      
+      <h3>Glass Safety</h3>
+      <p>Not all glass is equal. The code mandates the use of <strong>Tempered or Laminated Safety Glass</strong>. Standard float glass is dangerous and illegal for railings. At Aluminum Solutions, we use 10mm or 12mm tempered glass that exceeds minimum load requirements.</p>
+      
+      <p><em>Disclaimer: This is a summary for informational purposes. Always consult with a professional or your local building department for the specific requirements of your project.</em></p>
+    `,
+  },
+  {
+    slug: "custom-glass-saunas-gyms",
+    title: "Beyond Railings: Custom Glass for Saunas, Gyms & Wine Cellars",
+    excerpt: "Did you know we do custom interiors? Elevate your home spa or gym with premium tempered glass.",
+    date: "December 12, 2024",
+    category: "Interiors",
+    imageUrl: "/images/generated/glass_enclosure_project_1764312838961.png", // Placeholder
+    content: `
+      <p>While we are known for our exterior railings, Aluminum Solutions also specializes in high-end <strong>interior glass applications</strong>. If you are renovating a basement or building a home spa, custom glass is the ultimate finishing touch.</p>
+      
+      <h3>Custom Sauna Glass</h3>
+      <p>A cedar sauna is beautiful, but a solid wood door can make it feel claustrophobic. Replacing the front wall or door with <strong>10mm or 12mm tempered safety glass</strong> opens up the space, allowing light to flow while retaining heat. We use specialized hardware designed to withstand high heat and humidity.</p>
+      
+      <h3>Home Gym Mirrors & Partitions</h3>
+      <p>Create a professional gym atmosphere with wall-to-wall mirrors or glass partitions to separate your workout zone from the rest of the basement. Glass partitions reduce noise without sacrificing visual openness.</p>
+      
+      <h3>Wine Cellars</h3>
+      <p>Don't hide your collection behind a solid door. Frameless glass wine cellars are a massive trend in luxury homes. We provide thermally sealed glass units to ensure your climate control remains efficient while showcasing your vintage bottles.</p>
+    `,
+  },
+  {
+    slug: "landlord-liability-railing-safety",
+    title: "Landlord Alert: Is Your Rental Property Liability-Proof?",
+    excerpt: "Wobbly railings are a lawsuit waiting to happen. Learn about our Emergency Safety Proofing services for landlords.",
+    date: "December 15, 2024",
+    category: "Rental Safety",
+    imageUrl: "/images/generated/railing_hero_detail_1764312850877.png", // Placeholder
+    content: `
+      <p>As a landlord in Ontario, you have a legal duty to ensure your property is safe. One of the most common—and dangerous—liabilities in older rental units is <strong>unsafe railings</strong> on balconies, porches, and stairways.</p>
+      
+      <h3>The "Emergency Safety Proofing" Checklist</h3>
+      <p>If you notice any of the following, you need to act immediately:</p>
+      <ul>
+        <li><strong>Wobble:</strong> If the railing moves more than an inch when pushed, the connections are failing.</li>
+        <li><strong>Rust/Rot:</strong> Iron rusts at the base; wood rots at the joints. Both can lead to sudden catastrophic failure.</li>
+        <li><strong>Wide Gaps:</strong> Older railings often have gaps wider than 4 inches (100mm), which is a major child safety hazard and code violation.</li>
+      </ul>
+      
+      <h3>Our Rental Safety Audit</h3>
+      <p>Don't wait for a tenant complaint or an injury. We offer a <strong>Rental Safety Audit</strong> where we inspect all exterior guards and handrails. If we find immediate hazards, we offer an <strong>Emergency Repair Service</strong> to secure the area instantly, often replacing dangerous wood/iron with maintenance-free aluminum that lasts for decades.</p>
+      
+      <p><strong>Protect your tenants and your investment. <a href="/contact">Book a Safety Audit today.</a></strong></p>
+    `,
+  },
+  {
+    slug: "interior-stair-railings-guide",
+    title: "Stairway Railing Safety: What Every Homeowner Needs to Know",
+    excerpt: "Interior or exterior, your stairs need to be safe. We break down handrail continuity, height rules, and modern styles.",
+    date: "December 18, 2024",
+    category: "Safety",
+    imageUrl: "/images/projects/black-aluminum-railing-stone.png", // Placeholder
+    content: `
+      <p>Stairways are the #1 location for falls in the home. Whether it's your front steps or your main interior staircase, having a proper handrail isn't just about code—it's about keeping your family safe.</p>
+      
+      <h3>The "Continuity" Rule</h3>
+      <p>A common mistake in DIY renovations is breaking the handrail at every turn or landing. The building code generally requires a <strong>continuous graspable handrail</strong> for the entire flight of stairs. This ensures that if someone loses their balance, they don't lose their grip.</p>
+      
+      <h3>Modernizing Your Stairs</h3>
+      <p>Safety doesn't have to be ugly. We are seeing a huge shift away from bulky wooden pickets towards:</p>
+      <ul>
+        <li><strong>Glass Stand-offs:</strong> Floating glass panels for a super-modern, airy look.</li>
+        <li><strong>Matte Black Aluminum:</strong> A sleek, industrial contrast to hardwood stairs.</li>
+        <li><strong>Wall-Mounted Rails:</strong> Simple, sturdy, and minimalist pipe-style rails.</li>
+      </ul>
+      
+      <p>Whether you need to "safety proof" a rental or upgrade your forever home, we have a solution that fits.</p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

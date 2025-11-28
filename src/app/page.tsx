@@ -10,6 +10,7 @@ import QuoteCalculator from "@/components/tools/QuoteCalculator";
 import StyleExplorer from "@/components/tools/StyleExplorer";
 import Link from "next/link";
 import Image from "next/image";
+import TrustSection from "@/components/ui/TrustSection";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
           ctaLink="/contact"
         />
 
-        <TrustBadges />
+        <TrustSection />
 
         {/* NEW: Style Explorer (Visualizer Gap) */}
         <StyleExplorer />

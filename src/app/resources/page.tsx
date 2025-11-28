@@ -20,6 +20,7 @@ export default function ResourcesPage() {
                     subtitle="Everything you need to know about our materials, installation process, and lifetime guarantee."
                     ctaText="Download Specs PDF"
                     ctaLink="#"
+                    backgroundImage="/images/generated/glass_enclosure_project_1764312838961.png"
                 // Override default link behavior to open modal
                 />
 

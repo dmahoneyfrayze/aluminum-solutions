@@ -24,6 +24,8 @@ export const metadata: Metadata = {
 
 import ChatWidget from "@/components/ui/ChatWidget";
 import TrackingScript from "@/components/analytics/TrackingScript";
+import CookieConsent from "@/components/ui/CookieConsent";
+import ExitIntentPopup from "@/components/ui/ExitIntentPopup";
 
 export default function RootLayout({
   children,
@@ -87,6 +89,8 @@ export default function RootLayout({
         {children}
         <ChatWidget />
         <TrackingScript />
+        <CookieConsent />
+        <ExitIntentPopup />
       </body>
     </html>
   );
