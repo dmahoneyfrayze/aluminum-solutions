@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import SEOFooterLinks from "@/components/layout/SEOFooterLinks";
+import CookiePreferencesLink from "@/components/ui/CookiePreferencesLink";
 
 export default function Footer() {
     return (
@@ -115,6 +116,8 @@ export default function Footer() {
                     <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
                     <span>|</span>
                     <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+                    <span>|</span>
+                    <CookiePreferencesLink />
                 </div>
             </div>
         </footer>

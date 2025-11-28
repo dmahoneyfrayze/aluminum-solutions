@@ -14,6 +14,15 @@ export default function CookieConsent() {
             const timer = setTimeout(() => setIsVisible(true), 1000);
             return () => clearTimeout(timer);
         }
+
+        // Listen for reset event
+        const handleReset = () => {
+            localStorage.removeItem("cookie-consent");
+            setIsVisible(true);
+        };
+
+        window.addEventListener("reset-cookie-consent", handleReset);
+        return () => window.removeEventListener("reset-cookie-consent", handleReset);
     }, []);
 
     const handleAccept = () => {

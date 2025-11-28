@@ -49,7 +49,119 @@ export default function EnclosuresPage() {
                     backgroundImage="/images/generated/glass_enclosure_project_1764312838961.png"
                 />
 
-                {/* Overview */}
+                {/* Design Considerations */}
+                <section className="py-20 bg-slate-900 text-white">
+                    <div className="container mx-auto px-6">
+                        <div className="flex flex-col md:flex-row gap-16">
+                            <div className="w-full md:w-1/2">
+                                <h2 className="text-3xl font-serif font-bold mb-8">Design Considerations</h2>
+                                <div className="space-y-8">
+                                    <div>
+                                        <h3 className="text-xl font-bold text-brand-copper mb-2">Size & Layout</h3>
+                                        <p className="text-slate-300">
+                                            Assess your available area and consider how you intend to use the space. A cozy reading nook requires different planning than a large entertaining area.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-brand-copper mb-2">Glass Options</h3>
+                                        <p className="text-slate-300">
+                                            Choose clear glass for views, or frosted/tinted options for privacy and UV protection. Each choice impacts the aesthetic and performance of your enclosure.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-brand-copper mb-2">Fixtures & Hardware</h3>
+                                        <p className="text-slate-300">
+                                            We use marine-grade stainless steel fixtures for unmatched strength and rust resistance. This ensures your enclosure remains sturdy and secure in all weather conditions.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-brand-copper mb-2">Ventilation</h3>
+                                        <p className="text-slate-300">
+                                            Proper airflow is essential. We incorporate operable windows, sliding doors, or ceiling vents to allow fresh air circulation during warmer months.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="w-full md:w-1/2">
+                                <div className="bg-slate-800 p-8 rounded-xl border border-slate-700">
+                                    <h3 className="text-2xl font-bold mb-6">Professional Installation</h3>
+                                    <p className="text-slate-300 mb-6">
+                                        Hiring a professional contractor is essential for high-quality results. Here is why you should choose our installers:
+                                    </p>
+                                    <ul className="space-y-4">
+                                        <li className="flex items-start gap-3">
+                                            <span className="text-brand-copper mt-1">✓</span>
+                                            <div>
+                                                <strong>Expertise:</strong> We have the skills to handle complex structural requirements.
+                                            </div>
+                                        </li>
+                                        <li className="flex items-start gap-3">
+                                            <span className="text-brand-copper mt-1">✓</span>
+                                            <div>
+                                                <strong>Experience:</strong> Over 10 years of experience allows us to anticipate and overcome challenges.
+                                            </div>
+                                        </li>
+                                        <li className="flex items-start gap-3">
+                                            <span className="text-brand-copper mt-1">✓</span>
+                                            <div>
+                                                <strong>Time-Saving:</strong> We handle everything from permits to final cleanup.
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Maintenance Section */}
+                <section className="py-20 bg-white">
+                    <div className="container mx-auto px-6">
+                        <div className="max-w-4xl mx-auto text-center">
+                            <h2 className="text-3xl font-serif font-bold text-brand-dark mb-8">Maintenance Tips</h2>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                                <div className="p-6 bg-slate-50 rounded border border-slate-100">
+                                    <h3 className="font-bold text-lg mb-2 text-brand-navy">Regular Cleaning</h3>
+                                    <p className="text-slate-600 text-sm">Clean interior and exterior glass surfaces using manufacturer-recommended products to keep views crystal clear.</p>
+                                </div>
+                                <div className="p-6 bg-slate-50 rounded border border-slate-100">
+                                    <h3 className="font-bold text-lg mb-2 text-brand-navy">Inspect for Damage</h3>
+                                    <p className="text-slate-600 text-sm">Regularly check for any cracks or seal failures. addressing small issues promptly prevents costly repairs.</p>
+                                </div>
+                                <div className="p-6 bg-slate-50 rounded border border-slate-100">
+                                    <h3 className="font-bold text-lg mb-2 text-brand-navy">Lubricate Parts</h3>
+                                    <p className="text-slate-600 text-sm">Keep hinges, tracks, and locks operating smoothly by lubricating moving parts annually.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Testimonials */}
+                <section className="py-20 bg-brand-copper/5">
+                    <div className="container mx-auto px-6">
+                        <h2 className="text-3xl font-serif font-bold text-center text-brand-dark mb-12">Our Customers Say The Best About Us</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                            <div className="bg-white p-8 shadow-sm rounded-xl">
+                                <div className="flex text-brand-copper mb-4">★★★★★</div>
+                                <p className="text-slate-600 italic mb-6">"Aluminum Solutions transformed our porch. We used to sit inside and look at the rain, now we sit in our enclosure and enjoy it. The installation was flawless."</p>
+                                <div className="font-bold text-brand-navy">- Sarah M., Oakville</div>
+                            </div>
+                            <div className="bg-white p-8 shadow-sm rounded-xl">
+                                <div className="flex text-brand-copper mb-4">★★★★★</div>
+                                <p className="text-slate-600 italic mb-6">"The best investment we've made for our home. It adds so much curb appeal and keeps the snow off our front door. Highly recommend their team."</p>
+                                <div className="font-bold text-brand-navy">- David K., Toronto</div>
+                            </div>
+                        </div>
+                        <div className="text-center mt-10">
+                            <Link href="/reviews" className="text-brand-navy font-bold hover:underline">
+                                Read More Reviews &rarr;
+                            </Link>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Overview & Why Use */}
                 <section className="py-24 bg-white">
                     <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                         <div>
@@ -57,15 +169,30 @@ export default function EnclosuresPage() {
                                 Year-Round Comfort
                             </span>
                             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-brand-dark">
-                                Extend Your Living Space
+                                Why Use Glass Porch Enclosures?
                             </h2>
                             <div className="space-y-6 text-slate-600 leading-relaxed text-lg">
                                 <p>
-                                    A glass enclosure transforms your front porch, patio, or balcony into a functional, protected sanctuary. It creates a thermal buffer zone that keeps your home warmer in winter and cleaner year-round, without sacrificing natural light.
+                                    Frameless glass enclosures offer a range of benefits for homeowners looking to maximize their living space:
                                 </p>
-                                <p>
-                                    <strong>Factory Direct Advantage:</strong> Unlike resellers, we cut, temper, and polish our glass in-house. This allows for custom shapes, precise fits for uneven stone, and faster turnaround times.
-                                </p>
+                                <ul className="space-y-4">
+                                    <li className="flex items-start gap-3">
+                                        <span className="text-brand-copper mt-1">✓</span>
+                                        <span><strong>Increased Living Space:</strong> Enjoy an additional area for relaxation or entertaining guests, protected from the elements.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="text-brand-copper mt-1">✓</span>
+                                        <span><strong>Natural Light & Views:</strong> Unobstructed views create a bright, airy atmosphere while keeping you sheltered.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="text-brand-copper mt-1">✓</span>
+                                        <span><strong>Durability:</strong> Aluminum frames and tempered safety glass offer superior protection against wind, rain, and snow.</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="text-brand-copper mt-1">✓</span>
+                                        <span><strong>Custom Design:</strong> Versatile configurations to suit your home's unique architecture and your personal style.</span>
+                                    </li>
+                                </ul>
                             </div>
                             <div className="mt-10">
                                 <Link href="/contact" className="text-brand-dark font-bold border-b-2 border-brand-dark pb-1 hover:text-brand-copper hover:border-brand-copper transition-colors text-lg">
@@ -80,6 +207,42 @@ export default function EnclosuresPage() {
                                 fill
                                 className="object-cover"
                             />
+                        </div>
+                    </div>
+                </section>
+
+                {/* Types of Enclosures */}
+                <section className="py-20 bg-slate-50">
+                    <div className="container mx-auto px-6">
+                        <div className="text-center mb-16">
+                            <h2 className="text-3xl font-serif font-bold text-slate-900 mb-4">
+                                Types of Glass Porch Enclosures
+                            </h2>
+                            <p className="text-slate-600 max-w-2xl mx-auto">
+                                Choose the perfect level of protection for your lifestyle.
+                            </p>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div className="bg-white p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                                <h3 className="text-xl font-bold text-slate-900 mb-4">Three-Season Enclosures</h3>
+                                <p className="text-slate-600 mb-4">
+                                    A versatile and affordable solution for spring, summer, and fall. Perfect for soaking up the beauty of the changing seasons without dealing with rain, wind, or bugs.
+                                </p>
+                            </div>
+                            <div className="bg-white p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+                                <div className="absolute top-0 right-0 bg-brand-copper text-white text-xs font-bold px-3 py-1 rounded-bl">POPULAR</div>
+                                <h3 className="text-xl font-bold text-slate-900 mb-4">Four-Season Enclosures</h3>
+                                <p className="text-slate-600 mb-4">
+                                    Designed to transform your porch into a versatile living space you can enjoy year-round. Ideal for expanding your living area without the cost of a traditional addition.
+                                </p>
+                            </div>
+                            <div className="bg-white p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                                <h3 className="text-xl font-bold text-slate-900 mb-4">Solariums & Sunrooms</h3>
+                                <p className="text-slate-600 mb-4">
+                                    Stunning indoor-outdoor spaces designed to let in ample natural light while protecting you from the elements. Enjoy a seamless connection to nature from your home sanctuary.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
