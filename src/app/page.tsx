@@ -72,7 +72,7 @@ export default function Home() {
                   Need Railings Fast?
                 </h2>
                 <p className="text-slate-300 text-lg mb-8 leading-relaxed">
-                  Don't wait 8 weeks for the other guys. Our <strong className="text-white">Express Service</strong> gets you standard black aluminum railings installed in as little as <strong>5 business days</strong>.
+                  Don't wait 8 weeks for the other guys. Our <strong className="text-white">Express Service</strong> gets you standard black aluminum railings installed in as little as <strong>7 business days</strong>.
                 </p>
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-center gap-3">
@@ -95,8 +95,8 @@ export default function Home() {
               <div className="w-full md:w-1/2">
                 <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20 text-center">
                   <div className="text-6xl mb-4">⏱️</div>
-                  <h3 className="text-2xl font-bold mb-2">5-Day Turnaround</h3>
-                  <p className="text-slate-300 text-sm">
+                  <h3 className="text-2xl font-bold mb-2 text-white">7-Day Turnaround</h3>
+                  <p className="text-slate-200 text-sm">
                     *Subject to stock availability and crew schedule.
                   </p>
                 </div>
