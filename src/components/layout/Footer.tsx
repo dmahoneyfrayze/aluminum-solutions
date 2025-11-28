@@ -67,6 +67,7 @@ export default function Footer() {
                             <li><Link href="/blog" className="hover:text-white transition-colors">Blog & Case Studies</Link></li>
                             <li><Link href="/builders" className="hover:text-white transition-colors">For Builders</Link></li>
                             <li><Link href="/referral" className="hover:text-white transition-colors">Referral Program</Link></li>
+                            <li><a href="https://shop.aluminumsolutions.ca" target="_blank" rel="noopener noreferrer" className="hover:text-brand-copper transition-colors font-bold">Shop / Merch / Supplies</a></li>
                             <li><Link href="/contact" className="hover:text-white transition-colors">Get a Quote</Link></li>
                         </ul>
                     </div>
