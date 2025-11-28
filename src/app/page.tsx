@@ -1,65 +1,114 @@
-import Image from "next/image";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import Hero from "@/components/ui/Hero";
+import TrustBadges from "@/components/ui/TrustBadges";
+import ProcessSteps from "@/components/ui/ProcessSteps";
+import ManufacturingHighlight from "@/components/ui/ManufacturingHighlight";
+import MiniCaseStudies from "@/components/ui/MiniCaseStudies";
+import QuoteCalculator from "@/components/tools/QuoteCalculator";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="min-h-screen flex flex-col">
+      <Header />
+
+      <main className="flex-grow">
+        <Hero
+          title="Architect-Grade Aluminum & Glass Railings"
+          subtitle="Manufactured locally in the GTA. Installed in 4-6 weeks. Direct from the factory to your home or project."
+          ctaText="Get a Free Estimate"
+          ctaLink="/contact"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+
+        <TrustBadges />
+
+        <QuoteCalculator />
+
+        <ManufacturingHighlight />
+
+        <ProcessSteps />
+
+        <MiniCaseStudies />
+
+        {/* Services Overview */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
+                Premium Exterior Solutions
+              </h2>
+              <p className="text-slate-600 max-w-2xl mx-auto">
+                Engineered for safety, designed for elegance.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {/* Service 1 */}
+              <div className="group text-center">
+                <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg">
+                  <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <h3 className="text-xl font-bold mb-2 font-serif">Aluminum Railings</h3>
+                <p className="text-slate-600 text-sm mb-4">Maintenance-free durability.</p>
+                <Link href="/services/railings" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                  Learn More
+                </Link>
+              </div>
+              {/* Service 2 */}
+              <div className="group text-center">
+                <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg">
+                  <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <h3 className="text-xl font-bold mb-2 font-serif">Glass Enclosures</h3>
+                <p className="text-slate-600 text-sm mb-4">Wind protection & views.</p>
+                <Link href="/services/glass-enclosures" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                  Learn More
+                </Link>
+              </div>
+              {/* Service 3 */}
+              <div className="group text-center">
+                <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg">
+                  <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <h3 className="text-xl font-bold mb-2 font-serif">Custom Gates</h3>
+                <p className="text-slate-600 text-sm mb-4">Security meets style.</p>
+                <Link href="/services/gates" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                  Learn More
+                </Link>
+              </div>
+              {/* Service 4 */}
+              <div className="group text-center">
+                <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg">
+                  <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <h3 className="text-xl font-bold mb-2 font-serif">Aluminum Columns</h3>
+                <p className="text-slate-600 text-sm mb-4">Structural elegance.</p>
+                <Link href="/services/columns" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                  Learn More
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Final CTA */}
+        <section className="py-24 bg-slate-900 text-white text-center">
+          <div className="container mx-auto px-6">
+            <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6">
+              Get a Quote in 24 Hours
+            </h2>
+            <p className="text-slate-300 max-w-2xl mx-auto mb-10 text-lg">
+              Upload a photo of your project for a fast, accurate estimate. No site visit required for rough pricing.
+            </p>
+            <Link href="/contact" className="inline-block px-10 py-4 bg-white text-slate-900 font-bold tracking-wide hover:bg-slate-100 transition-colors shadow-lg">
+              Get My Free Quote
+            </Link>
+          </div>
+        </section>
       </main>
+
+      <Footer />
     </div>
   );
 }
