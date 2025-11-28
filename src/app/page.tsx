@@ -166,7 +166,7 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/generated/glass_office_partition_hero_1764346564712.png"
+                    src="/images/projects/glass-office-partition-modern.jpg"
                     alt="Glass Walls"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -182,7 +182,7 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/generated/frameless_glass_shower_modern_1764347088164.png"
+                    src="/images/projects/frameless-glass-shower-custom.jpg"
                     alt="Frameless Showers"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"

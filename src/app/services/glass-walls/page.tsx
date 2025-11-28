@@ -20,11 +20,11 @@ export default function GlassWallsPage() {
 
             <main className="flex-grow">
                 <Hero
-                    title="Modern Glass Walls & Office Partitions"
-                    subtitle="Redefine your space with sleek, frameless glass dividers. Perfect for offices, gyms, and home interiors."
-                    ctaText="Get a Free Estimate"
+                    title="Glass Walls & Office Partitions"
+                    subtitle="Redefine your space with sleek, modern glass solutions. Perfect for offices, home gyms, and wine cellars."
+                    ctaText="Get a Quote"
                     ctaLink="/contact"
-                    backgroundImage="/images/generated/glass_office_partition_hero_1764346564712.png"
+                    backgroundImage="/images/projects/glass-office-partition-modern.jpg"
                 />
 
                 {/* Intro */}
@@ -51,7 +51,7 @@ export default function GlassWallsPage() {
                             <div className="w-full md:w-1/2">
                                 <div className="aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden relative shadow-lg">
                                     <Image
-                                        src="/images/generated/glass_office_partition_hero_1764346564712.png"
+                                        src="/images/projects/glass-wall-meeting-room.jpg"
                                         alt="Glass Office Partition"
                                         fill
                                         className="object-cover"

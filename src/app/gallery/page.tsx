@@ -15,13 +15,13 @@ import ReputationWidget from "@/components/ui/ReputationWidget";
 const projects = [
     { id: 1, category: "Railings", title: "Modern Glass Railing", location: "Toronto", image: "/images/projects/railing-aluminum-deck-toronto.jpg" },
     { id: 2, category: "Enclosures", title: "Porch Enclosure", location: "Mississauga", image: "/images/projects/glass-enclosure-porch-front.jpg" },
-    { id: 3, category: "Showers", title: "Frameless Glass Shower", location: "Vaughan", image: "/images/projects/pool-fence-glass-guards.jpg" }, // Using pool fence as placeholder for high quality glass if shower specific missing, but ideally use shower image
-    { id: 4, category: "Walls", title: "Office Glass Partition", location: "Oakville", image: "/images/projects/privacy-screen-frosted-glass.jpg" },
+    { id: 3, category: "Showers", title: "Frameless Glass Shower", location: "Vaughan", image: "/images/projects/frameless-glass-shower-custom.jpg" },
+    { id: 4, category: "Walls", title: "Office Glass Partition", location: "Oakville", image: "/images/projects/glass-office-divider-system.jpg" },
     { id: 5, category: "Railings", title: "Black Aluminum Picket", location: "Markham", image: "/images/projects/black-aluminum-railing-stone.png" },
     { id: 6, category: "Enclosures", title: "Sunroom Addition", location: "Burlington", image: "/images/projects/glass-enclosure-porch-front.jpg" },
     { id: 7, category: "Railings", title: "Deck Glass Railing", location: "Richmond Hill", image: "/images/projects/railing-aluminum-deck-toronto.jpg" },
-    { id: 8, category: "Showers", title: "Custom Steam Shower", location: "Toronto", image: "/images/generated/frameless_glass_shower_modern_1764347088164.png" },
-    { id: 9, category: "Walls", title: "Gym Glass Wall", location: "Brampton", image: "/images/generated/glass_office_partition_hero_1764346564712.png" },
+    { id: 8, category: "Showers", title: "Custom Steam Shower", location: "Toronto", image: "/images/projects/shower-glass-door-hinge.jpg" },
+    { id: 9, category: "Walls", title: "Gym Glass Wall", location: "Brampton", image: "/images/projects/glass-office-partition-modern.jpg" },
 ];
 
 const categories = ["All", "Railings", "Enclosures", "Showers", "Walls"];
