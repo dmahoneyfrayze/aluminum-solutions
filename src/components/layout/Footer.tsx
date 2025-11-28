@@ -57,8 +57,9 @@ export default function Footer() {
                         <h3 className="font-bold mb-6 text-lg">Quick Links</h3>
                         <ul className="space-y-4 text-slate-300">
                             <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
-                            <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
-                            <li><Link href="/process" className="hover:text-white transition-colors">Our Process</Link></li>
+                            <li><Link href="/about" className="hover:text-brand-copper transition-colors">About Us</Link></li>
+                            <li><Link href="/careers" className="hover:text-brand-copper transition-colors">Careers</Link></li>
+                            <li><Link href="/process" className="hover:text-brand-copper transition-colors">Our Process</Link></li>
                             <li><Link href="/reviews" className="hover:text-white transition-colors">Reviews</Link></li>
                             <li><Link href="/gallery" className="hover:text-white transition-colors">Project Gallery</Link></li>
                             <li><Link href="/resources" className="hover:text-white transition-colors">Warranty & Specs</Link></li>
