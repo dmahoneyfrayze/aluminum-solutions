@@ -159,15 +159,15 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/generated/custom_gate_modern_1764314098362.png"
-                    alt="Custom Gates"
+                    src="/images/generated/glass_office_partition_hero_1764346564712.png"
+                    alt="Glass Walls"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <h3 className="text-xl font-bold mb-2 font-serif">Custom Gates</h3>
-                <p className="text-slate-600 text-sm mb-4">Security meets style.</p>
-                <Link href="/services/gates" aria-label="Learn more about Custom Gates" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                <h3 className="text-xl font-bold mb-2 font-serif">Glass Walls</h3>
+                <p className="text-slate-600 text-sm mb-4">Modern office partitions.</p>
+                <Link href="/services/glass-walls" aria-label="Learn more about Glass Walls" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
                   Learn More
                 </Link>
               </div>
@@ -175,7 +175,7 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/generated/pool_fence_glass_detail_1764312810331.png"
+                    src="/images/generated/frameless_glass_shower_modern_1764347088164.png"
                     alt="Frameless Showers"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
