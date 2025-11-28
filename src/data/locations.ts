@@ -1,6 +1,7 @@
 export interface LocationData {
     slug: string;
     name: string;
+    region: "GTA" | "Montreal"; // Added region field
     metaDescription: string;
     title: string;
     heroImage?: string;
@@ -15,6 +16,7 @@ export const locations: LocationData[] = [
     {
         slug: "toronto",
         name: "Toronto",
+        region: "GTA",
         title: "Aluminum Railings & Glass Enclosures in Toronto",
         metaDescription: "Premium aluminum railings and glass enclosures in Toronto. Custom manufactured and installed for homes and businesses. Get a free quote today.",
         heroImage: "/images/migrated/manufacturing-glass.jpg",
@@ -27,6 +29,7 @@ export const locations: LocationData[] = [
     {
         slug: "mississauga",
         name: "Mississauga",
+        region: "GTA",
         title: "Custom Railings & Glass Showers in Mississauga",
         metaDescription: "Top-rated manufacturer of aluminum railings and glass showers in Mississauga. Factory direct pricing and expert installation.",
         heroImage: "/images/migrated/hero-commercial.jpg",
@@ -39,6 +42,7 @@ export const locations: LocationData[] = [
     {
         slug: "oakville",
         name: "Oakville",
+        region: "GTA",
         title: "Luxury Glass Railings & Gates in Oakville",
         metaDescription: "Elevate your Oakville home with custom glass railings and aluminum gates. Designed for luxury estates and waterfront properties.",
         heroImage: "/images/migrated/manufacturing-glass.jpg",
@@ -51,6 +55,7 @@ export const locations: LocationData[] = [
     {
         slug: "north-york",
         name: "North York",
+        region: "GTA",
         title: "Aluminum Porch Railings in North York",
         metaDescription: "Durable aluminum porch railings and glass balcony guards in North York. Manufactured locally for superior quality.",
         heroImage: "/images/migrated/hero-commercial.jpg",
@@ -63,6 +68,7 @@ export const locations: LocationData[] = [
     {
         slug: "scarborough",
         name: "Scarborough",
+        region: "GTA",
         title: "Affordable Aluminum Railings in Scarborough",
         metaDescription: "Factory-direct aluminum railings in Scarborough. Save on high-quality exterior railings and glass enclosures.",
         heroImage: "/images/migrated/hero-commercial.jpg",
@@ -75,6 +81,7 @@ export const locations: LocationData[] = [
     {
         slug: "brampton",
         name: "Brampton",
+        region: "GTA",
         title: "Brampton Aluminum Railings & Fences",
         metaDescription: "Secure and stylish aluminum railings and fences for Brampton homes. Get a free estimate from the manufacturer.",
         heroImage: "/images/migrated/hero-commercial.jpg",
@@ -87,6 +94,7 @@ export const locations: LocationData[] = [
     {
         slug: "vaughan",
         name: "Vaughan",
+        region: "GTA",
         title: "Custom Glass Railings in Vaughan & Woodbridge",
         metaDescription: "Modern glass railings and aluminum columns for Vaughan and Woodbridge homes. Visit our showroom or get a free quote.",
         heroImage: "/images/migrated/manufacturing-glass.jpg",
@@ -99,6 +107,7 @@ export const locations: LocationData[] = [
     {
         slug: "markham",
         name: "Markham",
+        region: "GTA",
         title: "Markham Aluminum Railings & Glass",
         metaDescription: "Premium exterior railings for Markham and Unionville. Custom design and installation of aluminum and glass systems.",
         heroImage: "/images/migrated/hero-commercial.jpg",
@@ -111,6 +120,7 @@ export const locations: LocationData[] = [
     {
         slug: "richmond-hill",
         name: "Richmond Hill",
+        region: "GTA",
         title: "Richmond Hill Glass & Aluminum Railings",
         metaDescription: "Upgrade your Richmond Hill home with custom glass and aluminum railings. Expert manufacturing and installation.",
         heroImage: "/images/migrated/manufacturing-glass.jpg",
@@ -123,6 +133,7 @@ export const locations: LocationData[] = [
     {
         slug: "etobicoke",
         name: "Etobicoke",
+        region: "GTA",
         title: "Etobicoke Railings & Glass Enclosures",
         metaDescription: "Serving Etobicoke with high-quality aluminum railings and glass porch enclosures. Get a quote today.",
         heroImage: "/images/migrated/hero-commercial.jpg",
@@ -135,6 +146,7 @@ export const locations: LocationData[] = [
     {
         slug: "milton",
         name: "Milton",
+        region: "GTA",
         title: "Milton Aluminum Railings & Gates",
         metaDescription: "Durable exterior railings and gates for Milton homes. Fast installation and lifetime warranty.",
         heroImage: "/images/migrated/hero-commercial.jpg",
@@ -147,6 +159,7 @@ export const locations: LocationData[] = [
     {
         slug: "pickering-ajax",
         name: "Pickering & Ajax",
+        region: "GTA",
         title: "Railings for Pickering & Ajax Durham Region",
         metaDescription: "Serving Durham Region with custom aluminum railings. Pickering and Ajax installation experts.",
         heroImage: "/images/migrated/hero-commercial.jpg",
@@ -159,6 +172,7 @@ export const locations: LocationData[] = [
     {
         slug: "newmarket",
         name: "Newmarket",
+        region: "GTA",
         title: "Newmarket Porch Enclosures & Railings",
         metaDescription: "Custom porch enclosures and aluminum railings in Newmarket. Protect your home from the elements with our glass systems.",
         heroImage: "/images/migrated/hero-commercial.jpg",
@@ -171,6 +185,7 @@ export const locations: LocationData[] = [
     {
         slug: "burlington",
         name: "Burlington",
+        region: "GTA",
         title: "Burlington Glass Railings & Balconies",
         metaDescription: "Premium glass railings for Burlington waterfront homes and condos. Expert design and installation.",
         heroImage: "/images/migrated/manufacturing-glass.jpg",
@@ -183,6 +198,7 @@ export const locations: LocationData[] = [
     {
         slug: "montreal",
         name: "Montreal",
+        region: "Montreal",
         title: "Aluminum Railings & Glass in Montreal",
         metaDescription: "Premium aluminum railings and glass enclosures in Montreal. Serving the Greater Montreal Area with custom installation.",
         heroImage: "/images/migrated/manufacturing-glass.jpg",
@@ -195,6 +211,7 @@ export const locations: LocationData[] = [
     {
         slug: "blainville",
         name: "Blainville",
+        region: "Montreal",
         title: "Blainville Aluminum Railings & Glass",
         metaDescription: "Factory-direct aluminum railings in Blainville. Visit our local office for custom glass enclosures and expert installation.",
         heroImage: "/images/migrated/hero-commercial.jpg",
@@ -207,6 +224,7 @@ export const locations: LocationData[] = [
     {
         slug: "laval",
         name: "Laval",
+        region: "Montreal",
         title: "Laval Glass Railings & Porch Enclosures",
         metaDescription: "Upgrade your Laval home with custom glass railings. Durable, maintenance-free aluminum solutions for balconies and porches.",
         heroImage: "/images/migrated/manufacturing-glass.jpg",
@@ -219,6 +237,7 @@ export const locations: LocationData[] = [
     {
         slug: "terrebonne",
         name: "Terrebonne",
+        region: "Montreal",
         title: "Terrebonne Aluminum Railings & Fences",
         metaDescription: "Stylish and safe aluminum railings for Terrebonne homes. Custom manufacturing and professional installation.",
         heroImage: "/images/migrated/hero-commercial.jpg",
@@ -231,6 +250,7 @@ export const locations: LocationData[] = [
     {
         slug: "saint-eustache",
         name: "Saint-Eustache",
+        region: "Montreal",
         title: "Saint-Eustache Glass & Aluminum Railings",
         metaDescription: "Top-quality glass and aluminum railings in Saint-Eustache. Protect your porch and enjoy the view.",
         heroImage: "/images/migrated/manufacturing-glass.jpg",
