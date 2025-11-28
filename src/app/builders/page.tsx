@@ -20,106 +20,181 @@ export default function BuildersPage() {
                     backgroundImage="/images/generated/railing_hero_detail_1764312850877.png"
                 />
 
-                {/* Value Props */}
-                <section className="py-20">
+                {/* Manufacturer Advantage - Comparison */}
+                <section className="py-20 bg-white">
                     <div className="container mx-auto px-6">
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-                            <div className="text-center">
-                                <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">
-                                    🏭
-                                </div>
-                                <h3 className="text-xl font-bold text-slate-900 mb-4">Factory Direct Pricing</h3>
-                                <p className="text-slate-600">
-                                    Cut out the middleman. We extrude, fabricate, and powder-coat in-house, offering you competitive margins.
+                        <div className="text-center mb-16">
+                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
+                                The Manufacturer Advantage
+                            </h2>
+                            <p className="text-slate-600 max-w-2xl mx-auto">
+                                Why smart builders buy direct. Eliminate the middleman markup and delays.
+                            </p>
+                        </div>
+
+                        <div className="overflow-x-auto">
+                            <table className="w-full max-w-4xl mx-auto text-left border-collapse">
+                                <thead>
+                                    <tr>
+                                        <th className="p-4 border-b-2 border-slate-200 bg-slate-50 text-slate-500 font-bold uppercase text-sm">Feature</th>
+                                        <th className="p-4 border-b-2 border-brand-navy bg-brand-navy/5 text-brand-navy font-bold text-lg">Aluminum Solutions (Direct)</th>
+                                        <th className="p-4 border-b-2 border-slate-200 bg-slate-50 text-slate-400 font-medium">Distributors / Middlemen</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="text-slate-700">
+                                    <tr>
+                                        <td className="p-4 border-b border-slate-100 font-bold">Cost</td>
+                                        <td className="p-4 border-b border-slate-100 text-green-700 font-bold">Factory Direct Pricing (No Markup)</td>
+                                        <td className="p-4 border-b border-slate-100 text-slate-500">Retail Markup (20-40% Higher)</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="p-4 border-b border-slate-100 font-bold">Lead Time</td>
+                                        <td className="p-4 border-b border-slate-100 text-green-700 font-bold">4-6 Weeks (Controlled Production)</td>
+                                        <td className="p-4 border-b border-slate-100 text-slate-500">8-12 Weeks (Dependent on Suppliers)</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="p-4 border-b border-slate-100 font-bold">Customization</td>
+                                        <td className="p-4 border-b border-slate-100 text-green-700 font-bold">Full Custom Fabrication</td>
+                                        <td className="p-4 border-b border-slate-100 text-slate-500">Standard Sizes Only</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="p-4 border-b border-slate-100 font-bold">Accountability</td>
+                                        <td className="p-4 border-b border-slate-100 text-green-700 font-bold">Single Point of Contact</td>
+                                        <td className="p-4 border-b border-slate-100 text-slate-500">Blame Shifting</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Solutions by Role */}
+                <section className="py-20 bg-slate-50">
+                    <div className="container mx-auto px-6">
+                        <h2 className="text-3xl font-serif font-bold text-slate-900 mb-12 text-center">Tailored Solutions</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            {/* Developers */}
+                            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
+                                <div className="text-4xl mb-6">🏗️</div>
+                                <h3 className="text-xl font-bold text-slate-900 mb-4">For Developers</h3>
+                                <p className="text-slate-600 mb-6">
+                                    Maximize ROI with volume pricing and reliable scheduling. We understand the critical path of multi-unit developments and high-rise projects.
                                 </p>
+                                <ul className="text-sm text-slate-500 space-y-2">
+                                    <li className="flex items-center">✓ Volume Discounts</li>
+                                    <li className="flex items-center">✓ Phased Installation</li>
+                                    <li className="flex items-center">✓ Bonded & Insured</li>
+                                </ul>
                             </div>
-                            <div className="text-center">
-                                <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">
-                                    ⚡
-                                </div>
-                                <h3 className="text-xl font-bold text-slate-900 mb-4">Guaranteed Timelines</h3>
-                                <p className="text-slate-600">
-                                    Our local manufacturing facility means we aren't waiting on shipments. We hit your closing dates.
+
+                            {/* Architects */}
+                            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
+                                <div className="text-4xl mb-6">📐</div>
+                                <h3 className="text-xl font-bold text-slate-900 mb-4">For Architects</h3>
+                                <p className="text-slate-600 mb-6">
+                                    Realize your vision without compromise. We offer custom extrusions, precise engineering, and full CAD/BIM support to bring your designs to life.
                                 </p>
+                                <ul className="text-sm text-slate-500 space-y-2">
+                                    <li className="flex items-center">✓ Custom Extrusions</li>
+                                    <li className="flex items-center">✓ Engineering Stamped Drawings</li>
+                                    <li className="flex items-center">✓ LEED Compliance Support</li>
+                                </ul>
                             </div>
-                            <div className="text-center">
-                                <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">
-                                    📐
-                                </div>
-                                <h3 className="text-xl font-bold text-slate-900 mb-4">Code Compliance</h3>
-                                <p className="text-slate-600">
-                                    All systems are engineered to meet or exceed Ontario Building Code (SB-13) requirements. TSSA certified.
+
+                            {/* Contractors */}
+                            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
+                                <div className="text-4xl mb-6">🔨</div>
+                                <h3 className="text-xl font-bold text-slate-900 mb-4">For Contractors</h3>
+                                <p className="text-slate-600 mb-6">
+                                    Install with confidence. Our pre-assembled panels and exact measurements mean less time on site and zero headaches.
                                 </p>
+                                <ul className="text-sm text-slate-500 space-y-2">
+                                    <li className="flex items-center">✓ Pre-Assembled Panels</li>
+                                    <li className="flex items-center">✓ Rush Orders Available</li>
+                                    <li className="flex items-center">✓ Installation Support</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                {/* Resources Section */}
-                <section className="py-20 bg-slate-50 border-y border-slate-200">
+                {/* Project Capabilities */}
+                <section className="py-20 bg-white">
                     <div className="container mx-auto px-6">
-                        <div className="flex flex-col md:flex-row justify-between items-center mb-12">
-                            <div>
-                                <h2 className="text-3xl font-serif font-bold text-slate-900 mb-2">Technical Resources</h2>
-                                <p className="text-slate-600">Download specs, CAD files, and installation guides.</p>
-                            </div>
-                            <button className="mt-4 md:mt-0 px-6 py-3 bg-white border border-slate-300 font-bold text-slate-700 rounded hover:bg-slate-50 transition-colors">
-                                Access Full Library &rarr;
-                            </button>
-                        </div>
-
+                        <h2 className="text-3xl font-serif font-bold text-slate-900 mb-12 text-center">Project Capabilities</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            {["Aluminum Railing Specs", "Glass Shoe Detail (CAD)", "Wind Load Engineering", "Standard Colour Chart"].map((item, i) => (
-                                <div key={i} className="bg-white p-6 rounded border border-slate-200 hover:border-blue-500 hover:shadow-md transition-all cursor-pointer group">
-                                    <div className="flex items-center justify-between mb-4">
-                                        <span className="text-3xl text-slate-300 group-hover:text-blue-500 transition-colors">📄</span>
-                                        <span className="text-xs font-bold bg-slate-100 text-slate-600 px-2 py-1 rounded">PDF</span>
-                                    </div>
-                                    <h4 className="font-bold text-slate-900 group-hover:text-blue-600 transition-colors">{item}</h4>
-                                    <p className="text-xs text-slate-400 mt-2">Updated: Nov 2025</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                {/* Commercial Gallery Preview */}
-                <section className="py-20">
-                    <div className="container mx-auto px-6">
-                        <h2 className="text-3xl font-serif font-bold text-slate-900 mb-12 text-center">Recent Commercial Projects</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                            <div className="h-64 bg-slate-200 rounded-lg relative overflow-hidden group">
+                            <div className="group relative h-80 rounded-lg overflow-hidden">
                                 <Image
                                     src="/images/generated/glass_enclosure_project_1764312838961.png"
-                                    alt="Condo Balconies"
+                                    alt="High-Rise Condos"
                                     fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
-                                <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                                    <span className="text-white font-bold">Condo Balconies - Etobicoke</span>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+                                    <h3 className="text-white font-bold text-xl">High-Rise Condos</h3>
+                                    <p className="text-slate-300 text-sm">Balcony railings & dividers</p>
                                 </div>
                             </div>
-                            <div className="h-64 bg-slate-300 rounded-lg relative overflow-hidden group">
-                                <Image
-                                    src="/images/generated/railing_hero_detail_1764312850877.png"
-                                    alt="Office Staircase"
-                                    fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                                />
-                                <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                                    <span className="text-white font-bold">Office Staircase - Toronto</span>
-                                </div>
-                            </div>
-                            <div className="h-64 bg-slate-400 rounded-lg relative overflow-hidden group">
+                            <div className="group relative h-80 rounded-lg overflow-hidden">
                                 <Image
                                     src="/images/generated/pool_fence_glass_detail_1764312810331.png"
-                                    alt="Restaurant Patio"
+                                    alt="Subdivisions"
                                     fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
-                                <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                                    <span className="text-white font-bold">Restaurant Patio - Yorkville</span>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+                                    <h3 className="text-white font-bold text-xl">Subdivisions</h3>
+                                    <p className="text-slate-300 text-sm">Volume porch railings</p>
                                 </div>
+                            </div>
+                            <div className="group relative h-80 rounded-lg overflow-hidden">
+                                <Image
+                                    src="/images/generated/glass_office_partition_hero_1764346564712.png"
+                                    alt="Commercial Interiors"
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+                                    <h3 className="text-white font-bold text-xl">Commercial Interiors</h3>
+                                    <p className="text-slate-300 text-sm">Office partitions & gyms</p>
+                                </div>
+                            </div>
+                            <div className="group relative h-80 rounded-lg overflow-hidden">
+                                <Image
+                                    src="/images/generated/railing_hero_detail_1764312850877.png"
+                                    alt="Custom Luxury"
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+                                    <h3 className="text-white font-bold text-xl">Custom Luxury</h3>
+                                    <p className="text-slate-300 text-sm">Bespoke architectural glass</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* B2B FAQ */}
+                <section className="py-20 bg-slate-50">
+                    <div className="container mx-auto px-6 max-w-4xl">
+                        <h2 className="text-3xl font-serif font-bold text-slate-900 mb-12 text-center">Builder FAQ</h2>
+                        <div className="space-y-6">
+                            <div className="bg-white p-6 rounded-lg shadow-sm">
+                                <h3 className="font-bold text-lg text-slate-900 mb-2">What are your standard lead times?</h3>
+                                <p className="text-slate-600">For standard aluminum profiles, we typically manufacture in 3-4 weeks. Custom glass or special order colors may take 5-6 weeks. We also offer a "Rush Service" for urgent deadlines.</p>
+                            </div>
+                            <div className="bg-white p-6 rounded-lg shadow-sm">
+                                <h3 className="font-bold text-lg text-slate-900 mb-2">Do you offer credit terms?</h3>
+                                <p className="text-slate-600">Yes, we offer Net 30 terms for approved commercial accounts. Please contact our finance department to submit a credit application.</p>
+                            </div>
+                            <div className="bg-white p-6 rounded-lg shadow-sm">
+                                <h3 className="font-bold text-lg text-slate-900 mb-2">Do you provide installation?</h3>
+                                <p className="text-slate-600">Absolutely. We have our own team of WSIB-insured, certified installers. We do not subcontract, ensuring quality control from factory to finish.</p>
+                            </div>
+                            <div className="bg-white p-6 rounded-lg shadow-sm">
+                                <h3 className="font-bold text-lg text-slate-900 mb-2">Are your products code compliant?</h3>
+                                <p className="text-slate-600">Yes, all our railing and glass systems are engineered to meet or exceed the Ontario Building Code (SB-13) and National Building Code requirements.</p>
                             </div>
                         </div>
                     </div>

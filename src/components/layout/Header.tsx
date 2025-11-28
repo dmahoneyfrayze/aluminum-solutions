@@ -39,6 +39,9 @@ export default function Header() {
                     <Link href="/reviews" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">
                         Reviews
                     </Link>
+                    <Link href="/builders" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">
+                        For Builders
+                    </Link>
                     <Link href="/contact" className="px-6 py-2.5 bg-brand-navy text-white text-sm font-bold hover:bg-brand-copper transition-colors shadow-lg rounded-sm">
                         Get a Quote
                     </Link>
@@ -100,6 +103,13 @@ export default function Header() {
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             Reviews
+                        </Link>
+                        <Link
+                            href="/builders"
+                            className="text-lg font-bold text-slate-800 hover:text-brand-copper transition-colors border-b border-slate-50 pb-2"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            For Builders
                         </Link>
                         <Link
                             href="/contact"
