@@ -4,6 +4,10 @@ import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import { blogPosts } from "@/data/blog";
+import RelatedArticles from "@/components/blog/RelatedArticles";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
+import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
     title: "Glass Porch Enclosures & Sunrooms Toronto | Aluminum Solutions",
@@ -14,6 +18,27 @@ export default function EnclosuresPage() {
     return (
         <div className="min-h-screen flex flex-col">
             <Header />
+
+            <Breadcrumbs />
+
+            <JsonLd
+                data={{
+                    "@context": "https://schema.org",
+                    "@type": "Product",
+                    "name": "Glass Porch Enclosures",
+                    "description": "Custom glass enclosures for porches and sunrooms. Extend your outdoor season with wind protection.",
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "Aluminum Solutions"
+                    },
+                    "offers": {
+                        "@type": "Offer",
+                        "priceCurrency": "CAD",
+                        "availability": "https://schema.org/InStock",
+                        "areaServed": "Toronto, GTA"
+                    }
+                }}
+            />
 
             <main className="flex-grow">
                 <Hero
@@ -131,6 +156,14 @@ export default function EnclosuresPage() {
                         Get a Free Quote
                     </Link>
                 </div>
+
+                {/* Related Articles */}
+                <RelatedArticles
+                    posts={blogPosts.filter(post =>
+                        ['project-spotlight-oakville-waterfront', 'cmhc-insurance-home-upgrades', '2025-outdoor-design-trends'].includes(post.slug)
+                    )}
+                    title="Enclosure Design & Tips"
+                />
 
                 {/* CTA Section */}
                 <section className="py-24 bg-brand-navy text-white text-center">

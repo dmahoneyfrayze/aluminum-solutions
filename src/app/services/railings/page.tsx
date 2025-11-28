@@ -4,6 +4,10 @@ import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import { blogPosts } from "@/data/blog";
+import RelatedArticles from "@/components/blog/RelatedArticles";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
+import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
     title: "Aluminum Railings Toronto | Custom Porch & Deck Railings",
@@ -14,6 +18,27 @@ export default function RailingsPage() {
     return (
         <div className="min-h-screen flex flex-col">
             <Header />
+
+            <Breadcrumbs />
+
+            <JsonLd
+                data={{
+                    "@context": "https://schema.org",
+                    "@type": "Product",
+                    "name": "Aluminum Railings",
+                    "description": "High-quality, rust-free aluminum railings for porches and decks. Custom made in Toronto.",
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "Aluminum Solutions"
+                    },
+                    "offers": {
+                        "@type": "Offer",
+                        "priceCurrency": "CAD",
+                        "availability": "https://schema.org/InStock",
+                        "areaServed": "Toronto, GTA"
+                    }
+                }}
+            />
 
             <main className="flex-grow">
                 <Hero
@@ -136,6 +161,14 @@ export default function RailingsPage() {
                         Get a Free Quote
                     </Link>
                 </div>
+
+                {/* Related Articles */}
+                <RelatedArticles
+                    posts={blogPosts.filter(post =>
+                        ['the-advantages-of-aluminum-railings', 'increasing-home-value-curb-appeal', 'ontario-building-code-railing-safety'].includes(post.slug)
+                    )}
+                    title="Railings & Renovation Tips"
+                />
 
                 {/* CTA Section */}
                 <section className="py-24 bg-brand-navy text-white text-center">

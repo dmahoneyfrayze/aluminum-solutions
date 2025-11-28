@@ -4,6 +4,10 @@ import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import { blogPosts } from "@/data/blog";
+import RelatedArticles from "@/components/blog/RelatedArticles";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
+import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
     title: "Glass Railing Systems Toronto | Frameless & Post Glass Railings",
@@ -14,6 +18,27 @@ export default function GlassRailingsPage() {
     return (
         <div className="min-h-screen flex flex-col">
             <Header />
+
+            <Breadcrumbs />
+
+            <JsonLd
+                data={{
+                    "@context": "https://schema.org",
+                    "@type": "Product",
+                    "name": "Glass Railing Systems",
+                    "description": "Elegant frameless and post glass railing systems for stairs, porches, and decks. Professional installation in Toronto.",
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "Aluminum Solutions"
+                    },
+                    "offers": {
+                        "@type": "Offer",
+                        "priceCurrency": "CAD",
+                        "availability": "https://schema.org/InStock",
+                        "areaServed": "Toronto, GTA"
+                    }
+                }}
+            />
 
             <main className="flex-grow">
                 <Hero
@@ -189,6 +214,14 @@ export default function GlassRailingsPage() {
                         </div>
                     </div>
                 </section>
+
+                {/* Related Articles */}
+                <RelatedArticles
+                    posts={blogPosts.filter(post =>
+                        ['cleaning-maintaining-glass-railings', '2025-outdoor-design-trends', 'ontario-building-code-railing-safety'].includes(post.slug)
+                    )}
+                    title="Glass Railing Insights"
+                />
 
                 {/* CTA Section */}
                 <section className="py-24 bg-slate-50 text-center">

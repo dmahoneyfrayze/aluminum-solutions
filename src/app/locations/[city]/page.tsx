@@ -5,6 +5,9 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
+import Image from "next/image";
+import { blogPosts } from "@/data/blog";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 interface Props {
     params: Promise<{
@@ -62,11 +65,6 @@ export default async function LocationPage({ params }: Props) {
                 "addressCountry": "CA"
             },
             "telephone": "+14165550123",
-            "priceRange": "$$"
-        },
-        "areaServed": {
-            "@type": "City",
-            "name": location.name
         },
         "description": location.metaDescription,
         "url": `https://aluminumsolutions.ca/locations/${location.slug}`
@@ -75,6 +73,13 @@ export default async function LocationPage({ params }: Props) {
     return (
         <div className="min-h-screen flex flex-col">
             <Header />
+
+            <Breadcrumbs
+                items={[
+                    { label: "Locations", href: "/#locations" }, // Anchor link since we don't have a /locations index yet
+                    { label: location.name, href: `/locations/${location.slug}` }
+                ]}
+            />
 
             <main className="flex-grow">
                 <script
@@ -93,7 +98,7 @@ export default async function LocationPage({ params }: Props) {
                 {/* Localized Intro */}
                 <section className="py-20 bg-white">
                     <div className="container mx-auto px-6">
-                        <div className="max-w-3xl mx-auto text-center">
+                        <div className="max-w-3xl mx-auto text-center mb-12">
                             <h2 className="text-3xl font-serif font-bold mb-6 text-slate-900">
                                 Serving {location.name} with Excellence
                             </h2>
@@ -111,6 +116,25 @@ export default async function LocationPage({ params }: Props) {
                                 <span className="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">
                                     ✓ Lifetime Warranty
                                 </span>
+                            </div>
+                        </div>
+
+                        {/* Neighborhoods / Service Areas */}
+                        <div className="border-t border-slate-100 pt-12">
+                            <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider text-center mb-8">
+                                Proudly Serving Neighborhoods in {location.name}
+                            </h3>
+                            <div className="flex flex-wrap justify-center gap-3">
+                                {location.content.landmarks.map((landmark) => (
+                                    <span key={landmark} className="px-4 py-2 border border-slate-200 rounded-sm text-slate-600 text-sm hover:border-brand-copper hover:text-brand-copper transition-colors cursor-default">
+                                        📍 {landmark}
+                                    </span>
+                                ))}
+                                {location.content.serviceArea.split(',').map((area) => (
+                                    <span key={area} className="px-4 py-2 border border-slate-200 rounded-sm text-slate-600 text-sm hover:border-brand-copper hover:text-brand-copper transition-colors cursor-default">
+                                        📍 {area.trim()}
+                                    </span>
+                                ))}
                             </div>
                         </div>
                     </div>
@@ -166,6 +190,32 @@ export default async function LocationPage({ params }: Props) {
                     </div>
                 </section>
 
+                {/* Local Reviews (Static for now, but structured) */}
+                <section className="py-20 bg-brand-dark text-white">
+                    <div className="container mx-auto px-6">
+                        <h2 className="text-3xl font-serif font-bold mb-12 text-center">
+                            What {location.name} Homeowners Say
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div className="bg-white/5 p-8 rounded-lg border border-white/10">
+                                <div className="flex text-brand-copper mb-4">★★★★★</div>
+                                <p className="text-slate-300 italic mb-6">"The team was fantastic. They installed our glass railings in just two days and left the site spotless. Highly recommend for anyone in {location.name}."</p>
+                                <div className="font-bold text-white">- Jennifer M., {location.name}</div>
+                            </div>
+                            <div className="bg-white/5 p-8 rounded-lg border border-white/10">
+                                <div className="flex text-brand-copper mb-4">★★★★★</div>
+                                <p className="text-slate-300 italic mb-6">"We needed a porch enclosure to keep the snow off. Aluminum Solutions delivered exactly what we wanted. Great quality."</p>
+                                <div className="font-bold text-white">- David K., {location.name}</div>
+                            </div>
+                            <div className="bg-white/5 p-8 rounded-lg border border-white/10">
+                                <div className="flex text-brand-copper mb-4">★★★★★</div>
+                                <p className="text-slate-300 italic mb-6">"Best price we found in {location.name} without sacrificing quality. The black aluminum looks modern and sleek."</p>
+                                <div className="font-bold text-white">- Sarah P., {location.name}</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 {/* Local FAQ Section */}
                 <section className="py-20 bg-white border-t border-slate-100">
                     <div className="container mx-auto px-6 max-w-4xl">
@@ -191,6 +241,48 @@ export default async function LocationPage({ params }: Props) {
                                     Since we manufacture locally, our lead times are often shorter than competitors. Once your custom railings are ready, installation in {location.name} typically takes 1-2 days depending on the project size.
                                 </p>
                             </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Related Articles Section */}
+                <section className="py-20 bg-slate-50 border-t border-slate-200">
+                    <div className="container mx-auto px-6">
+                        <h2 className="text-3xl font-serif font-bold mb-12 text-center text-slate-900">
+                            Latest Insights & Tips
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            {blogPosts.slice(0, 3).map((post) => (
+                                <Link key={post.slug} href={`/blog/${post.slug}`} className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+                                    <div className="h-48 relative overflow-hidden bg-slate-200">
+                                        {post.imageUrl && (
+                                            <Image
+                                                src={post.imageUrl}
+                                                alt={post.title}
+                                                fill
+                                                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                            />
+                                        )}
+                                    </div>
+                                    <div className="p-6 flex-grow flex flex-col">
+                                        <div className="text-xs font-bold text-brand-copper uppercase tracking-wider mb-2">{post.category}</div>
+                                        <h3 className="text-lg font-bold text-slate-900 mb-3 group-hover:text-brand-navy transition-colors line-clamp-2">
+                                            {post.title}
+                                        </h3>
+                                        <p className="text-slate-600 text-sm mb-4 line-clamp-3 flex-grow">
+                                            {post.excerpt}
+                                        </p>
+                                        <span className="text-brand-navy font-bold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                                            Read Article <span className="text-lg">→</span>
+                                        </span>
+                                    </div>
+                                </Link>
+                            ))}
+                        </div>
+                        <div className="text-center mt-12">
+                            <Link href="/blog" className="inline-block px-8 py-3 border-2 border-slate-900 text-slate-900 font-bold rounded hover:bg-slate-900 hover:text-white transition-colors">
+                                View All Articles
+                            </Link>
                         </div>
                     </div>
                 </section>

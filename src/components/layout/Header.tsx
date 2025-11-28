@@ -25,7 +25,7 @@ export default function Header() {
                     <Link href="/process" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">
                         Process
                     </Link>
-                    <Link href="/projects" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">
+                    <Link href="/gallery" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">
                         Gallery
                     </Link>
                     <Link href="/about" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">

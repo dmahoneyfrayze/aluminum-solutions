@@ -11,11 +11,33 @@ import StyleExplorer from "@/components/tools/StyleExplorer";
 import Link from "next/link";
 import Image from "next/image";
 import TrustSection from "@/components/ui/TrustSection";
+import JsonLd from "@/components/seo/JsonLd";
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
+
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Aluminum Solutions",
+          "url": "https://aluminumsolutions.ca",
+          "logo": "https://aluminumsolutions.ca/images/global-aluminum-solutions-logo.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-416-555-0123",
+            "contactType": "customer service",
+            "areaServed": "CA",
+            "availableLanguage": "en"
+          },
+          "sameAs": [
+            "https://www.facebook.com/aluminumsolutions",
+            "https://www.instagram.com/aluminumsolutions"
+          ]
+        }}
+      />
 
       <main className="flex-grow">
         <Hero

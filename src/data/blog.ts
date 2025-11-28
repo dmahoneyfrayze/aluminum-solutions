@@ -18,7 +18,7 @@ export const blogPosts: BlogPost[] = [
     imageUrl: "/images/migrated/blog-aluminum-advantages.jpg",
     content: `
       <p><strong>No Rusting or Rotting</strong><br>
-      Aluminum is naturally resistant to rust and corrosion, making it an ideal choice for outdoor use in various climatic conditions. With aluminum railings, homeowners can be confident that they won’t have to worry about their bars rusting or deteriorating due to exposure to moisture. This durability ensures the barriers maintain their structural integrity and appearance over time.</p>
+      Aluminum is naturally resistant to rust and corrosion, making it an ideal choice for outdoor use in various climatic conditions. With <a href="/services/railings" class="text-brand-copper hover:underline">aluminum railings</a>, homeowners can be confident that they won’t have to worry about their bars rusting or deteriorating due to exposure to moisture. This durability ensures the barriers maintain their structural integrity and appearance over time.</p>
 
       <h3>Benefits of Aluminum Railings:</h3>
       <ul>
@@ -50,7 +50,7 @@ export const blogPosts: BlogPost[] = [
       <p>The patio was elevated and exposed to high winds, often exceeding 50km/h. Standard picket railings wouldn't provide any wind protection, and a full sunroom would be too expensive (upwards of $50k) and would obstruct the open-air feeling they wanted. The client needed a middle ground: structural integrity without visual clutter.</p>
       
       <h3>The Solution: 12mm Tempered Glass Wind Wall</h3>
-      <p>We designed and installed a custom <strong>6-foot tall frameless glass wind wall</strong> on the lake-facing side. Here is how we engineered it for safety and style:</p>
+      <p>We designed and installed a custom <strong>6-foot tall <a href="/services/glass-enclosures" class="text-brand-copper hover:underline">frameless glass wind wall</a></strong> on the lake-facing side. Here is how we engineered it for safety and style:</p>
       <ul>
         <li><strong>12mm Tempered Safety Glass:</strong> We upgraded from the standard 10mm to 12mm thickness to handle the increased wind load.</li>
         <li><strong>Heavy-Duty Spigots:</strong> Instead of a bottom channel which can collect water and dirt, we used marine-grade stainless steel spigots (Duplex 2205) which offer superior corrosion resistance.</li>
@@ -70,7 +70,7 @@ export const blogPosts: BlogPost[] = [
     category: "Tips",
     imageUrl: "/images/blog/curb-appeal.jpg", // Placeholder
     content: `
-      <p>Real estate agents agree: curb appeal sells homes. Potential buyers form an opinion within the first 7 seconds of seeing a property. One of the most cost-effective ways to boost your home's exterior look is by replacing old, rotting wood railings with modern aluminum.</p>
+      <p>Real estate agents agree: curb appeal sells homes. Potential buyers form an opinion within the first 7 seconds of seeing a property. One of the most cost-effective ways to boost your home's exterior look is by replacing old, rotting wood railings with modern <a href="/services/railings" class="text-brand-copper hover:underline">aluminum railings</a>.</p>
       
       <h3>1. Modern Aesthetic</h3>
       <p>Clean lines and black or dark grey finishes signal to buyers that the home is updated and well-cared for. It instantly modernizes the facade of even a traditional brick home, creating a "transitional" look that is highly desirable in today's market.</p>
@@ -82,7 +82,7 @@ export const blogPosts: BlogPost[] = [
       <p>Old railings often don't meet current building codes (SB-13). They may be too low (under 36" or 42") or have gaps wider than 4 inches. Installing new, code-compliant railings removes a potential red flag during the home inspection, preventing last-minute price renegotiations.</p>
 
       <h3>4. Defined Outdoor Living Space</h3>
-      <p>A well-railed porch creates a defined "outdoor room." By adding a glass enclosure or privacy screen, you effectively add square footage to the home's livable area, which directly correlates to appraisal value.</p>
+      <p>A well-railed porch creates a defined "outdoor room." By adding a <a href="/services/glass-enclosures" class="text-brand-copper hover:underline">glass enclosure</a> or <a href="/services/privacy-screens" class="text-brand-copper hover:underline">privacy screen</a>, you effectively add square footage to the home's livable area, which directly correlates to appraisal value.</p>
 
       <h3>5. The "Luxury" Factor</h3>
       <p>Glass railings, in particular, are associated with luxury custom homes. Adding them to a standard porch elevates the perceived value of the entire property, often allowing you to list at a higher price point.</p>
@@ -101,10 +101,10 @@ export const blogPosts: BlogPost[] = [
       <p>When preparing your home for sale, not all renovations are created equal. While a new kitchen is nice, exterior upgrades often provide a higher return on investment (ROI) because they improve curb appeal—the very first thing a buyer sees.</p>
       
       <h3>1. Front Entry Makeover</h3>
-      <p>Your front door and porch set the tone for the entire viewing. Replacing old, rusty railings with sleek aluminum or glass instantly modernizes the home. It signals to buyers that the property is well-maintained and "move-in ready."</p>
+      <p>Your front door and porch set the tone for the entire viewing. Replacing old, rusty railings with sleek aluminum or <a href="/services/glass-railings" class="text-brand-copper hover:underline">glass railings</a> instantly modernizes the home. It signals to buyers that the property is well-maintained and "move-in ready."</p>
       
       <h3>2. Secure & Stylish Gates</h3>
-      <p>For homes with side entrances or driveways, a custom aluminum gate adds both security and prestige. It implies privacy and exclusivity, which can justify a higher asking price.</p>
+      <p>For homes with side entrances or driveways, a <a href="/services/gates" class="text-brand-copper hover:underline">custom aluminum gate</a> adds both security and prestige. It implies privacy and exclusivity, which can justify a higher asking price.</p>
       
       <h3>3. Outdoor Living Spaces</h3>
       <p>Post-2020, buyers are prioritizing outdoor space more than ever. A porch enclosure or a well-defined deck with glass railings effectively adds "livable square footage" to your home listing.</p>
@@ -147,7 +147,7 @@ export const blogPosts: BlogPost[] = [
       <p>If you purchased your home with less than a 20% down payment, you likely paid for CMHC mortgage loan insurance. But did you know that the <strong>CMHC Eco Plus</strong> program offers a partial premium refund of up to 25% for energy-efficient renovations?</p>
       
       <h3>Does a Porch Enclosure Count?</h3>
-      <p>While railings themselves are safety features, a full <strong>glass porch enclosure</strong> can act as a buffer zone for your home's entrance, reducing heat loss in winter and keeping your home cooler in summer. This contributes to the overall energy efficiency of your building envelope.</p>
+      <p>While railings themselves are safety features, a full <strong><a href="/services/porch-enclosures" class="text-brand-copper hover:underline">glass porch enclosure</a></strong> can act as a buffer zone for your home's entrance, reducing heat loss in winter and keeping your home cooler in summer. This contributes to the overall energy efficiency of your building envelope.</p>
       
       <h3>How to Qualify</h3>
       <p>To qualify for the refund, you typically need to:</p>
@@ -171,7 +171,7 @@ export const blogPosts: BlogPost[] = [
     category: "Maintenance",
     imageUrl: "/images/generated/pool_fence_glass_detail_1764312810331.png",
     content: `
-      <p>One of the biggest myths about glass railings is that they are hard to keep clean. In reality, tempered glass is much lower maintenance than wood (which needs staining) or iron (which needs painting). Here is how to keep your glass railings looking brand new with minimal effort.</p>
+      <p>One of the biggest myths about <a href="/services/glass-railings" class="text-brand-copper hover:underline">glass railings</a> is that they are hard to keep clean. In reality, tempered glass is much lower maintenance than wood (which needs staining) or iron (which needs painting). Here is how to keep your glass railings looking brand new with minimal effort.</p>
       
       <h3>The Golden Rule: Squeegee is King</h3>
       <p>The secret to streak-free glass isn't a fancy chemical—it's a good quality squeegee. After washing, a quick pass with a squeegee removes water droplets before they can dry into mineral spots.</p>
@@ -210,7 +210,7 @@ export const blogPosts: BlogPost[] = [
       <p>High contrast is in. We are seeing a massive surge in <strong>Matte Black Aluminum</strong> railings paired with light natural stone or white composite decking. This "tuxedo" look is timeless, sharp, and frames the outdoor view like a photograph.</p>
       
       <h3>2. Invisible Barriers</h3>
-      <p>Homeowners want safety without obstruction. <strong>Frameless Glass Railings</strong> (using spigots or base shoes) are becoming the standard for lakefront properties and backyard pools. The goal is to make the safety barrier disappear entirely.</p>
+      <p>Homeowners want safety without obstruction. <strong><a href="/services/glass-railings" class="text-brand-copper hover:underline">Frameless Glass Railings</a></strong> (using spigots or base shoes) are becoming the standard for lakefront properties and backyard pools. The goal is to make the safety barrier disappear entirely.</p>
       
       <h3>3. Integrated Lighting</h3>
       <p>Railings are no longer just structural; they are part of the lighting scheme. LED strip lighting integrated into the handrail or small cap lights on posts are huge for 2025, adding ambiance and safety for evening entertaining.</p>
@@ -236,7 +236,7 @@ export const blogPosts: BlogPost[] = [
       <ul>
         <li><strong>Exterior (Decks/Porches):</strong> If the drop is less than 1.8m (5'11"), the minimum height is usually <strong>900mm (36 inches)</strong>.</li>
         <li><strong>High Drops:</strong> If the drop is more than 1.8m, the minimum height increases to <strong>1070mm (42 inches)</strong>.</li>
-        <li><strong>Pool Enclosures:</strong> These have their own specific bylaws, often requiring a minimum height of 1.2m (48 inches) and non-climbable features.</li>
+        <li><strong>Pool Enclosures:</strong> These have their own specific bylaws, often requiring a minimum height of 1.2m (48 inches) and non-climbable features. See our <a href="/services/pool-fences" class="text-brand-copper hover:underline">Pool Fences</a> page for more info.</li>
       </ul>
       
       <h3>The "Climbability" Rule</h3>
@@ -265,7 +265,7 @@ export const blogPosts: BlogPost[] = [
       <p>Create a professional gym atmosphere with wall-to-wall mirrors or glass partitions to separate your workout zone from the rest of the basement. Glass partitions reduce noise without sacrificing visual openness.</p>
       
       <h3>Wine Cellars</h3>
-      <p>Don't hide your collection behind a solid door. Frameless glass wine cellars are a massive trend in luxury homes. We provide thermally sealed glass units to ensure your climate control remains efficient while showcasing your vintage bottles.</p>
+      <p>Don't hide your collection behind a solid door. <a href="/services/glass-enclosures" class="text-brand-copper hover:underline">Frameless glass wine cellars</a> are a massive trend in luxury homes. We provide thermally sealed glass units to ensure your climate control remains efficient while showcasing your vintage bottles.</p>
     `,
   },
   {
@@ -287,7 +287,7 @@ export const blogPosts: BlogPost[] = [
       </ul>
       
       <h3>Our Rental Safety Audit</h3>
-      <p>Don't wait for a tenant complaint or an injury. We offer a <strong>Rental Safety Audit</strong> where we inspect all exterior guards and handrails. If we find immediate hazards, we offer an <strong>Emergency Repair Service</strong> to secure the area instantly, often replacing dangerous wood/iron with maintenance-free aluminum that lasts for decades.</p>
+      <p>Don't wait for a tenant complaint or an injury. We offer a <strong>Rental Safety Audit</strong> where we inspect all exterior guards and handrails. If we find immediate hazards, we offer an <strong>Emergency Repair Service</strong> to secure the area instantly, often replacing dangerous wood/iron with maintenance-free <a href="/services/railings" class="text-brand-copper hover:underline">aluminum railings</a> that lasts for decades.</p>
       
       <p><strong>Protect your tenants and your investment. <a href="/contact">Book a Safety Audit today.</a></strong></p>
     `,
