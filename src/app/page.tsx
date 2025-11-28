@@ -68,7 +68,7 @@ export default function Home() {
                 <div className="inline-block px-4 py-1 bg-brand-copper text-white text-xs font-bold uppercase tracking-wider rounded-full mb-6">
                   New Service
                 </div>
-                <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6">
+                <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6 text-white">
                   Need Railings Fast?
                 </h2>
                 <p className="text-slate-300 text-lg mb-8 leading-relaxed">
