@@ -5,23 +5,26 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
-
 import Image from "next/image";
+import ReputationWidget from "@/components/ui/ReputationWidget";
 
-// Mock Data for Gallery Items
+// SEO Metadata (Client Component workaround: Metadata must be in layout or server component, 
+// but for now we can't easily switch this to server without refactoring state. 
+// Ideally, this page should be a server component with a client island for the filter.)
+
 const projects = [
-    { id: 1, category: "Railings", title: "Modern Glass Railing", location: "Toronto", image: "/images/generated/railing_hero_detail_1764312850877.png" },
-    { id: 2, category: "Enclosures", title: "Porch Enclosure", location: "Mississauga", image: "/images/generated/glass_enclosure_project_1764312838961.png" },
-    { id: 3, category: "Gates", title: "Custom Driveway Gate", location: "Vaughan", image: "/images/generated/custom_gate_modern_1764314098362.png" },
-    { id: 4, category: "Columns", title: "Aluminum Columns", location: "Oakville", image: "/images/generated/railing_hero_detail_1764312850877.png" }, // Reusing railing detail
-    { id: 5, category: "Railings", title: "Black Picket Railing", location: "Markham", image: "/images/generated/pool_fence_picket_detail_1764312823826.png" },
-    { id: 6, category: "Enclosures", title: "Sunroom Addition", location: "Burlington", image: "/images/generated/glass_enclosure_project_1764312838961.png" }, // Reusing enclosure project
-    { id: 7, category: "Railings", title: "Deck Glass Railing", location: "Richmond Hill", image: "/images/generated/pool_fence_glass_detail_1764312810331.png" },
-    { id: 8, category: "Gates", title: "Garden Gate", location: "Toronto", image: "/images/generated/custom_gate_modern_1764314098362.png" }, // Reusing gate
-    { id: 9, category: "Columns", title: "Decorative Columns", location: "Brampton", image: "/images/generated/railing_hero_detail_1764312850877.png" }, // Reusing railing detail
+    { id: 1, category: "Railings", title: "Modern Glass Railing", location: "Toronto", image: "/images/projects/railing-aluminum-deck-toronto.jpg" },
+    { id: 2, category: "Enclosures", title: "Porch Enclosure", location: "Mississauga", image: "/images/projects/glass-enclosure-porch-front.jpg" },
+    { id: 3, category: "Showers", title: "Frameless Glass Shower", location: "Vaughan", image: "/images/projects/pool-fence-glass-guards.jpg" }, // Using pool fence as placeholder for high quality glass if shower specific missing, but ideally use shower image
+    { id: 4, category: "Walls", title: "Office Glass Partition", location: "Oakville", image: "/images/projects/privacy-screen-frosted-glass.jpg" },
+    { id: 5, category: "Railings", title: "Black Aluminum Picket", location: "Markham", image: "/images/projects/black-aluminum-railing-stone.png" },
+    { id: 6, category: "Enclosures", title: "Sunroom Addition", location: "Burlington", image: "/images/projects/glass-enclosure-porch-front.jpg" },
+    { id: 7, category: "Railings", title: "Deck Glass Railing", location: "Richmond Hill", image: "/images/projects/railing-aluminum-deck-toronto.jpg" },
+    { id: 8, category: "Showers", title: "Custom Steam Shower", location: "Toronto", image: "/images/generated/frameless_glass_shower_modern_1764347088164.png" },
+    { id: 9, category: "Walls", title: "Gym Glass Wall", location: "Brampton", image: "/images/generated/glass_office_partition_hero_1764346564712.png" },
 ];
 
-const categories = ["All", "Railings", "Enclosures", "Gates", "Columns"];
+const categories = ["All", "Railings", "Enclosures", "Showers", "Walls"];
 
 export default function GalleryPage() {
     const [activeCategory, setActiveCategory] = useState("All");
@@ -40,7 +43,7 @@ export default function GalleryPage() {
                     subtitle="Explore our portfolio of custom aluminum and glass projects across the GTA."
                     ctaText="Get a Quote"
                     ctaLink="/contact"
-                    backgroundImage="/images/generated/glass_enclosure_project_1764312838961.png"
+                    backgroundImage="/images/projects/railing-aluminum-deck-toronto.jpg"
                 />
 
                 <section className="py-20">
@@ -53,7 +56,7 @@ export default function GalleryPage() {
                                     key={category}
                                     onClick={() => setActiveCategory(category)}
                                     className={`px-6 py-2 rounded-full text-sm font-bold transition-all ${activeCategory === category
-                                        ? "bg-slate-900 text-white shadow-lg"
+                                        ? "bg-brand-navy text-white shadow-lg"
                                         : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                                         }`}
                                 >
@@ -63,7 +66,7 @@ export default function GalleryPage() {
                         </div>
 
                         {/* Masonry Grid */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
                             {filteredProjects.map((project) => (
                                 <div key={project.id} className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
                                     {/* Image Placeholder */}
@@ -96,19 +99,38 @@ export default function GalleryPage() {
                             </div>
                         )}
 
+                        {/* Service Links */}
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-slate-200 pt-16">
+                            <div className="text-center">
+                                <h3 className="font-bold text-lg mb-2">Looking for Railings?</h3>
+                                <Link href="/services/railings" className="text-brand-copper font-bold hover:underline">View Railing Options &rarr;</Link>
+                            </div>
+                            <div className="text-center">
+                                <h3 className="font-bold text-lg mb-2">Need a Glass Enclosure?</h3>
+                                <Link href="/services/glass-enclosures" className="text-brand-copper font-bold hover:underline">Explore Enclosures &rarr;</Link>
+                            </div>
+                            <div className="text-center">
+                                <h3 className="font-bold text-lg mb-2">Planning a Shower?</h3>
+                                <Link href="/services/showers" className="text-brand-copper font-bold hover:underline">See Shower Styles &rarr;</Link>
+                            </div>
+                        </div>
+
                     </div>
                 </section>
 
+                {/* Testimonials Widget */}
+                <ReputationWidget />
+
                 {/* CTA Section */}
-                <section className="py-24 bg-slate-900 text-white text-center">
+                <section className="py-24 bg-brand-navy text-white text-center">
                     <div className="container mx-auto px-6">
-                        <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6">
+                        <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6 text-white">
                             Inspired by our work?
                         </h2>
                         <p className="text-slate-300 max-w-2xl mx-auto mb-10 text-lg">
                             Let's discuss how we can bring similar quality and style to your home.
                         </p>
-                        <Link href="/contact" className="inline-block px-10 py-4 bg-white text-slate-900 font-bold tracking-wide hover:bg-slate-100 transition-colors shadow-lg">
+                        <Link href="/contact" className="inline-block px-10 py-4 bg-white text-brand-navy font-bold tracking-wide hover:bg-slate-100 transition-colors shadow-lg rounded-sm">
                             Start Your Project
                         </Link>
                     </div>
