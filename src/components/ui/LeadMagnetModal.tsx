@@ -27,7 +27,7 @@ export default function LeadMagnetModal({ isOpen, onClose, resourceName }: LeadM
 
     const onSubmit = async (data: FormData) => {
         // In a real app, send this to your CRM (GoHighLevel)
-        console.log("Lead captured:", data);
+        // console.log("Lead captured:", data); // Removed for production
 
         // Simulate API call
         setTimeout(() => {
