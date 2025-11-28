@@ -1,15 +1,14 @@
 {
     "exportFormatVersion": 2,
-    "exportTime": "2025-11-28T08:00:00.000Z",
+    "exportTime": "2025-11-28T08:30:00.000Z",
     "containerVersion": {
+        "path": "accounts/0000000000/containers/00000000/versions/0",
         "accountId": "0000000000",
         "containerId": "00000000",
         "containerVersionId": "0",
-        "name": "Aluminum Solutions Initial Setup",
+        "name": "Aluminum Solutions Clean Setup",
         "tag": [
             {
-                "accountId": "0000000000",
-                "containerId": "00000000",
                 "tagId": "1",
                 "name": "GA4 Configuration",
                 "type": "googtag",
@@ -20,18 +19,12 @@
                         "value": "G-EBYSGT31GD"
                     }
                 ],
-                "fingerprint": "1",
                 "firingTriggerId": [
-                    "2147479553"
+                    "99"
                 ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                }
+                "tagFiringOption": "ONCE_PER_EVENT"
             },
             {
-                "accountId": "0000000000",
-                "containerId": "00000000",
                 "tagId": "2",
                 "name": "Custom HTML - LeadConnector Chat Widget",
                 "type": "html",
@@ -47,18 +40,12 @@
                         "value": "false"
                     }
                 ],
-                "fingerprint": "2",
                 "firingTriggerId": [
-                    "2147479553"
+                    "99"
                 ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                }
+                "tagFiringOption": "ONCE_PER_EVENT"
             },
             {
-                "accountId": "0000000000",
-                "containerId": "00000000",
                 "tagId": "3",
                 "name": "Custom HTML - External Tracking Script",
                 "type": "html",
@@ -74,18 +61,12 @@
                         "value": "false"
                     }
                 ],
-                "fingerprint": "3",
                 "firingTriggerId": [
-                    "2147479553"
+                    "99"
                 ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                }
+                "tagFiringOption": "ONCE_PER_EVENT"
             },
             {
-                "accountId": "0000000000",
-                "containerId": "00000000",
                 "tagId": "4",
                 "name": "GA4 Event - Generate Lead",
                 "type": "gaawe",
@@ -101,18 +82,12 @@
                         "value": "generate_lead"
                     }
                 ],
-                "fingerprint": "4",
                 "firingTriggerId": [
                     "10"
                 ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                }
+                "tagFiringOption": "ONCE_PER_EVENT"
             },
             {
-                "accountId": "0000000000",
-                "containerId": "00000000",
                 "tagId": "5",
                 "name": "GA4 Event - Phone Click",
                 "type": "gaawe",
@@ -128,18 +103,12 @@
                         "value": "phone_click"
                     }
                 ],
-                "fingerprint": "5",
                 "firingTriggerId": [
                     "11"
                 ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                }
+                "tagFiringOption": "ONCE_PER_EVENT"
             },
             {
-                "accountId": "0000000000",
-                "containerId": "00000000",
                 "tagId": "6",
                 "name": "GA4 Event - Email Click",
                 "type": "gaawe",
@@ -155,20 +124,19 @@
                         "value": "email_click"
                     }
                 ],
-                "fingerprint": "6",
                 "firingTriggerId": [
                     "12"
                 ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                }
+                "tagFiringOption": "ONCE_PER_EVENT"
             }
         ],
         "trigger": [
             {
-                "accountId": "0000000000",
-                "containerId": "00000000",
+                "triggerId": "99",
+                "name": "All Pages Custom",
+                "type": "PAGEVIEW"
+            },
+            {
                 "triggerId": "10",
                 "name": "Custom Event - Form Submission",
                 "type": "CUSTOM_EVENT",
@@ -179,7 +147,7 @@
                             {
                                 "type": "TEMPLATE",
                                 "key": "arg0",
-                                "value": "{{_event}}"
+                                "value": "{{Event}}"
                             },
                             {
                                 "type": "TEMPLATE",
@@ -188,12 +156,9 @@
                             }
                         ]
                     }
-                ],
-                "fingerprint": "10"
+                ]
             },
             {
-                "accountId": "0000000000",
-                "containerId": "00000000",
                 "triggerId": "11",
                 "name": "Link Click - Phone",
                 "type": "LINK_CLICK",
@@ -225,12 +190,9 @@
                 "waitForTagsTimeout": {
                     "type": "TEMPLATE",
                     "value": "2000"
-                },
-                "fingerprint": "11"
+                }
             },
             {
-                "accountId": "0000000000",
-                "containerId": "00000000",
                 "triggerId": "12",
                 "name": "Link Click - Email",
                 "type": "LINK_CLICK",
@@ -258,49 +220,24 @@
                 "checkValidation": {
                     "type": "BOOLEAN",
                     "value": "false"
-                },
-                "fingerprint": "12"
+                }
             }
         ],
-        "variable": [
-            {
-                "accountId": "0000000000",
-                "containerId": "00000000",
-                "variableId": "20",
-                "name": "Click URL",
-                "type": "gtm.url",
-                "parameter": [
-                    {
-                        "type": "TEMPLATE",
-                        "key": "component",
-                        "value": "URL"
-                    }
-                ],
-                "fingerprint": "20"
-            }
-        ],
+        "variable": [],
         "builtInVariable": [
             {
-                "accountId": "0000000000",
-                "containerId": "00000000",
                 "type": "CLICK_URL",
                 "name": "Click URL"
             },
             {
-                "accountId": "0000000000",
-                "containerId": "00000000",
                 "type": "CLICK_TEXT",
                 "name": "Click Text"
             },
             {
-                "accountId": "0000000000",
-                "containerId": "00000000",
                 "type": "FORM_ID",
                 "name": "Form ID"
             },
             {
-                "accountId": "0000000000",
-                "containerId": "00000000",
                 "type": "EVENT",
                 "name": "Event"
             }

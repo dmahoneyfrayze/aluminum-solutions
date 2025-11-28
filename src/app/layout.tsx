@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 
 import ChatWidget from "@/components/ui/ChatWidget";
 import TrackingScript from "@/components/analytics/TrackingScript";
-import GoogleTagManager, { GoogleTagManagerNoScript } from "@/components/analytics/GoogleTagManager";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import CookieConsent from "@/components/ui/CookieConsent";
 import ExitIntentPopup from "@/components/ui/ExitIntentPopup";
 
@@ -38,8 +38,7 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${playfair.variable} antialiased font-sans bg-gray-50 text-slate-900`}
       >
-        <GoogleTagManagerNoScript gtmId="GTM-MQ79RTM9" />
-        <GoogleTagManager gtmId="GTM-MQ79RTM9" />
+        <GoogleAnalytics gaId="G-EBYSGT31GD" />
         <JsonLd
           data={{
             "@context": "https://schema.org",
