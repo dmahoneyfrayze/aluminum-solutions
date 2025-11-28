@@ -14,14 +14,14 @@ export default function ProcessPage() {
             title: "Consultation & Estimate",
             description: "It starts with a conversation. We discuss your vision, style preferences, and budget. You can visit our showroom or we can provide a rough estimate based on your photos and measurements.",
             icon: "💬",
-            image: "/images/generated/founder_portrait_1764313198224.png"
+            image: "/images/generated/process_consultation_blueprint_1764350167105.png"
         },
         {
             number: "02",
             title: "Precision Measurement",
             description: "Once you approve the estimate, our expert technician visits your site to take laser-precise measurements. We account for every slope, angle, and unique feature of your property.",
             icon: "📏",
-            image: "/images/generated/glass_enclosure_project_1764312838961.png"
+            image: "/images/generated/process_measurement_laser_1764350203708.png"
         },
         {
             number: "03",
