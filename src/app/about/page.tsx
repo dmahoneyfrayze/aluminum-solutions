@@ -4,156 +4,148 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
+import Image from "next/image";
 
-export default function ManufacturingPage() {
+export default function AboutPage() {
     return (
         <div className="min-h-screen flex flex-col bg-white">
             <Header />
 
             <main className="flex-grow">
                 <Hero
-                    title="We Don't Just Install. We Manufacture."
-                    subtitle="See inside our GTA facility where we extrude, cut, and coat every railing system to order."
+                    title="Craftsmanship. Integrity. Local Manufacturing."
+                    subtitle="We are a family-owned manufacturer dedicated to elevating Toronto homes with premium aluminum and glass solutions."
                     ctaText="Visit Our Showroom"
                     ctaLink="/contact"
                 />
 
-                {/* Video Tour Section */}
-                <section className="py-20 bg-slate-900 text-white">
-                    <div className="container mx-auto px-6 text-center">
-                        <h2 className="text-3xl font-serif font-bold mb-8">Inside the Factory</h2>
-                        <div className="max-w-4xl mx-auto aspect-video bg-slate-800 rounded-xl overflow-hidden shadow-2xl relative group cursor-pointer border border-slate-700">
-                            {/* Placeholder for Video */}
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="w-20 h-20 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 group-hover:scale-110 transition-transform">
-                                    <div className="w-0 h-0 border-t-[12px] border-t-transparent border-l-[20px] border-l-white border-b-[12px] border-b-transparent ml-1" />
+                {/* Founder's Note - The "Personal" Touch */}
+                <section className="py-24 bg-white">
+                    <div className="container mx-auto px-6">
+                        <div className="flex flex-col md:flex-row items-center gap-16">
+                            <div className="w-full md:w-1/2 relative">
+                                <div className="aspect-[4/5] bg-slate-100 rounded-lg overflow-hidden relative shadow-2xl">
+                                    {/* Placeholder for Founder Image - crucial for trust */}
+                                    <div className="absolute inset-0 bg-slate-200 flex items-center justify-center text-slate-400">
+                                        [Founder Portrait]
+                                    </div>
+                                </div>
+                                <div className="absolute -bottom-6 -right-6 bg-brand-navy text-white p-8 rounded-lg shadow-xl max-w-xs hidden md:block">
+                                    <p className="font-serif italic text-lg">"We build every piece as if it were for our own home."</p>
                                 </div>
                             </div>
-                            <div className="absolute bottom-6 left-6 text-left">
-                                <p className="font-bold text-lg">Virtual Tour</p>
-                                <p className="text-slate-400 text-sm">2:30 • 4K Quality</p>
+                            <div className="w-full md:w-1/2">
+                                <h2 className="text-sm font-bold text-brand-copper uppercase tracking-widest mb-4">A Message from the Owner</h2>
+                                <h3 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-8">
+                                    Building Trust, One Installation at a Time.
+                                </h3>
+                                <div className="prose prose-lg text-slate-600 space-y-6">
+                                    <p>
+                                        Welcome to Aluminum Solutions. When we started this company, we noticed a gap in the market. Homeowners were forced to choose between cheap, flimsy kits from big-box stores or overpriced custom work that took months to arrive.
+                                    </p>
+                                    <p>
+                                        We knew there was a better way. By manufacturing everything right here in the GTA, we control the quality, the timeline, and the cost.
+                                    </p>
+                                    <p>
+                                        Our philosophy is simple: <strong>No shortcuts.</strong> We use heavier gauge aluminum, thicker glass, and better hardware than our competitors. Why? Because we believe your home deserves a railing system that will look as good in 20 years as it does today.
+                                    </p>
+                                    <p>
+                                        I invite you to visit our factory, meet our team, and see the difference for yourself.
+                                    </p>
+                                    <div className="pt-6">
+                                        <p className="font-serif font-bold text-xl text-slate-900">Denis Mahoney</p>
+                                        <p className="text-slate-500">Founder, Aluminum Solutions</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                {/* The Process */}
-                <section className="py-24">
+                {/* The Factory Difference */}
+                <section className="py-24 bg-slate-50">
+                    <div className="container mx-auto px-6 text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
+                            The Aluminum Solutions Standard
+                        </h2>
+                        <p className="text-slate-600 max-w-2xl mx-auto">
+                            Situated in the bustling heart of the Greater Toronto Area (GTA), we take immense pride in delivering top-notch aluminum and glass railing services.
+                        </p>
+                    </div>
+
+                    <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                            <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 text-3xl">
+                                🏭
+                            </div>
+                            <h3 className="text-xl font-bold text-slate-900 mb-4">Direct Manufacturer</h3>
+                            <p className="text-slate-600">
+                                We take the reins in directly manufacturing an extensive array of aluminum railings and superior-quality stairs. Our fabrication expertise enables us to craft railing systems that cater to virtually every homeowner’s need.
+                            </p>
+                        </div>
+                        <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                            <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 text-3xl">
+                                📍
+                            </div>
+                            <h3 className="text-xl font-bold text-slate-900 mb-4">Your Local Specialists</h3>
+                            <p className="text-slate-600">
+                                Our service ambit covers Toronto, Mississauga, Brampton, Vaughan, and Markham. With a deep understanding of the GTA’s unique architectural styles and stringent building requirements, we position ourselves as your first choice.
+                            </p>
+                        </div>
+                        <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                            <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 text-3xl">
+                                ✨
+                            </div>
+                            <h3 className="text-xl font-bold text-slate-900 mb-4">Custom Perfection</h3>
+                            <p className="text-slate-600">
+                                Every home is unique. We custom fabricate every panel and post to fit your specific layout perfectly. No "making it work" with standard sizes.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Team Section - "Meet the Experts" */}
+                <section className="py-24 bg-white">
                     <div className="container mx-auto px-6">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
-                                The Manufacturing Process
+                                Meet Your Installation Team
                             </h2>
                             <p className="text-slate-600 max-w-2xl mx-auto">
-                                Total quality control from raw aluminum to final installation.
+                                Our installers are full-time employees, not subcontractors. They are trained, insured, and dedicated to treating your home with respect.
                             </p>
                         </div>
 
-                        <div className="space-y-24">
-                            {/* Step 1 */}
-                            <div className="flex flex-col md:flex-row items-center gap-12">
-                                <div className="w-full md:w-1/2">
-                                    <div className="h-80 bg-slate-100 rounded-lg relative overflow-hidden">
-                                        <div className="absolute inset-0 bg-slate-200" />
-                                        <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded shadow text-sm font-bold">Step 01</div>
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                            {[1, 2, 3, 4].map((i) => (
+                                <div key={i} className="group">
+                                    <div className="aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden mb-4 relative">
+                                        <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
+                                        {/* Placeholder for Team Photos */}
+                                        <div className="absolute inset-0 flex items-center justify-center text-slate-400 text-sm">
+                                            [Team Member {i}]
+                                        </div>
                                     </div>
+                                    <h3 className="font-bold text-slate-900">Expert Installer</h3>
+                                    <p className="text-sm text-slate-500">Senior Technician</p>
                                 </div>
-                                <div className="w-full md:w-1/2">
-                                    <h3 className="text-2xl font-bold text-slate-900 mb-4">Precision Extrusion & Cutting</h3>
-                                    <p className="text-slate-600 leading-relaxed mb-6">
-                                        We start with premium-grade raw aluminum. Using computer-controlled saws, we cut profiles to the exact millimeter required for your project, ensuring a perfect fit that pre-fabricated kits can't match.
-                                    </p>
-                                    <ul className="space-y-2 text-slate-700">
-                                        <li className="flex items-center">✓ 6063-T5 Architectural Grade Aluminum</li>
-                                        <li className="flex items-center">✓ CNC Precision Cutting</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            {/* Step 2 */}
-                            <div className="flex flex-col md:flex-row-reverse items-center gap-12">
-                                <div className="w-full md:w-1/2">
-                                    <div className="h-80 bg-slate-100 rounded-lg relative overflow-hidden">
-                                        <div className="absolute inset-0 bg-slate-200" />
-                                        <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded shadow text-sm font-bold">Step 02</div>
-                                    </div>
-                                </div>
-                                <div className="w-full md:w-1/2">
-                                    <h3 className="text-2xl font-bold text-slate-900 mb-4">Powder Coating Line</h3>
-                                    <p className="text-slate-600 leading-relaxed mb-6">
-                                        Our in-house powder coating line applies a durable, weather-resistant finish. We can match any custom color and ensure a thick, uniform coat that resists chipping and fading for decades.
-                                    </p>
-                                    <ul className="space-y-2 text-slate-700">
-                                        <li className="flex items-center">✓ AAMA 2604 Compliant Finishes</li>
-                                        <li className="flex items-center">✓ Custom Color Matching</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            {/* Step 3 */}
-                            <div className="flex flex-col md:flex-row items-center gap-12">
-                                <div className="w-full md:w-1/2">
-                                    <div className="h-80 bg-slate-100 rounded-lg relative overflow-hidden">
-                                        <div className="absolute inset-0 bg-slate-200" />
-                                        <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded shadow text-sm font-bold">Step 03</div>
-                                    </div>
-                                </div>
-                                <div className="w-full md:w-1/2">
-                                    <h3 className="text-2xl font-bold text-slate-900 mb-4">Glass Tempering & Polishing</h3>
-                                    <p className="text-slate-600 leading-relaxed mb-6">
-                                        Safety is paramount. We use only tempered safety glass, cut and polished to eliminate sharp edges. Our quality control team inspects every panel for clarity and strength before it leaves the shop.
-                                    </p>
-                                    <ul className="space-y-2 text-slate-700">
-                                        <li className="flex items-center">✓ 10mm & 12mm Tempered Glass</li>
-                                        <li className="flex items-center">✓ Polished Edges for Safety</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Stats / Trust */}
-                <section className="py-20 bg-slate-50 border-y border-slate-200">
-                    <div className="container mx-auto px-6">
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                            <div>
-                                <div className="text-4xl font-bold text-blue-600 mb-2">10+</div>
-                                <div className="text-sm font-bold text-slate-600 uppercase tracking-wide">Years in Business</div>
-                            </div>
-                            <div>
-                                <div className="text-4xl font-bold text-blue-600 mb-2">5,000+</div>
-                                <div className="text-sm font-bold text-slate-600 uppercase tracking-wide">Projects Installed</div>
-                            </div>
-                            <div>
-                                <div className="text-4xl font-bold text-blue-600 mb-2">100%</div>
-                                <div className="text-sm font-bold text-slate-600 uppercase tracking-wide">WSIB Insured</div>
-                            </div>
-                            <div>
-                                <div className="text-4xl font-bold text-blue-600 mb-2">Lifetime</div>
-                                <div className="text-sm font-bold text-slate-600 uppercase tracking-wide">Product Warranty</div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </section>
 
                 {/* CTA */}
-                <section className="py-24 text-center">
+                <section className="py-24 bg-brand-navy text-white text-center">
                     <div className="container mx-auto px-6">
-                        <h2 className="text-3xl font-serif font-bold text-slate-900 mb-6">
-                            See the Difference Quality Makes
+                        <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6">
+                            Ready to Work with the Best?
                         </h2>
-                        <p className="text-slate-600 max-w-2xl mx-auto mb-10">
-                            Visit our showroom to see samples and meet the team, or request a free on-site consultation.
+                        <p className="text-slate-300 max-w-2xl mx-auto mb-10 text-lg">
+                            Experience the Aluminum Solutions difference. Book your free consultation today.
                         </p>
-                        <div className="flex flex-col md:flex-row justify-center gap-4">
-                            <Link href="/contact" className="px-8 py-4 bg-slate-900 text-white font-bold rounded hover:bg-slate-800 transition-colors">
-                                Get a Free Quote
-                            </Link>
-                            <Link href="/contact" className="px-8 py-4 bg-white text-slate-900 border-2 border-slate-200 font-bold rounded hover:border-slate-900 transition-colors">
-                                Book Showroom Visit
-                            </Link>
-                        </div>
+                        <Link href="/contact" className="inline-block px-10 py-4 bg-brand-copper text-white font-bold tracking-wide hover:bg-orange-700 transition-colors shadow-lg rounded-sm">
+                            Get My Free Quote
+                        </Link>
                     </div>
                 </section>
             </main>

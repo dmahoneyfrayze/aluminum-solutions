@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   description: "Transform your home with high-end aluminum railings, glass enclosures, and custom gates. Serving Toronto, Mississauga, Oakville, and the GTA.",
 };
 
+import ChatWidget from "@/components/ui/ChatWidget";
+import TrackingScript from "@/components/analytics/TrackingScript";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -78,6 +81,8 @@ export default function RootLayout({
           }}
         />
         {children}
+        <ChatWidget />
+        <TrackingScript />
       </body>
     </html>
   );

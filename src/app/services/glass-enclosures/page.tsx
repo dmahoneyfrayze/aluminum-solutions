@@ -16,35 +16,39 @@ export default function EnclosuresPage() {
 
             <main className="flex-grow">
                 <Hero
-                    title="Glass Porch Enclosures"
-                    subtitle="Enjoy your outdoor space year-round. Protect your entrance from snow, wind, and rain without blocking the light."
-                    ctaText="Get a Quote"
+                    title="Architectural Glass Enclosures"
+                    subtitle="Seamlessly blend indoor comfort with outdoor views. Custom-manufactured frameless and semi-frameless systems."
+                    ctaText="Request Design Consultation"
                     ctaLink="/contact"
+                    backgroundImage="/images/migrated/manufacturing-glass.jpg"
                 />
 
                 {/* Overview */}
-                <section className="py-20 bg-white">
+                <section className="py-24 bg-white">
                     <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-slate-900">
+                            <span className="text-brand-copper font-bold tracking-widest uppercase text-sm mb-2 block">
+                                Year-Round Comfort
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-brand-dark">
                                 Extend Your Living Space
                             </h2>
-                            <div className="space-y-6 text-slate-600 leading-relaxed">
+                            <div className="space-y-6 text-slate-600 leading-relaxed text-lg">
                                 <p>
-                                    A glass enclosure transforms your front porch or patio into a functional, protected space. It creates a buffer zone that keeps your home warmer in the winter and cleaner year-round.
+                                    A glass enclosure transforms your front porch, patio, or balcony into a functional, protected sanctuary. It creates a thermal buffer zone that keeps your home warmer in winter and cleaner year-round, without sacrificing natural light.
                                 </p>
                                 <p>
-                                    Our systems are custom-designed to fit your existing architecture perfectly. We use high-quality tempered safety glass and heavy-duty aluminum frames that are built to last.
+                                    <strong>Factory Direct Advantage:</strong> Unlike resellers, we cut, temper, and polish our glass in-house. This allows for custom shapes, precise fits for uneven stone, and faster turnaround times.
                                 </p>
                             </div>
-                            <div className="mt-8">
-                                <Link href="/contact" className="text-slate-900 font-bold border-b-2 border-slate-900 pb-1 hover:text-slate-700 hover:border-slate-700 transition-colors">
-                                    Request a Design Consultation &rarr;
+                            <div className="mt-10">
+                                <Link href="/contact" className="text-brand-dark font-bold border-b-2 border-brand-dark pb-1 hover:text-brand-copper hover:border-brand-copper transition-colors text-lg">
+                                    Schedule a Free Measurement &rarr;
                                 </Link>
                             </div>
                         </div>
-                        <div className="h-96 bg-slate-100 relative rounded-lg overflow-hidden shadow-2xl">
-                            {/* Image Placeholder */}
+                        <div className="h-[500px] bg-slate-100 relative rounded-sm overflow-hidden shadow-2xl">
+                            {/* Image Placeholder - To be replaced with real project */}
                             <div className="absolute inset-0 bg-slate-200" />
                             <div className="absolute inset-0 flex items-center justify-center text-slate-400 font-medium">
                                 [Glass Enclosure Project Image]
@@ -53,22 +57,67 @@ export default function EnclosuresPage() {
                     </div>
                 </section>
 
-                {/* Benefits Grid */}
-                <section className="py-20 bg-slate-50">
+                {/* Technical Specs - Manufacturer Credibility */}
+                <section className="py-24 bg-brand-dark text-white">
                     <div className="container mx-auto px-6">
-                        <h2 className="text-3xl font-serif font-bold mb-12 text-center text-slate-900">Benefits of Enclosing Your Porch</h2>
+                        <div className="text-center mb-16">
+                            <h2 className="text-3xl font-serif font-bold mb-4">Technical Specifications</h2>
+                            <p className="text-slate-400 max-w-2xl mx-auto">
+                                Engineered for Canadian winters and high-wind loads.
+                            </p>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                            {/* Spec 1 */}
+                            <div className="border border-white/10 p-8 rounded-sm hover:bg-white/5 transition-colors">
+                                <h3 className="text-xl font-bold mb-4 text-brand-copper">Glass Options</h3>
+                                <ul className="space-y-3 text-slate-300 text-sm">
+                                    <li className="flex items-start"><span className="mr-2">•</span> 10mm or 12mm Tempered Safety Glass</li>
+                                    <li className="flex items-start"><span className="mr-2">•</span> Clear, Frosted, or Grey Tint</li>
+                                    <li className="flex items-start"><span className="mr-2">•</span> Polished Edges for Safety</li>
+                                </ul>
+                            </div>
+                            {/* Spec 2 */}
+                            <div className="border border-white/10 p-8 rounded-sm hover:bg-white/5 transition-colors">
+                                <h3 className="text-xl font-bold mb-4 text-brand-copper">Hardware</h3>
+                                <ul className="space-y-3 text-slate-300 text-sm">
+                                    <li className="flex items-start"><span className="mr-2">•</span> Marine-Grade Stainless Steel (316)</li>
+                                    <li className="flex items-start"><span className="mr-2">•</span> Heavy-Duty Aluminum Channels</li>
+                                    <li className="flex items-start"><span className="mr-2">•</span> Soft-Close Hinges Available</li>
+                                </ul>
+                            </div>
+                            {/* Spec 3 */}
+                            <div className="border border-white/10 p-8 rounded-sm hover:bg-white/5 transition-colors">
+                                <h3 className="text-xl font-bold mb-4 text-brand-copper">Performance</h3>
+                                <ul className="space-y-3 text-slate-300 text-sm">
+                                    <li className="flex items-start"><span className="mr-2">•</span> Wind Load Tested</li>
+                                    <li className="flex items-start"><span className="mr-2">•</span> UV Resistant Seals</li>
+                                    <li className="flex items-start"><span className="mr-2">•</span> 10-Year Warranty on Glass</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Benefits Grid */}
+                <section className="py-24 bg-slate-50">
+                    <div className="container mx-auto px-6">
+                        <h2 className="text-3xl font-serif font-bold mb-12 text-center text-brand-dark">Why Enclose Your Porch?</h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            <div className="bg-white p-8 shadow-lg">
-                                <h3 className="text-xl font-bold mb-4">Energy Efficiency</h3>
-                                <p className="text-slate-600">Creates an airlock that prevents cold drafts from entering your home when the front door is opened.</p>
+                            <div className="bg-white p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                                <div className="text-4xl mb-4">🌡️</div>
+                                <h3 className="text-xl font-bold mb-4 text-brand-dark">Energy Efficiency</h3>
+                                <p className="text-slate-600">Creates an airlock that prevents cold drafts from entering your home when the front door is opened, lowering heating bills.</p>
                             </div>
-                            <div className="bg-white p-8 shadow-lg">
-                                <h3 className="text-xl font-bold mb-4">Weather Protection</h3>
-                                <p className="text-slate-600">Keeps snow, rain, and leaves off your porch, reducing maintenance and shoveling.</p>
+                            <div className="bg-white p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                                <div className="text-4xl mb-4">🛡️</div>
+                                <h3 className="text-xl font-bold mb-4 text-brand-dark">Weather Protection</h3>
+                                <p className="text-slate-600">Keeps snow, rain, and leaves off your porch. No more shoveling your front step before you can leave the house.</p>
                             </div>
-                            <div className="bg-white p-8 shadow-lg">
-                                <h3 className="text-xl font-bold mb-4">Security</h3>
-                                <p className="text-slate-600">Adds an extra layer of security to your main entrance with lockable storm doors.</p>
+                            <div className="bg-white p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                                <div className="text-4xl mb-4">🔒</div>
+                                <h3 className="text-xl font-bold mb-4 text-brand-dark">Added Security</h3>
+                                <p className="text-slate-600">Adds an extra layer of security to your main entrance with robust, lockable storm doors and difficult-to-break tempered glass.</p>
                             </div>
                         </div>
                     </div>
@@ -76,21 +125,21 @@ export default function EnclosuresPage() {
 
                 {/* Sticky Mobile CTA */}
                 <div className="md:hidden fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-slate-200 z-40 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
-                    <Link href="/contact" className="block w-full py-3 bg-slate-900 text-white text-center font-bold rounded shadow-lg">
+                    <Link href="/contact" className="block w-full py-3 bg-brand-copper text-white text-center font-bold rounded shadow-lg">
                         Get a Free Quote
                     </Link>
                 </div>
 
                 {/* CTA Section */}
-                <section className="py-24 bg-slate-900 text-white text-center">
+                <section className="py-24 bg-brand-navy text-white text-center">
                     <div className="container mx-auto px-6">
                         <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6">
                             Ready to Enclose Your Porch?
                         </h2>
                         <p className="text-slate-300 max-w-2xl mx-auto mb-10 text-lg">
-                            Contact us today for a free estimate. We serve Toronto, Mississauga, and the entire GTA.
+                            Send us a photo of your porch for a fast, accurate estimate. No site visit required for rough pricing.
                         </p>
-                        <Link href="/contact" className="inline-block px-10 py-4 bg-white text-slate-900 font-bold tracking-wide hover:bg-slate-100 transition-colors shadow-lg">
+                        <Link href="/contact" className="inline-block px-10 py-4 bg-brand-copper text-white font-bold tracking-wide hover:bg-orange-700 transition-colors shadow-lg rounded-sm">
                             Get a Free Estimate
                         </Link>
                     </div>

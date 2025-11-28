@@ -2,25 +2,32 @@ import Link from "next/link";
 
 export default function Header() {
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-panel border-b border-white/10">
+        <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
             <div className="container mx-auto px-6 h-20 flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="text-2xl font-serif font-bold text-slate-900 tracking-tight">
-                    ALUMINUM<span className="text-slate-500">SOLUTIONS</span>
+                <Link href="/" className="text-2xl font-serif font-bold text-slate-900 tracking-tight flex items-center gap-2">
+                    <span className="w-8 h-8 bg-brand-copper text-white flex items-center justify-center rounded-sm text-lg">A</span>
+                    <span>ALUMINUM<span className="text-slate-400">SOLUTIONS</span></span>
                 </Link>
 
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex items-center gap-8">
-                    <Link href="/services" className="text-sm font-medium text-slate-700 hover:text-slate-900 transition-colors uppercase tracking-wide">
+                    <Link href="/services" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">
                         Services
                     </Link>
-                    <Link href="/projects" className="text-sm font-medium text-slate-700 hover:text-slate-900 transition-colors uppercase tracking-wide">
+                    <Link href="/process" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">
+                        Process
+                    </Link>
+                    <Link href="/projects" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">
                         Gallery
                     </Link>
-                    <Link href="/about" className="text-sm font-medium text-slate-700 hover:text-slate-900 transition-colors uppercase tracking-wide">
+                    <Link href="/about" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">
                         About
                     </Link>
-                    <Link href="/contact" className="px-6 py-2.5 bg-slate-900 text-white text-sm font-medium hover:bg-slate-800 transition-colors shadow-lg">
+                    <Link href="/reviews" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">
+                        Reviews
+                    </Link>
+                    <Link href="/contact" className="px-6 py-2.5 bg-brand-navy text-white text-sm font-bold hover:bg-brand-copper transition-colors shadow-lg rounded-sm">
                         Get a Quote
                     </Link>
                 </nav>

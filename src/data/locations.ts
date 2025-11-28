@@ -165,6 +165,61 @@ export const locations: LocationData[] = [
             serviceArea: "Burlington, Aldershot, Appleby, Tansley, Tyandaga.",
         },
     },
+    {
+        slug: "montreal",
+        name: "Montreal",
+        title: "Aluminum Railings & Glass in Montreal",
+        metaDescription: "Premium aluminum railings and glass enclosures in Montreal. Serving the Greater Montreal Area with custom installation.",
+        content: {
+            intro: "From the Old Port to the Plateau, we bring modern aluminum and glass solutions to Montreal homes. Our Blainville office ensures local service for all your railing needs.",
+            landmarks: ["Old Montreal", "Mount Royal", "The Plateau", "Griffintown"],
+            serviceArea: "Montreal, West Island, Anjou, Saint-Laurent, Ahuntsic.",
+        },
+    },
+    {
+        slug: "blainville",
+        name: "Blainville",
+        title: "Blainville Aluminum Railings & Glass",
+        metaDescription: "Factory-direct aluminum railings in Blainville. Visit our local office for custom glass enclosures and expert installation.",
+        content: {
+            intro: "Home to our Quebec headquarters, Blainville is where quality meets craftsmanship. We provide our neighbors with the finest aluminum railings and glass systems on the North Shore.",
+            landmarks: ["Fontainebleau", "Curé-Labelle", "Blainville Equestrian Park", "Michèle-Bohec"],
+            serviceArea: "Blainville, Sainte-Thérèse, Lorraine, Rosemère, Boisbriand.",
+        },
+    },
+    {
+        slug: "laval",
+        name: "Laval",
+        title: "Laval Glass Railings & Porch Enclosures",
+        metaDescription: "Upgrade your Laval home with custom glass railings. Durable, maintenance-free aluminum solutions for balconies and porches.",
+        content: {
+            intro: "Laval's mix of modern condos and suburban homes is perfect for our versatile railing systems. We install durable glass and aluminum enclosures across Île Jésus.",
+            landmarks: ["Carrefour Laval", "Centropolis", "Vieux-Sainte-Rose", "Nature Centre"],
+            serviceArea: "Laval, Chomedey, Sainte-Dorothée, Fabreville, Vimont.",
+        },
+    },
+    {
+        slug: "terrebonne",
+        name: "Terrebonne",
+        title: "Terrebonne Aluminum Railings & Fences",
+        metaDescription: "Stylish and safe aluminum railings for Terrebonne homes. Custom manufacturing and professional installation.",
+        content: {
+            intro: "Enhance your property in Terrebonne with our rust-free aluminum railings. Perfect for historic Vieux-Terrebonne or new developments in Lachenaie.",
+            landmarks: ["Île-des-Moulins", "Vieux-Terrebonne", "Lachenaie", "Trans-Terrebonne"],
+            serviceArea: "Terrebonne, Lachenaie, La Plaine, Mascouche.",
+        },
+    },
+    {
+        slug: "saint-eustache",
+        name: "Saint-Eustache",
+        title: "Saint-Eustache Glass & Aluminum Railings",
+        metaDescription: "Top-quality glass and aluminum railings in Saint-Eustache. Protect your porch and enjoy the view.",
+        content: {
+            intro: "We serve the Saint-Eustache community with high-quality exterior solutions. Our glass railings provide safety without obstructing the beautiful views of the Mille Îles River.",
+            landmarks: ["Vieux-Saint-Eustache", "Promenade Paul-Sauvé", "Saint-Eustache Church", "Autodrome"],
+            serviceArea: "Saint-Eustache, Deux-Montagnes, Sainte-Marthe-sur-le-Lac.",
+        },
+    },
 ];
 
 export function getLocationBySlug(slug: string): LocationData | undefined {

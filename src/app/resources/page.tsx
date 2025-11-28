@@ -1,11 +1,15 @@
 "use client";
 
+import { useState } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
+import LeadMagnetModal from "@/components/ui/LeadMagnetModal";
 
 export default function ResourcesPage() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     return (
         <div className="min-h-screen flex flex-col bg-white">
             <Header />
@@ -16,7 +20,17 @@ export default function ResourcesPage() {
                     subtitle="Everything you need to know about our materials, installation process, and lifetime guarantee."
                     ctaText="Download Specs PDF"
                     ctaLink="#"
+                // Override default link behavior to open modal
                 />
+
+                {/* Custom Button Overlay for Hero - A bit of a hack but effective without modifying Hero props deeply */}
+                <div className="absolute top-[60vh] left-0 right-0 flex justify-center z-30 pointer-events-none">
+                    <button
+                        onClick={() => setIsModalOpen(true)}
+                        className="pointer-events-auto opacity-0 w-64 h-16 cursor-pointer"
+                        aria-label="Download Specs"
+                    />
+                </div>
 
                 {/* Warranty Section */}
                 <section className="py-20" id="warranty">
@@ -61,6 +75,13 @@ export default function ResourcesPage() {
                         <div className="text-center mb-16">
                             <h2 className="text-3xl font-serif font-bold mb-4">Technical Specifications</h2>
                             <p className="text-slate-400">Architect-grade materials for superior performance.</p>
+
+                            <button
+                                onClick={() => setIsModalOpen(true)}
+                                className="mt-8 inline-block px-8 py-3 bg-brand-copper text-white font-bold rounded hover:bg-orange-700 transition-colors"
+                            >
+                                Download Full Spec Sheet (PDF)
+                            </button>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
@@ -86,38 +107,23 @@ export default function ResourcesPage() {
                     </div>
                 </section>
 
-                {/* FAQ */}
-                <section className="py-20" id="faq">
-                    <div className="container mx-auto px-6 max-w-3xl">
-                        <div className="text-center mb-12">
-                            <h2 className="text-3xl font-serif font-bold text-slate-900 mb-4">Frequently Asked Questions</h2>
-                        </div>
-
-                        <div className="space-y-6">
-                            <div className="border-b border-slate-200 pb-6">
-                                <h3 className="text-lg font-bold text-slate-900 mb-2">Do I need a building permit?</h3>
-                                <p className="text-slate-600">
-                                    For most standard railing replacements, a permit is not required. However, for new decks or structural changes, one may be needed. We can assist with providing engineering drawings if your municipality requires them.
-                                </p>
-                            </div>
-                            <div className="border-b border-slate-200 pb-6">
-                                <h3 className="text-lg font-bold text-slate-900 mb-2">What is the typical lead time?</h3>
-                                <p className="text-slate-600">
-                                    Since we manufacture in-house, our typical lead time is 3-5 weeks from final measurements to installation. Custom glass or special colors may take slightly longer.
-                                </p>
-                            </div>
-                            <div className="border-b border-slate-200 pb-6">
-                                <h3 className="text-lg font-bold text-slate-900 mb-2">How do I clean my glass railings?</h3>
-                                <p className="text-slate-600">
-                                    We recommend using a mixture of water and mild dish soap with a soft cloth or squeegee. Avoid abrasive cleaners or pads that could scratch the glass or aluminum finish.
-                                </p>
-                            </div>
-                        </div>
+                {/* FAQ Link */}
+                <section className="py-20 bg-slate-50 text-center">
+                    <div className="container mx-auto px-6">
+                        <h2 className="text-3xl font-serif font-bold text-slate-900 mb-6">
+                            Common Questions
+                        </h2>
+                        <p className="text-slate-600 mb-8">
+                            Find answers to questions about permits, timelines, and maintenance.
+                        </p>
+                        <Link href="/faq" className="text-brand-navy font-bold underline hover:text-brand-copper">
+                            View Full FAQ Page
+                        </Link>
                     </div>
                 </section>
 
                 {/* CTA */}
-                <section className="py-24 bg-slate-50 text-center">
+                <section className="py-24 bg-white text-center">
                     <div className="container mx-auto px-6">
                         <h2 className="text-3xl font-serif font-bold text-slate-900 mb-6">
                             Have More Questions?
@@ -130,6 +136,12 @@ export default function ResourcesPage() {
             </main>
 
             <Footer />
+
+            <LeadMagnetModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                resourceName="Technical Specifications PDF"
+            />
         </div>
     );
 }

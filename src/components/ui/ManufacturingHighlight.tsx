@@ -43,8 +43,11 @@ export default function ManufacturingHighlight() {
                     <div className="relative">
                         {/* Video/Image Placeholder */}
                         <div className="aspect-video bg-slate-800 rounded-lg shadow-2xl border border-slate-700 flex items-center justify-center relative overflow-hidden group">
+                            <div
+                                className="absolute inset-0 bg-cover bg-center"
+                                style={{ backgroundImage: "url('/images/migrated/manufacturing-glass.jpg')" }}
+                            />
                             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors" />
-                            <span className="text-slate-500 font-medium">[Manufacturing Tour Video Placeholder]</span>
                             {/* Play Button Mockup */}
                             <div className="absolute inset-0 flex items-center justify-center">
                                 <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30 group-hover:scale-110 transition-transform cursor-pointer">

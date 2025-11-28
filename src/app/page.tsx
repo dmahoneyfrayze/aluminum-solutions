@@ -5,7 +5,9 @@ import TrustBadges from "@/components/ui/TrustBadges";
 import ProcessSteps from "@/components/ui/ProcessSteps";
 import ManufacturingHighlight from "@/components/ui/ManufacturingHighlight";
 import MiniCaseStudies from "@/components/ui/MiniCaseStudies";
+import ReputationWidget from "@/components/ui/ReputationWidget";
 import QuoteCalculator from "@/components/tools/QuoteCalculator";
+import StyleExplorer from "@/components/tools/StyleExplorer";
 import Link from "next/link";
 
 export default function Home() {
@@ -15,13 +17,62 @@ export default function Home() {
 
       <main className="flex-grow">
         <Hero
-          title="Architect-Grade Aluminum & Glass Railings"
-          subtitle="Manufactured locally in the GTA. Installed in 4-6 weeks. Direct from the factory to your home or project."
+          title="Modernize Your Home with Premium Glass Railings"
+          subtitle="Factory Direct. Installed in 4 Weeks. Lifetime Warranty."
           ctaText="Get a Free Estimate"
           ctaLink="/contact"
         />
 
         <TrustBadges />
+
+        {/* NEW: Style Explorer (Visualizer Gap) */}
+        <StyleExplorer />
+
+        {/* NEW: Express Service (Speed Gap) */}
+        <section className="py-20 bg-brand-navy text-white overflow-hidden relative">
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 transform translate-x-20" />
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="flex flex-col md:flex-row items-center gap-12">
+              <div className="w-full md:w-1/2">
+                <div className="inline-block px-4 py-1 bg-brand-copper text-white text-xs font-bold uppercase tracking-wider rounded-full mb-6">
+                  New Service
+                </div>
+                <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6">
+                  Need Railings Fast?
+                </h2>
+                <p className="text-slate-300 text-lg mb-8 leading-relaxed">
+                  Don't wait 8 weeks for the other guys. Our <strong className="text-white">Express Service</strong> gets you standard black aluminum railings installed in as little as <strong>5 business days</strong>.
+                </p>
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-center gap-3">
+                    <span className="text-brand-copper text-xl">✓</span>
+                    <span className="text-slate-200">In-Stock Black Picket Profiles</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-brand-copper text-xl">✓</span>
+                    <span className="text-slate-200">Priority Fabrication Queue</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-brand-copper text-xl">✓</span>
+                    <span className="text-slate-200">Same-Day Estimates</span>
+                  </li>
+                </ul>
+                <Link href="/contact" className="inline-block px-8 py-3 bg-white text-brand-navy font-bold hover:bg-slate-100 transition-colors rounded-sm">
+                  Check Availability
+                </Link>
+              </div>
+              <div className="w-full md:w-1/2">
+                <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20 text-center">
+                  <div className="text-6xl mb-4">⏱️</div>
+                  <h3 className="text-2xl font-bold mb-2">5-Day Turnaround</h3>
+                  <p className="text-slate-300 text-sm">
+                    *Subject to stock availability and crew schedule.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <QuoteCalculator />
 
@@ -30,6 +81,8 @@ export default function Home() {
         <ProcessSteps />
 
         <MiniCaseStudies />
+
+        <ReputationWidget />
 
         {/* Services Overview */}
         <section className="py-20 bg-white">
@@ -93,7 +146,7 @@ export default function Home() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-24 bg-slate-900 text-white text-center">
+        <section className="py-24 bg-brand-navy text-white text-center">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6">
               Get a Quote in 24 Hours
@@ -101,7 +154,7 @@ export default function Home() {
             <p className="text-slate-300 max-w-2xl mx-auto mb-10 text-lg">
               Upload a photo of your project for a fast, accurate estimate. No site visit required for rough pricing.
             </p>
-            <Link href="/contact" className="inline-block px-10 py-4 bg-white text-slate-900 font-bold tracking-wide hover:bg-slate-100 transition-colors shadow-lg">
+            <Link href="/contact" className="inline-block px-10 py-4 bg-brand-copper text-white font-bold tracking-wide hover:bg-orange-700 transition-colors shadow-lg rounded-sm">
               Get My Free Quote
             </Link>
           </div>

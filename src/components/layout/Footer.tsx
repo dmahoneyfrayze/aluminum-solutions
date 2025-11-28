@@ -1,26 +1,27 @@
 import Link from "next/link";
+import SEOFooterLinks from "@/components/layout/SEOFooterLinks";
 
 export default function Footer() {
     return (
-        <footer className="bg-slate-900 text-white border-t border-slate-800">
+        <footer className="bg-brand-dark text-white border-t border-slate-800">
             {/* Trust Strip */}
-            <div className="border-b border-slate-800 bg-slate-950">
+            <div className="border-b border-slate-800 bg-black/20">
                 <div className="container mx-auto px-6 py-4">
                     <div className="flex flex-wrap justify-center md:justify-between gap-6 text-sm font-bold text-slate-400 uppercase tracking-wider">
                         <div className="flex items-center gap-2">
-                            <span className="text-blue-500">✓</span> WSIB Insured
+                            <span className="text-brand-copper">✓</span> WSIB Insured
                         </div>
                         <div className="flex items-center gap-2">
-                            <span className="text-blue-500">✓</span> TSSA Certified
+                            <span className="text-brand-copper">✓</span> TSSA Certified
                         </div>
                         <div className="flex items-center gap-2">
-                            <span className="text-blue-500">✓</span> 5M Liability Insurance
+                            <span className="text-brand-copper">✓</span> 5M Liability Insurance
                         </div>
                         <div className="flex items-center gap-2">
-                            <span className="text-blue-500">✓</span> Lifetime Warranty
+                            <span className="text-brand-copper">✓</span> Lifetime Warranty
                         </div>
                         <div className="flex items-center gap-2">
-                            <span className="text-blue-500">✓</span> Code Compliant (SB-13)
+                            <span className="text-brand-copper">✓</span> Code Compliant (SB-13)
                         </div>
                     </div>
                 </div>
@@ -47,8 +48,11 @@ export default function Footer() {
                         <ul className="space-y-4 text-slate-400">
                             <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
                             <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
+                            <li><Link href="/process" className="hover:text-white transition-colors">Our Process</Link></li>
+                            <li><Link href="/reviews" className="hover:text-white transition-colors">Reviews</Link></li>
                             <li><Link href="/gallery" className="hover:text-white transition-colors">Project Gallery</Link></li>
                             <li><Link href="/resources" className="hover:text-white transition-colors">Warranty & Specs</Link></li>
+                            <li><Link href="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
                             <li><Link href="/blog" className="hover:text-white transition-colors">Blog & Case Studies</Link></li>
                             <li><Link href="/builders" className="hover:text-white transition-colors">For Builders</Link></li>
                             <li><Link href="/contact" className="hover:text-white transition-colors">Get a Quote</Link></li>
@@ -62,6 +66,8 @@ export default function Footer() {
                             <li><Link href="/services/railings" className="hover:text-white transition-colors">Aluminum Railings</Link></li>
                             <li><Link href="/services/glass-enclosures" className="hover:text-white transition-colors">Glass Enclosures</Link></li>
                             <li><Link href="/services/porch-enclosures" className="hover:text-white transition-colors">Porch Enclosures</Link></li>
+                            <li><Link href="/services/pool-fences" className="hover:text-white transition-colors">Pool Fences</Link></li>
+                            <li><Link href="/services/privacy-screens" className="hover:text-white transition-colors">Privacy Screens</Link></li>
                             <li><Link href="/services/showers" className="hover:text-white transition-colors">Frameless Showers</Link></li>
                             <li><Link href="/services/gates" className="hover:text-white transition-colors">Custom Gates</Link></li>
                             <li><Link href="/services/columns" className="hover:text-white transition-colors">Aluminum Columns</Link></li>
@@ -74,7 +80,7 @@ export default function Footer() {
                         <ul className="space-y-4 text-slate-400">
                             <li className="flex items-start">
                                 <span className="mr-3 mt-1">📍</span>
-                                <span>Serving Toronto & the GTA</span>
+                                <span>Serving Toronto & Montreal</span>
                             </li>
                             <li className="flex items-center">
                                 <span className="mr-3">📞</span>
@@ -88,6 +94,9 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
+
+            {/* SEO Footer Links */}
+            <SEOFooterLinks />
 
             {/* Copyright */}
             <div className="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">

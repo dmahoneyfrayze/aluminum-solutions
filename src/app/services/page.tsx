@@ -33,6 +33,18 @@ const services = [
         description: "Structural and decorative aluminum columns to replace rotting wood and add curb appeal.",
         link: "/services/columns",
         features: ["Load-bearing options", "Classic & modern styles", "Maintenance-free"]
+    },
+    {
+        title: "Pool Fences",
+        description: "Safe, code-compliant glass and aluminum pool enclosures that don't obstruct your view.",
+        link: "/services/pool-fences",
+        features: ["Self-closing gates", "Climb-resistant", "12mm safety glass"]
+    },
+    {
+        title: "Privacy Screens",
+        description: "Acid-etched glass and aluminum screens to create a private oasis in urban settings.",
+        link: "/services/privacy-screens",
+        features: ["Frosted glass", "Custom heights", "Wind reduction"]
     }
 ];
 
