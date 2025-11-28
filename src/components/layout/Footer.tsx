@@ -81,7 +81,7 @@ export default function Footer() {
                             <li><Link href="/services/pool-fences" className="hover:text-white transition-colors">Pool Fences</Link></li>
                             <li><Link href="/services/privacy-screens" className="hover:text-white transition-colors">Privacy Screens</Link></li>
                             <li><Link href="/services/showers" className="hover:text-white transition-colors">Frameless Showers</Link></li>
-                            <li><Link href="/services/gates" className="hover:text-white transition-colors">Custom Gates</Link></li>
+
                             <li><Link href="/services/columns" className="hover:text-white transition-colors">Aluminum Columns</Link></li>
                         </ul>
                     </div>

@@ -34,13 +34,7 @@ const services = [
         link: "/services/glass-railings",
         image: "/images/projects/railing-aluminum-brown-glass.jpg"
     },
-    {
-        title: "Custom Gates",
-        description: "Secure and stylish aluminum gates for driveways and gardens.",
-        link: "/services/gates",
-        features: ["Heavy-duty hardware", "Custom designs", "Security focused"],
-        image: "/images/generated/custom_gate_modern_1764314098362.png"
-    },
+
     {
         title: "Aluminum Columns",
         description: "Structural and decorative aluminum columns to replace rotting wood and add curb appeal.",

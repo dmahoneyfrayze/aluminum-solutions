@@ -84,6 +84,34 @@ export default function RailingsPage() {
                     </div>
                 </section>
 
+                {/* Technical Specs & "Made in Canada" Trust Signals */}
+                <section className="py-16 bg-brand-navy text-white">
+                    <div className="container mx-auto px-6">
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                            <div className="p-4 border border-slate-700 rounded-lg bg-slate-800/50">
+                                <div className="text-3xl mb-2">🇨🇦</div>
+                                <h3 className="font-bold text-lg mb-1">Made in Canada</h3>
+                                <p className="text-slate-400 text-sm">Fabricated locally in the GTA</p>
+                            </div>
+                            <div className="p-4 border border-slate-700 rounded-lg bg-slate-800/50">
+                                <div className="text-3xl mb-2">🛡️</div>
+                                <h3 className="font-bold text-lg mb-1">6063-T5 Alloy</h3>
+                                <p className="text-slate-400 text-sm">Architectural grade aluminum</p>
+                            </div>
+                            <div className="p-4 border border-slate-700 rounded-lg bg-slate-800/50">
+                                <div className="text-3xl mb-2">📜</div>
+                                <h3 className="font-bold text-lg mb-1">OBC Compliant</h3>
+                                <p className="text-slate-400 text-sm">Meets SB-13 Building Code</p>
+                            </div>
+                            <div className="p-4 border border-slate-700 rounded-lg bg-slate-800/50">
+                                <div className="text-3xl mb-2">🎨</div>
+                                <h3 className="font-bold text-lg mb-1">AAMA 2604</h3>
+                                <p className="text-slate-400 text-sm">Premium powder coat finish</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 {/* Explore Our Products */}
                 <section className="py-24 bg-slate-50">
                     <div className="container mx-auto px-6">
@@ -101,7 +129,7 @@ export default function RailingsPage() {
                             <div className="flex flex-col md:flex-row gap-12 items-center">
                                 <div className="w-full md:w-1/2">
                                     <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg">
-                                        <Image src="/images/projects/railing-aluminum-deck-toronto.jpg" alt="Aluminum Deck Railings" fill className="object-cover" />
+                                        <Image src="/images/projects/railing-aluminum-deck-toronto.jpg" alt="Aluminum Deck Railings Toronto" fill className="object-cover" />
                                     </div>
                                 </div>
                                 <div className="w-full md:w-1/2">
@@ -119,7 +147,7 @@ export default function RailingsPage() {
                             <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
                                 <div className="w-full md:w-1/2">
                                     <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg">
-                                        <Image src="/images/projects/glass-enclosure-porch-front.jpg" alt="Aluminum Porch Railings" fill className="object-cover" />
+                                        <Image src="/images/projects/glass-enclosure-porch-front.jpg" alt="Aluminum Porch Railings GTA" fill className="object-cover" />
                                     </div>
                                 </div>
                                 <div className="w-full md:w-1/2">
@@ -151,19 +179,138 @@ export default function RailingsPage() {
                                 </div>
                             </div>
 
-                            {/* Privacy Screens */}
-                            <div className="group bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-md transition-all">
-                                <div className="h-64 bg-slate-200 relative">
-                                    <Image src="/images/projects/privacy-screen-black-aluminum.jpg" alt="Aluminum Privacy Screens" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                            {/* Commercial & Restaurant Patios (NEW) */}
+                            <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
+                                <div className="w-full md:w-1/2">
+                                    <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg">
+                                        <Image src="/images/generated/pool_fence_glass_detail_1764312810331.png" alt="Restaurant Patio Railings Toronto" fill className="object-cover" />
+                                    </div>
                                 </div>
-                                <div className="p-8">
-                                    <h3 className="text-2xl font-bold text-brand-dark mb-4">Toronto Aluminum Privacy Screens</h3>
+                                <div className="w-full md:w-1/2">
+                                    <h3 className="text-2xl font-bold text-brand-dark mb-4">Restaurant & Commercial Patio Railings</h3>
                                     <p className="text-slate-600 mb-6 leading-relaxed">
-                                        Our Aluminum Privacy Screens offer an ideal solution for homeowners seeking both privacy and style. Shield your outdoor spaces from prying eyes, creating a private haven in your backyard or patio.
+                                        Create an inviting outdoor dining space with our commercial-grade aluminum and glass railings. Perfect for restaurants, cafes, and rooftop patios in Toronto. Our systems are engineered to handle high traffic while meeting all commercial building codes.
                                     </p>
-                                    <Link href="/services/privacy-screens" className="text-brand-copper font-bold hover:underline">
-                                        Learn More About Privacy Screens &rarr;
+                                    <ul className="mb-6 space-y-2 text-slate-600">
+                                        <li className="flex items-center">✓ Wind walls & privacy dividers</li>
+                                        <li className="flex items-center">✓ Custom branding options</li>
+                                        <li className="flex items-center">✓ Quick installation to minimize downtime</li>
+                                    </ul>
+                                    <Link href="/contact" className="text-brand-copper font-bold hover:underline">
+                                        Get a Commercial Quote &rarr;
                                     </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Pricing Guide (NEW) */}
+                <section className="py-20 bg-white border-y border-slate-100">
+                    <div className="container mx-auto px-6">
+                        <div className="text-center max-w-3xl mx-auto mb-16">
+                            <h2 className="text-3xl font-serif font-bold text-brand-dark mb-4">Transparent Pricing Guide</h2>
+                            <p className="text-slate-600">
+                                Estimated supply and installation costs per linear foot. Final price depends on complexity, height, and specific finish options.
+                            </p>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                            {/* Standard Picket */}
+                            <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 text-center">
+                                <h3 className="font-bold text-xl text-brand-dark mb-2">Standard Picket Railing</h3>
+                                <div className="text-4xl font-bold text-brand-copper mb-2">$60 - $80</div>
+                                <div className="text-sm text-slate-500 mb-6">per linear foot</div>
+                                <ul className="text-left space-y-3 text-slate-600 mb-8 text-sm">
+                                    <li className="flex items-center">✓ Standard Black or White</li>
+                                    <li className="flex items-center">✓ 42" Height</li>
+                                    <li className="flex items-center">✓ Professional Installation</li>
+                                </ul>
+                                <Link href="/contact" className="block w-full py-3 bg-white border border-brand-copper text-brand-copper font-bold rounded hover:bg-brand-copper hover:text-white transition-colors">
+                                    Get Exact Price
+                                </Link>
+                            </div>
+
+                            {/* Glass Railing */}
+                            <div className="bg-white p-8 rounded-xl border-2 border-brand-navy shadow-lg text-center relative transform md:-translate-y-4">
+                                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-brand-navy text-white px-4 py-1 text-xs font-bold uppercase tracking-wider rounded-full">
+                                    Most Popular
+                                </div>
+                                <h3 className="font-bold text-xl text-brand-dark mb-2">Glass Railing</h3>
+                                <div className="text-4xl font-bold text-brand-copper mb-2">$100 - $150</div>
+                                <div className="text-sm text-slate-500 mb-6">per linear foot</div>
+                                <ul className="text-left space-y-3 text-slate-600 mb-8 text-sm">
+                                    <li className="flex items-center">✓ 6mm or 10mm Tempered Glass</li>
+                                    <li className="flex items-center">✓ Clear or Tinted Options</li>
+                                    <li className="flex items-center">✓ Unobstructed Views</li>
+                                </ul>
+                                <Link href="/contact" className="block w-full py-3 bg-brand-navy text-white font-bold rounded hover:bg-brand-copper transition-colors">
+                                    Get Exact Price
+                                </Link>
+                            </div>
+
+                            {/* Custom / Commercial */}
+                            <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 text-center">
+                                <h3 className="font-bold text-xl text-brand-dark mb-2">Custom & Commercial</h3>
+                                <div className="text-4xl font-bold text-brand-copper mb-2">Contact Us</div>
+                                <div className="text-sm text-slate-500 mb-6">for project quote</div>
+                                <ul className="text-left space-y-3 text-slate-600 mb-8 text-sm">
+                                    <li className="flex items-center">✓ Custom Colors & Heights</li>
+                                    <li className="flex items-center">✓ Volume Discounts</li>
+                                    <li className="flex items-center">✓ Architectural Specs</li>
+                                </ul>
+                                <Link href="/contact" className="block w-full py-3 bg-white border border-brand-copper text-brand-copper font-bold rounded hover:bg-brand-copper hover:text-white transition-colors">
+                                    Request Bid
+                                </Link>
+                            </div>
+                        </div>
+                        <p className="text-center text-xs text-slate-400 mt-8">
+                            *Prices are estimates only and subject to change. Minimum order quantities may apply.
+                        </p>
+                    </div>
+                </section>
+
+                {/* Installation Process (NEW) */}
+                <section className="py-24 bg-slate-900 text-white">
+                    <div className="container mx-auto px-6">
+                        <div className="text-center mb-16">
+                            <h2 className="text-3xl font-serif font-bold mb-4">Our Installation Process</h2>
+                            <p className="text-slate-400">Simple, transparent, and professional from start to finish.</p>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                            <div className="relative">
+                                <div className="text-6xl font-bold text-slate-800 absolute -top-4 -left-4 z-0">01</div>
+                                <div className="relative z-10">
+                                    <h3 className="text-xl font-bold text-brand-copper mb-4">Consultation</h3>
+                                    <p className="text-slate-300 text-sm">
+                                        We visit your property to take precise measurements, discuss design options, and provide a detailed estimate.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="relative">
+                                <div className="text-6xl font-bold text-slate-800 absolute -top-4 -left-4 z-0">02</div>
+                                <div className="relative z-10">
+                                    <h3 className="text-xl font-bold text-brand-copper mb-4">Fabrication</h3>
+                                    <p className="text-slate-300 text-sm">
+                                        Your railings are custom-fabricated in our GTA facility using high-grade aluminum and premium powder coating.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="relative">
+                                <div className="text-6xl font-bold text-slate-800 absolute -top-4 -left-4 z-0">03</div>
+                                <div className="relative z-10">
+                                    <h3 className="text-xl font-bold text-brand-copper mb-4">Installation</h3>
+                                    <p className="text-slate-300 text-sm">
+                                        Our certified team installs your system efficiently, ensuring structural integrity and a clean job site.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="relative">
+                                <div className="text-6xl font-bold text-slate-800 absolute -top-4 -left-4 z-0">04</div>
+                                <div className="relative z-10">
+                                    <h3 className="text-xl font-bold text-brand-copper mb-4">Inspection</h3>
+                                    <p className="text-slate-300 text-sm">
+                                        We perform a final walkthrough with you to ensure everything meets our high standards and your satisfaction.
+                                    </p>
                                 </div>
                             </div>
                         </div>
