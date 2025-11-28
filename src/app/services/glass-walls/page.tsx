@@ -5,6 +5,8 @@ import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 import Image from "next/image";
+import GlassPartitionGuideForm from "@/components/ui/GlassPartitionGuideForm";
+import FloorPlanUploadForm from "@/components/ui/FloorPlanUploadForm";
 
 import { Metadata } from "next";
 
@@ -26,6 +28,36 @@ export default function GlassWallsPage() {
                     ctaLink="/contact"
                     backgroundImage="/images/projects/glass-office-partition-modern.jpg"
                 />
+
+                {/* Lead Magnet: Planning Guide */}
+                <section className="py-12 bg-slate-50 border-b border-slate-200">
+                    <div className="container mx-auto px-6">
+                        <div className="flex flex-col md:flex-row items-center gap-12">
+                            <div className="w-full md:w-1/2">
+                                <h2 className="text-3xl font-serif font-bold text-slate-900 mb-4">
+                                    Planning a Glass Partition?
+                                </h2>
+                                <p className="text-lg text-slate-600 mb-6">
+                                    Avoid common mistakes with our free <strong>Glass Partition Planning Guide</strong>. Learn about:
+                                </p>
+                                <ul className="space-y-3 mb-8">
+                                    <li className="flex items-center text-slate-700">
+                                        <span className="text-brand-copper mr-3">✓</span> Optimal glass thickness for soundproofing
+                                    </li>
+                                    <li className="flex items-center text-slate-700">
+                                        <span className="text-brand-copper mr-3">✓</span> Privacy options (Frosted vs. Smart Glass)
+                                    </li>
+                                    <li className="flex items-center text-slate-700">
+                                        <span className="text-brand-copper mr-3">✓</span> Budget ranges for different styles
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="w-full md:w-1/2">
+                                <GlassPartitionGuideForm />
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 {/* Intro */}
                 <section className="py-20 bg-white">
@@ -92,6 +124,33 @@ export default function GlassWallsPage() {
                                 <p className="text-slate-600">
                                     Showcase your collection with temperature-controlled glass enclosures. Custom hardware to match your decor.
                                 </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Lead Magnet: Floor Plan Upload */}
+                <section className="py-20 bg-brand-navy relative overflow-hidden">
+                    {/* Background Pattern */}
+                    <div className="absolute inset-0 opacity-10 bg-[url('/images/pattern-grid.png')]"></div>
+
+                    <div className="container mx-auto px-6 relative z-10">
+                        <div className="flex flex-col md:flex-row items-center gap-16">
+                            <div className="w-full md:w-1/2 text-white">
+                                <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
+                                    Already have a layout in mind?
+                                </h2>
+                                <p className="text-slate-300 text-lg mb-8 leading-relaxed">
+                                    Don't wait for a site visit. Upload your floor plan, sketch, or even a photo of the space, and our estimators will provide a <strong>preliminary budget and design options within 24 hours</strong>.
+                                </p>
+                                <div className="flex items-center gap-4 text-slate-400 text-sm">
+                                    <span>⚡ Fast Turnaround</span>
+                                    <span>🔒 Secure Upload</span>
+                                    <span>📋 Free Estimate</span>
+                                </div>
+                            </div>
+                            <div className="w-full md:w-1/2">
+                                <FloorPlanUploadForm />
                             </div>
                         </div>
                     </div>

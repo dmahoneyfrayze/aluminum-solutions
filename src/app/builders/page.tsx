@@ -10,6 +10,7 @@ import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 import Image from "next/image";
 import { getUTMParams } from "@/lib/utm";
+import BuilderPartnerPackForm from "@/components/ui/BuilderPartnerPackForm";
 
 const builderFormSchema = z.object({
     firstName: z.string().min(2, "First name is required"),
