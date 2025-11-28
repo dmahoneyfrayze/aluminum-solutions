@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { getUTMParams } from "@/lib/utm";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BookingCalendar from "@/components/ui/BookingCalendar";
@@ -35,12 +36,43 @@ export default function ContactPage() {
 
     const onSubmit = async (data: FormData) => {
         setIsSubmitting(true);
-        // Simulate API call
-        await new Promise((resolve) => setTimeout(resolve, 1500));
-        // console.log("Form Data:", data); // Removed for production
-        setIsSuccess(true);
-        setIsSubmitting(false);
-        reset();
+
+        try {
+            // Get UTM parameters
+            const utms = getUTMParams();
+
+            // Send data to GoHighLevel Webhook
+            // User requested flattened data, which our schema already is, but we ensure we send it directly.
+            const response = await fetch("https://services.leadconnectorhq.com/hooks/hos0jUKT6DAHGRD0nBoP/webhook-trigger/403b183a-fcf4-47f3-a206-c00d1987b66b", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    // Explicitly mapping to ensure flat structure and consistent keys
+                    first_name: data.firstName,
+                    last_name: data.lastName,
+                    email: data.email,
+                    phone: data.phone,
+                    location: data.location,
+                    message: data.message,
+                    source: "website_contact_form",
+                    ...utms // Spread UTMs into the flat payload
+                }),
+            });
+
+            if (!response.ok) {
+                throw new Error("Failed to submit form");
+            }
+
+            setIsSuccess(true);
+            reset();
+        } catch (error) {
+            console.error("Submission error:", error);
+            alert("Something went wrong. Please try again or call us directly.");
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (

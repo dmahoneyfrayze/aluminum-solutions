@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { getUTMParams } from "@/lib/utm";
 
 const schema = z.object({
     email: z.string().email("Please enter a valid email address"),
@@ -26,13 +27,31 @@ export default function LeadMagnetModal({ isOpen, onClose, resourceName }: LeadM
     });
 
     const onSubmit = async (data: FormData) => {
-        // In a real app, send this to your CRM (GoHighLevel)
-        // console.log("Lead captured:", data); // Removed for production
+        try {
+            const utms = getUTMParams();
 
-        // Simulate API call
-        setTimeout(() => {
+            // Send to GoHighLevel
+            const response = await fetch("https://services.leadconnectorhq.com/hooks/hos0jUKT6DAHGRD0nBoP/webhook-trigger/DRcb8YyzaoND8umhVxMy", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    name: data.name,
+                    email: data.email,
+                    source: "lead_magnet_popup",
+                    resource_requested: resourceName,
+                    ...utms
+                }),
+            });
+
+            if (!response.ok) throw new Error("Submission failed");
+
             setIsSuccess(true);
-        }, 1000);
+        } catch (error) {
+            console.error("Error submitting lead:", error);
+            // Optional: Show error state, but for now we'll just log it
+            // setIsSuccess(true); // Fallback to success to not block user? No, better to fail silently or show alert.
+            alert("Sorry, there was an issue downloading the guide. Please try again.");
+        }
     };
 
     if (!isOpen) return null;

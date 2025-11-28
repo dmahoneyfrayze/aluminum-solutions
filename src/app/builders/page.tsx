@@ -1,12 +1,66 @@
 "use client";
 
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 import Image from "next/image";
+import { getUTMParams } from "@/lib/utm";
+
+const builderFormSchema = z.object({
+    firstName: z.string().min(2, "First name is required"),
+    lastName: z.string().min(2, "Last name is required"),
+    companyName: z.string().min(2, "Company name is required"),
+    email: z.string().email("Invalid email address"),
+    phone: z.string().min(10, "Phone number is required"),
+    projectDetails: z.string().min(10, "Please provide some project details"),
+});
+
+type BuilderFormData = z.infer<typeof builderFormSchema>;
 
 export default function BuildersPage() {
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [isSuccess, setIsSuccess] = useState(false);
+
+    const { register, handleSubmit, formState: { errors }, reset } = useForm<BuilderFormData>({
+        resolver: zodResolver(builderFormSchema),
+    });
+
+    const onSubmit = async (data: BuilderFormData) => {
+        setIsSubmitting(true);
+        try {
+            const utms = getUTMParams();
+
+            const response = await fetch("https://services.leadconnectorhq.com/hooks/hos0jUKT6DAHGRD0nBoP/webhook-trigger/flvpatv1vPRdj7ozN1bn", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    first_name: data.firstName,
+                    last_name: data.lastName,
+                    company_name: data.companyName,
+                    email: data.email,
+                    phone: data.phone,
+                    project_details: data.projectDetails,
+                    source: "builder_application_form",
+                    ...utms
+                }),
+            });
+
+            if (!response.ok) throw new Error("Submission failed");
+
+            setIsSuccess(true);
+            reset();
+        } catch (error) {
+            console.error("Error submitting builder form:", error);
+            alert("Something went wrong. Please try again.");
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
     return (
         <div className="min-h-screen flex flex-col bg-white">
             <Header />
@@ -218,33 +272,89 @@ export default function BuildersPage() {
                                 </ul>
                             </div>
 
-                            <form className="bg-white p-8 rounded-lg text-slate-900 border border-slate-200 shadow-sm">
-                                <div className="grid grid-cols-2 gap-4 mb-4">
-                                    <div>
-                                        <label className="block text-sm font-bold mb-2">First Name</label>
-                                        <input className="w-full p-3 border border-slate-300 rounded bg-slate-50 focus:bg-white focus:outline-none focus:border-brand-navy transition-colors" placeholder="John" />
+                            <div className="bg-white p-8 rounded-lg text-slate-900 border border-slate-200 shadow-sm">
+                                {isSuccess ? (
+                                    <div className="text-center py-12">
+                                        <div className="text-4xl mb-4">✅</div>
+                                        <h3 className="font-bold text-xl mb-2">Request Received</h3>
+                                        <p className="text-slate-600 mb-6">
+                                            Thanks for your interest. Our commercial team will review your details and be in touch shortly.
+                                        </p>
+                                        <button
+                                            onClick={() => setIsSuccess(false)}
+                                            className="text-brand-navy font-bold underline"
+                                        >
+                                            Submit another request
+                                        </button>
                                     </div>
-                                    <div>
-                                        <label className="block text-sm font-bold mb-2">Last Name</label>
-                                        <input className="w-full p-3 border border-slate-300 rounded bg-slate-50 focus:bg-white focus:outline-none focus:border-brand-navy transition-colors" placeholder="Smith" />
-                                    </div>
-                                </div>
-                                <div className="mb-4">
-                                    <label className="block text-sm font-bold mb-2">Company Name</label>
-                                    <input className="w-full p-3 border border-slate-300 rounded bg-slate-50 focus:bg-white focus:outline-none focus:border-brand-navy transition-colors" placeholder="Acme Construction" />
-                                </div>
-                                <div className="mb-4">
-                                    <label className="block text-sm font-bold mb-2">Email</label>
-                                    <input className="w-full p-3 border border-slate-300 rounded bg-slate-50 focus:bg-white focus:outline-none focus:border-brand-navy transition-colors" placeholder="john@acme.com" />
-                                </div>
-                                <div className="mb-6">
-                                    <label className="block text-sm font-bold mb-2">Project Details</label>
-                                    <textarea className="w-full p-3 border border-slate-300 rounded bg-slate-50 focus:bg-white focus:outline-none focus:border-brand-navy transition-colors" rows={3} placeholder="Tell us about the scope..." />
-                                </div>
-                                <button className="w-full py-4 bg-brand-navy text-white font-bold rounded hover:bg-slate-800 transition-colors">
-                                    Request Builder Package
-                                </button>
-                            </form>
+                                ) : (
+                                    <form onSubmit={handleSubmit(onSubmit)}>
+                                        <div className="grid grid-cols-2 gap-4 mb-4">
+                                            <div>
+                                                <label className="block text-sm font-bold mb-2">First Name</label>
+                                                <input
+                                                    {...register("firstName")}
+                                                    className="w-full p-3 border border-slate-300 rounded bg-slate-50 focus:bg-white focus:outline-none focus:border-brand-navy transition-colors"
+                                                    placeholder="John"
+                                                />
+                                                {errors.firstName && <p className="text-red-500 text-xs mt-1">{errors.firstName.message}</p>}
+                                            </div>
+                                            <div>
+                                                <label className="block text-sm font-bold mb-2">Last Name</label>
+                                                <input
+                                                    {...register("lastName")}
+                                                    className="w-full p-3 border border-slate-300 rounded bg-slate-50 focus:bg-white focus:outline-none focus:border-brand-navy transition-colors"
+                                                    placeholder="Smith"
+                                                />
+                                                {errors.lastName && <p className="text-red-500 text-xs mt-1">{errors.lastName.message}</p>}
+                                            </div>
+                                        </div>
+                                        <div className="mb-4">
+                                            <label className="block text-sm font-bold mb-2">Company Name</label>
+                                            <input
+                                                {...register("companyName")}
+                                                className="w-full p-3 border border-slate-300 rounded bg-slate-50 focus:bg-white focus:outline-none focus:border-brand-navy transition-colors"
+                                                placeholder="Acme Construction"
+                                            />
+                                            {errors.companyName && <p className="text-red-500 text-xs mt-1">{errors.companyName.message}</p>}
+                                        </div>
+                                        <div className="mb-4">
+                                            <label className="block text-sm font-bold mb-2">Email</label>
+                                            <input
+                                                {...register("email")}
+                                                className="w-full p-3 border border-slate-300 rounded bg-slate-50 focus:bg-white focus:outline-none focus:border-brand-navy transition-colors"
+                                                placeholder="john@acme.com"
+                                            />
+                                            {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
+                                        </div>
+                                        <div className="mb-4">
+                                            <label className="block text-sm font-bold mb-2">Phone</label>
+                                            <input
+                                                {...register("phone")}
+                                                className="w-full p-3 border border-slate-300 rounded bg-slate-50 focus:bg-white focus:outline-none focus:border-brand-navy transition-colors"
+                                                placeholder="(555) 123-4567"
+                                            />
+                                            {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone.message}</p>}
+                                        </div>
+                                        <div className="mb-6">
+                                            <label className="block text-sm font-bold mb-2">Project Details</label>
+                                            <textarea
+                                                {...register("projectDetails")}
+                                                className="w-full p-3 border border-slate-300 rounded bg-slate-50 focus:bg-white focus:outline-none focus:border-brand-navy transition-colors"
+                                                rows={3}
+                                                placeholder="Tell us about the scope..."
+                                            />
+                                            {errors.projectDetails && <p className="text-red-500 text-xs mt-1">{errors.projectDetails.message}</p>}
+                                        </div>
+                                        <button
+                                            disabled={isSubmitting}
+                                            className="w-full py-4 bg-brand-navy text-white font-bold rounded hover:bg-slate-800 transition-colors disabled:opacity-50"
+                                        >
+                                            {isSubmitting ? "Sending..." : "Request Builder Package"}
+                                        </button>
+                                    </form>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </section>
