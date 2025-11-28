@@ -28,8 +28,8 @@ export default function BuilderPartnerPackForm() {
         try {
             const utms = getUTMParams();
 
-            // Using the specific Builder webhook
-            const response = await fetch("https://services.leadconnectorhq.com/hooks/hos0jUKT6DAHGRD0nBoP/webhook-trigger/flvpatv1vPRdj7ozN1bn", {
+            // Using the specific Builder Partner Pack webhook
+            const response = await fetch("https://services.leadconnectorhq.com/hooks/hos0jUKT6DAHGRD0nBoP/webhook-trigger/U47r6qucawrNMiyT6ZeD", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({

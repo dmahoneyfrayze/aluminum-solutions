@@ -9,6 +9,7 @@ import { getUTMParams } from "@/lib/utm";
 const guideFormSchema = z.object({
     name: z.string().min(2, "Name is required"),
     email: z.string().email("Invalid email address"),
+    phone: z.string().min(10, "Phone number is required"),
     city: z.string().min(2, "City is required"),
     projectType: z.string().min(1, "Please select a project type"),
 });
@@ -28,13 +29,14 @@ export default function GlassPartitionGuideForm() {
         try {
             const utms = getUTMParams();
 
-            // Using the general contact webhook for now, tagged with specific source
-            const response = await fetch("https://services.leadconnectorhq.com/hooks/hos0jUKT6DAHGRD0nBoP/webhook-trigger/403b183a-fcf4-47f3-a206-c00d1987b66b", {
+            // Using the specific Glass Partition Guide webhook
+            const response = await fetch("https://services.leadconnectorhq.com/hooks/hos0jUKT6DAHGRD0nBoP/webhook-trigger/87ODF4UVspewV3XhoCPm", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
                     name: data.name,
                     email: data.email,
+                    phone: data.phone,
                     city: data.city,
                     project_type: data.projectType,
                     source: "glass_partition_guide_magnet",
@@ -95,14 +97,25 @@ export default function GlassPartitionGuideForm() {
                     {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name.message}</p>}
                 </div>
 
-                <div>
-                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Email</label>
-                    <input
-                        {...register("email")}
-                        className="w-full p-3 border border-slate-300 rounded bg-slate-50 focus:bg-white focus:border-brand-navy focus:outline-none transition-colors"
-                        placeholder="name@company.com"
-                    />
-                    {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
+                <div className="grid grid-cols-2 gap-4">
+                    <div>
+                        <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Email</label>
+                        <input
+                            {...register("email")}
+                            className="w-full p-3 border border-slate-300 rounded bg-slate-50 focus:bg-white focus:border-brand-navy focus:outline-none transition-colors"
+                            placeholder="name@company.com"
+                        />
+                        {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
+                    </div>
+                    <div>
+                        <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Phone</label>
+                        <input
+                            {...register("phone")}
+                            className="w-full p-3 border border-slate-300 rounded bg-slate-50 focus:bg-white focus:border-brand-navy focus:outline-none transition-colors"
+                            placeholder="(555) 123-4567"
+                        />
+                        {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone.message}</p>}
+                    </div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
