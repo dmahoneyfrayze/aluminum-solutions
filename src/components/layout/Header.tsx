@@ -1,13 +1,20 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
     return (
         <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
             <div className="container mx-auto px-6 h-20 flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="text-2xl font-serif font-bold text-slate-900 tracking-tight flex items-center gap-2">
-                    <span className="w-8 h-8 bg-brand-copper text-white flex items-center justify-center rounded-sm text-lg">A</span>
-                    <span>ALUMINUM<span className="text-slate-400">SOLUTIONS</span></span>
+                <Link href="/" className="flex items-center gap-2">
+                    <Image
+                        src="/images/global-aluminum-solutions-logo.png"
+                        alt="Global Aluminum Solutions"
+                        width={200}
+                        height={60}
+                        className="h-12 w-auto object-contain"
+                        priority
+                    />
                 </Link>
 
                 {/* Desktop Nav */}

@@ -6,17 +6,19 @@ import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 
+import Image from "next/image";
+
 // Mock Data for Gallery Items
 const projects = [
-    { id: 1, category: "Railings", title: "Modern Glass Railing", location: "Toronto", image: "bg-slate-200" },
-    { id: 2, category: "Enclosures", title: "Porch Enclosure", location: "Mississauga", image: "bg-slate-300" },
-    { id: 3, category: "Gates", title: "Custom Driveway Gate", location: "Vaughan", image: "bg-slate-400" },
-    { id: 4, category: "Columns", title: "Aluminum Columns", location: "Oakville", image: "bg-slate-200" },
-    { id: 5, category: "Railings", title: "Black Picket Railing", location: "Markham", image: "bg-slate-300" },
-    { id: 6, category: "Enclosures", title: "Sunroom Addition", location: "Burlington", image: "bg-slate-400" },
-    { id: 7, category: "Railings", title: "Deck Glass Railing", location: "Richmond Hill", image: "bg-slate-200" },
-    { id: 8, category: "Gates", title: "Garden Gate", location: "Toronto", image: "bg-slate-300" },
-    { id: 9, category: "Columns", title: "Decorative Columns", location: "Brampton", image: "bg-slate-400" },
+    { id: 1, category: "Railings", title: "Modern Glass Railing", location: "Toronto", image: "/images/generated/railing_hero_detail_1764312850877.png" },
+    { id: 2, category: "Enclosures", title: "Porch Enclosure", location: "Mississauga", image: "/images/generated/glass_enclosure_project_1764312838961.png" },
+    { id: 3, category: "Gates", title: "Custom Driveway Gate", location: "Vaughan", image: "/images/generated/custom_gate_modern_1764314098362.png" },
+    { id: 4, category: "Columns", title: "Aluminum Columns", location: "Oakville", image: "/images/generated/railing_hero_detail_1764312850877.png" }, // Reusing railing detail
+    { id: 5, category: "Railings", title: "Black Picket Railing", location: "Markham", image: "/images/generated/pool_fence_picket_detail_1764312823826.png" },
+    { id: 6, category: "Enclosures", title: "Sunroom Addition", location: "Burlington", image: "/images/generated/glass_enclosure_project_1764312838961.png" }, // Reusing enclosure project
+    { id: 7, category: "Railings", title: "Deck Glass Railing", location: "Richmond Hill", image: "/images/generated/pool_fence_glass_detail_1764312810331.png" },
+    { id: 8, category: "Gates", title: "Garden Gate", location: "Toronto", image: "/images/generated/custom_gate_modern_1764314098362.png" }, // Reusing gate
+    { id: 9, category: "Columns", title: "Decorative Columns", location: "Brampton", image: "/images/generated/railing_hero_detail_1764312850877.png" }, // Reusing railing detail
 ];
 
 const categories = ["All", "Railings", "Enclosures", "Gates", "Columns"];
@@ -38,6 +40,7 @@ export default function GalleryPage() {
                     subtitle="Explore our portfolio of custom aluminum and glass projects across the GTA."
                     ctaText="Get a Quote"
                     ctaLink="/contact"
+                    backgroundImage="/images/generated/glass_enclosure_project_1764312838961.png"
                 />
 
                 <section className="py-20">
@@ -50,8 +53,8 @@ export default function GalleryPage() {
                                     key={category}
                                     onClick={() => setActiveCategory(category)}
                                     className={`px-6 py-2 rounded-full text-sm font-bold transition-all ${activeCategory === category
-                                            ? "bg-slate-900 text-white shadow-lg"
-                                            : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                                        ? "bg-slate-900 text-white shadow-lg"
+                                        : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                                         }`}
                                 >
                                     {category}
@@ -64,7 +67,13 @@ export default function GalleryPage() {
                             {filteredProjects.map((project) => (
                                 <div key={project.id} className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
                                     {/* Image Placeholder */}
-                                    <div className={`h-80 w-full ${project.image} relative`}>
+                                    <div className="h-80 w-full relative bg-slate-100">
+                                        <Image
+                                            src={project.image}
+                                            alt={project.title}
+                                            fill
+                                            className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                        />
                                         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300" />
                                     </div>
 

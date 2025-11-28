@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     description: "Secure and stylish aluminum gates for driveways, gardens, and side entrances. Custom fabricated in Toronto.",
 };
 
+import Image from "next/image";
+
 export default function GatesPage() {
     return (
         <div className="min-h-screen flex flex-col">
@@ -48,11 +50,12 @@ export default function GatesPage() {
                             </div>
                         </div>
                         <div className="h-[500px] bg-slate-100 relative rounded-sm overflow-hidden shadow-2xl">
-                            {/* Image Placeholder */}
-                            <div className="absolute inset-0 bg-slate-200" />
-                            <div className="absolute inset-0 flex items-center justify-center text-slate-400 font-medium">
-                                [Custom Gate Project Image]
-                            </div>
+                            <Image
+                                src="/images/generated/custom_gate_modern_1764314098362.png"
+                                alt="Custom Aluminum Driveway Gate"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
                     </div>
                 </section>

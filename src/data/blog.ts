@@ -90,6 +90,79 @@ export const blogPosts: BlogPost[] = [
       <p><strong>Ready to boost your home's value?</strong> <a href="/contact">Contact us today</a> for a free design consultation.</p>
     `,
   },
+  {
+    slug: "top-home-upgrades-sales-value",
+    title: "Top Home Upgrades for Maximum Sales Value",
+    excerpt: "Planning to sell? Focus your renovation budget on these high-ROI exterior upgrades.",
+    date: "November 25, 2024",
+    category: "Real Estate",
+    imageUrl: "/images/generated/custom_gate_modern_1764314098362.png", // Reusing gate image
+    content: `
+      <p>When preparing your home for sale, not all renovations are created equal. While a new kitchen is nice, exterior upgrades often provide a higher return on investment (ROI) because they improve curb appeal—the very first thing a buyer sees.</p>
+      
+      <h3>1. Front Entry Makeover</h3>
+      <p>Your front door and porch set the tone for the entire viewing. Replacing old, rusty railings with sleek aluminum or glass instantly modernizes the home. It signals to buyers that the property is well-maintained and "move-in ready."</p>
+      
+      <h3>2. Secure & Stylish Gates</h3>
+      <p>For homes with side entrances or driveways, a custom aluminum gate adds both security and prestige. It implies privacy and exclusivity, which can justify a higher asking price.</p>
+      
+      <h3>3. Outdoor Living Spaces</h3>
+      <p>Post-2020, buyers are prioritizing outdoor space more than ever. A porch enclosure or a well-defined deck with glass railings effectively adds "livable square footage" to your home listing.</p>
+      
+      <h3>The Numbers</h3>
+      <p>According to Remodeling Magazine's Cost vs. Value Report, exterior improvements like manufactured stone veneer and new entry doors consistently rank in the top 5 for ROI, often recouping over 90% of their cost at resale.</p>
+    `,
+  },
+  {
+    slug: "financing-your-outdoor-project",
+    title: "Financing Your Outdoor Renovation: Options & Tips",
+    excerpt: "Don't let budget constraints delay your dream project. Explore smart financing options for Canadian homeowners.",
+    date: "November 28, 2024",
+    category: "Financing",
+    imageUrl: "/images/generated/founder_portrait_1764313198224.png", // Reusing founder image (consultation vibe)
+    content: `
+      <p>Investing in high-quality aluminum railings or a glass enclosure is a smart decision for your home's value, but it is also a significant financial commitment. Fortunately, there are several ways to finance your project without draining your savings.</p>
+      
+      <h3>1. Home Equity Line of Credit (HELOC)</h3>
+      <p>For most homeowners, a HELOC is the lowest-interest option. It allows you to borrow against the equity you've built up in your home. Since exterior upgrades increase property value, this is often considered "good debt."</p>
+      
+      <h3>2. Vendor Financing</h3>
+      <p>Many contractors and suppliers work with third-party lenders to offer installment plans. This can be a convenient way to spread the cost over 12-24 months. <em>Ask us about our preferred financing partners during your consultation.</em></p>
+      
+      <h3>3. Refinancing for Major Renovations</h3>
+      <p>If you are doing a larger overhaul—like a full landscape redesign including fences, gates, and railings—rolling the cost into your mortgage refinancing might make sense to keep monthly payments low.</p>
+      
+      <h3>Budgeting Tip</h3>
+      <p>When comparing quotes, remember to look at the <strong>lifetime cost</strong>. Wood railings may be cheaper upfront but require annual staining and eventual replacement. Aluminum is a "buy once" investment.</p>
+    `,
+  },
+  {
+    slug: "cmhc-insurance-home-upgrades",
+    title: "CMHC Insurance & Home Upgrades: What You Need to Know",
+    excerpt: "Did you know certain energy-efficient upgrades can qualify for CMHC premium refunds? Here is the scoop.",
+    date: "November 29, 2024",
+    category: "Tips",
+    imageUrl: "/images/generated/glass_enclosure_project_1764312838961.png", // Reusing enclosure image
+    content: `
+      <p>If you purchased your home with less than a 20% down payment, you likely paid for CMHC mortgage loan insurance. But did you know that the <strong>CMHC Eco Plus</strong> program offers a partial premium refund of up to 25% for energy-efficient renovations?</p>
+      
+      <h3>Does a Porch Enclosure Count?</h3>
+      <p>While railings themselves are safety features, a full <strong>glass porch enclosure</strong> can act as a buffer zone for your home's entrance, reducing heat loss in winter and keeping your home cooler in summer. This contributes to the overall energy efficiency of your building envelope.</p>
+      
+      <h3>How to Qualify</h3>
+      <p>To qualify for the refund, you typically need to:</p>
+      <ul>
+        <li>Have CMHC-insured financing.</li>
+        <li>Conduct an energetic evaluation before and after the work.</li>
+        <li>Improve your home's energy rating by a specific margin.</li>
+      </ul>
+      
+      <h3>Safety Upgrades</h3>
+      <p>While CMHC focuses on energy, don't overlook the value of safety. Replacing non-compliant railings is often a requirement for insurance renewals or refinancing approvals. Ensuring your home meets current building codes (SB-13) protects your investment and your family.</p>
+      
+      <p><em>Note: Program details change. Always check the official CMHC website for the latest eligibility criteria.</em></p>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

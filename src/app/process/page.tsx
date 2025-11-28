@@ -5,31 +5,37 @@ import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 
+import Image from "next/image";
+
 export default function ProcessPage() {
     const steps = [
         {
             number: "01",
             title: "Consultation & Estimate",
             description: "It starts with a conversation. We discuss your vision, style preferences, and budget. You can visit our showroom or we can provide a rough estimate based on your photos and measurements.",
-            icon: "💬"
+            icon: "💬",
+            image: "/images/generated/founder_portrait_1764313198224.png"
         },
         {
             number: "02",
             title: "Precision Measurement",
             description: "Once you approve the estimate, our expert technician visits your site to take laser-precise measurements. We account for every slope, angle, and unique feature of your property.",
-            icon: "📏"
+            icon: "📏",
+            image: "/images/generated/glass_enclosure_project_1764312838961.png"
         },
         {
             number: "03",
             title: "Custom Fabrication",
             description: "Your order goes to our GTA factory. We cut, drill, and powder coat your aluminum profiles to the exact specifications. Glass is tempered and polished. Quality control checks every piece.",
-            icon: "🏭"
+            icon: "🏭",
+            image: "/images/generated/railing_hero_detail_1764312850877.png"
         },
         {
             number: "04",
             title: "Professional Installation",
             description: "Our in-house team arrives on the scheduled day. We protect your property, install efficiently, and clean up thoroughly. We don't leave until you are 100% satisfied.",
-            icon: "✨"
+            icon: "✨",
+            image: "/images/generated/team_member_1_installer_1764313211230.png"
         }
     ];
 
@@ -43,6 +49,7 @@ export default function ProcessPage() {
                     subtitle="From the first call to the final polish, we handle every detail so you don't have to."
                     ctaText="Start Your Project"
                     ctaLink="/contact"
+                    backgroundImage="/images/generated/railing_hero_detail_1764312850877.png"
                 />
 
                 {/* Intro */}
@@ -69,15 +76,17 @@ export default function ProcessPage() {
                                     {/* Image Side */}
                                     <div className="w-full md:w-1/2">
                                         <div className="aspect-video bg-slate-100 rounded-xl shadow-lg relative overflow-hidden group">
-                                            <div className="absolute inset-0 bg-slate-200 transition-transform duration-700 group-hover:scale-105" />
-                                            <div className="absolute inset-0 flex items-center justify-center text-4xl">
-                                                {step.icon}
-                                            </div>
+                                            <Image
+                                                src={step.image}
+                                                alt={step.title}
+                                                fill
+                                                className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                            />
                                         </div>
                                     </div>
 
                                     {/* Center Dot */}
-                                    <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white border-4 border-brand-copper rounded-full items-center justify-center font-bold text-brand-dark shadow-lg">
+                                    <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white border-4 border-brand-copper rounded-full items-center justify-center font-bold text-brand-dark shadow-lg z-20">
                                         {step.number}
                                     </div>
 

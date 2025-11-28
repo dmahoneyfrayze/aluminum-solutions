@@ -9,6 +9,7 @@ import ReputationWidget from "@/components/ui/ReputationWidget";
 import QuoteCalculator from "@/components/tools/QuoteCalculator";
 import StyleExplorer from "@/components/tools/StyleExplorer";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -84,6 +85,8 @@ export default function Home() {
 
         <ReputationWidget />
 
+
+
         {/* Services Overview */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-6">
@@ -99,8 +102,13 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Service 1 */}
               <div className="group text-center">
-                <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg">
-                  <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
+                <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
+                  <Image
+                    src="/images/generated/railing_hero_detail_1764312850877.png"
+                    alt="Aluminum Railings"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
                 <h3 className="text-xl font-bold mb-2 font-serif">Aluminum Railings</h3>
                 <p className="text-slate-600 text-sm mb-4">Maintenance-free durability.</p>
@@ -110,8 +118,13 @@ export default function Home() {
               </div>
               {/* Service 2 */}
               <div className="group text-center">
-                <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg">
-                  <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
+                <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
+                  <Image
+                    src="/images/generated/glass_enclosure_project_1764312838961.png"
+                    alt="Glass Enclosures"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
                 <h3 className="text-xl font-bold mb-2 font-serif">Glass Enclosures</h3>
                 <p className="text-slate-600 text-sm mb-4">Wind protection & views.</p>
@@ -121,8 +134,13 @@ export default function Home() {
               </div>
               {/* Service 3 */}
               <div className="group text-center">
-                <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg">
-                  <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
+                <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
+                  <Image
+                    src="/images/generated/custom_gate_modern_1764314098362.png"
+                    alt="Custom Gates"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
                 <h3 className="text-xl font-bold mb-2 font-serif">Custom Gates</h3>
                 <p className="text-slate-600 text-sm mb-4">Security meets style.</p>
@@ -132,8 +150,13 @@ export default function Home() {
               </div>
               {/* Service 4 */}
               <div className="group text-center">
-                <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg">
-                  <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
+                <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
+                  <Image
+                    src="/images/generated/pool_fence_glass_detail_1764312810331.png"
+                    alt="Frameless Showers"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
                 <h3 className="text-xl font-bold mb-2 font-serif">Frameless Showers</h3>
                 <p className="text-slate-600 text-sm mb-4">Spa-like luxury glass.</p>
@@ -159,6 +182,7 @@ export default function Home() {
             </Link>
           </div>
         </section>
+
       </main>
 
       <Footer />

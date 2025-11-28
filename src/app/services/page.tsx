@@ -9,42 +9,52 @@ export const metadata: Metadata = {
     description: "Explore our premium aluminum railings, glass enclosures, custom gates, and columns. Expert installation in Toronto and the GTA.",
 };
 
+import Image from "next/image";
+
+// ... (imports)
+
 const services = [
     {
         title: "Aluminum Railings",
         description: "Durable, maintenance-free railings in a variety of modern styles and colors. Perfect for porches, balconies, and decks.",
         link: "/services/railings",
-        features: ["Rust-free", "Powder-coated finish", "Multiple color options"]
+        features: ["Rust-free", "Powder-coated finish", "Multiple color options"],
+        image: "/images/generated/railing_hero_detail_1764312850877.png"
     },
     {
         title: "Glass Enclosures",
         description: "Frameless and framed glass solutions that provide wind protection without sacrificing your view.",
         link: "/services/glass-enclosures",
-        features: ["Tempered safety glass", "Custom sizing", "Wind protection"]
+        features: ["Tempered safety glass", "Custom sizing", "Wind protection"],
+        image: "/images/generated/glass_enclosure_project_1764312838961.png"
     },
     {
         title: "Custom Gates",
         description: "Secure and stylish entry gates custom fabricated to match your property's aesthetic.",
         link: "/services/gates",
-        features: ["Heavy-duty hardware", "Custom designs", "Security focused"]
+        features: ["Heavy-duty hardware", "Custom designs", "Security focused"],
+        image: "/images/generated/custom_gate_modern_1764314098362.png"
     },
     {
         title: "Aluminum Columns",
         description: "Structural and decorative aluminum columns to replace rotting wood and add curb appeal.",
         link: "/services/columns",
-        features: ["Load-bearing options", "Classic & modern styles", "Maintenance-free"]
+        features: ["Load-bearing options", "Classic & modern styles", "Maintenance-free"],
+        image: "/images/generated/railing_hero_detail_1764312850877.png" // Temporary: Railing detail
     },
     {
         title: "Pool Fences",
         description: "Safe, code-compliant glass and aluminum pool enclosures that don't obstruct your view.",
         link: "/services/pool-fences",
-        features: ["Self-closing gates", "Climb-resistant", "12mm safety glass"]
+        features: ["Self-closing gates", "Climb-resistant", "12mm safety glass"],
+        image: "/images/generated/pool_fence_hero_1764312796756.png"
     },
     {
         title: "Privacy Screens",
         description: "Acid-etched glass and aluminum screens to create a private oasis in urban settings.",
         link: "/services/privacy-screens",
-        features: ["Frosted glass", "Custom heights", "Wind reduction"]
+        features: ["Frosted glass", "Custom heights", "Wind reduction"],
+        image: "/images/generated/pool_fence_glass_detail_1764312810331.png" // Temporary: Glass detail
     }
 ];
 
@@ -59,16 +69,21 @@ export default function ServicesPage() {
                     subtitle="Enhance your home's value and curb appeal with our custom-fabricated aluminum and glass products."
                     ctaText="Get a Free Quote"
                     ctaLink="/contact"
+                    backgroundImage="/images/generated/railing_hero_detail_1764312850877.png"
                 />
 
                 <section className="py-20 bg-white">
                     <div className="container mx-auto px-6">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                             {services.map((service, index) => (
-                                <div key={index} className="group bg-slate-50 border border-slate-100 hover:border-slate-200 hover:shadow-xl transition-all duration-300 overflow-hidden">
+                                <div key={index} className="group bg-slate-50 border border-slate-100 hover:border-slate-200 hover:shadow-xl transition-all duration-300 overflow-hidden rounded-lg">
                                     <div className="h-64 bg-slate-200 relative">
-                                        {/* Placeholder for Service Image */}
-                                        <div className="absolute inset-0 bg-slate-300 group-hover:scale-105 transition-transform duration-700" />
+                                        <Image
+                                            src={service.image}
+                                            alt={service.title}
+                                            fill
+                                            className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                        />
                                     </div>
                                     <div className="p-8">
                                         <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">{service.title}</h3>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import SEOFooterLinks from "@/components/layout/SEOFooterLinks";
 
 export default function Footer() {
@@ -31,7 +32,15 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
                     {/* Brand */}
                     <div>
-                        <div className="text-2xl font-serif font-bold mb-6">Aluminum Solutions</div>
+                        <div className="mb-6">
+                            <Image
+                                src="/images/global-aluminum-solutions-logo.png"
+                                alt="Global Aluminum Solutions"
+                                width={200}
+                                height={60}
+                                className="h-12 w-auto object-contain brightness-0 invert"
+                            />
+                        </div>
                         <p className="text-slate-400 mb-6">
                             Premium aluminum railings and glass enclosures. Manufactured in the GTA, installed by experts.
                         </p>
@@ -55,6 +64,7 @@ export default function Footer() {
                             <li><Link href="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
                             <li><Link href="/blog" className="hover:text-white transition-colors">Blog & Case Studies</Link></li>
                             <li><Link href="/builders" className="hover:text-white transition-colors">For Builders</Link></li>
+                            <li><Link href="/referral" className="hover:text-white transition-colors">Referral Program</Link></li>
                             <li><Link href="/contact" className="hover:text-white transition-colors">Get a Quote</Link></li>
                         </ul>
                     </div>
