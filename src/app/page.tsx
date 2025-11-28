@@ -122,10 +122,10 @@ export default function Home() {
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
-                Premium Exterior Solutions
+                Premium Aluminum & Glass Solutions
               </h2>
               <p className="text-slate-600 max-w-2xl mx-auto">
-                Engineered for safety, designed for elegance.
+                Engineered for safety, designed for elegance. Interior & Exterior.
               </p>
             </div>
 
@@ -166,7 +166,7 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/generated/glass_office_partition_hero_1764346564712.png"
+                    src="/images/projects/privacy-screen-frosted-glass.jpg"
                     alt="Glass Walls"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -182,12 +182,18 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/generated/frameless_glass_shower_modern_1764347088164.png"
+                    src="/images/projects/pool-fence-glass-guards.jpg"
                     alt="Frameless Showers"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
+                <h3 className="text-xl font-bold mb-2 font-serif">Frameless Showers</h3>
+                <p className="text-slate-600 text-sm mb-4">Spa-like luxury glass.</p>
+                <Link href="/services/showers" aria-label="Learn more about Frameless Showers" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                  Learn More
+                </Link>
+              </div>
                 <h3 className="text-xl font-bold mb-2 font-serif">Frameless Showers</h3>
                 <p className="text-slate-600 text-sm mb-4">Spa-like luxury glass.</p>
                 <Link href="/services/showers" aria-label="Learn more about Frameless Showers" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
@@ -216,6 +222,6 @@ export default function Home() {
       </main>
 
       <Footer />
-    </div>
+    </div >
   );
 }
