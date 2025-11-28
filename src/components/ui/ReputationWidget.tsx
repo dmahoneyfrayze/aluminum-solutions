@@ -26,6 +26,7 @@ export default function ReputationWidget() {
                         frameBorder="0"
                         scrolling="no"
                         style={{ minWidth: "100%", width: "100%", minHeight: "600px", border: "none", overflow: "hidden" }}
+                        title="Customer Reviews"
                     />
                 </div>
             </div>

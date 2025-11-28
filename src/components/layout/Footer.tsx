@@ -42,7 +42,7 @@ export default function Footer() {
                                 className="h-12 w-auto object-contain brightness-0 invert"
                             />
                         </div>
-                        <p className="text-slate-400 mb-6">
+                        <p className="text-slate-300 mb-6">
                             Premium aluminum railings and glass enclosures. Manufactured in the GTA, installed by experts.
                         </p>
                         <div className="flex space-x-4">
@@ -54,8 +54,8 @@ export default function Footer() {
 
                     {/* Quick Links */}
                     <div>
-                        <h4 className="font-bold mb-6">Quick Links</h4>
-                        <ul className="space-y-4 text-slate-400">
+                        <h3 className="font-bold mb-6 text-lg">Quick Links</h3>
+                        <ul className="space-y-4 text-slate-300">
                             <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
                             <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
                             <li><Link href="/process" className="hover:text-white transition-colors">Our Process</Link></li>
@@ -72,12 +72,12 @@ export default function Footer() {
 
                     {/* Services */}
                     <div>
-                        <h4 className="font-bold mb-6">Our Services</h4>
-                        <ul className="space-y-4 text-slate-400">
+                        <h3 className="font-bold mb-6 text-lg">Our Services</h3>
+                        <ul className="space-y-4 text-slate-300">
                             <li><Link href="/services/railings" className="hover:text-white transition-colors">Aluminum Railings</Link></li>
-                            <li><Link href="/services/glass-enclosures" className="text-slate-400 hover:text-brand-copper transition-colors">Glass Enclosures</Link></li>
-                            <li><Link href="/services/glass-walls" className="text-slate-400 hover:text-brand-copper transition-colors">Glass Walls</Link></li>
-                            <li><Link href="/services/glass-railings" className="text-slate-400 hover:text-brand-copper transition-colors">Glass Railings</Link></li>
+                            <li><Link href="/services/glass-enclosures" className="text-slate-300 hover:text-brand-copper transition-colors">Glass Enclosures</Link></li>
+                            <li><Link href="/services/glass-walls" className="text-slate-300 hover:text-brand-copper transition-colors">Glass Walls</Link></li>
+                            <li><Link href="/services/glass-railings" className="text-slate-300 hover:text-brand-copper transition-colors">Glass Railings</Link></li>
                             <li><Link href="/services/pool-fences" className="hover:text-white transition-colors">Pool Fences</Link></li>
                             <li><Link href="/services/privacy-screens" className="hover:text-white transition-colors">Privacy Screens</Link></li>
                             <li><Link href="/services/showers" className="hover:text-white transition-colors">Frameless Showers</Link></li>
@@ -88,8 +88,8 @@ export default function Footer() {
 
                     {/* Contact */}
                     <div>
-                        <h4 className="font-bold mb-6">Contact Us</h4>
-                        <ul className="space-y-4 text-slate-400">
+                        <h3 className="font-bold mb-6 text-lg">Contact Us</h3>
+                        <ul className="space-y-4 text-slate-300">
                             <li className="flex items-start">
                                 <span className="mr-3 mt-1">📍</span>
                                 <span>Serving Toronto & Montreal</span>
