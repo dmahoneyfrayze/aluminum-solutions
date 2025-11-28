@@ -135,7 +135,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-2 font-serif">Aluminum Railings</h3>
                 <p className="text-slate-600 text-sm mb-4">Maintenance-free durability.</p>
-                <Link href="/services/railings" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                <Link href="/services/railings" aria-label="Learn more about Aluminum Railings" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
                   Learn More
                 </Link>
               </div>
@@ -151,7 +151,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-2 font-serif">Glass Enclosures</h3>
                 <p className="text-slate-600 text-sm mb-4">Wind protection & views.</p>
-                <Link href="/services/glass-enclosures" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                <Link href="/services/glass-enclosures" aria-label="Learn more about Glass Enclosures" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
                   Learn More
                 </Link>
               </div>
@@ -167,7 +167,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-2 font-serif">Custom Gates</h3>
                 <p className="text-slate-600 text-sm mb-4">Security meets style.</p>
-                <Link href="/services/gates" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                <Link href="/services/gates" aria-label="Learn more about Custom Gates" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
                   Learn More
                 </Link>
               </div>
@@ -183,7 +183,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-2 font-serif">Frameless Showers</h3>
                 <p className="text-slate-600 text-sm mb-4">Spa-like luxury glass.</p>
-                <Link href="/services/showers" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                <Link href="/services/showers" aria-label="Learn more about Frameless Showers" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
                   Learn More
                 </Link>
               </div>

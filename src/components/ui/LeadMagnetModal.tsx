@@ -64,8 +64,9 @@ export default function LeadMagnetModal({ isOpen, onClose, resourceName }: LeadM
 
                             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                                 <div>
-                                    <label className="block text-sm font-bold text-slate-700 mb-1">Name</label>
+                                    <label htmlFor="lead-name" className="block text-sm font-bold text-slate-700 mb-1">Name</label>
                                     <input
+                                        id="lead-name"
                                         {...register("name")}
                                         className="w-full px-4 py-2 border border-slate-300 rounded focus:border-brand-navy focus:ring-1 focus:ring-brand-navy outline-none"
                                         placeholder="Your Name"
@@ -74,8 +75,9 @@ export default function LeadMagnetModal({ isOpen, onClose, resourceName }: LeadM
                                 </div>
 
                                 <div>
-                                    <label className="block text-sm font-bold text-slate-700 mb-1">Email</label>
+                                    <label htmlFor="lead-email" className="block text-sm font-bold text-slate-700 mb-1">Email</label>
                                     <input
+                                        id="lead-email"
                                         {...register("email")}
                                         className="w-full px-4 py-2 border border-slate-300 rounded focus:border-brand-navy focus:ring-1 focus:ring-brand-navy outline-none"
                                         placeholder="your@email.com"

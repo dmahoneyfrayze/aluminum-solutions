@@ -125,8 +125,9 @@ export default function ContactPage() {
                                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div>
-                                            <label className="block text-sm font-bold text-slate-700 mb-2">First Name *</label>
+                                            <label htmlFor="firstName" className="block text-sm font-bold text-slate-700 mb-2">First Name *</label>
                                             <input
+                                                id="firstName"
                                                 {...register("firstName")}
                                                 className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-brand-copper focus:ring-2 focus:ring-brand-copper/20 outline-none transition-all"
                                                 placeholder="John"
@@ -134,8 +135,9 @@ export default function ContactPage() {
                                             {errors.firstName && <p className="text-red-500 text-xs mt-1">{errors.firstName.message}</p>}
                                         </div>
                                         <div>
-                                            <label className="block text-sm font-bold text-slate-700 mb-2">Last Name *</label>
+                                            <label htmlFor="lastName" className="block text-sm font-bold text-slate-700 mb-2">Last Name *</label>
                                             <input
+                                                id="lastName"
                                                 {...register("lastName")}
                                                 className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-brand-copper focus:ring-2 focus:ring-brand-copper/20 outline-none transition-all"
                                                 placeholder="Doe"
@@ -146,8 +148,9 @@ export default function ContactPage() {
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div>
-                                            <label className="block text-sm font-bold text-slate-700 mb-2">Email *</label>
+                                            <label htmlFor="email" className="block text-sm font-bold text-slate-700 mb-2">Email *</label>
                                             <input
+                                                id="email"
                                                 {...register("email")}
                                                 className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-brand-copper focus:ring-2 focus:ring-brand-copper/20 outline-none transition-all"
                                                 placeholder="john@example.com"
@@ -155,8 +158,9 @@ export default function ContactPage() {
                                             {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
                                         </div>
                                         <div>
-                                            <label className="block text-sm font-bold text-slate-700 mb-2">Phone *</label>
+                                            <label htmlFor="phone" className="block text-sm font-bold text-slate-700 mb-2">Phone *</label>
                                             <input
+                                                id="phone"
                                                 {...register("phone")}
                                                 className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-brand-copper focus:ring-2 focus:ring-brand-copper/20 outline-none transition-all"
                                                 placeholder="(555) 123-4567"
@@ -166,8 +170,9 @@ export default function ContactPage() {
                                     </div>
 
                                     <div>
-                                        <label className="block text-sm font-bold text-slate-700 mb-2">Your Location *</label>
+                                        <label htmlFor="location" className="block text-sm font-bold text-slate-700 mb-2">Your Location *</label>
                                         <select
+                                            id="location"
                                             {...register("location")}
                                             className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-brand-copper focus:ring-2 focus:ring-brand-copper/20 outline-none transition-all bg-white"
                                         >
@@ -180,8 +185,9 @@ export default function ContactPage() {
                                     </div>
 
                                     <div>
-                                        <label className="block text-sm font-bold text-slate-700 mb-2">Message *</label>
+                                        <label htmlFor="message" className="block text-sm font-bold text-slate-700 mb-2">Message *</label>
                                         <textarea
+                                            id="message"
                                             {...register("message")}
                                             rows={4}
                                             className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-brand-copper focus:ring-2 focus:ring-brand-copper/20 outline-none transition-all"

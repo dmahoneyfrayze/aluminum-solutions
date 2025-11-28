@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 interface HeroProps {
     title: string;
@@ -18,10 +19,16 @@ export default function Hero({
     return (
         <section className="relative h-[85vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-900">
             {/* Background Image with Parallax-like feel */}
-            <div
-                className="absolute inset-0 z-0 bg-cover bg-center transform scale-105"
-                style={{ backgroundImage: `url(${backgroundImage})` }}
-            />
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src={backgroundImage}
+                    alt={title}
+                    fill
+                    priority
+                    className="object-cover transform scale-105"
+                    quality={85}
+                />
+            </div>
 
             {/* Gradient Overlay for Depth & Readability */}
             <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/60 to-slate-900/90 z-10" />
