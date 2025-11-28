@@ -8,28 +8,28 @@ const styles = [
         id: "glass-spigot",
         name: "Frameless Glass (Spigot)",
         description: "Minimalist luxury. 12mm tempered glass held by stainless steel spigots.",
-        image: "/images/projects/pool-fence-glass-guards.jpg",
+        image: "/images/projects/pool-fence-glass-swimming.jpg",
         features: ["Unobstructed Views", "Modern Aesthetic", "Pool Safe"]
     },
     {
         id: "glass-rail",
         name: "Glass with Top Rail",
         description: "Contemporary safety. Glass panels with a sleek aluminum top rail.",
-        image: "/images/projects/railing-aluminum-deck-toronto.jpg",
+        image: "/images/projects/porch-railing-glass-aluminum.jpg",
         features: ["Added Stability", "Lean-friendly", "Custom Colors"]
     },
     {
         id: "picket",
         name: "Aluminum Picket",
         description: "Classic durability. Maintenance-free aluminum pickets in various colors.",
-        image: "/images/projects/black-aluminum-railing-stone.png",
+        image: "/images/projects/aluminum-railing-pickets-black.png",
         features: ["Cost Effective", "Traditional Look", "Airflow"]
     },
     {
         id: "privacy",
         name: "Privacy Screen",
         description: "Secluded comfort. Acid-etched glass to block views but let light in.",
-        image: "/images/projects/privacy-screen-frosted-glass.jpg",
+        image: "/images/projects/privacy-screen-etched-glass.jpg",
         features: ["Maximum Privacy", "Wind Protection", "Soft Light"]
     }
 ];
@@ -49,51 +49,60 @@ export default function StyleExplorer() {
                     </p>
                 </div>
 
-                <div className="flex flex-col lg:flex-row gap-12 items-center">
+                <div className="flex flex-col lg:flex-row gap-12 items-start">
                     {/* Controls */}
                     <div className="w-full lg:w-1/3 space-y-4">
                         {styles.map((style) => (
                             <button
                                 key={style.id}
                                 onClick={() => setActiveStyle(style)}
-                                className={`w-full text-left p-6 rounded-xl transition-all duration-300 border ${activeStyle.id === style.id
-                                    ? "bg-brand-navy text-white border-brand-navy shadow-lg scale-105"
+                                className={`w-full text-left p-6 rounded-xl transition-all duration-300 border group relative overflow-hidden ${activeStyle.id === style.id
+                                    ? "bg-brand-navy text-white border-brand-navy shadow-lg scale-105 z-10"
                                     : "bg-white text-slate-600 border-slate-200 hover:border-brand-copper hover:shadow-md"
                                     }`}
                             >
-                                <h3 className={`font-bold text-lg mb-1 ${activeStyle.id === style.id ? "text-white" : "text-slate-900"}`}>
-                                    {style.name}
-                                </h3>
-                                <p className={`text-sm ${activeStyle.id === style.id ? "text-slate-300" : "text-slate-500"}`}>
-                                    {style.description}
-                                </p>
+                                <div className="relative z-10">
+                                    <h3 className={`font-bold text-lg mb-1 ${activeStyle.id === style.id ? "text-white" : "text-slate-900"}`}>
+                                        {style.name}
+                                    </h3>
+                                    <p className={`text-sm ${activeStyle.id === style.id ? "text-slate-300" : "text-slate-500"}`}>
+                                        {style.description}
+                                    </p>
+                                </div>
+                                {activeStyle.id === style.id && (
+                                    <div className="absolute inset-0 bg-gradient-to-r from-brand-navy to-slate-800 opacity-100" />
+                                )}
                             </button>
                         ))}
                     </div>
 
                     {/* Preview */}
-                    <div className="w-full lg:w-2/3">
-                        <div className="relative aspect-[16/9] bg-slate-100 rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
+                    <div className="w-full lg:w-2/3 sticky top-24">
+                        <div className="relative aspect-[16/9] bg-slate-100 rounded-2xl overflow-hidden shadow-2xl border border-slate-200 group">
                             <Image
-                                key={activeStyle.id} // Force re-render on change for animation if we added it, but good for keying
+                                key={activeStyle.id}
                                 src={activeStyle.image}
                                 alt={activeStyle.name}
                                 fill
-                                className="object-cover"
+                                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                priority
                             />
 
+                            {/* Gradient Overlay */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" />
+
                             {/* Overlay Info */}
-                            <div className="absolute bottom-0 left-0 right-0 bg-white/90 backdrop-blur-md p-6 border-t border-white/20">
-                                <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                                    <div className="flex gap-4">
+                            <div className="absolute bottom-0 left-0 right-0 p-8">
+                                <div className="flex flex-col md:flex-row justify-between items-end gap-6">
+                                    <div className="flex flex-wrap gap-3">
                                         {activeStyle.features.map((feature, i) => (
-                                            <span key={i} className="px-3 py-1 bg-brand-copper/10 text-brand-copper text-xs font-bold uppercase tracking-wider rounded-full">
+                                            <span key={i} className="px-4 py-1.5 bg-white/20 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wider rounded-full border border-white/30 shadow-sm">
                                                 {feature}
                                             </span>
                                         ))}
                                     </div>
-                                    <a href="/contact" className="px-6 py-2 bg-brand-navy text-white text-sm font-bold rounded hover:bg-slate-800 transition-colors">
-                                        Get Quote for {activeStyle.name}
+                                    <a href="/contact" className="px-8 py-3 bg-brand-copper text-white font-bold rounded shadow-lg hover:bg-orange-700 transition-colors transform hover:-translate-y-1">
+                                        Get Quote
                                     </a>
                                 </div>
                             </div>
