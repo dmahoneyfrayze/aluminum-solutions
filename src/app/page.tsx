@@ -125,7 +125,10 @@ export default function Home() {
                 Premium Aluminum & Glass Solutions
               </h2>
               <p className="text-slate-600 max-w-2xl mx-auto">
-                Engineered for safety, designed for elegance. Interior & Exterior.
+                Engineered for safety, designed for elegance. If you're looking for "aluminum railings near me" in the GTA, you've found the factory-direct source.
+              </p>
+              <p className="text-slate-500 text-sm mt-2">
+                Building on the legacy of Global Aluminum Solutions.
               </p>
             </div>
 

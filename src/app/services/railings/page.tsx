@@ -57,7 +57,7 @@ export default function RailingsPage() {
                                 Built for Canada
                             </span>
                             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-brand-dark">
-                                Why Choose Aluminum Railings?
+                                Why Choose an Aluminium Railing System?
                             </h2>
                             <div className="space-y-6 text-slate-600 leading-relaxed text-lg">
                                 <p>

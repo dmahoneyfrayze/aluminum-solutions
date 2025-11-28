@@ -18,7 +18,7 @@ export default function PorchEnclosuresPage() {
             <main className="flex-grow">
                 <Hero
                     title="Custom Glass Porch Enclosures"
-                    subtitle="Protect your front entrance from snow, rain, and wind. Create a vestibule that adds value and comfort to your home."
+                    subtitle="Protect your home with a custom glass enclosure for front porch. Create a vestibule that adds value and comfort to your home."
                     ctaText="Get a Free Estimate"
                     ctaLink="/contact"
                     backgroundImage="/images/generated/glass_enclosure_project_1764312838961.png"
@@ -33,10 +33,10 @@ export default function PorchEnclosuresPage() {
                                     Winter Protection
                                 </span>
                                 <h2 className="text-3xl font-serif font-bold text-brand-dark mb-6">
-                                    Why Enclose Your Porch?
+                                    Why Install a Glass Porch Enclosure?
                                 </h2>
                                 <p className="text-slate-600 mb-6 leading-relaxed text-lg">
-                                    In the GTA, winter can be harsh. A glass porch enclosure acts as a buffer zone, keeping your front door dry and reducing heat loss when you enter or exit your home.
+                                    In the GTA, winter can be harsh. An enclosed glass porch acts as a buffer zone, keeping your front door dry and reducing heat loss when you enter or exit your home.
                                 </p>
                                 <ul className="space-y-4 mb-10">
                                     <li className="flex items-center">
@@ -107,7 +107,7 @@ export default function PorchEnclosuresPage() {
                     <div className="container mx-auto px-6">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl font-serif font-bold text-slate-900 mb-4">
-                                Types of Glass Porch Enclosures
+                                Types of Front Entrance Enclosures
                             </h2>
                             <p className="text-slate-600 max-w-2xl mx-auto">
                                 We offer versatile solutions tailored to how you want to use your space.
