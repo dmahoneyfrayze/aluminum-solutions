@@ -14,8 +14,25 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Aluminum Solutions | Premium Railings & Enclosures in Toronto & GTA",
+  metadataBase: new URL("https://aluminumsolutions.ca"),
+  title: {
+    default: "Aluminum Solutions | Premium Railings & Enclosures in Toronto & GTA",
+    template: "%s | Aluminum Solutions",
+  },
   description: "Transform your home with high-end aluminum railings, glass enclosures, and custom gates. Serving Toronto, Mississauga, Oakville, and the GTA.",
+  openGraph: {
+    type: "website",
+    locale: "en_CA",
+    url: "https://aluminumsolutions.ca",
+    siteName: "Aluminum Solutions",
+    title: "Aluminum Solutions | Premium Railings & Enclosures",
+    description: "Factory-direct aluminum railings, glass showers, and porch enclosures. Installed in 4 weeks.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aluminum Solutions",
+    description: "Premium aluminum railings and glass enclosures in Toronto.",
+  },
   robots: {
     index: false,
     follow: false,

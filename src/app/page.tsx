@@ -13,6 +13,13 @@ import Image from "next/image";
 import TrustSection from "@/components/ui/TrustSection";
 import JsonLd from "@/components/seo/JsonLd";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Aluminum Solutions | Factory Direct Railings & Glass in Toronto",
+  description: "Upgrade your home with premium aluminum railings, glass porch enclosures, and frameless showers. Factory direct pricing and expert installation in the GTA.",
+};
+
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
