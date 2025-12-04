@@ -166,7 +166,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-2 font-serif">Glass / Frameless Railings</h3>
                 <p className="text-slate-600 text-sm mb-4">Frameless, Stand-offs, Base shoe.</p>
-                <Link href="/services/glass-railing" aria-label="Learn more about Glass Railings" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                <Link href="/services/glass-railings" aria-label="Learn more about Glass Railings" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
                   Learn More
                 </Link>
               </div>
