@@ -14,7 +14,7 @@ export default function Hero({
     subtitle,
     ctaText = "Get a Free Quote",
     ctaLink = "/contact",
-    backgroundImage = "/images/hero-v2.jpg"
+    backgroundImage = "/images/hero-final-update.jpg"
 }: HeroProps) {
     return (
         <section className="relative h-[85vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-900">

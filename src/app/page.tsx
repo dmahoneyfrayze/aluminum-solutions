@@ -52,6 +52,7 @@ export default function Home() {
           subtitle="Factory Direct. Installed in 4 Weeks. Lifetime Warranty."
           ctaText="Get a Free Estimate"
           ctaLink="/contact"
+          backgroundImage="/images/hero-final-update.jpg"
         />
 
         <TrustSection />
