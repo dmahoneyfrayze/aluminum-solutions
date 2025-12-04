@@ -138,13 +138,13 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/generated/railing_aluminum_placeholder.png"
-                    alt="Aluminum Railings"
+                    src="/images/projects/aluminum-railing-pickets-black.png"
+                    alt="Aluminum Railings - Pickets"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <h3 className="text-xl font-bold mb-2 font-serif">Aluminum Railings</h3>
+                <h3 className="text-xl font-bold mb-2 font-serif">Aluminum Railings - Pickets</h3>
                 <p className="text-slate-600 text-sm mb-4">Maintenance-free durability.</p>
                 <Link href="/services/railings" aria-label="Learn more about Aluminum Railings" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
                   Learn More
@@ -154,15 +154,15 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/generated/glass_railing_placeholder.png"
-                    alt="Glass Railing Systems"
+                    src="/images/projects/deck-glass-railing-privacy.jpg"
+                    alt="Glass / Frameless Railings"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <h3 className="text-xl font-bold mb-2 font-serif">Glass Railing Systems</h3>
+                <h3 className="text-xl font-bold mb-2 font-serif">Glass / Frameless Railings</h3>
                 <p className="text-slate-600 text-sm mb-4">Frameless, Stand-offs, Base shoe.</p>
-                <Link href="/services/glass-railing" aria-label="Learn more about Glass Railing Systems" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                <Link href="/services/glass-railing" aria-label="Learn more about Glass Railings" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
                   Learn More
                 </Link>
               </div>
@@ -170,13 +170,13 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/generated/glass_enclosure_placeholder.png"
-                    alt="Glass Enclosures"
+                    src="/images/projects/glass-enclosure-porch-front.jpg"
+                    alt="Glass Enclosures & Offices"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <h3 className="text-xl font-bold mb-2 font-serif">Glass Enclosures</h3>
+                <h3 className="text-xl font-bold mb-2 font-serif">Glass Enclosures & Offices</h3>
                 <p className="text-slate-600 text-sm mb-4">Wind protection & views.</p>
                 <Link href="/services/glass-enclosures" aria-label="Learn more about Glass Enclosures" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
                   Learn More
@@ -186,15 +186,15 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/generated/shower_placeholder.png"
-                    alt="Showers"
+                    src="/images/projects/frameless-glass-shower-custom.jpg"
+                    alt="Frameless Showers"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <h3 className="text-xl font-bold mb-2 font-serif">Showers</h3>
+                <h3 className="text-xl font-bold mb-2 font-serif">Frameless Showers</h3>
                 <p className="text-slate-600 text-sm mb-4">Spa-like luxury glass.</p>
-                <Link href="/services/showers" aria-label="Learn more about Showers" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                <Link href="/services/showers" aria-label="Learn more about Frameless Showers" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
                   Learn More
                 </Link>
               </div>
