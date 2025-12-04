@@ -111,7 +111,7 @@ export default function RootLayout({
         <ChatWidget />
         <TrackingScript />
         <CookieConsent />
-        <ExitIntentPopup />
+        {/* <ExitIntentPopup /> */}
       </body>
     </html>
   );
