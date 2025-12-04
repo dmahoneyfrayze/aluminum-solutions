@@ -4,6 +4,7 @@ import Hero from "@/components/ui/Hero";
 import TrustBadges from "@/components/ui/TrustBadges";
 import ProcessSteps from "@/components/ui/ProcessSteps";
 import ManufacturingHighlight from "@/components/ui/ManufacturingHighlight";
+import MaterialComparison from "@/components/ui/MaterialComparison";
 import MiniCaseStudies from "@/components/ui/MiniCaseStudies";
 import ReputationWidget from "@/components/ui/ReputationWidget";
 import QuoteCalculator from "@/components/tools/QuoteCalculator";
@@ -106,6 +107,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <MaterialComparison />
 
         <QuoteCalculator />
 

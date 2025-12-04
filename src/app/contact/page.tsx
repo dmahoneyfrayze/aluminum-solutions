@@ -94,29 +94,81 @@ export default function ContactPage() {
                         {/* Left Column: Contact Info */}
                         <div className="space-y-12">
                             {/* Toronto */}
+                            {/* Benefits & Trust */}
                             <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100">
-                                <h2 className="text-2xl font-serif font-bold text-slate-900 mb-6 flex items-center gap-3">
-                                    <span className="text-brand-copper">📍</span> Toronto (Head Office)
+                                <h2 className="text-2xl font-serif font-bold text-slate-900 mb-6">
+                                    Get your personalized estimate within hours!
                                 </h2>
-                                <div className="space-y-4 text-slate-600">
-                                    <p>
-                                        <strong>Global Aluminum Solutions Inc.</strong><br />
-                                        75 Fernstaff Ct. Unit #5<br />
-                                        Vaughan, ON, L4K 3P8
-                                    </p>
-                                    <p>
-                                        <strong>Tel:</strong> (905) 780-3088<br />
-                                        <strong>Email:</strong> info@aluminumsolutions.ca
-                                    </p>
-                                    <div className="pt-4 border-t border-slate-100 mt-4">
-                                        <p className="text-sm font-bold text-slate-900 mb-2">Hours of Operation</p>
-                                        <ul className="text-sm space-y-1">
-                                            <li className="flex justify-between"><span>Mon - Fri:</span> <span>10am – 3pm</span></li>
-                                            <li className="flex justify-between"><span>Wed:</span> <span>By Appointment</span></li>
-                                            <li className="flex justify-between"><span>Sat - Sun:</span> <span>Closed</span></li>
-                                        </ul>
+                                <ul className="space-y-6 mb-8">
+                                    <li className="flex gap-4">
+                                        <span className="text-brand-copper font-bold text-xl">›</span>
+                                        <div>
+                                            <strong className="block text-slate-900 mb-1">No Spam Guarantee</strong>
+                                            <p className="text-slate-600 text-sm">
+                                                Your information is safe with us; we only use your contact information for project-related communication!
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li className="flex gap-4">
+                                        <span className="text-brand-copper font-bold text-xl">›</span>
+                                        <div>
+                                            <strong className="block text-slate-900 mb-1">Professional Guidance</strong>
+                                            <p className="text-slate-600 text-sm">
+                                                With every quote request, you can access expert advice. Our knowledgeable team will guide you through the best options for your specific needs and budget.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li className="flex gap-4">
+                                        <span className="text-brand-copper font-bold text-xl">›</span>
+                                        <div>
+                                            <strong className="block text-slate-900 mb-1">Prompt Responses</strong>
+                                            <p className="text-slate-600 text-sm">
+                                                We understand that your time is valuable. That's why we strive to respond to all quote requests swiftly.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li className="flex gap-4">
+                                        <span className="text-brand-copper font-bold text-xl">›</span>
+                                        <div>
+                                            <strong className="block text-slate-900 mb-1">Trusted By Countless Customers</strong>
+                                            <p className="text-slate-600 text-sm">
+                                                We've enjoyed serving numerous customers across the GTA. Their positive reviews speak volumes about our dedication to excellence.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                {/* Trust Badges */}
+                                <div className="flex flex-wrap gap-4 items-center justify-center pt-6 border-t border-slate-100">
+                                    <div className="flex flex-col items-center">
+                                        <span className="text-3xl mb-1">🏆</span>
+                                        <span className="text-[10px] font-bold uppercase text-slate-600">10+ Years</span>
+                                    </div>
+                                    <div className="flex flex-col items-center">
+                                        <span className="text-3xl mb-1">⭐</span>
+                                        <span className="text-[10px] font-bold uppercase text-slate-600">Google 4.8</span>
+                                    </div>
+                                    <div className="flex flex-col items-center">
+                                        <span className="text-3xl mb-1">✓</span>
+                                        <span className="text-[10px] font-bold uppercase text-slate-600">HomeStars</span>
                                     </div>
                                 </div>
+                            </div>
+
+                            {/* Contact Details (Moved Down) */}
+                            <div className="bg-slate-50 p-8 rounded-xl border border-slate-200">
+                                <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+                                    <span>📍</span> Head Office
+                                </h3>
+                                <p className="text-slate-600 text-sm mb-4">
+                                    <strong>Global Aluminum Solutions Inc.</strong><br />
+                                    75 Fernstaff Ct. Unit #5<br />
+                                    Vaughan, ON, L4K 3P8
+                                </p>
+                                <p className="text-slate-600 text-sm">
+                                    <strong>Tel:</strong> (905) 780-3088<br />
+                                    <strong>Email:</strong> info@aluminumsolutions.ca
+                                </p>
                             </div>
 
 
