@@ -43,7 +43,7 @@ export default function RailingsPage() {
             <main className="flex-grow">
                 <Hero
                     title="Custom Aluminum Railings in Toronto"
-                    subtitle="The perfect blend of safety, style, and durability. Maintenance-free solutions for your porch, deck, or balcony."
+                    subtitle="The perfect blend of safety, style, and durability. Maintenance-free solutions for your <Link href='/services/porch-enclosures' className='underline hover:text-brand-copper'>porch</Link>, deck, or balcony."
                     ctaText="Get a Quote"
                     ctaLink="/contact"
                     backgroundImage="/images/projects/railing-aluminum-deck-toronto.jpg"
@@ -135,7 +135,7 @@ export default function RailingsPage() {
                                 <div className="w-full md:w-1/2">
                                     <h3 className="text-2xl font-bold text-brand-dark mb-4">Toronto Aluminum Deck Railings</h3>
                                     <p className="text-slate-600 mb-6 leading-relaxed">
-                                        Elevate your outdoor living experience with our premium Aluminum Deck Railings. Crafted from high-grade aluminum, they are designed to withstand harsh weather conditions, ensuring durability and longevity. Our deck railings come in a variety of designs and finishes, allowing you to customize them to match your home’s aesthetic.
+                                        Elevate your outdoor living experience with our premium Aluminum Deck Railings. Crafted from high-grade aluminum, they are designed to withstand harsh weather conditions, ensuring durability and longevity. Our deck railings come in a variety of designs and finishes, allowing you to customize them to match your home’s aesthetic. Consider pairing with <Link href="/services/glass-railings" className="text-brand-copper hover:underline">glass panels</Link> for an unobstructed view.
                                     </p>
                                     <Link href="/contact" className="text-brand-copper font-bold hover:underline">
                                         Get a Quote for Deck Railings &rarr;

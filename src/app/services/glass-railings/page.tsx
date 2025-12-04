@@ -136,7 +136,7 @@ export default function GlassRailingsPage() {
                                 <div className="w-full md:w-2/3">
                                     <h3 className="text-xl font-bold text-brand-dark mb-2">Swimming Pool Guards</h3>
                                     <p className="text-slate-600 text-sm">
-                                        Combine clear visibility with robust safety. Ideal for pool areas, offering an unimpeded view while ensuring a secure boundary.
+                                        Combine clear visibility with robust safety. Ideal for pool areas, offering an unimpeded view while ensuring a secure boundary. Learn more about our <Link href="/services/pool-fences" className="text-brand-copper hover:underline">Pool Fences</Link>.
                                     </p>
                                 </div>
                             </div>

@@ -42,6 +42,9 @@ export default function Header() {
                     <Link href="/builders" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">
                         For Builders
                     </Link>
+                    <a href="tel:9057803088" className="text-sm font-bold text-slate-900 hover:text-brand-copper transition-colors mr-2">
+                        (905) 780-3088
+                    </a>
                     <Link href="/contact" className="px-6 py-2.5 bg-brand-navy text-white text-sm font-bold hover:bg-brand-copper transition-colors shadow-lg rounded-sm">
                         Get a Quote
                     </Link>

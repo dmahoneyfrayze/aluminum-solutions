@@ -173,7 +173,7 @@ export default function EnclosuresPage() {
                             </h2>
                             <div className="space-y-6 text-slate-600 leading-relaxed text-lg">
                                 <p>
-                                    Frameless glass enclosures offer a range of benefits for homeowners looking to maximize their living space:
+                                    Frameless glass enclosures offer a range of benefits for homeowners looking to maximize their living space. They pair perfectly with our <Link href="/services/glass-railings" className="text-brand-copper hover:underline">glass railing systems</Link> for a complete modern look:
                                 </p>
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-3">

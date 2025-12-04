@@ -94,7 +94,7 @@ export default function Footer() {
                         <ul className="space-y-4 text-slate-300">
                             <li className="flex items-start">
                                 <span className="mr-3 mt-1">📍</span>
-                                <span>Serving Toronto & Montreal</span>
+                                <span>Serving Toronto & GTA</span>
                             </li>
                             <li className="flex items-center">
                                 <span className="mr-3">📞</span>
