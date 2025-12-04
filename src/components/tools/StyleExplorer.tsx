@@ -5,32 +5,32 @@ import Image from "next/image";
 
 const styles = [
     {
-        id: "glass-spigot",
-        name: "Frameless Glass (Spigot)",
-        description: "Minimalist luxury. 12mm tempered glass held by stainless steel spigots.",
-        image: "/images/projects/pool-fence-glass-swimming.jpg",
-        features: ["Unobstructed Views", "Modern Aesthetic", "Pool Safe"]
-    },
-    {
-        id: "glass-rail",
-        name: "Glass with Top Rail",
-        description: "Contemporary safety. Glass panels with a sleek aluminum top rail.",
-        image: "/images/projects/porch-railing-glass-aluminum.jpg",
-        features: ["Added Stability", "Lean-friendly", "Custom Colors"]
-    },
-    {
-        id: "picket",
-        name: "Aluminum Picket",
+        id: "aluminum",
+        name: "Aluminum Railings",
         description: "Classic durability. Maintenance-free aluminum pickets in various colors.",
         image: "/images/projects/aluminum-railing-pickets-black.png",
         features: ["Cost Effective", "Traditional Look", "Airflow"]
     },
     {
-        id: "privacy",
-        name: "Privacy Screen",
-        description: "Secluded comfort. Acid-etched glass to block views but let light in.",
-        image: "/images/projects/privacy-screen-etched-glass.jpg",
-        features: ["Maximum Privacy", "Wind Protection", "Soft Light"]
+        id: "glass-railings",
+        name: "Glass Railings",
+        description: "Contemporary safety. Frameless or with top rail for a sleek look.",
+        image: "/images/glass-with-top-rail.jpg",
+        features: ["Unobstructed Views", "Modern Aesthetic", "Pool Safe"]
+    },
+    {
+        id: "enclosures",
+        name: "Glass Enclosures",
+        description: "Wind protection & views. Perfect for porches and sunrooms.",
+        image: "/images/projects/glass-enclosure-porch-front.jpg",
+        features: ["3-Season Use", "Wind Protection", "Custom Fit"]
+    },
+    {
+        id: "showers",
+        name: "Showers",
+        description: "Spa-like luxury. Custom frameless glass shower enclosures.",
+        image: "/images/projects/frameless-glass-shower-custom.jpg",
+        features: ["Easy Clean", "Luxury Feel", "Custom Hardware"]
     }
 ];
 
