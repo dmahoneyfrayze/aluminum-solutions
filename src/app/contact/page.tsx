@@ -86,7 +86,7 @@ export default function ContactPage() {
                             Get in Touch
                         </h1>
                         <p className="text-slate-600 max-w-2xl mx-auto text-lg">
-                            Ready to transform your space? Contact our team in Toronto or Montreal for a free consultation.
+                            Ready to transform your space? Contact our team in Toronto for a free consultation.
                         </p>
                     </div>
 
@@ -119,22 +119,7 @@ export default function ContactPage() {
                                 </div>
                             </div>
 
-                            {/* Montreal */}
-                            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100">
-                                <h2 className="text-2xl font-serif font-bold text-slate-900 mb-6 flex items-center gap-3">
-                                    <span className="text-brand-copper">📍</span> Montreal
-                                </h2>
-                                <div className="space-y-4 text-slate-600">
-                                    <p>
-                                        <strong>Solutions Aluminium Inc.</strong><br />
-                                        301 Omer Deserres, Local 103<br />
-                                        Blainville, QC, J7C 0K2
-                                    </p>
-                                    <p>
-                                        <strong>Tel:</strong> (514) 963-2030
-                                    </p>
-                                </div>
-                            </div>
+
                         </div>
 
                         {/* Right Column: Form */}
@@ -210,7 +195,6 @@ export default function ContactPage() {
                                         >
                                             <option value="">Select a region...</option>
                                             <option value="Toronto/GTA">Toronto / GTA</option>
-                                            <option value="Montreal/Quebec">Montreal / Quebec</option>
                                             <option value="Other">Other</option>
                                         </select>
                                         {errors.location && <p className="text-red-500 text-xs mt-1">{errors.location.message}</p>}

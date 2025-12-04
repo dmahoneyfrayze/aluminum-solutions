@@ -11,21 +11,9 @@ export default function QuoteCalculator() {
     const [estimate, setEstimate] = useState<{ min: number; max: number } | null>(null);
 
     const products = [
-        { id: "aluminum", name: "Aluminum Railings", priceMin: 60, priceMax: 90 },
-        { id: "glass", name: "Glass Enclosures", priceMin: 120, priceMax: 180 },
-        { id: "showers", name: "Frameless Showers", priceMin: 800, priceMax: 2500 }, // Flat range for showers usually, but let's keep linear logic or just handle it. 
-        // Actually for showers linear feet is tricky. Let's assume the calculator logic uses linear feet for now, 
-        // but for showers maybe we treat "feet" as "width" or just give a broader range per unit.
-        // For simplicity in this "Rough Quote" tool, let's map it to a price per unit logic or just keep it simple.
-        // Let's stick to linear feet for railings, but for showers, maybe just a fixed range?
-        // The current calculator multiplies by feet. 
-        // Let's adjust the logic or just use a proxy. 
-        // If user selects showers, maybe we change the input label? 
-        // For now, let's add it and maybe the user enters "width in feet" (e.g. 4ft, 5ft).
-        // Price per foot for glass shower? ~ $200-$400/ft installed? 
-        // Let's use $250 - $450 per linear foot of glass as a rough proxy.
-        { id: "showers_glass", name: "Frameless Showers", priceMin: 250, priceMax: 450 },
-        { id: "gates", name: "Custom Gates", priceMin: 150, priceMax: 250 },
+        { id: "aluminum", name: "Aluminum Railings", priceMin: 75, priceMax: 95 },
+        { id: "glass", name: "Glass Railings", priceMin: 145, priceMax: 205 },
+        { id: "pool", name: "Pool Railing", priceMin: 90, priceMax: 205 },
     ];
 
     const calculate = () => {

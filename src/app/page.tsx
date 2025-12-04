@@ -72,7 +72,8 @@ export default function Home() {
                   Need Railings Fast?
                 </h2>
                 <p className="text-slate-300 text-lg mb-8 leading-relaxed">
-                  Don't wait 8 weeks for the other guys. Our <strong className="text-white">Express Service</strong> gets you standard black aluminum railings installed in as little as <strong>7 business days</strong>.
+                  Standard Lead Time: <strong className="text-white">1–3 weeks</strong>. <br />
+                  Expedited Service: <strong className="text-white">Available selectively</strong> (week-to-week basis).
                 </p>
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-center gap-3">
@@ -137,7 +138,7 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/projects/railing-aluminum-deck-toronto.jpg"
+                    src="/images/generated/railing_aluminum_placeholder.png"
                     alt="Aluminum Railings"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -153,7 +154,23 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/projects/glass-enclosure-porch-front.jpg"
+                    src="/images/generated/glass_railing_placeholder.png"
+                    alt="Glass Railing Systems"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <h3 className="text-xl font-bold mb-2 font-serif">Glass Railing Systems</h3>
+                <p className="text-slate-600 text-sm mb-4">Frameless, Stand-offs, Base shoe.</p>
+                <Link href="/services/glass-railing" aria-label="Learn more about Glass Railing Systems" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                  Learn More
+                </Link>
+              </div>
+              {/* Service 3 */}
+              <div className="group text-center">
+                <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
+                  <Image
+                    src="/images/generated/glass_enclosure_placeholder.png"
                     alt="Glass Enclosures"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -165,35 +182,19 @@ export default function Home() {
                   Learn More
                 </Link>
               </div>
-              {/* Service 3 */}
-              <div className="group text-center">
-                <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
-                  <Image
-                    src="/images/projects/glass-office-partition-modern.jpg"
-                    alt="Glass Walls"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <h3 className="text-xl font-bold mb-2 font-serif">Glass Walls</h3>
-                <p className="text-slate-600 text-sm mb-4">Modern office partitions.</p>
-                <Link href="/services/glass-walls" aria-label="Learn more about Glass Walls" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
-                  Learn More
-                </Link>
-              </div>
               {/* Service 4 */}
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/projects/frameless-glass-shower-custom.jpg"
-                    alt="Frameless Showers"
+                    src="/images/generated/shower_placeholder.png"
+                    alt="Showers"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <h3 className="text-xl font-bold mb-2 font-serif">Frameless Showers</h3>
+                <h3 className="text-xl font-bold mb-2 font-serif">Showers</h3>
                 <p className="text-slate-600 text-sm mb-4">Spa-like luxury glass.</p>
-                <Link href="/services/showers" aria-label="Learn more about Frameless Showers" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                <Link href="/services/showers" aria-label="Learn more about Showers" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
                   Learn More
                 </Link>
               </div>
