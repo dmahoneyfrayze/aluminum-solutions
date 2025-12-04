@@ -147,40 +147,137 @@ export default function GlassRailingsPage() {
                 {/* Features & Designs */}
                 <section className="py-24 bg-white">
                     <div className="container mx-auto px-6">
-                        <div className="text-center max-w-3xl mx-auto mb-16">
+                        <div className="text-center max-w-4xl mx-auto mb-16">
                             <h2 className="text-3xl font-serif font-bold text-brand-dark mb-6">Glass Features & Designs</h2>
-                            <p className="text-slate-600">
-                                Transform the aesthetics of your residential or business area with our frameless glass! Global Aluminum Solutions provides diverse foundational hardware, from posts to baseshoe.
+                            <p className="text-slate-600 text-lg leading-relaxed">
+                                Transform the aesthetics of your residential or business area with our frameless glass! Global Aluminum Solutions provides diverse foundational hardware, from posts to baseshoe. Our glass railings enhance interiors in subtle yet impactful ways: they preserve the continuity of space, making ceilings appear loftier. Not only does the glass match the strength of other materials, but it also marries safety with refined elegance.
                             </p>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                             {/* Stand-offs */}
-                            <div className="bg-slate-50 p-6 rounded border border-slate-100 hover:shadow-lg transition-all group">
-                                <div className="h-12 w-12 bg-brand-navy text-white rounded-full flex items-center justify-center mb-4 font-bold text-xl group-hover:bg-brand-copper transition-colors">1</div>
-                                <h3 className="font-bold text-lg mb-3">Stand-off System</h3>
-                                <p className="text-sm text-slate-600 mb-4">Point-supported railing system. Compact design with base, cap, and mounting stud. High-grade alloy 316 stainless steel.</p>
+                            <div className="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col">
+                                <div className="h-64 relative bg-slate-200">
+                                    <Image
+                                        src="/images/projects/glass-railing-standoffs.jpg"
+                                        alt="Stand-off Glass Railing System"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                                <div className="p-8 flex-grow">
+                                    <h3 className="text-2xl font-bold text-brand-dark mb-2">Stand-offs</h3>
+                                    <p className="text-brand-copper font-bold text-sm uppercase tracking-wider mb-4">Point-supported railing system</p>
+                                    <ul className="space-y-3">
+                                        {[
+                                            "Compact design with base, cap, and mounting stud",
+                                            "For use with 8mm and 10mm monolithic tempered glass",
+                                            "High-grade alloy 316 stainless steel standard",
+                                            "For mounting to steel, concrete, or wood substrate"
+                                        ].map((item, i) => (
+                                            <li key={i} className="flex items-start gap-3 text-slate-600 text-sm">
+                                                <span className="text-brand-copper mt-1">✓</span>
+                                                <span>{item}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
 
                             {/* Baseshoe */}
-                            <div className="bg-slate-50 p-6 rounded border border-slate-100 hover:shadow-lg transition-all group">
-                                <div className="h-12 w-12 bg-brand-navy text-white rounded-full flex items-center justify-center mb-4 font-bold text-xl group-hover:bg-brand-copper transition-colors">2</div>
-                                <h3 className="font-bold text-lg mb-3">Baseshoe Track</h3>
-                                <p className="text-sm text-slate-600 mb-4">Robust nature for weight-bearing demands. Can be embedded or fascia-mounted for a sleek appearance. Paintable cladding available.</p>
+                            <div className="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col">
+                                <div className="h-64 relative bg-slate-200">
+                                    <Image
+                                        src="/images/projects/glass-railing-baseshoe.jpg"
+                                        alt="Baseshoe Glass Railing System"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                                <div className="p-8 flex-grow">
+                                    <h3 className="text-2xl font-bold text-brand-dark mb-2">Baseshoe</h3>
+                                    <p className="text-brand-copper font-bold text-sm uppercase tracking-wider mb-4">Glass railing systems on a shoe track</p>
+                                    <p className="text-slate-600 mb-6 text-sm leading-relaxed">
+                                        The shoe track is favored in commercial glass railing due to its robust nature, especially in areas with substantial weight-bearing demands. Depending on aesthetic preferences, the shoe base can be embedded within the floor or attached to the fascia, resulting in a sleek and discreet appearance.
+                                    </p>
+                                    <ul className="space-y-3">
+                                        {[
+                                            "For use with 8mm and 10mm monolithic tempered glass",
+                                            "10-feet stock lengths available",
+                                            "Paintable shoe base cladding allows users to match their architectural finishes"
+                                        ].map((item, i) => (
+                                            <li key={i} className="flex items-start gap-3 text-slate-600 text-sm">
+                                                <span className="text-brand-copper mt-1">✓</span>
+                                                <span>{item}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
 
                             {/* Mini-posts */}
-                            <div className="bg-slate-50 p-6 rounded border border-slate-100 hover:shadow-lg transition-all group">
-                                <div className="h-12 w-12 bg-brand-navy text-white rounded-full flex items-center justify-center mb-4 font-bold text-xl group-hover:bg-brand-copper transition-colors">3</div>
-                                <h3 className="font-bold text-lg mb-3">Mini-posts (Spigots)</h3>
-                                <p className="text-sm text-slate-600 mb-4">Maintain continuous visual flow. Ideal for staircases and patios. Easy-to-install surface mount design in 316 stainless steel.</p>
+                            <div className="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col">
+                                <div className="h-64 relative bg-slate-200">
+                                    <Image
+                                        src="/images/projects/glass-railing-mini-posts.jpg"
+                                        alt="Mini-post Glass Railing System"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                                <div className="p-8 flex-grow">
+                                    <h3 className="text-2xl font-bold text-brand-dark mb-2">Mini-posts</h3>
+                                    <p className="text-brand-copper font-bold text-sm uppercase tracking-wider mb-4">Glass railing system on mini-posts (Spigots)</p>
+                                    <p className="text-slate-600 mb-6 text-sm leading-relaxed">
+                                        Mini posts maintain the continuous visual flow of the glass railing. They’re ideal for staircases and patios where traditional shoe or stand-off points might be unfeasible due to specific structural constraints.
+                                    </p>
+                                    <ul className="space-y-3">
+                                        {[
+                                            "For use with 8mm and 10mm monolithic tempered glass",
+                                            "High-grade 316 stainless steel alloy",
+                                            "Easy-to-Install surface mount design",
+                                            "Posts come in several types, heights, and configurations"
+                                        ].map((item, i) => (
+                                            <li key={i} className="flex items-start gap-3 text-slate-600 text-sm">
+                                                <span className="text-brand-copper mt-1">✓</span>
+                                                <span>{item}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
 
                             {/* Tall Posts */}
-                            <div className="bg-slate-50 p-6 rounded border border-slate-100 hover:shadow-lg transition-all group">
-                                <div className="h-12 w-12 bg-brand-navy text-white rounded-full flex items-center justify-center mb-4 font-bold text-xl group-hover:bg-brand-copper transition-colors">4</div>
-                                <h3 className="font-bold text-lg mb-3">Tall Posts</h3>
-                                <p className="text-sm text-slate-600 mb-4">Optimal for indoor and outdoor spaces. Striking industrial appeal. Choice of square or round posts. Standard heights 36″ and 42″.</p>
+                            <div className="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col">
+                                <div className="h-64 relative bg-slate-200">
+                                    <Image
+                                        src="/images/projects/glass-railing-tall-posts.jpg"
+                                        alt="Tall Post Glass Railing System"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                                <div className="p-8 flex-grow">
+                                    <h3 className="text-2xl font-bold text-brand-dark mb-2">Tall Posts</h3>
+                                    <p className="text-brand-copper font-bold text-sm uppercase tracking-wider mb-4">Glass Railing System On Posts</p>
+                                    <p className="text-slate-600 mb-6 text-sm leading-relaxed">
+                                        Optimal for indoor and outdoor spaces, this glass railing system is a top choice among business property owners and designers, credited for its dependable nature and striking industrial appeal.
+                                    </p>
+                                    <ul className="space-y-3">
+                                        {[
+                                            "Choice of square or round posts and clamps",
+                                            "Prepped for immediate installation in both commercial and home settings",
+                                            "Crafted to accommodate 8mm singularly tempered glass",
+                                            "Standard post elevations are 36″ and 42″",
+                                            "Bespoke post heights can be arranged"
+                                        ].map((item, i) => (
+                                            <li key={i} className="flex items-start gap-3 text-slate-600 text-sm">
+                                                <span className="text-brand-copper mt-1">✓</span>
+                                                <span>{item}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
