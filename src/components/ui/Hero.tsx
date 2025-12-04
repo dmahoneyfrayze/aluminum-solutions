@@ -14,7 +14,7 @@ export default function Hero({
     subtitle,
     ctaText = "Get a Free Quote",
     ctaLink = "/contact",
-    backgroundImage = "/images/hero-commercial-railings.jpg"
+    backgroundImage = "/images/hero-v2.jpg"
 }: HeroProps) {
     return (
         <section className="relative h-[85vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-900">
@@ -31,7 +31,7 @@ export default function Hero({
             </div>
 
             {/* Gradient Overlay for Depth & Readability */}
-            <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/60 to-slate-900/90 z-10" />
+            <div className="absolute inset-0 bg-gradient-to-b from-slate-900/50 via-slate-900/40 to-slate-900/80 z-10" />
 
             {/* Radial Gradient for "Spotlight" effect */}
             <div className="absolute inset-0 bg-radial-gradient from-transparent to-slate-900/40 z-10" />
