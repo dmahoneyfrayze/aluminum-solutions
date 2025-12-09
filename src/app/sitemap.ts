@@ -1,8 +1,8 @@
 import { MetadataRoute } from 'next';
-import { blogPosts } from '@/data/blog';
 import { locations } from '@/data/locations';
+import { getBlogPosts } from '@/lib/blog-rss';
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = 'https://aluminumsolutions.ca';
 
     // Static routes
@@ -45,8 +45,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.9,
     }));
 
-    // Blog posts
-    const blogRoutes = blogPosts.map((post) => ({
+    // Dynamic Blog posts from RSS
+    const posts = await getBlogPosts();
+    const blogRoutes = posts.map((post) => ({
         url: `${baseUrl}/blog/${post.slug}`,
         lastModified: new Date(post.date),
         changeFrequency: 'monthly' as const,

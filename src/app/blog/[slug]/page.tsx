@@ -5,6 +5,7 @@ import Image from "next/image";
 import { getBlogPostBySlug, getBlogPosts } from "@/lib/blog-rss";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 type Props = {
     params: Promise<{ slug: string }>;
@@ -50,6 +51,12 @@ export default async function BlogPostPage({ params }: Props) {
     return (
         <div className="min-h-screen flex flex-col bg-white">
             <Header />
+            <Breadcrumbs
+                items={[
+                    { label: "Blog", href: "/blog" },
+                    { label: post.title, href: `/blog/${post.slug}` }
+                ]}
+            />
 
             <main className="flex-grow">
                 {/* Article Hero */}

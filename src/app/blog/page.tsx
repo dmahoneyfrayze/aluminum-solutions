@@ -4,6 +4,7 @@ import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 import Image from "next/image";
 import { getBlogPosts } from "@/lib/blog-rss";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 export const metadata = {
     title: "Aluminum Solutions Blog | Railing Design & Installation Tips",
@@ -17,6 +18,7 @@ export default async function BlogIndexPage() {
     return (
         <div className="min-h-screen flex flex-col bg-white">
             <Header />
+            <Breadcrumbs items={[{ label: "Blog", href: "/blog" }]} />
 
             <main className="flex-grow">
                 <Hero

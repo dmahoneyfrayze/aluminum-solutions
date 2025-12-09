@@ -15,7 +15,7 @@ export default function SafetyFocus() {
                         <span className="text-brand-copper font-bold tracking-widest uppercase text-sm mb-4 block">
                             Premium Protection
                         </span>
-                        <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6 leading-tight">
+                        <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6 leading-tight text-white">
                             Safety That Doesn't Compromise Style.
                         </h2>
                         <p className="text-slate-300 text-lg mb-8 leading-relaxed">
