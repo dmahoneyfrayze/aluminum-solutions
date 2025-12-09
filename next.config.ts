@@ -16,6 +16,11 @@ const nextConfig: NextConfig = {
         destination: "/gallery",
         permanent: true,
       },
+      {
+        source: "/builders",
+        destination: "/commercial",
+        permanent: true,
+      },
     ];
   },
 };

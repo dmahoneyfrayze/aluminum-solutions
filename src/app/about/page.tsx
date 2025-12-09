@@ -5,6 +5,7 @@ import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 import Image from "next/image";
+import ManufacturingHighlight from "@/components/ui/ManufacturingHighlight";
 
 export default function AboutPage() {
     return (
@@ -63,6 +64,9 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </section>
+
+                {/* Manufacturer Advantage */}
+                <ManufacturingHighlight />
 
                 {/* Founder's Message */}
                 <section className="py-24 bg-brand-navy text-white relative overflow-hidden">

@@ -13,6 +13,7 @@ import Link from "next/link";
 import Image from "next/image";
 import TrustSection from "@/components/ui/TrustSection";
 import SafetyFocus from "@/components/ui/SafetyFocus";
+import PremiumFeatures from "@/components/ui/PremiumFeatures";
 import ServiceMap from "@/components/ui/ServiceMap";
 import JsonLd from "@/components/seo/JsonLd";
 
@@ -117,6 +118,8 @@ export default function Home() {
         <QuoteCalculator />
 
         <ManufacturingHighlight />
+
+        <PremiumFeatures />
 
         <ProcessSteps />
 

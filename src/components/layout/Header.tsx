@@ -39,8 +39,8 @@ export default function Header() {
                     <Link href="/reviews" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">
                         Reviews
                     </Link>
-                    <Link href="/builders" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">
-                        For Builders
+                    <Link href="/commercial" className="text-sm font-bold text-slate-600 hover:text-brand-copper transition-colors uppercase tracking-wide">
+                        Commercial
                     </Link>
                     <a href="tel:9057803088" className="text-sm font-bold text-slate-900 hover:text-brand-copper transition-colors mr-2">
                         (905) 780-3088
@@ -118,11 +118,11 @@ export default function Header() {
                             Reviews
                         </Link>
                         <Link
-                            href="/builders"
+                            href="/commercial"
                             className="text-lg font-bold text-slate-800 hover:text-brand-copper transition-colors border-b border-slate-50 pb-2"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
-                            For Builders
+                            Commercial
                         </Link>
                         <Link
                             href="/contact"

@@ -23,7 +23,7 @@ const builderFormSchema = z.object({
 
 type BuilderFormData = z.infer<typeof builderFormSchema>;
 
-export default function BuildersPage() {
+export default function CommercialPage() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
 
@@ -46,7 +46,7 @@ export default function BuildersPage() {
                     email: data.email,
                     phone: data.phone,
                     project_details: data.projectDetails,
-                    source: "builder_application_form",
+                    source: "commercial_inquiry_form",
                     ...utms
                 }),
             });
@@ -69,8 +69,8 @@ export default function BuildersPage() {
             <main className="flex-grow">
                 <Hero
                     title="Partner with the Manufacturer"
-                    subtitle="Reliable supply and installation for builders, architects, and developers. We control the timeline because we control the production."
-                    ctaText="Request Builder Package"
+                    subtitle="Reliable supply and installation for builders, property managers, and developers. We control the timeline because we control the production."
+                    ctaText="Request Commercial Package"
                     ctaLink="#contact-form"
                     backgroundImage="/images/generated/railing_hero_detail_1764312850877.png"
                 />
@@ -383,7 +383,7 @@ export default function BuildersPage() {
                                             disabled={isSubmitting}
                                             className="w-full py-4 bg-brand-navy text-white font-bold rounded hover:bg-slate-800 transition-colors disabled:opacity-50"
                                         >
-                                            {isSubmitting ? "Sending..." : "Request Builder Package"}
+                                            {isSubmitting ? "Sending..." : "Request Commercial Package"}
                                         </button>
                                     </form>
                                 )}

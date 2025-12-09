@@ -8,6 +8,7 @@ import { blogPosts } from "@/data/blog";
 import RelatedArticles from "@/components/blog/RelatedArticles";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
+import PremiumFeatures from "@/components/ui/PremiumFeatures";
 
 export const metadata: Metadata = {
     title: "Glass Railing Systems Toronto | Frameless & Post Glass Railings",
@@ -282,6 +283,9 @@ export default function GlassRailingsPage() {
                         </div>
                     </div>
                 </section>
+
+                {/* Premium Hardware Features */}
+                <PremiumFeatures />
 
                 {/* Benefits Section */}
                 <section className="py-24 bg-brand-navy text-white">

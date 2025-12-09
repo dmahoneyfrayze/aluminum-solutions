@@ -8,49 +8,57 @@ import Link from "next/link";
 export default function FAQPage() {
     const faqs = [
         {
-            category: "Installation & Process",
+            category: "Why Choose Aluminum Solutions?",
             questions: [
                 {
-                    q: "How long does installation take?",
-                    a: "Once your custom materials are manufactured (typically 3-5 weeks), the actual installation usually takes 1-2 days depending on the size of the project."
+                    q: "Why should I choose a manufacturer-installer instead of a regular railing contractor?",
+                    a: "Manufacturer-installers control the entire process — design, fabrication, and installation. That means higher-quality materials, perfect fit, faster timelines (4-6 weeks vs. 8-12+), and stronger warranties. Most railing companies in the GTA simply assemble pre-bought kits."
                 },
                 {
-                    q: "Do I need to be home?",
-                    a: "We recommend being present at the start of the day to confirm details and at the end to inspect the work. You do not need to be there the entire time."
+                    q: "What makes your railings premium compared to cheaper quotes?",
+                    a: "Cheaper quotes often use thin imported aluminum, offshore non-tempered glass, and low-quality powder coating that fades in 2-4 years. We use architect-grade materials, Canadian-tempered glass, and a premium powder coat built for 20+ years of performance."
                 },
                 {
-                    q: "What areas do you serve?",
-                    a: "We serve the entire GTA, including Toronto, Mississauga, Oakville, Burlington, Vaughan, Richmond Hill, Markham, Brampton, and Milton."
+                    q: "What is your installation timeline?",
+                    a: "With in-house production, most projects are completed in 4–6 weeks, even during peak season. Outsourced competitors often take 8–12 weeks or more."
+                },
+                {
+                    q: "Do you fabricate the glass yourself?",
+                    a: "Yes — all glass is measured, templated, fabricated, and tempered through our controlled suppliers in Canada. This ensures proper fit, clarity, and code compliance."
                 }
             ]
         },
         {
-            category: "Products & Materials",
+            category: "Technical & Safety",
             questions: [
                 {
-                    q: "Will aluminum railings rust?",
-                    a: "No. Aluminum is a non-ferrous metal, meaning it does not rust. Our powder-coated finish provides additional protection against oxidation and fading."
+                    q: "Do your railings meet Ontario building code?",
+                    a: "Yes — every project is engineered and installed to Ontario OBC requirements, including guard heights, post spacing, glass thickness, and load requirements. This protects you from liability and avoids costly rework."
                 },
                 {
-                    q: "Is glass safe for families with kids?",
-                    a: "Yes. We use 10mm or 12mm tempered safety glass. It is 4x stronger than regular glass and, if it were to break, it shatters into small, dull cubes rather than sharp shards."
+                    q: "How long do aluminum railings last?",
+                    a: "A properly engineered aluminum railing with premium powder coating lasts 20–30+ years with virtually zero maintenance. It will not rust, rot, or warp like wood or steel."
                 },
                 {
-                    q: "Can I customize the color?",
-                    a: "Absolutely. While Black, White, and Commercial Brown are standard, we can custom powder coat your railings to match any RAL color code."
+                    q: "Can you handle complex projects like commercial, multi-story, or custom builds?",
+                    a: "Yes — our engineering-first approach and in-house production allow us to handle advanced high-rise, commercial, and custom architectural projects that many standard railing installers avoid."
                 }
             ]
         },
         {
-            category: "Permits & Warranty",
+            category: "Options & Service",
             questions: [
                 {
-                    q: "Do I need a permit?",
-                    a: "For replacing existing railings on a porch or deck, a permit is often not required. However, new structures or significant alterations may require one. We can help guide you through this process."
+                    q: "Do you offer custom colors and finishes?",
+                    a: "Yes — we offer premium architectural powder coat finishes, including Matte Black, Textured Black, White, Custom RAL colors, and Wood-grain aluminum options."
                 },
                 {
-                    q: "What is your warranty?",
-                    a: "We offer a Lifetime Limited Warranty on the aluminum structure and finish, and a 2-Year Warranty on installation workmanship."
+                    q: "What warranties do you provide?",
+                    a: "We offer full protection on Aluminum, Powder Coating, Glass, and Installation workmanship. Because we manufacture it, we back it."
+                },
+                {
+                    q: "Do you remove old railings?",
+                    a: "Yes — we offer full removal and disposal of old wood or steel railings, ensuring a clean and ready install surface."
                 }
             ]
         }
