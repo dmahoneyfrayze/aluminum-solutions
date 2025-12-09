@@ -1,16 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 import Image from "next/image";
 import ReputationWidget from "@/components/ui/ReputationWidget";
-
-// SEO Metadata (Client Component workaround: Metadata must be in layout or server component, 
-// but for now we can't easily switch this to server without refactoring state. 
-// Ideally, this page should be a server component with a client island for the filter.)
 
 const projects = [
     { id: 1, category: "Railings", title: "Modern Glass Railing", location: "Toronto", image: "/images/projects/railing-aluminum-deck-toronto.jpg" },
@@ -22,16 +18,41 @@ const projects = [
     { id: 7, category: "Railings", title: "Deck Glass Railing", location: "Richmond Hill", image: "/images/projects/railing-aluminum-deck-toronto.jpg" },
     { id: 8, category: "Showers", title: "Custom Steam Shower", location: "Toronto", image: "/images/projects/shower-glass-door-hinge.jpg" },
     { id: 9, category: "Walls", title: "Gym Glass Wall", location: "Brampton", image: "/images/projects/glass-office-partition-modern.jpg" },
+    // New Additions
+    { id: 10, category: "Railings", title: "Frameless Deck System", location: "North York", image: "/images/Frameless-Glass.jpg" },
+    { id: 11, category: "Railings", title: "Commercial Balcony Railings", location: "Etobicoke", image: "/images/projects/commercial-building-railings.png" },
+    { id: 12, category: "Railings", title: "Glass with Top Rail", location: "Scarborough", image: "/images/glass-with-top-rail.jpg" },
+    { id: 13, category: "Enclosures", title: "Commercial Office Enclosure", location: "Financial District", image: "/images/Glass-Enclosures-and-Offices.jpg" },
+    { id: 14, category: "Enclosures", title: "Premium Gatsby Enclosure", location: "King City", image: "/images/projects/glass-enclosure-gatsby.png" },
+    { id: 15, category: "Showers", title: "Corner Glass Shower", location: "Newmarket", image: "/images/projects/corner-glass-shower-enclosure.jpg" },
+    { id: 16, category: "Walls", title: "Boardroom Glass Wall", location: "Mississauga", image: "/images/projects/glass-wall-meeting-room.jpg" },
+    { id: 17, category: "Fences", title: "Pool Safety Fence", location: "Oakville", image: "/images/projects/pool-fence-glass-new.png" },
+    { id: 18, category: "Fences", title: "Glass Swimming Guard", location: "Vaughan", image: "/images/projects/pool-fence-glass-swimming.jpg" },
+    { id: 19, category: "Privacy", title: "Deck Privacy Screen", location: "Toronto", image: "/images/projects/privacy-screen-deck.jpg" },
 ];
 
-const categories = ["All", "Railings", "Enclosures", "Showers", "Walls"];
+const categories = ["All", "Railings", "Enclosures", "Showers", "Fences", "Walls", "Privacy"];
 
 export default function GalleryPage() {
     const [activeCategory, setActiveCategory] = useState("All");
+    const [sortOption, setSortOption] = useState("Featured"); // Featured, Newest, Alphabetical
 
-    const filteredProjects = activeCategory === "All"
-        ? projects
-        : projects.filter(project => project.category === activeCategory);
+    const processedProjects = useMemo(() => {
+        // 1. Filter
+        let result = activeCategory === "All"
+            ? projects
+            : projects.filter(project => project.category === activeCategory);
+
+        // 2. Sort
+        return [...result].sort((a, b) => {
+            if (sortOption === "Newest") {
+                return b.id - a.id;
+            } else if (sortOption === "Alphabetical") {
+                return a.title.localeCompare(b.title);
+            }
+            return 0; // Default / Featured (ID ascending as entered)
+        });
+    }, [activeCategory, sortOption]);
 
     return (
         <div className="min-h-screen flex flex-col bg-white">
@@ -49,43 +70,62 @@ export default function GalleryPage() {
                 <section className="py-20">
                     <div className="container mx-auto px-6">
 
-                        {/* Filter Controls */}
-                        <div className="flex flex-wrap justify-center gap-4 mb-12">
-                            {categories.map((category) => (
-                                <button
-                                    key={category}
-                                    onClick={() => setActiveCategory(category)}
-                                    className={`px-6 py-2 rounded-full text-sm font-bold transition-all ${activeCategory === category
-                                        ? "bg-brand-navy text-white shadow-lg"
-                                        : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-                                        }`}
+                        {/* Controls Container */}
+                        <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+
+                            {/* Filter Controls */}
+                            <div className="flex flex-wrap justify-center md:justify-start gap-3">
+                                {categories.map((category) => (
+                                    <button
+                                        key={category}
+                                        onClick={() => setActiveCategory(category)}
+                                        className={`px-5 py-2 rounded-full text-sm font-bold transition-all border ${activeCategory === category
+                                            ? "bg-brand-navy text-white border-brand-navy shadow-md"
+                                            : "bg-white text-slate-600 border-slate-200 hover:bg-slate-50 hover:border-slate-300"
+                                            }`}
+                                    >
+                                        {category}
+                                    </button>
+                                ))}
+                            </div>
+
+                            {/* Sort Dropdown */}
+                            <div className="flex items-center gap-3">
+                                <label htmlFor="sort" className="text-sm font-bold text-slate-500 whitespace-nowrap">Sort by:</label>
+                                <select
+                                    id="sort"
+                                    value={sortOption}
+                                    onChange={(e) => setSortOption(e.target.value)}
+                                    className="pl-4 pr-10 py-2 rounded-lg border border-slate-300 bg-white text-sm font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-copper/50"
                                 >
-                                    {category}
-                                </button>
-                            ))}
+                                    <option value="Featured">Featured</option>
+                                    <option value="Newest">Newest</option>
+                                    <option value="Alphabetical">Alphabetical (A-Z)</option>
+                                </select>
+                            </div>
                         </div>
 
                         {/* Masonry Grid */}
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-                            {filteredProjects.map((project) => (
-                                <div key={project.id} className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                            {processedProjects.map((project) => (
+                                <div key={project.id} className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 bg-slate-100">
                                     {/* Image Placeholder */}
-                                    <div className="h-80 w-full relative bg-slate-100">
+                                    <div className="h-80 w-full relative">
                                         <Image
                                             src={project.image}
                                             alt={project.title}
                                             fill
                                             className="object-cover group-hover:scale-105 transition-transform duration-700"
                                         />
-                                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300" />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
                                     </div>
 
                                     {/* Overlay Content */}
-                                    <div className="absolute inset-0 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        <span className="text-xs font-bold text-slate-200 uppercase tracking-wider mb-1">
+                                    <div className="absolute inset-0 flex flex-col justify-end p-6">
+                                        <span className="text-xs font-bold text-brand-copper uppercase tracking-wider mb-2 opacity-90">
                                             {project.category} • {project.location}
                                         </span>
-                                        <h3 className="text-xl font-serif font-bold text-white">
+                                        <h3 className="text-xl font-serif font-bold text-white mb-2 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                                             {project.title}
                                         </h3>
                                     </div>
@@ -93,9 +133,12 @@ export default function GalleryPage() {
                             ))}
                         </div>
 
-                        {filteredProjects.length === 0 && (
-                            <div className="text-center py-20 text-slate-500">
-                                No projects found in this category yet.
+                        {processedProjects.length === 0 && (
+                            <div className="text-center py-20 text-slate-500 bg-slate-50 rounded-lg border border-dashed border-slate-300">
+                                <p className="text-lg">No projects found in this category yet.</p>
+                                <button onClick={() => setActiveCategory("All")} className="text-brand-copper font-bold mt-2 hover:underline">
+                                    View All Projects
+                                </button>
                             </div>
                         )}
 
