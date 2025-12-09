@@ -169,6 +169,34 @@ export default function BuildersPage() {
                                     <li className="flex items-center">✓ Installation Support</li>
                                 </ul>
                             </div>
+
+                            {/* Property Managers */}
+                            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
+                                <div className="text-4xl mb-6">🏢</div>
+                                <h3 className="text-xl font-bold text-slate-900 mb-4">Property Managers</h3>
+                                <p className="text-slate-600 mb-6">
+                                    Keep your buildings safe and compliant. We act fast on repairs and full retrofits to minimize tenant disruption and liability.
+                                </p>
+                                <ul className="text-sm text-slate-500 space-y-2">
+                                    <li className="flex items-center">✓ Code Compliance Retrofits</li>
+                                    <li className="flex items-center">✓ Tenant Notification Support</li>
+                                    <li className="flex items-center">✓ Maintenance Plans</li>
+                                </ul>
+                            </div>
+
+                            {/* Inspections & Sign-offs */}
+                            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
+                                <div className="text-4xl mb-6">📋</div>
+                                <h3 className="text-xl font-bold text-slate-900 mb-4">Inspectors & Engineers</h3>
+                                <p className="text-slate-600 mb-6">
+                                    Need a remedial action plan? We work directly with engineers to provide the exact fabrication needed to close permits.
+                                </p>
+                                <ul className="text-sm text-slate-500 space-y-2">
+                                    <li className="flex items-center">✓ Remedial Action Execution</li>
+                                    <li className="flex items-center">✓ Engineering Letter Support</li>
+                                    <li className="flex items-center">✓ Rapid Compliance Fixes</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -250,6 +278,10 @@ export default function BuildersPage() {
                             <div className="bg-white p-6 rounded-lg shadow-sm">
                                 <h3 className="font-bold text-lg text-slate-900 mb-2">Are your products code compliant?</h3>
                                 <p className="text-slate-600">Yes, all our railing and glass systems are engineered to meet or exceed the Ontario Building Code (SB-13) and National Building Code requirements.</p>
+                            </div>
+                            <div className="bg-white p-6 rounded-lg shadow-sm">
+                                <h3 className="font-bold text-lg text-slate-900 mb-2">Can you help close open permits?</h3>
+                                <p className="text-slate-600">Yes. If you have an Order to Comply or an open permit requiring guardrail updates, we can provide the necessary shop drawings and engineering letters to satisfy municipal inspectors.</p>
                             </div>
                         </div>
                     </div>
