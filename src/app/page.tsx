@@ -12,6 +12,7 @@ import StyleExplorer from "@/components/tools/StyleExplorer";
 import Link from "next/link";
 import Image from "next/image";
 import TrustSection from "@/components/ui/TrustSection";
+import ServiceMap from "@/components/ui/ServiceMap";
 import JsonLd from "@/components/seo/JsonLd";
 
 import { Metadata } from "next";
@@ -206,6 +207,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <ServiceMap />
 
         {/* Final CTA */}
         <section className="py-24 bg-brand-navy text-white text-center">
