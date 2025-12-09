@@ -8,6 +8,7 @@ import { blogPosts } from "@/data/blog";
 import RelatedArticles from "@/components/blog/RelatedArticles";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
+import PremiumFeatures from "@/components/ui/PremiumFeatures";
 
 export const metadata: Metadata = {
     title: "Aluminum Railings Toronto | Custom Porch & Deck Railings",
@@ -111,6 +112,9 @@ export default function RailingsPage() {
                         </div>
                     </div>
                 </section>
+
+                {/* Premium Hardware Features */}
+                <PremiumFeatures />
 
                 {/* Explore Our Products */}
                 <section className="py-24 bg-slate-50">
