@@ -137,7 +137,7 @@ export default function QuoteCalculator() {
                                     ${estimate.min.toLocaleString()} - ${estimate.max.toLocaleString()}
                                 </div>
                                 <p className="text-slate-600 mb-8 max-w-md mx-auto">
-                                    *This is a rough estimate based on standard materials. Custom finishes, height requirements, and installation complexity may affect the final price.
+                                    *This is a rough estimate based on standard materials. Custom finishes, height requirements, and installation complexity may affect the final price. This is for estimate purposes, and subject to change based on numerous job factors.
                                 </p>
 
                                 <Link

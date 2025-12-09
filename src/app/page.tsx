@@ -80,7 +80,7 @@ export default function Home() {
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-center gap-3">
                     <span className="text-brand-copper text-xl">✓</span>
-                    <span className="text-slate-200">In-Stock Black Picket Profiles</span>
+                    <span className="text-slate-200">In Stock Systems frequently change</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <span className="text-brand-copper text-xl">✓</span>
@@ -174,7 +174,7 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/projects/glass-enclosure-porch-front.jpg"
+                    src="/images/Glass-Enclosures-and-Offices.jpg"
                     alt="Glass Enclosures & Offices"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"

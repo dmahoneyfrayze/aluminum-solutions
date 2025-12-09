@@ -57,7 +57,7 @@ export default function ManufacturingHighlight() {
                         </div>
                         {/* Floating Stats Card */}
                         <div className="absolute -bottom-6 -left-6 bg-blue-600 p-6 rounded-lg shadow-xl hidden md:block">
-                            <p className="text-3xl font-bold">4-6 Weeks</p>
+                            <p className="text-3xl font-bold">1-3 Weeks</p>
                             <p className="text-sm text-blue-100">Average Lead Time</p>
                         </div>
                     </div>

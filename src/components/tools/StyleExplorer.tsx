@@ -15,14 +15,14 @@ const styles = [
         id: "glass-railings",
         name: "Glass Railings",
         description: "Contemporary safety. Frameless or with top rail for a sleek look.",
-        image: "/images/glass-with-top-rail.jpg",
+        image: "/images/Glass-Railing.JPG",
         features: ["Unobstructed Views", "Modern Aesthetic", "Pool Safe"]
     },
     {
         id: "enclosures",
         name: "Glass Enclosures",
         description: "Wind protection & views. Perfect for porches and sunrooms.",
-        image: "/images/projects/glass-enclosure-porch-front.jpg",
+        image: "/images/porch-glass-enclosures2.jpg",
         features: ["3-Season Use", "Wind Protection", "Custom Fit"]
     },
     {
