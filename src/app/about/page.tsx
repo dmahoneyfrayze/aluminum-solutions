@@ -12,6 +12,7 @@ export default function AboutPage() {
             <Header />
 
             <main className="flex-grow">
+                {/* Hero Section */}
                 <Hero
                     title="Craftsmanship. Integrity. Local Manufacturing."
                     subtitle="We are a family-owned manufacturer dedicated to elevating Toronto homes with premium aluminum and glass solutions."
@@ -20,44 +21,89 @@ export default function AboutPage() {
                     backgroundImage="/images/generated/railing_hero_detail_1764312850877.png"
                 />
 
-                {/* Founder's Note - The "Personal" Touch */}
-                <section className="py-24 bg-white">
+                {/* Main About Content */}
+                <section className="py-20 bg-white">
                     <div className="container mx-auto px-6">
+                        <div className="max-w-4xl mx-auto">
+                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-8">
+                                About Global Aluminum Solutions
+                            </h2>
+                            <div className="prose prose-lg text-slate-600 space-y-6">
+                                <p>
+                                    Global Aluminum Solutions specializes in high-quality aluminum and glass products designed to enhance residential, commercial, and architectural spaces. From custom glass walls, railings, and showers to precision aluminum framing, panels, and enclosures, we blend craftsmanship with innovation to deliver stunning, durable results.
+                                </p>
+                                <p>
+                                    As a trusted name in architectural aluminum and glass fabrication, our mission is simple — to create lasting value for our clients through superior products, reliable service, and collaborative partnerships. Every project, whether a custom home installation or a large-scale commercial development, receives the same attention to detail, precision engineering, and exceptional customer care.
+                                </p>
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16">
+                                <div className="bg-slate-50 p-8 rounded-xl border border-slate-100">
+                                    <h3 className="text-xl font-bold text-brand-dark mb-4">For Homeowners</h3>
+                                    <p className="text-slate-600">
+                                        We bring modern aesthetics, functional elegance, and long-term performance to every installation. Our team works closely with clients to design and install solutions that reflect their unique vision while maintaining the highest standards of durability and safety.
+                                    </p>
+                                </div>
+                                <div className="bg-slate-50 p-8 rounded-xl border border-slate-100">
+                                    <h3 className="text-xl font-bold text-brand-dark mb-4">For Contractors & Builders</h3>
+                                    <p className="text-slate-600">
+                                        We’re more than a supplier — we’re a preferred fabrication and installation partner. Our advanced materials, flexible production capabilities, and responsive support ensure that every project stays on time, on spec, and on budget.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="mt-16 prose prose-lg text-slate-600">
+                                <p>
+                                    At Global Aluminum Solutions, we believe that great spaces start with collaboration, craftsmanship, and a shared commitment to excellence. Whether you’re building a dream home or managing a commercial property, our aluminum and glass experts are here to help you bring your vision to life.
+                                </p>
+                                <p className="font-bold text-brand-dark text-xl mt-8">
+                                    Global Aluminum Solutions — Crafting beauty. Building strength. Shaping the future of aluminum and glass design.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Founder's Message */}
+                <section className="py-24 bg-brand-navy text-white relative overflow-hidden">
+                    {/* Background Pattern */}
+                    <div className="absolute inset-0 opacity-5 bg-[url('/images/pattern.png')] bg-repeat" />
+
+                    <div className="container mx-auto px-6 relative z-10">
                         <div className="flex flex-col md:flex-row items-center gap-16">
-                            <div className="w-full md:w-1/2 relative">
-                                <div className="aspect-[4/5] bg-slate-100 rounded-lg overflow-hidden relative shadow-2xl">
+                            <div className="w-full md:w-1/2">
+                                <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl border-4 border-white/10">
                                     <Image
                                         src="/images/generated/founder_portrait_1764313198224.png"
-                                        alt="Max Catreau, Owner of Aluminum Solutions"
+                                        alt="Max Catreau"
                                         fill
                                         className="object-cover"
                                     />
                                 </div>
-                                <div className="absolute -bottom-6 -right-6 bg-brand-navy text-white p-8 rounded-lg shadow-xl max-w-xs hidden md:block">
-                                    <p className="font-serif italic text-lg">"We build every piece as if it were for our own home."</p>
-                                </div>
                             </div>
                             <div className="w-full md:w-1/2">
-                                <h2 className="text-sm font-bold text-brand-copper uppercase tracking-widest mb-4">A Message from the Owner</h2>
-                                <h3 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-8">
-                                    Building Trust, One Installation at a Time.
+                                <h2 className="text-brand-copper font-bold tracking-widest uppercase text-sm mb-4">
+                                    A Message from the Owner
+                                </h2>
+                                <h3 className="text-3xl md:text-4xl font-serif font-bold mb-8">
+                                    Welcome to Aluminum Solutions
                                 </h3>
-                                <div className="prose prose-lg text-slate-600 space-y-6">
+                                <div className="space-y-6 text-slate-300 text-lg leading-relaxed">
                                     <p>
-                                        Welcome to Aluminum Solutions. When we started this company, we noticed a gap in the market. Homeowners were forced to choose between cheap, flimsy kits from big-box stores or overpriced custom work that took months to arrive.
+                                        When we started this company, we noticed a gap in the market. Homeowners were forced to choose between cheap, flimsy kits from big-box stores or overpriced custom work that took months to arrive.
                                     </p>
                                     <p>
                                         We knew there was a better way. By manufacturing everything right here in the GTA, we control the quality, the timeline, and the cost.
                                     </p>
                                     <p>
-                                        Our philosophy is simple: <strong>No shortcuts.</strong> We use heavier gauge aluminum, thicker glass, and better hardware than our competitors. Why? Because we believe your home deserves a railing system that will look as good in 20 years as it does today.
+                                        Our philosophy is simple: <strong className="text-white">No shortcuts.</strong> We use heavier gauge aluminum, thicker glass, and better hardware than our competitors. Why? Because we believe your home deserves a railing system that will look as good in 20 years as it does today.
                                     </p>
                                     <p>
                                         I invite you to visit our factory, meet our team, and see the difference for yourself.
                                     </p>
-                                    <div className="pt-6">
-                                        <p className="font-serif font-bold text-xl text-slate-900">Max Catreau</p>
-                                        <p className="text-slate-500">Owner, Aluminum Solutions</p>
+                                    <div className="pt-8">
+                                        <div className="text-2xl font-serif font-bold text-white">Max Catreau</div>
+                                        <div className="text-brand-copper">Owner, Aluminum Solutions</div>
                                     </div>
                                 </div>
                             </div>
@@ -65,125 +111,89 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                {/* The Factory Difference */}
+                {/* Team & Gallery Grid */}
                 <section className="py-24 bg-slate-50">
-                    <div className="container mx-auto px-6 text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
-                            The Aluminum Solutions Standard
-                        </h2>
-                        <p className="text-slate-600 max-w-2xl mx-auto">
-                            Situated in the bustling heart of the Greater Toronto Area (GTA), we take immense pride in delivering top-notch aluminum and glass railing services.
-                        </p>
-                    </div>
-
-                    <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                            <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 text-3xl">
-                                🏭
-                            </div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-4">Direct Manufacturer</h3>
-                            <p className="text-slate-600">
-                                We take the reins in directly <Link href="/process" className="text-brand-copper hover:underline">manufacturing</Link> an extensive array of aluminum railings, glass showers, and office partitions. Our fabrication expertise enables us to craft systems that cater to virtually every homeowner’s need.
-                            </p>
-                        </div>
-                        <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                            <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 text-3xl">
-                                📍
-                            </div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-4">Your Local Specialists</h3>
-                            <p className="text-slate-600">
-                                Our service ambit covers <Link href="/locations" className="text-brand-copper hover:underline">Toronto, Mississauga, Brampton, Vaughan, and Markham</Link>. With a deep understanding of the GTA’s unique architectural styles and stringent building requirements, we position ourselves as your first choice.
-                            </p>
-                        </div>
-                        <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                            <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 text-3xl">
-                                ✨
-                            </div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-4">Custom Perfection</h3>
-                            <p className="text-slate-600">
-                                Every home is unique. We custom fabricate every panel and post to fit your specific layout perfectly. No "making it work" with standard sizes.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Team Section - "Meet the Experts" */}
-                <section className="py-24 bg-white">
                     <div className="container mx-auto px-6">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
-                                Meet Your Installation Team
+                                Our Team in Action
                             </h2>
                             <p className="text-slate-600 max-w-2xl mx-auto">
-                                Our installers are full-time employees, not subcontractors. They are trained, insured, and dedicated to treating your home with respect.
+                                From the factory floor to the final installation, meet the people who make it happen.
                             </p>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                            {/* Team Member 1 - Generated */}
-                            <div className="group">
-                                <div className="aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden mb-4 relative shadow-md">
-                                    <Image
-                                        src="/images/generated/team_member_1_installer_1764313211230.png"
-                                        alt="Expert Aluminum Railing Installer"
-                                        fill
-                                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                                    />
+                        {/* Masonry-style or irregular grid for visual interest */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px]">
+
+                            {/* Card 1: Large - Staff Waving */}
+                            <div className="lg:col-span-2 lg:row-span-2 relative group rounded-2xl overflow-hidden shadow-lg">
+                                <Image
+                                    src="/images/Staff-Waving.jpeg"
+                                    alt="Global Aluminum Solutions Team"
+                                    fill
+                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+                                    <h3 className="text-white text-2xl font-bold">Dedicated to Excellence</h3>
                                 </div>
-                                <h3 className="font-bold text-slate-900">Lead Installer</h3>
-                                <p className="text-sm text-slate-500">Senior Technician</p>
                             </div>
 
-                            {/* Team Member 2 - Placeholder */}
-                            <div className="group">
-                                <div className="aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden mb-4 relative shadow-md flex items-center justify-center">
-                                    <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
-                                    <svg className="w-20 h-20 text-slate-300 relative z-10" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                                    </svg>
-                                </div>
-                                <h3 className="font-bold text-slate-900">Project Manager</h3>
-                                <p className="text-sm text-slate-500">Operations</p>
+                            {/* Card 2: Work Vehicle */}
+                            <div className="relative group rounded-2xl overflow-hidden shadow-lg">
+                                <Image
+                                    src="/images/work-vehicle.jpg"
+                                    alt="Our Fleet"
+                                    fill
+                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                />
                             </div>
 
-                            {/* Team Member 3 - Placeholder */}
-                            <div className="group">
-                                <div className="aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden mb-4 relative shadow-md flex items-center justify-center">
-                                    <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
-                                    <svg className="w-20 h-20 text-slate-300 relative z-10" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                                    </svg>
+                            {/* Card 3: Close Up Level */}
+                            <div className="relative group rounded-2xl overflow-hidden shadow-lg">
+                                <Image
+                                    src="/images/Close-Up-Level.jpeg"
+                                    alt="Precision Installation"
+                                    fill
+                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                />
+                                <div className="absolute bottom-0 left-0 right-0 p-6 bg-black/50 backdrop-blur-sm">
+                                    <p className="text-white font-medium">Precision in every detail</p>
                                 </div>
-                                <h3 className="font-bold text-slate-900">Master Fabricator</h3>
-                                <p className="text-sm text-slate-500">Manufacturing</p>
                             </div>
 
-                            {/* Team Member 4 - Placeholder */}
-                            <div className="group">
-                                <div className="aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden mb-4 relative shadow-md flex items-center justify-center">
-                                    <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-500" />
-                                    <svg className="w-20 h-20 text-slate-300 relative z-10" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                                    </svg>
-                                </div>
-                                <h3 className="font-bold text-slate-900">Customer Support</h3>
-                                <p className="text-sm text-slate-500">Service</p>
+                            {/* Card 4: Nighttime glass */}
+                            <div className="lg:col-span-2 relative group rounded-2xl overflow-hidden shadow-lg">
+                                <Image
+                                    src="/images/Nighttime-glass-with-aluminum.jpg"
+                                    alt="Nighttime Glass Aesthetics"
+                                    fill
+                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                />
                             </div>
+
+                            {/* Card 5: Glass with aluminum and privacy */}
+                            <div className="relative group rounded-2xl overflow-hidden shadow-lg">
+                                <Image
+                                    src="/images/Glass-with-aluminum-and-privacy.jpg"
+                                    alt="Process and Manufacturing"
+                                    fill
+                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                />
+                            </div>
+
                         </div>
                     </div>
                 </section>
 
-                {/* CTA */}
-                <section className="py-24 bg-slate-50 text-center">
+                {/* Final CTA */}
+                <section className="py-24 bg-white text-center">
                     <div className="container mx-auto px-6">
-                        <h2 className="text-3xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
-                            Ready to Work with the Best?
+                        <h2 className="text-3xl md:text-5xl font-serif font-bold text-brand-dark mb-6">
+                            Start Your Project Today
                         </h2>
-                        <p className="text-slate-600 max-w-2xl mx-auto mb-10 text-lg">
-                            Experience the Aluminum Solutions difference. Book your free consultation today.
-                        </p>
                         <Link href="/contact" className="inline-block px-10 py-4 bg-brand-navy text-white font-bold tracking-wide hover:bg-slate-800 transition-colors shadow-lg rounded-sm">
-                            Get My Free Quote
+                            Get a Free Quote
                         </Link>
                     </div>
                 </section>

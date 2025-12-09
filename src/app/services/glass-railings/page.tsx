@@ -92,7 +92,7 @@ export default function GlassRailingsPage() {
                             {/* Staircase */}
                             <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6 items-center">
                                 <div className="w-full md:w-1/3 h-48 bg-slate-200 relative rounded overflow-hidden">
-                                    <Image src="/images/projects/black-aluminum-railing-stone.png" alt="Staircase Railing" fill className="object-cover" />
+                                    <Image src="/images/Frameless-Glass.jpg" alt="Staircase Railing" fill className="object-cover" />
                                 </div>
                                 <div className="w-full md:w-2/3">
                                     <h3 className="text-xl font-bold text-brand-dark mb-2">Staircase Frameless Glass Railings</h3>
@@ -118,7 +118,7 @@ export default function GlassRailingsPage() {
                             {/* Deck */}
                             <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6 items-center">
                                 <div className="w-full md:w-1/3 h-48 bg-slate-200 relative rounded overflow-hidden">
-                                    <Image src="/images/projects/deck-glass-railing-pergola.jpg" alt="Deck Railing" fill className="object-cover" />
+                                    <Image src="/images/Frameless-Glass.jpg" alt="Deck Railing" fill className="object-cover" />
                                 </div>
                                 <div className="w-full md:w-2/3">
                                     <h3 className="text-xl font-bold text-brand-dark mb-2">Frameless Glass Deck Railings</h3>
