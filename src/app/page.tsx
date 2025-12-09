@@ -162,7 +162,7 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/projects/deck-glass-railing-privacy.jpg"
+                    src="/images/Frameless-Glass.jpg"
                     alt="Glass / Frameless Railings"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
