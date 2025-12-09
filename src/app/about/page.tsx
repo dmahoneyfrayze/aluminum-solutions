@@ -75,7 +75,7 @@ export default function AboutPage() {
                                 <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl border-4 border-white/10">
                                     <Image
                                         src="/images/generated/founder_portrait_1764313198224.png"
-                                        alt="Max Catreau"
+                                        alt="Val Catreau"
                                         fill
                                         className="object-cover"
                                     />
@@ -102,7 +102,7 @@ export default function AboutPage() {
                                         I invite you to visit our factory, meet our team, and see the difference for yourself.
                                     </p>
                                     <div className="pt-8">
-                                        <div className="text-2xl font-serif font-bold text-white">Max Catreau</div>
+                                        <div className="text-2xl font-serif font-bold text-white">Val Catreau</div>
                                         <div className="text-brand-copper">Owner, Aluminum Solutions</div>
                                     </div>
                                 </div>

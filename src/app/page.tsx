@@ -12,6 +12,7 @@ import StyleExplorer from "@/components/tools/StyleExplorer";
 import Link from "next/link";
 import Image from "next/image";
 import TrustSection from "@/components/ui/TrustSection";
+import SafetyFocus from "@/components/ui/SafetyFocus";
 import ServiceMap from "@/components/ui/ServiceMap";
 import JsonLd from "@/components/seo/JsonLd";
 
@@ -110,6 +111,8 @@ export default function Home() {
         </section>
 
         <MaterialComparison />
+
+        <SafetyFocus />
 
         <QuoteCalculator />
 
