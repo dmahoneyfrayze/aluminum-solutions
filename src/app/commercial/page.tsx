@@ -201,6 +201,79 @@ export default function CommercialPage() {
                     </div>
                 </section>
 
+                {/* Dealer Program Section - NEW for Distro/Manufacturing */}
+                <section className="py-24 bg-brand-navy text-white relative overflow-hidden">
+                    <div className="absolute inset-0 bg-[url('/images/pattern.png')] opacity-10 bg-repeat" />
+                    <div className="container mx-auto px-6 relative z-10">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                            <div>
+                                <span className="text-brand-copper font-bold tracking-widest uppercase text-sm mb-2 block">
+                                    Supply Only & Distribution
+                                </span>
+                                <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6 text-white">
+                                    Become an Aluminum Solutions Dealer
+                                </h2>
+                                <p className="text-slate-300 text-lg mb-8 leading-relaxed">
+                                    Are you a railing installer, deck builder, or landscaper anywhere in Ontario? Stop waiting 8-12 weeks for third-party kits. Buy direct from our factory and grow your margins.
+                                </p>
+
+                                <div className="space-y-6">
+                                    <div className="flex gap-4">
+                                        <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-2xl flex-shrink-0">
+                                            🚚
+                                        </div>
+                                        <div>
+                                            <h3 className="font-bold text-xl text-white">Ontario-Wide Shipping</h3>
+                                            <p className="text-slate-400">We crate and ship prefab kits to Ottawa, Muskoka, London, and beyond. Your location is no longer a barrier.</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-2xl flex-shrink-0">
+                                            💰
+                                        </div>
+                                        <div>
+                                            <h3 className="font-bold text-xl text-white">Wholesale Dealer Pricing</h3>
+                                            <p className="text-slate-400">Unlock deep discounts tailored for recurring volume. Stop paying retail markup.</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-2xl flex-shrink-0">
+                                            ⚡
+                                        </div>
+                                        <div>
+                                            <h3 className="font-bold text-xl text-white">Priority 2-3 Week Fabrication</h3>
+                                            <p className="text-slate-400">Dealers get access to our "Fast Lane" production. complete more jobs in less time.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="mt-10">
+                                    <Link href="#contact-form" className="inline-block px-8 py-4 bg-brand-copper text-white font-bold rounded hover:bg-orange-700 transition-colors">
+                                        Apply for Dealer Account
+                                    </Link>
+                                </div>
+                            </div>
+
+                            <div className="relative h-[500px] rounded-xl overflow-hidden border border-white/10 shadow-2xl bg-slate-800">
+                                <Image
+                                    src="/images/migrated/manufacturing-glass.jpg"
+                                    alt="Aluminum Solutions Factory Shipping"
+                                    fill
+                                    className="object-cover opacity-80"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-brand-navy via-transparent to-transparent" />
+                                <div className="absolute bottom-6 left-6 right-6 bg-white/10 backdrop-blur-md p-6 rounded-lg border border-white/20">
+                                    <p className="font-bold text-lg mb-2">"Switching to Aluminum Solutions cut our material costs by 15% and installation time by half."</p>
+                                    <div className="flex items-center gap-2 text-sm text-brand-copper">
+                                        <span>★★★★★</span>
+                                        <span className="text-white font-bold">- Partner Installer, Muskoka</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 {/* Project Capabilities */}
                 <section className="py-20 bg-white">
                     <div className="container mx-auto px-6">
