@@ -195,6 +195,7 @@ export default function Home() {
                   <Image
                     src="/images/Frameless-Glass.jpg"
                     alt="Glass / Frameless Railings"
+                    fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -211,6 +212,7 @@ export default function Home() {
                   <Image
                     src="/images/Glass-Enclosures-and-Offices.jpg"
                     alt="Glass Enclosures & Offices"
+                    fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -227,6 +229,7 @@ export default function Home() {
                   <Image
                     src="/images/projects/frameless-glass-shower-custom.jpg"
                     alt="Frameless Showers"
+                    fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
