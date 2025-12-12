@@ -23,7 +23,7 @@ const exteriorServices = [
         description: "Elegant frameless and post systems for unobstructed views.",
         link: "/services/glass-railings",
         features: ["10mm/12mm Glass", "Spigot or Channel", "Modern Look"],
-        image: "/images/projects/porch-railing-glass-aluminum.jpg"
+        image: "/images/projects/glass-railing-staircase.jpg"
     },
     {
         title: "Pool Fences",

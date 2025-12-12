@@ -78,7 +78,7 @@ export default function AboutPage() {
                             <div className="w-full md:w-1/2">
                                 <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl border-4 border-white/10">
                                     <Image
-                                        src="/images/generated/founder_portrait_1764313198224.png"
+                                        src="/images/message-from-owner.jpg"
                                         alt="Val Catreau"
                                         fill
                                         className="object-cover"

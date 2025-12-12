@@ -47,7 +47,7 @@ export default function GlassRailingsPage() {
                     subtitle="Global Aluminum Solutions delivers elegant glass systems that blend functionality with aesthetic appeal. Our glass interior and exterior glass railings offer sleek and pristine visuals."
                     ctaText="Get a Quote"
                     ctaLink="/contact"
-                    backgroundImage="/images/generated/pool_fence_glass_detail_1764312810331.png"
+                    backgroundImage="/images/projects/glass-railing-stairs-hero.jpg"
                 />
 
                 {/* Intro / Benefits */}
@@ -65,7 +65,7 @@ export default function GlassRailingsPage() {
                                     Glass railings, blending style and safety with stainless steel and tempered glass, are a top choice for modern spaces. At Global Aluminum Solutions, we expertly balance functionality and aesthetics in our diverse range of glass railing styles, from post-mounted to frameless designs.
                                 </p>
                                 <p>
-                                    Catering to homes, offices, and commercial spaces, we ensure efficient, cost-effective project completion. Contact us for a quote and to explore how our glass railings can enhance your space.
+                                    Catering to homes, offices, and <Link href="/commercial" className="text-brand-copper hover:underline">commercial spaces</Link>, we ensure efficient, cost-effective project completion. Contact us for a quote and to explore how our glass railings can enhance your space.
                                 </p>
                             </div>
                             <div className="mt-10">
@@ -93,7 +93,7 @@ export default function GlassRailingsPage() {
                             {/* Staircase */}
                             <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6 items-center">
                                 <div className="w-full md:w-1/3 h-48 bg-slate-200 relative rounded overflow-hidden">
-                                    <Image src="/images/Frameless-Glass.jpg" alt="Staircase Railing" fill className="object-cover" />
+                                    <Image src="/images/projects/staircase-frameless-glass.jpg" alt="Staircase Railing" fill className="object-cover" />
                                 </div>
                                 <div className="w-full md:w-2/3">
                                     <h3 className="text-xl font-bold text-brand-dark mb-2">Staircase Frameless Glass Railings</h3>
@@ -119,7 +119,7 @@ export default function GlassRailingsPage() {
                             {/* Deck */}
                             <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6 items-center">
                                 <div className="w-full md:w-1/3 h-48 bg-slate-200 relative rounded overflow-hidden">
-                                    <Image src="/images/Frameless-Glass.jpg" alt="Deck Railing" fill className="object-cover" />
+                                    <Image src="/images/projects/frameless-glass-deck-railing.jpg" alt="Deck Railing" fill className="object-cover" />
                                 </div>
                                 <div className="w-full md:w-2/3">
                                     <h3 className="text-xl font-bold text-brand-dark mb-2">Frameless Glass Deck Railings</h3>
@@ -132,7 +132,7 @@ export default function GlassRailingsPage() {
                             {/* Pool */}
                             <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6 items-center">
                                 <div className="w-full md:w-1/3 h-48 bg-slate-200 relative rounded overflow-hidden">
-                                    <Image src="/images/generated/pool_fence_glass_detail_1764312810331.png" alt="Pool Guard" fill className="object-cover" />
+                                    <Image src="/images/Frameless-Glass.jpg" alt="Pool Guard" fill className="object-cover" />
                                 </div>
                                 <div className="w-full md:w-2/3">
                                     <h3 className="text-xl font-bold text-brand-dark mb-2">Swimming Pool Guards</h3>
@@ -158,12 +158,12 @@ export default function GlassRailingsPage() {
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                             {/* Stand-offs */}
                             <div className="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col">
-                                <div className="h-64 relative bg-slate-200">
+                                <div className="h-64 relative bg-white p-6">
                                     <Image
                                         src="/images/projects/glass-railing-standoffs.jpg"
                                         alt="Stand-off Glass Railing System"
                                         fill
-                                        className="object-cover"
+                                        className="object-contain"
                                     />
                                 </div>
                                 <div className="p-8 flex-grow">
@@ -187,12 +187,12 @@ export default function GlassRailingsPage() {
 
                             {/* Baseshoe */}
                             <div className="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col">
-                                <div className="h-64 relative bg-slate-200">
+                                <div className="h-64 relative bg-white p-6">
                                     <Image
                                         src="/images/projects/glass-railing-baseshoe.jpg"
                                         alt="Baseshoe Glass Railing System"
                                         fill
-                                        className="object-cover"
+                                        className="object-contain"
                                     />
                                 </div>
                                 <div className="p-8 flex-grow">
@@ -218,12 +218,12 @@ export default function GlassRailingsPage() {
 
                             {/* Mini-posts */}
                             <div className="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col">
-                                <div className="h-64 relative bg-slate-200">
+                                <div className="h-64 relative bg-white p-6">
                                     <Image
                                         src="/images/projects/glass-railing-mini-posts.jpg"
                                         alt="Mini-post Glass Railing System"
                                         fill
-                                        className="object-cover"
+                                        className="object-contain"
                                     />
                                 </div>
                                 <div className="p-8 flex-grow">
@@ -250,12 +250,12 @@ export default function GlassRailingsPage() {
 
                             {/* Tall Posts */}
                             <div className="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col">
-                                <div className="h-64 relative bg-slate-200">
+                                <div className="h-64 relative bg-white p-6">
                                     <Image
                                         src="/images/projects/glass-railing-tall-posts.jpg"
                                         alt="Tall Post Glass Railing System"
                                         fill
-                                        className="object-cover"
+                                        className="object-contain"
                                     />
                                 </div>
                                 <div className="p-8 flex-grow">

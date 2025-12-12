@@ -190,7 +190,7 @@ export default function PrivacyPolicyPage() {
                             <strong>Global Aluminum Solutions Inc</strong><br />
                             Phone: <a href="tel:9057803088" className="text-brand-copper hover:underline">(905) 780-3088</a><br />
                             Email: <a href="mailto:info@aluminumsolutions.ca" className="text-brand-copper hover:underline">info@aluminumsolutions.ca</a><br />
-                            Website: <a href="http://aluminumsolutions.ca/" className="text-brand-copper hover:underline">aluminumsolutions.ca</a>
+                            Website: <a href="https://aluminumsolutions.ca/" className="text-brand-copper hover:underline">aluminumsolutions.ca</a>
                         </address>
 
                         <p className="mt-8 text-sm text-slate-500">
