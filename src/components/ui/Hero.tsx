@@ -6,6 +6,9 @@ interface HeroProps {
     subtitle: string | React.ReactNode;
     ctaText?: string;
     ctaLink?: string;
+    secondaryCtaText?: string;
+    secondaryCtaLink?: string;
+    showSecondaryCta?: boolean;
     backgroundImage?: string;
 }
 
@@ -14,6 +17,9 @@ export default function Hero({
     subtitle,
     ctaText = "Get a Free Quote",
     ctaLink = "/contact",
+    secondaryCtaText = "View Gallery",
+    secondaryCtaLink = "/gallery",
+    showSecondaryCta = true,
     backgroundImage = "/images/hero-final-update.jpg"
 }: HeroProps) {
     return (
@@ -52,12 +58,14 @@ export default function Hero({
                     >
                         {ctaText}
                     </Link>
-                    <Link
-                        href="/projects"
-                        className="inline-block px-12 py-5 bg-transparent border-2 border-white text-white text-lg font-bold tracking-wide hover:bg-white hover:text-slate-900 transition-all transform hover:-translate-y-1 shadow-xl rounded-sm backdrop-blur-sm"
-                    >
-                        View Gallery
-                    </Link>
+                    {showSecondaryCta && (
+                        <Link
+                            href={secondaryCtaLink}
+                            className="inline-block px-12 py-5 bg-transparent border-2 border-white text-white text-lg font-bold tracking-wide hover:bg-white hover:text-slate-900 transition-all transform hover:-translate-y-1 shadow-xl rounded-sm backdrop-blur-sm"
+                        >
+                            {secondaryCtaText}
+                        </Link>
+                    )}
                 </div>
             </div>
         </section>

@@ -72,6 +72,8 @@ export default function GalleryContent() {
                     subtitle="Explore our portfolio of custom aluminum and glass projects across the GTA."
                     ctaText="Get a Quote"
                     ctaLink="/contact"
+                    secondaryCtaText="Our Process"
+                    secondaryCtaLink="/process"
                     backgroundImage="/images/projects/railing-aluminum-deck-toronto.jpg"
                 />
 

@@ -17,7 +17,7 @@ export default function ReviewsContent() {
                     subtitle="We believe our work speaks for itself, but we prefer to let our happy clients do the talking."
                     ctaText="Join Our Happy Clients"
                     ctaLink="/contact"
-                    backgroundImage="/images/generated/team_member_1_installer_1764313211230.webp"
+                    backgroundImage="/images/projects/glass-railing-stairs-hero.jpg"
                 />
 
                 {/* Intro Stats */}
