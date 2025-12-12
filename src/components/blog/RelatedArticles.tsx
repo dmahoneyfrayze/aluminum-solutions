@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { BlogPost } from "@/data/blog";
+import { BlogPost } from "@/lib/blog-rss";
 
 interface Props {
     posts: BlogPost[];
