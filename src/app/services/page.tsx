@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import ManufacturingHighlight from "@/components/ui/ManufacturingHighlight";
 import ServicesFAQ from "@/components/ui/ServicesFAQ";
+import ServiceJumpBar from "@/components/ui/ServiceJumpBar";
 
 export const metadata: Metadata = {
     title: "Aluminum & Glass Services | Factory Direct Toronto & GTA",
@@ -102,6 +103,8 @@ export default function ServicesPage() {
                     backgroundImage="/images/generated/railing_hero_detail_1764312850877.webp"
                 />
 
+                <ServiceJumpBar />
+
                 {/* Intro Keyword Block */}
                 <section className="py-12 bg-white">
                     <div className="container mx-auto px-6 max-w-4xl text-center">
@@ -112,7 +115,7 @@ export default function ServicesPage() {
                 </section>
 
                 {/* Exterior Section */}
-                <section className="pb-20 pt-8 bg-white">
+                <section id="exterior" className="pb-20 pt-8 bg-white">
                     <div className="container mx-auto px-6">
                         <div className="text-center mb-16">
                             <span className="text-brand-copper font-bold tracking-widest uppercase text-sm mb-2 block">Exterior Solutions</span>
@@ -163,7 +166,7 @@ export default function ServicesPage() {
                 <ManufacturingHighlight />
 
                 {/* Interior Section */}
-                <section className="py-20 bg-slate-50">
+                <section id="interior" className="py-20 bg-slate-50">
                     <div className="container mx-auto px-6">
                         <div className="text-center mb-16">
                             <span className="text-brand-copper font-bold tracking-widest uppercase text-sm mb-2 block">Interior Solutions</span>
