@@ -23,35 +23,35 @@ const exteriorServices = [
         description: "Elegant frameless and post systems for unobstructed views.",
         link: "/services/glass-railings",
         features: ["10mm/12mm Glass", "Spigot or Channel", "Modern Look"],
-        image: "/images/projects/glass-railing-staircase.jpg"
+        image: "/images/projects/glass-railing-staircase.webp"
     },
     {
         title: "Pool Fences",
         description: "Safe, code-compliant glass and aluminum pool enclosures that don't obstruct your view.",
         link: "/services/pool-fences",
         features: ["Self-closing gates", "Climb-resistant", "12mm safety glass"],
-        image: "/images/projects/pool-fence-glass-swimming.jpg"
+        image: "/images/projects/pool-fence-glass-swimming.webp"
     },
     {
         title: "Glass Enclosures",
         description: "Frameless and framed glass solutions that provide wind protection without sacrificing your view.",
         link: "/services/glass-enclosures",
         features: ["Tempered safety glass", "Custom sizing", "Wind protection"],
-        image: "/images/projects/glass-enclosure-double-door.jpg"
+        image: "/images/projects/glass-enclosure-double-door.webp"
     },
     {
         title: "Privacy Screens",
         description: "Acid-etched glass and aluminum screens to create a private oasis in urban settings.",
         link: "/services/privacy-screens",
         features: ["Frosted glass", "Custom heights", "Wind reduction"],
-        image: "/images/projects/privacy-screen-etched-glass.jpg"
+        image: "/images/projects/privacy-screen-etched-glass.webp"
     },
     {
         title: "Aluminum Columns",
         description: "Structural and decorative aluminum columns to replace rotting wood and add curb appeal.",
         link: "/services/columns",
         features: ["Load-bearing options", "Classic & modern styles", "Maintenance-free"],
-        image: "/images/projects/aluminum-columns-glass-railing.jpg"
+        image: "/images/projects/aluminum-columns-glass-railing.webp"
     }
 ];
 
@@ -61,14 +61,14 @@ const interiorServices = [
         description: "Modern glass partitions for offices, gyms, and wine cellars. Create separation without losing light.",
         link: "/services/glass-walls",
         features: ["Acoustic privacy", "Frameless design", "Custom hardware"],
-        image: "/images/projects/glass-office-partition-modern.jpg"
+        image: "/images/projects/glass-office-partition-modern.webp"
     },
     {
         title: "Frameless Showers",
         description: "Custom glass shower enclosures and tub shields. Spa-like luxury for your bathroom.",
         link: "/services/showers",
         features: ["10mm Safety Glass", "Custom Hardware", "Steam Showers"],
-        image: "/images/projects/frameless-glass-shower-custom.jpg"
+        image: "/images/projects/frameless-glass-shower-custom.webp"
     }
 ];
 
@@ -83,7 +83,7 @@ export default function ServicesPage() {
                     subtitle="Custom fabrication and installation for your entire home—inside and out."
                     ctaText="Get a Free Quote"
                     ctaLink="/contact"
-                    backgroundImage="/images/generated/railing_hero_detail_1764312850877.png"
+                    backgroundImage="/images/generated/railing_hero_detail_1764312850877.webp"
                 />
 
                 {/* Exterior Section */}

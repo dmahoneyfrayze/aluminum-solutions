@@ -24,7 +24,7 @@ export default function ShowersPage() {
                     subtitle="Bespoke frameless showers, glass partitions, and custom mirrors. Precision-measured and professionally installed."
                     ctaText="Get a Free Estimate"
                     ctaLink="/contact"
-                    backgroundImage="/images/projects/frameless-glass-shower-custom.jpg"
+                    backgroundImage="/images/projects/frameless-glass-shower-custom.webp"
                 />
 
                 {/* Trust Signals Strip */}
@@ -68,7 +68,7 @@ export default function ShowersPage() {
                             <div className="group">
                                 <div className="aspect-[4/5] relative rounded-lg overflow-hidden shadow-lg mb-6">
                                     <Image
-                                        src="/images/projects/frameless-glass-shower-custom.jpg"
+                                        src="/images/projects/frameless-glass-shower-custom.webp"
                                         alt="Custom Frameless Glass Shower Toronto"
                                         fill
                                         className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -92,7 +92,7 @@ export default function ShowersPage() {
                             <div className="group">
                                 <div className="aspect-[4/5] relative rounded-lg overflow-hidden shadow-lg mb-6">
                                     <Image
-                                        src="/images/projects/glass-office-partition-modern.jpg"
+                                        src="/images/projects/glass-office-partition-modern.webp"
                                         alt="Glass Office Partitions & Gym Walls"
                                         fill
                                         className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -116,7 +116,7 @@ export default function ShowersPage() {
                             <div className="group">
                                 <div className="aspect-[4/5] relative rounded-lg overflow-hidden shadow-lg mb-6">
                                     <Image
-                                        src="/images/generated/glass_enclosure_project_1764312838961.png"
+                                        src="/images/generated/glass_enclosure_project_1764312838961.webp"
                                         alt="Custom Wall Mirrors"
                                         fill
                                         className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -175,7 +175,7 @@ export default function ShowersPage() {
                             <div className="w-full md:w-1/2">
                                 <div className="relative h-[600px] rounded-lg overflow-hidden shadow-2xl border-4 border-slate-800">
                                     <Image
-                                        src="/images/projects/frameless-shower-black-hardware.jpg"
+                                        src="/images/projects/frameless-shower-black-hardware.webp"
                                         alt="Custom Shower Installation Process"
                                         fill
                                         className="object-cover"

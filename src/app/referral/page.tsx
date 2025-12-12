@@ -20,7 +20,7 @@ export default function ReferralPage() {
                     subtitle="Share the quality, earn rewards. Our way of saying thank you for your trust."
                     ctaText="Contact Us"
                     ctaLink="/contact"
-                    backgroundImage="/images/generated/glass_enclosure_project_1764312838961.png"
+                    backgroundImage="/images/generated/glass_enclosure_project_1764312838961.webp"
                 />
 
                 <section className="py-32 bg-white text-center">

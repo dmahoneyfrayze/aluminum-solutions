@@ -20,7 +20,7 @@ export default function CareersPage() {
                     subtitle="Join a team dedicated to craftsmanship, safety, and innovation. We are always looking for talent to help us build the future of aluminum and glass."
                     ctaText="View Openings"
                     ctaLink="#openings"
-                    backgroundImage="/images/migrated/manufacturing-glass.jpg"
+                    backgroundImage="/images/migrated/manufacturing-glass.webp"
                 />
 
                 {/* Intro */}

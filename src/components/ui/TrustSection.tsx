@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const clients = [
-    { name: "Barroso Custom Homes", logo: "/images/clients/barroso-custom-homes.jpg", width: 180, height: 60 },
+    { name: "Barroso Custom Homes", logo: "/images/clients/barroso-custom-homes.webp", width: 180, height: 60 },
     { name: "Berkim Construction", logo: "/images/clients/berkim.png", width: 180, height: 60 },
     { name: "YYZ Ed Projects", logo: "/images/clients/yyzed-projects.png", width: 160, height: 50 },
     { name: "The Downsview Group", logo: "/images/clients/downsview-group.png", width: 140, height: 80 },

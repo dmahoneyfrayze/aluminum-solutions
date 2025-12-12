@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         openGraph: {
             title: `Aluminum Railings & Glass Enclosures in ${location.name}`,
             description: location.metaDescription,
-            images: ["/images/og-default.jpg"], // We should add dynamic images later
+            images: ["/images/og-default.webp"], // We should add dynamic images later
         },
     };
 }
@@ -152,7 +152,7 @@ export default async function LocationPage({ params }: Props) {
                                 <div className="h-48 relative overflow-hidden">
                                     <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/0 transition-colors z-10" />
                                     {/* Using a generic image for now, ideally dynamic */}
-                                    <div className="absolute inset-0 bg-[url('/images/projects/deck-glass-railing-privacy.jpg')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700" />
+                                    <div className="absolute inset-0 bg-[url('/images/projects/deck-glass-railing-privacy.webp')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700" />
                                 </div>
                                 <div className="p-8">
                                     <h3 className="text-xl font-bold mb-3 font-serif text-slate-900">Glass Railings</h3>
@@ -171,7 +171,7 @@ export default async function LocationPage({ params }: Props) {
                             <div className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
                                 <div className="h-48 relative overflow-hidden">
                                     <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/0 transition-colors z-10" />
-                                    <div className="absolute inset-0 bg-[url('/images/generated/glass_enclosure_project_1764312838961.png')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700" />
+                                    <div className="absolute inset-0 bg-[url('/images/generated/glass_enclosure_project_1764312838961.webp')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700" />
                                 </div>
                                 <div className="p-8">
                                     <h3 className="text-xl font-bold mb-3 font-serif text-slate-900">Porch Enclosures</h3>
@@ -190,7 +190,7 @@ export default async function LocationPage({ params }: Props) {
                             <div className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
                                 <div className="h-48 relative overflow-hidden">
                                     <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/0 transition-colors z-10" />
-                                    <div className="absolute inset-0 bg-[url('/images/generated/railing_hero_detail_1764312850877.png')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700" />
+                                    <div className="absolute inset-0 bg-[url('/images/generated/railing_hero_detail_1764312850877.webp')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700" />
                                 </div>
                                 <div className="p-8">
                                     <h3 className="text-xl font-bold mb-3 font-serif text-slate-900">Aluminum Columns</h3>

@@ -26,7 +26,7 @@ export default async function BlogIndexPage() {
                     subtitle="Tips on design, installation, and maintenance from the GTA's railing experts."
                     ctaText="View Our Gallery"
                     ctaLink="/gallery"
-                    backgroundImage="/images/generated/railing_hero_detail_1764312850877.png"
+                    backgroundImage="/images/generated/railing_hero_detail_1764312850877.webp"
                 />
 
                 <section className="py-20">

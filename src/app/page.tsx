@@ -60,7 +60,7 @@ export default function Home() {
           subtitle="Factory Direct. Installed in 4 Weeks. Lifetime Warranty."
           ctaText="Get a Free Estimate"
           ctaLink="/contact"
-          backgroundImage="/images/hero-final-update.jpg"
+          backgroundImage="/images/hero-final-update.webp"
         />
 
         <TrustSection />
@@ -170,7 +170,7 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/Frameless-Glass.jpg"
+                    src="/images/Frameless-Glass.webp"
                     alt="Glass / Frameless Railings"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -186,7 +186,7 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/Glass-Enclosures-and-Offices.jpg"
+                    src="/images/Glass-Enclosures-and-Offices.webp"
                     alt="Glass Enclosures & Offices"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -202,7 +202,7 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/projects/frameless-glass-shower-custom.jpg"
+                    src="/images/projects/frameless-glass-shower-custom.webp"
                     alt="Frameless Showers"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"

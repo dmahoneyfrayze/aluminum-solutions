@@ -21,7 +21,7 @@ export default function PorchEnclosuresPage() {
                     subtitle="Protect your home with a custom glass enclosure for front porch. Create a vestibule that adds value and comfort to your home."
                     ctaText="Get a Free Estimate"
                     ctaLink="/contact"
-                    backgroundImage="/images/generated/glass_enclosure_project_1764312838961.png"
+                    backgroundImage="/images/generated/glass_enclosure_project_1764312838961.webp"
                 />
 
                 {/* Benefits Section */}
@@ -58,7 +58,7 @@ export default function PorchEnclosuresPage() {
                             </div>
                             <div className="h-[500px] bg-slate-200 rounded-sm relative overflow-hidden shadow-2xl">
                                 <Image
-                                    src="/images/generated/glass_enclosure_project_1764312838961.png"
+                                    src="/images/generated/glass_enclosure_project_1764312838961.webp"
                                     alt="Newmarket Porch Enclosure"
                                     fill
                                     className="object-cover"

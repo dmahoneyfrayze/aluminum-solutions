@@ -21,7 +21,7 @@ export default function ColumnsPage() {
                     subtitle="Add elegance and structural integrity to your porch. The permanent, load-bearing solution to rotting wood columns."
                     ctaText="Get a Quote"
                     ctaLink="/contact"
-                    backgroundImage="/images/generated/railing_hero_detail_1764312850877.png"
+                    backgroundImage="/images/generated/railing_hero_detail_1764312850877.webp"
                 />
 
                 {/* Overview */}
@@ -50,7 +50,7 @@ export default function ColumnsPage() {
                         </div>
                         <div className="h-[500px] bg-slate-100 relative rounded-sm overflow-hidden shadow-2xl">
                             <Image
-                                src="/images/generated/railing_hero_detail_1764312850877.png"
+                                src="/images/generated/railing_hero_detail_1764312850877.webp"
                                 alt="Aluminum Column Project"
                                 fill
                                 className="object-cover"

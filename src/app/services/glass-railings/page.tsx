@@ -47,7 +47,7 @@ export default function GlassRailingsPage() {
                     subtitle="Global Aluminum Solutions delivers elegant glass systems that blend functionality with aesthetic appeal. Our glass interior and exterior glass railings offer sleek and pristine visuals."
                     ctaText="Get a Quote"
                     ctaLink="/contact"
-                    backgroundImage="/images/projects/glass-railing-stairs-hero.jpg"
+                    backgroundImage="/images/projects/glass-railing-stairs-hero.webp"
                 />
 
                 {/* Intro / Benefits */}
@@ -76,7 +76,7 @@ export default function GlassRailingsPage() {
                         </div>
                         <div className="h-[500px] bg-slate-100 relative rounded-sm overflow-hidden shadow-2xl">
                             <Image
-                                src="/images/projects/deck-glass-railing-privacy.jpg"
+                                src="/images/projects/deck-glass-railing-privacy.webp"
                                 alt="Modern Glass Railing System"
                                 fill
                                 className="object-cover"
@@ -93,7 +93,7 @@ export default function GlassRailingsPage() {
                             {/* Staircase */}
                             <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6 items-center">
                                 <div className="w-full md:w-1/3 h-48 bg-slate-200 relative rounded overflow-hidden">
-                                    <Image src="/images/projects/staircase-frameless-glass.jpg" alt="Staircase Railing" fill className="object-cover" />
+                                    <Image src="/images/projects/staircase-frameless-glass.webp" alt="Staircase Railing" fill className="object-cover" />
                                 </div>
                                 <div className="w-full md:w-2/3">
                                     <h3 className="text-xl font-bold text-brand-dark mb-2">Staircase Frameless Glass Railings</h3>
@@ -119,7 +119,7 @@ export default function GlassRailingsPage() {
                             {/* Deck */}
                             <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6 items-center">
                                 <div className="w-full md:w-1/3 h-48 bg-slate-200 relative rounded overflow-hidden">
-                                    <Image src="/images/projects/frameless-glass-deck-railing.jpg" alt="Deck Railing" fill className="object-cover" />
+                                    <Image src="/images/projects/frameless-glass-deck-railing.webp" alt="Deck Railing" fill className="object-cover" />
                                 </div>
                                 <div className="w-full md:w-2/3">
                                     <h3 className="text-xl font-bold text-brand-dark mb-2">Frameless Glass Deck Railings</h3>
@@ -132,7 +132,7 @@ export default function GlassRailingsPage() {
                             {/* Pool */}
                             <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6 items-center">
                                 <div className="w-full md:w-1/3 h-48 bg-slate-200 relative rounded overflow-hidden">
-                                    <Image src="/images/Frameless-Glass.jpg" alt="Pool Guard" fill className="object-cover" />
+                                    <Image src="/images/Frameless-Glass.webp" alt="Pool Guard" fill className="object-cover" />
                                 </div>
                                 <div className="w-full md:w-2/3">
                                     <h3 className="text-xl font-bold text-brand-dark mb-2">Swimming Pool Guards</h3>
@@ -160,7 +160,7 @@ export default function GlassRailingsPage() {
                             <div className="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col">
                                 <div className="h-64 relative bg-white p-6">
                                     <Image
-                                        src="/images/projects/glass-railing-standoffs.jpg"
+                                        src="/images/projects/glass-railing-standoffs.webp"
                                         alt="Stand-off Glass Railing System"
                                         fill
                                         className="object-contain"
@@ -189,7 +189,7 @@ export default function GlassRailingsPage() {
                             <div className="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col">
                                 <div className="h-64 relative bg-white p-6">
                                     <Image
-                                        src="/images/projects/glass-railing-baseshoe.jpg"
+                                        src="/images/projects/glass-railing-baseshoe.webp"
                                         alt="Baseshoe Glass Railing System"
                                         fill
                                         className="object-contain"
@@ -220,7 +220,7 @@ export default function GlassRailingsPage() {
                             <div className="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col">
                                 <div className="h-64 relative bg-white p-6">
                                     <Image
-                                        src="/images/projects/glass-railing-mini-posts.jpg"
+                                        src="/images/projects/glass-railing-mini-posts.webp"
                                         alt="Mini-post Glass Railing System"
                                         fill
                                         className="object-contain"
@@ -252,7 +252,7 @@ export default function GlassRailingsPage() {
                             <div className="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col">
                                 <div className="h-64 relative bg-white p-6">
                                     <Image
-                                        src="/images/projects/glass-railing-tall-posts.jpg"
+                                        src="/images/projects/glass-railing-tall-posts.webp"
                                         alt="Tall Post Glass Railing System"
                                         fill
                                         className="object-contain"
