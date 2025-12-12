@@ -115,7 +115,7 @@ export default function Header() {
 
             {/* Mobile Menu Overlay */}
             {isMobileMenuOpen && (
-                <div className="lg:hidden fixed inset-0 bg-white z-40 pt-24 pb-10 overflow-y-auto">
+                <div className="lg:hidden fixed inset-0 !bg-white z-40 pt-24 pb-10 overflow-y-auto h-screen w-screen">
                     <nav className="container mx-auto px-6 flex flex-col space-y-2">
                         {navigationData.map((item) => (
                             <div key={item.label} className="border-b border-slate-50 last:border-0">

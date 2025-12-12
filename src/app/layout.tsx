@@ -68,7 +68,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://services.leadconnectorhq.com" />
       </head>
       <body
-        className={`${montserrat.variable} ${playfair.variable} antialiased font-sans bg-gray-50 text-slate-900`}
+        className={`${montserrat.variable} ${playfair.variable} antialiased font-sans bg-gray-50 text-slate-900 pt-28`}
       >
         <GoogleAnalytics gaId="G-EBYSGT31GD" />
         <JsonLd
@@ -126,6 +126,6 @@ export default function RootLayout({
         <CookieConsent />
         {/* <ExitIntentPopup /> */}
       </body>
-    </html>
+    </html >
   );
 }

@@ -23,7 +23,7 @@ export default function Hero({
     backgroundImage = "/images/hero-final-update.jpg"
 }: HeroProps) {
     return (
-        <section className="relative h-[85vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-900">
+        <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-slate-900 py-20">
             {/* Background Image with Parallax-like feel */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -45,7 +45,7 @@ export default function Hero({
 
             {/* Content */}
             <div className="relative z-20 container mx-auto px-6 text-center text-white max-w-5xl">
-                <h1 className="text-5xl md:text-7xl font-serif font-bold mb-8 leading-tight animate-fade-in-up drop-shadow-lg text-white">
+                <h1 className="text-4xl md:text-7xl font-serif font-bold mb-8 leading-tight animate-fade-in-up drop-shadow-lg text-white">
                     {title}
                 </h1>
                 <p className="text-xl md:text-2xl text-slate-100 mb-12 max-w-3xl mx-auto font-light leading-relaxed animate-fade-in-up delay-100 drop-shadow-md text-balance text-white">
