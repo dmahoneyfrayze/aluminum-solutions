@@ -166,6 +166,17 @@ export default function ContactContent() {
                                     <strong>Tel:</strong> (905) 780-3088<br />
                                     <strong>Email:</strong> info@aluminumsolutions.ca
                                 </p>
+
+                                <div className="mt-8 pt-6 border-t border-slate-200">
+                                    <h4 className="font-bold text-slate-900 mb-3 text-sm uppercase tracking-wide">Hours of Operation</h4>
+                                    <ul className="space-y-2 text-slate-600 text-sm">
+                                        <li className="flex justify-between"><span>Mon</span> <span>10am – 3pm</span></li>
+                                        <li className="flex justify-between"><span>Tue</span> <span>10am – 3pm</span></li>
+                                        <li className="flex justify-between"><span>Wed</span> <span>By appointment</span></li>
+                                        <li className="flex justify-between"><span>Fri</span> <span>10am – 3pm</span></li>
+                                        <li className="flex justify-between text-brand-copper font-bold"><span>Sat-Sun</span> <span>Closed (Winter Schedule)</span></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
 
