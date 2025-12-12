@@ -279,53 +279,29 @@ export default function CommercialPage() {
                     <div className="container mx-auto px-6">
                         <h2 className="text-3xl font-serif font-bold text-slate-900 mb-12 text-center">Project Capabilities</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            <div className="group relative h-80 rounded-lg overflow-hidden">
-                                <Image
-                                    src="/images/generated/glass_enclosure_project_1764312838961.png"
-                                    alt="High-Rise Condos"
-                                    fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
-                                    <h3 className="text-white font-bold text-xl"><Link href="/services/glass-railings" className="hover:underline">High-Rise Condos</Link></h3>
-                                    <p className="text-slate-300 text-sm">Balcony railings & dividers</p>
-                                </div>
+                            <div className="bg-slate-50 p-6 rounded-lg border border-slate-100 hover:shadow-md transition-shadow">
+                                <h3 className="text-xl font-bold text-slate-900 mb-3"><Link href="/services/glass-railings" className="hover:underline">High-Rise Condos</Link></h3>
+                                <p className="text-slate-600 text-sm">
+                                    Engineering-compliant aluminum railing systems and privacy dividers for multi-story residential developments. We specialize in volume fabrication for tower retrofits and new construction across the GTA.
+                                </p>
                             </div>
-                            <div className="group relative h-80 rounded-lg overflow-hidden">
-                                <Image
-                                    src="/images/generated/pool_fence_glass_detail_1764312810331.png"
-                                    alt="Subdivisions"
-                                    fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
-                                    <h3 className="text-white font-bold text-xl"><Link href="/services/porch-enclosures" className="hover:underline">Subdivisions</Link></h3>
-                                    <p className="text-slate-300 text-sm">Volume porch railings</p>
-                                </div>
+                            <div className="bg-slate-50 p-6 rounded-lg border border-slate-100 hover:shadow-md transition-shadow">
+                                <h3 className="text-xl font-bold text-slate-900 mb-3"><Link href="/services/porch-enclosures" className="hover:underline">Subdivisions</Link></h3>
+                                <p className="text-slate-600 text-sm">
+                                    Scalable exterior railing solutions for low-rise communities. Durable, maintenance-free aluminum porch railings and storm doors designed for builder-grade budgets without sacrificing curb appeal.
+                                </p>
                             </div>
-                            <div className="group relative h-80 rounded-lg overflow-hidden">
-                                <Image
-                                    src="/images/generated/glass_office_partition_hero_1764346564712.png"
-                                    alt="Commercial Interiors"
-                                    fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
-                                    <h3 className="text-white font-bold text-xl"><Link href="/services/glass-walls" className="hover:underline">Commercial Interiors</Link></h3>
-                                    <p className="text-slate-300 text-sm">Office partitions & gyms</p>
-                                </div>
+                            <div className="bg-slate-50 p-6 rounded-lg border border-slate-100 hover:shadow-md transition-shadow">
+                                <h3 className="text-xl font-bold text-slate-900 mb-3"><Link href="/services/glass-walls" className="hover:underline">Commercial Interiors</Link></h3>
+                                <p className="text-slate-600 text-sm">
+                                    Modern glass wall systems for corporate offices, fitness centers, and retail spaces. Create open, light-filled environments with acoustic privacy using our frameless and aluminum-framed glass partitions.
+                                </p>
                             </div>
-                            <div className="group relative h-80 rounded-lg overflow-hidden">
-                                <Image
-                                    src="/images/generated/railing_hero_detail_1764312850877.png"
-                                    alt="Custom Luxury"
-                                    fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
-                                    <h3 className="text-white font-bold text-xl">Custom Luxury</h3>
-                                    <p className="text-slate-300 text-sm">Bespoke architectural glass</p>
-                                </div>
+                            <div className="bg-slate-50 p-6 rounded-lg border border-slate-100 hover:shadow-md transition-shadow">
+                                <h3 className="text-xl font-bold text-slate-900 mb-3">Custom Architectural</h3>
+                                <p className="text-slate-600 text-sm">
+                                    Bespoke fabrication for luxury homes and unique commercial features. From floating staircases to structural glass floors, our precision engineering brings complex architectural visions to reality.
+                                </p>
                             </div>
                         </div>
                     </div>

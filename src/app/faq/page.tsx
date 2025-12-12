@@ -15,12 +15,20 @@ export default function FAQPage() {
                     a: "Manufacturer-installers control the entire process — design, fabrication, and installation. That means higher-quality materials, perfect fit, faster timelines (4-6 weeks vs. 8-12+), and stronger warranties. Most railing companies in the GTA simply assemble pre-bought kits."
                 },
                 {
+                    q: "How does buying direct save me money?",
+                    a: "By cutting out the middleman, you avoid the standard 20-40% retail markup charged by distributors and general contractors. You get premium, architect-grade materials for the same price as standard builder-grade products."
+                },
+                {
                     q: "What makes your railings premium compared to cheaper quotes?",
                     a: "Cheaper quotes often use thin imported aluminum, offshore non-tempered glass, and low-quality powder coating that fades in 2-4 years. We use architect-grade materials, Canadian-tempered glass, and a premium powder coat built for 20+ years of performance."
                 },
                 {
+                    q: "Who is responsible if something goes wrong?",
+                    a: "We are. With Aluminum Solutions, you have a single point of accountability. No blame-shifting between the supplier, the fabricator, and the installer. We manufacture it, we install it, and we back it with our lifetime warranty."
+                },
+                {
                     q: "What is your installation timeline?",
-                    a: "With in-house production, most projects are completed in 4–6 weeks, even during peak season. Outsourced competitors often take 8–12 weeks or more."
+                    a: "With in-house production, most projects are completed in 4–6 weeks, even during peak season. Outsourced competitors often take 8–12 weeks or more because they are at the mercy of third-party suppliers."
                 },
                 {
                     q: "Do you fabricate the glass yourself?",

@@ -35,7 +35,7 @@ export default function ProcessPage() {
             title: "Professional Installation",
             description: "Our in-house team arrives on the scheduled day. We protect your property, install efficiently, and clean up thoroughly. We don't leave until you are 100% satisfied.",
             icon: "✨",
-            image: "/images/generated/team_member_1_installer_1764313211230.png"
+            image: "/images/close-up-level.jpg"
         }
     ];
 

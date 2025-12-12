@@ -20,7 +20,7 @@ const projects = [
     { id: 9, category: "Walls", title: "Gym Glass Wall", location: "Brampton", image: "/images/projects/glass-office-partition-modern.jpg" },
     // New Additions
     { id: 10, category: "Railings", title: "Frameless Deck System", location: "North York", image: "/images/Frameless-Glass.jpg" },
-    { id: 11, category: "Railings", title: "Commercial Balcony Railings", location: "Etobicoke", image: "/images/projects/commercial-building-railings.png" },
+    { id: 11, category: "Railings", title: "Commercial Balcony Railings", location: "Etobicoke", image: "/images/projects/black-aluminum-railing-stone.png" },
     { id: 12, category: "Railings", title: "Glass with Top Rail", location: "Scarborough", image: "/images/glass-with-top-rail.jpg" },
     { id: 13, category: "Enclosures", title: "Commercial Office Enclosure", location: "Financial District", image: "/images/Glass-Enclosures-and-Offices.jpg" },
     { id: 14, category: "Enclosures", title: "Premium Gatsby Enclosure", location: "King City", image: "/images/projects/glass-enclosure-gatsby.png" },
@@ -29,6 +29,13 @@ const projects = [
     { id: 17, category: "Fences", title: "Pool Safety Fence", location: "Oakville", image: "/images/projects/pool-fence-glass-new.png" },
     { id: 18, category: "Fences", title: "Glass Swimming Guard", location: "Vaughan", image: "/images/projects/pool-fence-glass-swimming.jpg" },
     { id: 19, category: "Privacy", title: "Deck Privacy Screen", location: "Toronto", image: "/images/projects/privacy-screen-deck.jpg" },
+    { id: 20, category: "Railings", title: "Modern Picket Railing", location: "Toronto", image: "/images/projects/aluminum-railing-pickets-black.png" },
+    { id: 21, category: "Showers", title: "Corner Glass Shower", location: "Mississauga", image: "/images/projects/corner-glass-shower-enclosure.jpg" },
+    { id: 22, category: "Showers", title: "Custom Frameless Shower", location: "Oakville", image: "/images/projects/frameless-glass-shower-custom.jpg" },
+    { id: 23, category: "Railings", title: "Frameless Deck View", location: "Vaughan", image: "/images/projects/frameless-glass-deck-railing.jpg" },
+    { id: 24, category: "Walls", title: "Office Divider System", location: "Markham", image: "/images/projects/glass-office-divider-system.jpg" },
+    { id: 25, category: "Privacy", title: "Condo Balcony Privacy", location: "Toronto", image: "/images/projects/privacy-screen-condo-balcony.jpg" },
+    { id: 26, category: "Privacy", title: "Black Aluminum Privacy", location: "Mississauga", image: "/images/projects/privacy-screen-black-aluminum.jpg" },
 ];
 
 const categories = ["All", "Railings", "Enclosures", "Showers", "Fences", "Walls", "Privacy"];
