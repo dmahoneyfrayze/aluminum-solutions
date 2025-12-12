@@ -90,6 +90,7 @@ export default function ServicesPage() {
                 <section className="py-20 bg-white">
                     <div className="container mx-auto px-6">
                         <div className="text-center mb-16">
+                            <span className="text-brand-copper font-bold tracking-widest uppercase text-sm mb-2 block">Explore Solutions</span>
                             <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">Exterior Living & Safety</h2>
                             <p className="text-slate-600 max-w-2xl mx-auto text-lg">
                                 Enhance your curb appeal and outdoor living space with our durable, maintenance-free aluminum and glass products.
@@ -97,7 +98,11 @@ export default function ServicesPage() {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {exteriorServices.map((service, index) => (
-                                <div key={index} className="group bg-white border border-slate-100 hover:border-slate-300 hover:shadow-xl transition-all duration-300 overflow-hidden rounded-lg flex flex-col">
+                                <Link
+                                    key={index}
+                                    href={service.link}
+                                    className="group bg-white border border-slate-100 hover:border-slate-300 hover:shadow-xl transition-all duration-300 overflow-hidden rounded-lg flex flex-col block"
+                                >
                                     <div className="h-64 bg-slate-200 relative overflow-hidden">
                                         <Image
                                             src={service.image}
@@ -108,7 +113,7 @@ export default function ServicesPage() {
                                         />
                                     </div>
                                     <div className="p-8 flex-grow flex flex-col">
-                                        <h3 className="text-2xl font-serif font-bold mb-3 text-slate-900">{service.title}</h3>
+                                        <h3 className="text-2xl font-serif font-bold mb-3 text-slate-900 group-hover:text-brand-copper transition-colors">{service.title}</h3>
                                         <p className="text-slate-600 mb-6 leading-relaxed flex-grow">{service.description}</p>
                                         <div className="mb-6 flex flex-wrap gap-2">
                                             {service.features?.map((feature, i) => (
@@ -117,15 +122,13 @@ export default function ServicesPage() {
                                                 </span>
                                             ))}
                                         </div>
-                                        <Link
-                                            href={service.link}
-                                            className="inline-block w-full text-center py-3 bg-white border border-slate-900 text-slate-900 font-bold text-sm uppercase tracking-wider hover:bg-slate-900 hover:text-white transition-colors rounded-sm"
-                                            aria-label={`View details about ${service.title}`}
+                                        <span
+                                            className="inline-block w-full text-center py-3 bg-white border border-slate-900 text-slate-900 font-bold text-sm uppercase tracking-wider group-hover:bg-slate-900 group-hover:text-white transition-colors rounded-sm"
                                         >
                                             View {service.title}
-                                        </Link>
+                                        </span>
                                     </div>
-                                </div>
+                                </Link>
                             ))}
                         </div>
                     </div>
@@ -135,6 +138,7 @@ export default function ServicesPage() {
                 <section className="py-20 bg-slate-50">
                     <div className="container mx-auto px-6">
                         <div className="text-center mb-16">
+                            <span className="text-brand-copper font-bold tracking-widest uppercase text-sm mb-2 block">Explore Solutions</span>
                             <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">Interior Glass & Design</h2>
                             <p className="text-slate-600 max-w-2xl mx-auto text-lg">
                                 Transform your indoor spaces with modern, light-filled glass partitions and enclosures.
@@ -142,7 +146,11 @@ export default function ServicesPage() {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                             {interiorServices.map((service, index) => (
-                                <div key={index} className="group bg-white border border-slate-100 hover:border-slate-300 hover:shadow-xl transition-all duration-300 overflow-hidden rounded-lg flex flex-col">
+                                <Link
+                                    key={index}
+                                    href={service.link}
+                                    className="group bg-white border border-slate-100 hover:border-slate-300 hover:shadow-xl transition-all duration-300 overflow-hidden rounded-lg flex flex-col block"
+                                >
                                     <div className="h-72 bg-slate-200 relative overflow-hidden">
                                         <Image
                                             src={service.image}
@@ -153,7 +161,7 @@ export default function ServicesPage() {
                                         />
                                     </div>
                                     <div className="p-8 flex-grow flex flex-col">
-                                        <h3 className="text-2xl font-serif font-bold mb-3 text-slate-900">{service.title}</h3>
+                                        <h3 className="text-2xl font-serif font-bold mb-3 text-slate-900 group-hover:text-brand-copper transition-colors">{service.title}</h3>
                                         <p className="text-slate-600 mb-6 leading-relaxed flex-grow">{service.description}</p>
                                         <div className="mb-6 flex flex-wrap gap-2">
                                             {service.features?.map((feature, i) => (
@@ -162,15 +170,13 @@ export default function ServicesPage() {
                                                 </span>
                                             ))}
                                         </div>
-                                        <Link
-                                            href={service.link}
-                                            className="inline-block w-full text-center py-3 bg-white border border-slate-900 text-slate-900 font-bold text-sm uppercase tracking-wider hover:bg-slate-900 hover:text-white transition-colors rounded-sm"
-                                            aria-label={`View details about ${service.title}`}
+                                        <span
+                                            className="inline-block w-full text-center py-3 bg-white border border-slate-900 text-slate-900 font-bold text-sm uppercase tracking-wider group-hover:bg-slate-900 group-hover:text-white transition-colors rounded-sm"
                                         >
                                             View {service.title}
-                                        </Link>
+                                        </span>
                                     </div>
-                                </div>
+                                </Link>
                             ))}
                         </div>
                     </div>
