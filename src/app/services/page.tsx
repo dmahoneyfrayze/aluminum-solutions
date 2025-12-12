@@ -16,7 +16,7 @@ const exteriorServices = [
         description: "Durable, maintenance-free railings in a variety of modern styles and colors. Perfect for porches, balconies, and decks.",
         link: "/services/railings",
         features: ["Rust-free", "Powder-coated finish", "Multiple color options"],
-        image: "/images/projects/aluminum-railing-pickets-black.png"
+        image: "/images/projects/aluminum-railing-pickets-black.webp"
     },
     {
         title: "Glass Railings",

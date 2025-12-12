@@ -16,7 +16,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Why aluminum is the superior choice for Canadian homes: No rust, low maintenance, and high durability.",
     date: "July 5, 2023",
     category: "Product Info",
-    imageUrl: "/images/projects/aluminum-railing-pickets-black.png",
+    imageUrl: "/images/projects/aluminum-railing-pickets-black.webp",
     altText: "Black aluminum picket railings on a residential deck",
     content: `
       <p><strong>No Rusting or Rotting</strong><br>

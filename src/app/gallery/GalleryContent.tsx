@@ -30,7 +30,7 @@ const projects = [
     { id: 17, category: "Fences", title: "Pool Safety Fence", location: "Oakville", image: "/images/projects/pool-fence-glass-new.png" },
     { id: 18, category: "Fences", title: "Glass Swimming Guard", location: "Vaughan", image: "/images/projects/pool-fence-glass-swimming.webp" },
     { id: 19, category: "Privacy", title: "Deck Privacy Screen", location: "Toronto", image: "/images/projects/privacy-screen-deck.webp" },
-    { id: 20, category: "Railings", title: "Modern Picket Railing", location: "Toronto", image: "/images/projects/aluminum-railing-pickets-black.png" },
+    { id: 20, category: "Railings", title: "Modern Picket Railing", location: "Toronto", image: "/images/projects/aluminum-railing-pickets-black.webp" },
     { id: 21, category: "Showers", title: "Corner Glass Shower", location: "Mississauga", image: "/images/projects/corner-glass-shower-enclosure.webp" },
     { id: 22, category: "Showers", title: "Custom Frameless Shower", location: "Oakville", image: "/images/projects/frameless-glass-shower-custom.webp" },
     { id: 23, category: "Railings", title: "Frameless Deck View", location: "Vaughan", image: "/images/projects/frameless-glass-deck-railing.webp" },

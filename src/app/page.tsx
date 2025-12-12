@@ -56,8 +56,8 @@ export default function Home() {
 
       <main className="flex-grow">
         <Hero
-          title="Modernize Your Home with Premium Glass Railings"
-          subtitle="Factory Direct. Installed in 4 Weeks. Lifetime Warranty."
+          title="Premium Aluminum, Glass & Custom Showers"
+          subtitle="Factory Direct. Specializing in Aluminum Railings, Exterior Glass, Interior Partitions & Showers."
           ctaText="Get a Free Estimate"
           ctaLink="/contact"
           backgroundImage="/images/hero-final-update.webp"
@@ -153,7 +153,7 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/projects/aluminum-railing-pickets-black.png"
+                    src="/images/projects/aluminum-railing-pickets-black.webp"
                     alt="Aluminum Railings - Pickets"
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"

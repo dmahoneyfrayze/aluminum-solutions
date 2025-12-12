@@ -2,8 +2,12 @@ import { Metadata } from "next";
 import PrivacyScreensContent from "./PrivacyScreensContent";
 
 export const metadata: Metadata = {
-    title: "Privacy Screens Toronto | Custom Aluminum & Glass Privacy Fences",
-    description: "Enhance your backyard privacy with stylish aluminum and frosted glass privacy screens. Durable, maintenance-free, and custom-built for decks and pools.",
+    title: "Privacy Screens | Aluminum & Frosted Glass Dividers",
+    description: "Add privacy to your deck, balcony, or patio with custom aluminum privacy screens and frosted glass dividers.",
+    openGraph: {
+        title: "Privacy Screens | Aluminum & Frosted Glass Dividers",
+        description: "Add privacy to your deck, balcony, or patio with custom aluminum privacy screens and frosted glass dividers.",
+    },
 };
 
 export default function PrivacyScreensPage() {

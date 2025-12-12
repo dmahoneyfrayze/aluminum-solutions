@@ -8,7 +8,7 @@ const styles = [
         id: "aluminum",
         name: "Aluminum Railings",
         description: "Classic durability. Maintenance-free aluminum pickets in various colors.",
-        image: "/images/projects/aluminum-railing-pickets-black.png",
+        image: "/images/projects/aluminum-railing-pickets-black.webp",
         features: ["Cost Effective", "Traditional Look", "Airflow"]
     },
     {
