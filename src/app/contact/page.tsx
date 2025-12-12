@@ -8,6 +8,7 @@ import { getUTMParams } from "@/lib/utm";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BookingCalendar from "@/components/ui/BookingCalendar";
+import { Metadata } from "next";
 
 // Form Schema
 const formSchema = z.object({
@@ -20,6 +21,11 @@ const formSchema = z.object({
 });
 
 type FormData = z.infer<typeof formSchema>;
+
+export const metadata: Metadata = {
+    title: "Contact Aluminum Solutions | Free Railing Estimates in GTA",
+    description: "Get a free quote for aluminum railings, glass enclosures, or custom gates. Visit our showroom in Toronto or book an on-site consultation today.",
+};
 
 export default function ContactPage() {
     const [isSubmitting, setIsSubmitting] = useState(false);

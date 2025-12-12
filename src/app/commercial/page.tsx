@@ -9,8 +9,14 @@ import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
 import { getUTMParams } from "@/lib/utm";
 import BuilderPartnerPackForm from "@/components/ui/BuilderPartnerPackForm";
+
+export const metadata: Metadata = {
+    title: "Commercial Aluminum Railings & Glass Partitions | Toronto Contractors",
+    description: "Heavy-duty aluminum railings and glass systems for commercial buildings, condos, and offices. Bulk pricing and professional installation available.",
+};
 
 const builderFormSchema = z.object({
     firstName: z.string().min(2, "First name is required"),

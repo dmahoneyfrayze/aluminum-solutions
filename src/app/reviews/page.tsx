@@ -5,6 +5,12 @@ import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import ReputationWidget from "@/components/ui/ReputationWidget";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Customer Reviews | Rated 5-Stars for Aluminum Railings in GTA",
+    description: "See what homeowners in Toronto, Mississauga, and Oakville are saying about Aluminum Solutions. We pride ourselves on quality and service.",
+};
 
 export default function ReviewsPage() {
     return (

@@ -7,35 +7,38 @@ import Link from "next/link";
 
 import Image from "next/image";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Our Process | Custom Railing Manufacturing & Installation",
+    description: "From design consultation to local manufacturing and professional installation. See how we deliver premium aluminum railings in just 4 weeks.",
+};
+
 export default function ProcessPage() {
     const steps = [
         {
             number: "01",
-            title: "Consultation & Estimate",
-            description: "It starts with a conversation. We discuss your vision, style preferences, and budget. You can visit our showroom or we can provide a rough estimate based on your photos and measurements.",
-            icon: "💬",
+            title: "Virtual or On-Site Consultation",
+            description: "We start by understanding your vision. Send us photos for a quick estimate, or book a free on-site visit where we take precise measurements and show you material samples.",
             image: "/images/generated/process_consultation_blueprint_1764350167105.png"
         },
         {
             number: "02",
-            title: "Precision Measurement",
-            description: "Once you approve the estimate, our expert technician visits your site to take laser-precise measurements. We account for every slope, angle, and unique feature of your property.",
-            icon: "📏",
-            image: "/images/generated/process_measurement_laser_1764350203708.png"
+            title: "Design & manufacturing",
+            description: "Once approved, your project moves to our local manufacturing facility. We precision-cut high-grade aluminum and temper our own glass to ensure perfect fit and finish.",
+            image: "/images/migrated/manufacturing-glass.jpg"
         },
         {
             number: "03",
-            title: "Custom Fabrication",
-            description: "Your order goes to our GTA factory. We cut, drill, and powder coat your aluminum profiles to the exact specifications. Glass is tempered and polished. Quality control checks every piece.",
-            icon: "🏭",
-            image: "/images/generated/railing_hero_detail_1764312850877.png"
+            title: "Quality Control",
+            description: "Every piece undergoes rigorous inspection before leaving our factory. We check for powder coat consistency, glass clarity, and structural integrity.",
+            image: "/images/generated/process_measurement_laser_1764350203708.png"
         },
         {
             number: "04",
             title: "Professional Installation",
-            description: "Our in-house team arrives on the scheduled day. We protect your property, install efficiently, and clean up thoroughly. We don't leave until you are 100% satisfied.",
-            icon: "✨",
-            image: "/images/close-up-level.jpg"
+            description: "Our licensed installers arrive on time and complete most residential projects in 1-2 days. We treat your property with respect and leave the site spotless.",
+            image: "/images/generated/railing_hero_detail_1764312850877.png" // Updated to a relevant installation/detail shot
         }
     ];
 

@@ -5,6 +5,12 @@ import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Glass Pool Fencing Toronto | Safe & Compliant Pool Enclosures",
+    description: "Secure your swimming pool with frameless glass fences and self-closing gates. Meets all Ontario safety by-laws without obstructing your view.",
+};
 
 export default function PoolFencesPage() {
     return (

@@ -6,6 +6,12 @@ import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 import Image from "next/image";
 import ManufacturingHighlight from "@/components/ui/ManufacturingHighlight";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "About Us | Top-Rated Aluminum Railing Manufacturers Toronto",
+    description: "Learn about Aluminum Solutions, Toronto's premier manufacturer of custom aluminum railings, glass showers, and gates. Family-owned, factory-direct pricing.",
+};
 
 export default function AboutPage() {
     return (

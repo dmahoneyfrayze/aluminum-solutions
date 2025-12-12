@@ -7,6 +7,12 @@ import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 import Image from "next/image";
 import ReputationWidget from "@/components/ui/ReputationWidget";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Project Gallery | Recent Railing & Glass Projects in Toronto",
+    description: "Browse our portfolio of custom glass railings, porch enclosures, and aluminum gates installed across the GTA. See the quality of our workmanship.",
+};
 
 const projects = [
     { id: 1, category: "Railings", title: "Modern Glass Railing", location: "Toronto", image: "/images/projects/railing-aluminum-deck-toronto.jpg" },

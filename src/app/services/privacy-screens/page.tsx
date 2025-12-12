@@ -5,6 +5,12 @@ import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Privacy Screens Toronto | Custom Aluminum & Glass Privacy Fences",
+    description: "Enhance your backyard privacy with stylish aluminum and frosted glass privacy screens. Durable, maintenance-free, and custom-built for decks and pools.",
+};
 
 export default function PrivacyScreensPage() {
     return (

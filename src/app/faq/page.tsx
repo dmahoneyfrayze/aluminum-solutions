@@ -4,6 +4,12 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "FAQ | Aluminum Railing Installation & Pricing Questions",
+    description: "Answers to common questions about aluminum railing costs, installation timelines in Toronto, permits, and warranty coverage.",
+};
 
 export default function FAQPage() {
     const faqs = [
