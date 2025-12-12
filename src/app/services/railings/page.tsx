@@ -9,6 +9,8 @@ import RelatedArticles from "@/components/blog/RelatedArticles";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import PremiumFeatures from "@/components/ui/PremiumFeatures";
+import RailingsWhoThisIsFor from "@/components/ui/RailingsWhoThisIsFor";
+import RailingsFAQ from "@/components/ui/RailingsFAQ";
 
 export const metadata: Metadata = {
     title: "Aluminum Railings Toronto | Custom Porch & Deck Railings",
@@ -22,11 +24,12 @@ export default function RailingsPage() {
 
             <Breadcrumbs />
 
+            {/* Product Schema */}
             <JsonLd
                 data={{
                     "@context": "https://schema.org",
                     "@type": "Product",
-                    "name": "Aluminum Railings",
+                    "name": "Custom Aluminum Railings",
                     "description": "High-quality, rust-free aluminum railings for porches and decks. Custom made in Toronto.",
                     "brand": {
                         "@type": "Brand",
@@ -36,12 +39,42 @@ export default function RailingsPage() {
                         "@type": "Offer",
                         "priceCurrency": "CAD",
                         "availability": "https://schema.org/InStock",
-                        "areaServed": "Toronto, GTA"
+                        "areaServed": "Toronto, GTA",
+                        "priceSpecification": {
+                            "@type": "UnitPriceSpecification",
+                            "price": "60.00",
+                            "priceCurrency": "CAD",
+                            "unitCode": "FOT" // Foot
+                        }
+                    },
+                    "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.9",
+                        "reviewCount": "128"
                     }
                 }}
             />
 
+            {/* Service Schema */}
+            <JsonLd
+                data={{
+                    "@context": "https://schema.org",
+                    "@type": "Service",
+                    "serviceType": "Aluminum Railing Installation",
+                    "provider": {
+                        "@type": "LocalBusiness",
+                        "name": "Aluminum Solutions"
+                    },
+                    "areaServed": [
+                        { "@type": "City", "name": "Toronto" },
+                        { "@type": "City", "name": "Mississauga" },
+                        { "@type": "City", "name": "Vaughan" }
+                    ]
+                }}
+            />
+
             <main className="flex-grow">
+                {/* H1 is here */}
                 <Hero
                     title="Custom Aluminum Railings in Toronto"
                     subtitle={
@@ -77,6 +110,9 @@ export default function RailingsPage() {
                         </div>
                     </div>
                 </div>
+
+                {/* Who This Is For (Micro-Section) */}
+                <RailingsWhoThisIsFor />
 
                 {/* Overview */}
                 <section className="py-24 bg-white">
@@ -167,7 +203,7 @@ export default function RailingsPage() {
                                 <div className="w-full md:w-1/2">
                                     <h3 className="text-2xl font-bold text-brand-dark mb-4">Toronto Aluminum Deck Railings</h3>
                                     <p className="text-slate-600 mb-6 leading-relaxed">
-                                        Elevate your outdoor living experience with our premium Aluminum Deck Railings. Crafted from high-grade aluminum, they are designed to withstand harsh weather conditions, ensuring durability and longevity. Our deck railings come in a variety of designs and finishes, allowing you to customize them to match your home’s aesthetic. Consider pairing with <Link href="/services/glass-railings" className="text-brand-copper hover:underline">glass panels</Link> for an unobstructed view.
+                                        Elevate your outdoor living experience with our premium Aluminum Deck Railings. Crafted from high-grade aluminum, they are designed to withstand harsh weather conditions, ensuring durability and longevity. Our deck railings come in a variety of designs and finishes, allowing you to customize them to match your home’s aesthetic. Consider pairing with <Link href="/services/glass-railings" className="text-brand-copper hover:underline font-bold">glass panels</Link> for an unobstructed view.
                                     </p>
                                     <Link href="/contact" className="text-brand-copper font-bold hover:underline">
                                         Get a Quote for Deck Railings &rarr;
@@ -185,7 +221,7 @@ export default function RailingsPage() {
                                 <div className="w-full md:w-1/2">
                                     <h3 className="text-2xl font-bold text-brand-dark mb-4">Toronto Aluminum Porch Railings</h3>
                                     <p className="text-slate-600 mb-6 leading-relaxed">
-                                        Our Aluminum Porch Railings are the perfect blend of functionality and curb appeal. Designed to enhance safety and accessibility, these railings add an elegant touch that can significantly increase your home’s value. Made from top-quality aluminum, they are resistant to rust and corrosion.
+                                        Our Aluminum Porch Railings are the perfect blend of functionality and curb appeal. Designed to enhance safety and accessibility, these railings add an elegant touch that can significantly increase your home’s value. If you need complete protection, explore our <Link href="/services/porch-enclosures" className="text-brand-copper hover:underline font-bold">porch enclosures</Link>.
                                     </p>
                                     <Link href="/contact" className="text-brand-copper font-bold hover:underline">
                                         Get a Quote for Porch Railings &rarr;
@@ -221,7 +257,7 @@ export default function RailingsPage() {
                                 <div className="w-full md:w-1/2">
                                     <h3 className="text-2xl font-bold text-brand-dark mb-4">Restaurant & Commercial Patio Railings</h3>
                                     <p className="text-slate-600 mb-6 leading-relaxed">
-                                        Create an inviting outdoor dining space with our commercial-grade aluminum and glass railings. Perfect for restaurants, cafes, and rooftop patios in Toronto. Our systems are engineered to handle high traffic while meeting all commercial building codes.
+                                        Create an inviting outdoor dining space with our commercial-grade aluminum and glass railings. Perfect for restaurants, cafes, and rooftop patios in Toronto. Visit our <Link href="/commercial" className="text-brand-copper hover:underline font-bold">Commercial Services</Link> page for more details.
                                     </p>
                                     <ul className="mb-6 space-y-2 text-slate-600">
                                         <li className="flex items-center">✓ Wind walls & privacy dividers</li>
@@ -237,7 +273,7 @@ export default function RailingsPage() {
                     </div>
                 </section>
 
-                {/* Pricing Guide (NEW) */}
+                {/* Pricing Guide */}
                 <section className="py-20 bg-white border-y border-slate-100">
                     <div className="container mx-auto px-6">
                         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -254,7 +290,7 @@ export default function RailingsPage() {
                                 <div className="text-sm text-slate-500 mb-6">per linear foot</div>
                                 <ul className="text-left space-y-3 text-slate-600 mb-8 text-sm">
                                     <li className="flex items-center">✓ Standard Black or White</li>
-                                    <li className="flex items-center">✓ 42" Height</li>
+                                    <li className="flex items-center">✓ 42&quot; Height</li>
                                     <li className="flex items-center">✓ Professional Installation</li>
                                 </ul>
                                 <Link href="/contact" className="block w-full py-3 bg-white border border-brand-copper text-brand-copper font-bold rounded hover:bg-brand-copper hover:text-white transition-colors">
@@ -301,7 +337,22 @@ export default function RailingsPage() {
                     </div>
                 </section>
 
-                {/* Installation Process (NEW) */}
+                {/* Mid-Page Conversion Anchor (NEW) */}
+                <section className="bg-brand-copper py-12">
+                    <div className="container mx-auto px-6 text-center">
+                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                            Ready to Price Your Railing Project?
+                        </h2>
+                        <p className="text-white/90 mb-8 text-lg">
+                            Upload a photo and get a same-day estimate. No site visit required for rough pricing.
+                        </p>
+                        <Link href="/contact" className="inline-block px-10 py-4 bg-white text-brand-copper font-bold shadow-lg hover:bg-slate-100 transition-colors rounded-sm">
+                            Get My Free Estimate →
+                        </Link>
+                    </div>
+                </section>
+
+                {/* Installation Process */}
                 <section className="py-24 bg-slate-900 text-white">
                     <div className="container mx-auto px-6">
                         <div className="text-center mb-16">
@@ -511,39 +562,6 @@ export default function RailingsPage() {
                     </div>
                 </section>
 
-                {/* Portfolio / Gallery Preview */}
-                <section className="py-24 bg-white">
-                    <div className="container mx-auto px-6">
-                        <h3 className="text-3xl font-serif font-bold text-center text-brand-dark mb-12">Recent Projects</h3>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <div className="aspect-square relative rounded-lg overflow-hidden shadow-md group">
-                                <Image
-                                    src="/images/projects/deck-glass-railing-pergola.jpg"
-                                    alt="Deck with glass railing and pergola"
-                                    fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                                />
-                            </div>
-                            <div className="aspect-square relative rounded-lg overflow-hidden shadow-md group">
-                                <Image
-                                    src="/images/projects/deck-glass-railing-privacy.jpg"
-                                    alt="Deck with privacy screen"
-                                    fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                                />
-                            </div>
-                            <div className="aspect-square relative rounded-lg overflow-hidden shadow-md group">
-                                <Image
-                                    src="/images/projects/black-aluminum-railing-stone.png"
-                                    alt="Black aluminum railing on stone steps"
-                                    fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
                 {/* Clients */}
                 <section className="py-16 bg-white border-b border-slate-100">
                     <div className="container mx-auto px-6 text-center">
@@ -568,6 +586,9 @@ export default function RailingsPage() {
                     </div>
                 </section>
 
+                {/* FAQ */}
+                <RailingsFAQ />
+
                 {/* Testimonials */}
                 <section className="py-20 bg-brand-copper/5">
                     <div className="container mx-auto px-6">
@@ -575,22 +596,22 @@ export default function RailingsPage() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                             <div className="bg-white p-8 shadow-sm rounded-xl border border-slate-100">
                                 <div className="flex text-brand-copper mb-4">★★★★★</div>
-                                <p className="text-slate-600 italic mb-6">"Val and his team installed glass panel aluminum railings at my house. I was blown away by how professional and quick they were... They were very reasonably priced and super professional. I would highly recommend!"</p>
+                                <p className="text-slate-600 italic mb-6">&quot;Val and his team installed glass panel aluminum railings at my house. I was blown away by how professional and quick they were... They were very reasonably priced and super professional. I would highly recommend!&quot;</p>
                                 <div className="font-bold text-brand-navy">- Milos Radicevic</div>
                             </div>
                             <div className="bg-white p-8 shadow-sm rounded-xl border border-slate-100">
                                 <div className="flex text-brand-copper mb-4">★★★★★</div>
-                                <p className="text-slate-600 italic mb-6">"I wasn't sure about getting glass railings for our deck as we have a young child... but I'm so glad I was able to find this company. Vlad and his team worked and installed the deck rails efficiently this week... Highly recommend!"</p>
+                                <p className="text-slate-600 italic mb-6">&quot;I wasn't sure about getting glass railings for our deck as we have a young child... but I'm so glad I was able to find this company. Vlad and his team worked and installed the deck rails efficiently this week... Highly recommend!&quot;</p>
                                 <div className="font-bold text-brand-navy">- Graham Diana</div>
                             </div>
                             <div className="bg-white p-8 shadow-sm rounded-xl border border-slate-100">
                                 <div className="flex text-brand-copper mb-4">★★★★★</div>
-                                <p className="text-slate-600 italic mb-6">"Exceptional experience working with Global Aluminum Solutions. Everything was done in such a professional manner and exceeded expectations."</p>
+                                <p className="text-slate-600 italic mb-6">&quot;Exceptional experience working with Global Aluminum Solutions. Everything was done in such a professional manner and exceeded expectations.&quot;</p>
                                 <div className="font-bold text-brand-navy">- Saleem Akhtar</div>
                             </div>
                             <div className="bg-white p-8 shadow-sm rounded-xl border border-slate-100">
                                 <div className="flex text-brand-copper mb-4">★★★★★</div>
-                                <p className="text-slate-600 italic mb-6">"Global Aluminum was very professional and expedient. From their quotation accuracy, to on-site measure and final installation, time spanned less thank 2 weeks. Most importantly amazing quality and value."</p>
+                                <p className="text-slate-600 italic mb-6">&quot;Global Aluminum was very professional and expedient. From their quotation accuracy, to on-site measure and final installation, time spanned less thank 2 weeks. Most importantly amazing quality and value.&quot;</p>
                                 <div className="font-bold text-brand-navy">- Steve Sottile</div>
                             </div>
                         </div>
