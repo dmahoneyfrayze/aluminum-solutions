@@ -9,27 +9,27 @@ import Image from "next/image";
 const steps = [
     {
         number: "01",
-        title: "Virtual or On-Site Consultation",
-        description: "We start by understanding your vision. Send us photos for a quick estimate, or book a free on-site visit where we take precise measurements and show you material samples.",
+        title: "Consultation & Measurement",
+        description: "We start by understanding your vision. Send us photos for a custom railing manufacturing process estimate, or book a free on-site visit anywhere in Toronto & the GTA where we take precise measurements.",
         image: "/images/generated/process_consultation_blueprint_1764350167105.png"
     },
     {
         number: "02",
-        title: "Design & manufacturing",
-        description: "Once approved, your project moves to our local manufacturing facility. We precision-cut high-grade aluminum and temper our own glass to ensure perfect fit and finish.",
+        title: "In-House Design & Fabrication",
+        description: "Once approved, your project moves to our local facility. We precision-cut high-grade aluminum and temper our own glass, ensuring better quality control than installers who outsource.",
         image: "/images/migrated/manufacturing-glass.jpg"
     },
     {
         number: "03",
-        title: "Quality Control",
-        description: "Every piece undergoes rigorous inspection before leaving our factory. We check for powder coat consistency, glass clarity, and structural integrity.",
+        title: "Factory Quality Assurance",
+        description: "Every piece undergoes rigorous inspection before leaving our factory. We check for powder coat consistency, glass clarity, and structural integrity to guarantee a flawless finish.",
         image: "/images/generated/process_measurement_laser_1764350203708.png"
     },
     {
         number: "04",
-        title: "Professional Installation",
-        description: "Our licensed installers arrive on time and complete most residential projects in 1-2 days. We treat your property with respect and leave the site spotless.",
-        image: "/images/generated/railing_hero_detail_1764312850877.webp" // Updated to a relevant installation/detail shot
+        title: "Certified Installation & Walkthrough",
+        description: "Our licensed Toronto railing installation team typically completes projects in 1-2 days. We treat your property with respect, clean up thoroughly, and perform a final walkthrough with you.",
+        image: "/images/generated/railing_hero_detail_1764312850877.webp"
     }
 ];
 
@@ -41,7 +41,7 @@ export default function ProcessContent() {
             <main className="flex-grow">
                 <Hero
                     title="Our Concierge Process"
-                    subtitle="From the first call to the final polish, we handle every detail so you don't have to."
+                    subtitle="From the first call to the final polish, we handle every detail of your custom railing project."
                     ctaText="Start Your Project"
                     ctaLink="/contact"
                     backgroundImage="/images/generated/railing_hero_detail_1764312850877.webp"
@@ -50,11 +50,11 @@ export default function ProcessContent() {
                 {/* Intro */}
                 <section className="py-20 bg-white">
                     <div className="container mx-auto px-6 text-center">
-                        <h2 className="text-3xl font-serif font-bold text-slate-900 mb-6">
-                            A Seamless Experience from Start to Finish
+                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
+                            A White-Glove Experience from Quote to Completion
                         </h2>
-                        <p className="text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                            Renovations can be stressful. We've designed our process to be the opposite. Clear communication, strict timelines, and respect for your home are the pillars of our service.
+                        <p className="text-slate-600 max-w-3xl mx-auto leading-relaxed text-lg">
+                            Renovations can be stressful. We've designed our comprehensive custom railing manufacturing process to be the opposite. Clear communication, strict timelines, and respect for your home are the pillars of our service.
                         </p>
                     </div>
                 </section>
@@ -66,41 +66,135 @@ export default function ProcessContent() {
                             {/* Connecting Line (Desktop) */}
                             <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-slate-200 -translate-x-1/2 z-0" />
 
-                            {steps.map((step, index) => (
-                                <div key={index} className={`relative z-10 flex flex-col md:flex-row items-center gap-12 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
-                                    {/* Image Side */}
-                                    <div className="w-full md:w-1/2">
-                                        <div className="aspect-video bg-slate-100 rounded-xl shadow-lg relative overflow-hidden group">
-                                            <Image
-                                                src={step.image}
-                                                alt={step.title}
-                                                fill
-                                                className="object-cover group-hover:scale-105 transition-transform duration-700"
-                                            />
+                            {/* Step 1 */}
+                            <div className="relative z-10 flex flex-col md:flex-row items-center gap-12 md:flex-row-reverse">
+                                <div className="w-full md:w-1/2">
+                                    <div className="aspect-video bg-slate-100 rounded-xl shadow-lg relative overflow-hidden group">
+                                        <Image
+                                            src={steps[0].image}
+                                            alt={steps[0].title}
+                                            fill
+                                            className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white border-4 border-brand-copper rounded-full items-center justify-center font-bold text-brand-dark shadow-lg z-20">
+                                    {steps[0].number}
+                                </div>
+                                <div className="w-full md:w-1/2 text-center md:text-left">
+                                    <div className="bg-white p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                                        <span className="md:hidden inline-block px-3 py-1 bg-brand-copper text-white text-xs font-bold rounded-full mb-4">Step {steps[0].number}</span>
+                                        <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">{steps[0].title}</h3>
+                                        <p className="text-slate-600 leading-relaxed">{steps[0].description}</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Step 2 */}
+                            <div className="relative z-10 flex flex-col md:flex-row items-center gap-12">
+                                <div className="w-full md:w-1/2">
+                                    <div className="aspect-video bg-slate-100 rounded-xl shadow-lg relative overflow-hidden group">
+                                        <Image
+                                            src={steps[1].image}
+                                            alt={steps[1].title}
+                                            fill
+                                            className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white border-4 border-brand-copper rounded-full items-center justify-center font-bold text-brand-dark shadow-lg z-20">
+                                    {steps[1].number}
+                                </div>
+                                <div className="w-full md:w-1/2 text-center md:text-left">
+                                    <div className="bg-white p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                                        <span className="md:hidden inline-block px-3 py-1 bg-brand-copper text-white text-xs font-bold rounded-full mb-4">Step {steps[1].number}</span>
+                                        <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">{steps[1].title}</h3>
+                                        <p className="text-slate-600 leading-relaxed">{steps[1].description}</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Micro-CTA Checkpoint */}
+                            <div className="relative z-20 max-w-2xl mx-auto bg-brand-navy/5 rounded-xl p-8 text-center border border-brand-navy/10">
+                                <h4 className="font-bold text-brand-dark mb-2">Want a quick idea of cost before moving forward?</h4>
+                                <p className="text-slate-600 mb-6 text-sm">Upload a photo of your space for a same-day rough estimate.</p>
+                                <Link href="/contact" className="inline-block px-6 py-3 bg-white border-2 border-brand-copper text-brand-copper font-bold rounded hover:bg-brand-copper hover:text-white transition-colors">
+                                    Get a Quick Estimate &rarr;
+                                </Link>
+                            </div>
+
+                            {/* Why Our Process Is Different (Manufacturer Advantage) */}
+                            <div className="relative z-20 max-w-4xl mx-auto">
+                                <div className="bg-slate-900 text-white p-8 rounded-xl shadow-xl text-center">
+                                    <h3 className="text-2xl font-serif font-bold mb-6">Why Our Process Is Different</h3>
+                                    <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                                        <div>
+                                            <div className="text-3xl mb-2">🏭</div>
+                                            <div className="font-bold text-sm">In-House Fabrication</div>
                                         </div>
-                                    </div>
-
-                                    {/* Center Dot */}
-                                    <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white border-4 border-brand-copper rounded-full items-center justify-center font-bold text-brand-dark shadow-lg z-20">
-                                        {step.number}
-                                    </div>
-
-                                    {/* Text Side */}
-                                    <div className="w-full md:w-1/2 text-center md:text-left">
-                                        <div className="bg-white p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                                            <span className="md:hidden inline-block px-3 py-1 bg-brand-copper text-white text-xs font-bold rounded-full mb-4">
-                                                Step {step.number}
-                                            </span>
-                                            <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">
-                                                {step.title}
-                                            </h3>
-                                            <p className="text-slate-600 leading-relaxed">
-                                                {step.description}
-                                            </p>
+                                        <div>
+                                            <div className="text-3xl mb-2">🔥</div>
+                                            <div className="font-bold text-sm">Local Glass Tempering</div>
+                                        </div>
+                                        <div>
+                                            <div className="text-3xl mb-2">🚫</div>
+                                            <div className="font-bold text-sm">No Middlemen</div>
+                                        </div>
+                                        <div>
+                                            <div className="text-3xl mb-2">✅</div>
+                                            <div className="font-bold text-sm">Full Quality Control</div>
                                         </div>
                                     </div>
                                 </div>
-                            ))}
+                            </div>
+
+                            {/* Step 3 */}
+                            <div className="relative z-10 flex flex-col md:flex-row items-center gap-12 md:flex-row-reverse">
+                                <div className="w-full md:w-1/2">
+                                    <div className="aspect-video bg-slate-100 rounded-xl shadow-lg relative overflow-hidden group">
+                                        <Image
+                                            src={steps[2].image}
+                                            alt={steps[2].title}
+                                            fill
+                                            className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white border-4 border-brand-copper rounded-full items-center justify-center font-bold text-brand-dark shadow-lg z-20">
+                                    {steps[2].number}
+                                </div>
+                                <div className="w-full md:w-1/2 text-center md:text-left">
+                                    <div className="bg-white p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                                        <span className="md:hidden inline-block px-3 py-1 bg-brand-copper text-white text-xs font-bold rounded-full mb-4">Step {steps[2].number}</span>
+                                        <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">{steps[2].title}</h3>
+                                        <p className="text-slate-600 leading-relaxed">{steps[2].description}</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Step 4 */}
+                            <div className="relative z-10 flex flex-col md:flex-row items-center gap-12">
+                                <div className="w-full md:w-1/2">
+                                    <div className="aspect-video bg-slate-100 rounded-xl shadow-lg relative overflow-hidden group">
+                                        <Image
+                                            src={steps[3].image}
+                                            alt={steps[3].title}
+                                            fill
+                                            className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white border-4 border-brand-copper rounded-full items-center justify-center font-bold text-brand-dark shadow-lg z-20">
+                                    {steps[3].number}
+                                </div>
+                                <div className="w-full md:w-1/2 text-center md:text-left">
+                                    <div className="bg-white p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                                        <span className="md:hidden inline-block px-3 py-1 bg-brand-copper text-white text-xs font-bold rounded-full mb-4">Step {steps[3].number}</span>
+                                        <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">{steps[3].title}</h3>
+                                        <p className="text-slate-600 leading-relaxed">{steps[3].description}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
