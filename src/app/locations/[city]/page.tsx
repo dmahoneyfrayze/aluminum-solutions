@@ -6,7 +6,7 @@ import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 import Image from "next/image";
-import { blogPosts } from "@/data/blog";
+import { getBlogPosts } from "@/lib/blog-rss";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 interface Props {
@@ -67,7 +67,36 @@ export default async function LocationPage({ params }: Props) {
             "telephone": "+14165550123",
         },
         "description": location.metaDescription,
-        "url": `https://aluminumsolutions.ca/locations/${location.slug}`
+        "url": `https://aluminumsolutions.ca/locations/${location.slug}`,
+        "mainEntity": {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": `Do I need a permit for railings in ${location.name}?`,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": `Generally, if you are replacing existing railings with the same height and layout, a permit might not be required. However, for new decks or structural changes, ${location.name} building codes usually require a permit.`
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": `Are your railings suitable for the ${location.name} winter?`,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": `Absolutely. Our aluminum products are designed specifically for the Canadian climate. They will not rust, rot, or crack even in the harshest winter conditions common in ${location.name}.`
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": `How long does installation take in ${location.name}?`,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Since we manufacture locally, our lead times are often shorter than competitors. Once your custom railings are ready, installation typically takes 1-2 days."
+                    }
+                }
+            ]
+        }
     };
 
     return (
@@ -88,7 +117,7 @@ export default async function LocationPage({ params }: Props) {
                 />
 
                 <Hero
-                    title={`Premium Aluminum Railings in ${location.name}`}
+                    title={`Premium Aluminum & Glass Railings in ${location.name}`}
                     subtitle={`Transform your ${location.name} home with our high-end glass enclosures, custom gates, and durable aluminum solutions.`}
                     ctaText="Get a Free Estimate"
                     ctaLink="/contact"
@@ -208,6 +237,86 @@ export default async function LocationPage({ params }: Props) {
                     </div>
                 </section>
 
+                {/* Code Compliance & Safety Section (New Authority Block) */}
+                <section className="py-20 bg-white border-t border-slate-100">
+                    <div className="container mx-auto px-6">
+                        <div className="flex flex-col md:flex-row gap-12 items-center">
+                            <div className="w-full md:w-1/2">
+                                <h2 className="text-3xl font-serif font-bold mb-6 text-slate-900">
+                                    {location.name} Building Code & Railing Compliance
+                                </h2>
+                                <p className="text-slate-600 mb-6 leading-relaxed">
+                                    Safety is our top priority. All our aluminum and glass installations in {location.name} are rigorously engineered to meet or exceed the <strong>Ontario Building Code (SB-13)</strong>. We handle the technical details so you pass inspection the first time.
+                                </p>
+                                <ul className="space-y-4">
+                                    <li className="flex items-start">
+                                        <span className="text-brand-copper font-bold mr-3">✓</span>
+                                        <div>
+                                            <strong className="block text-slate-900">Guard Height Requirements</strong>
+                                            <span className="text-slate-600 text-sm">Strict adherence to the 1070mm (42") minimum height rule for decks and balconies over 5'11".</span>
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-brand-copper font-bold mr-3">✓</span>
+                                        <div>
+                                            <strong className="block text-slate-900">Maximum Picket Spacing</strong>
+                                            <span className="text-slate-600 text-sm">Pickets spaced no more than 100mm (4") apart to prevent climbing and ensure child safety.</span>
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-brand-copper font-bold mr-3">✓</span>
+                                        <div>
+                                            <strong className="block text-slate-900">Glass Thickness Standards</strong>
+                                            <span className="text-slate-600 text-sm">We use exclusively 10mm-12mm tempered or laminated safety glass, never standard float glass.</span>
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-brand-copper font-bold mr-3">✓</span>
+                                        <div>
+                                            <strong className="block text-slate-900">Pool Fence Bylaws</strong>
+                                            <span className="text-slate-600 text-sm">Compliant with specific {location.name} pool enclosure bylaws, including non-climbable zones and self-closing gates.</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div className="mt-8 p-4 bg-blue-50 border border-blue-100 rounded-lg">
+                                    <p className="text-sm text-blue-800">
+                                        <strong>Did you know?</strong> All {location.name} projects are fabricated at our Vaughan manufacturing facility and installed by our in-house team — no subcontractors. This ensures full quality control from design to inspection.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="w-full md:w-1/2">
+                                <div className="bg-slate-900 text-white p-8 rounded-xl shadow-xl">
+                                    <h3 className="text-xl font-bold mb-6 text-brand-copper">Why Railing Inspections Fail in {location.name}</h3>
+                                    <div className="space-y-6">
+                                        <div className="border-b border-slate-700 pb-4">
+                                            <strong className="block mb-1 text-lg">⚠ Incorrect Height</strong>
+                                            <p className="text-slate-400 text-sm">DIY kits often come in standard 36" heights, which fail code for higher decks.</p>
+                                        </div>
+                                        <div className="border-b border-slate-700 pb-4">
+                                            <strong className="block mb-1 text-lg">⚠ Weak Post Anchoring</strong>
+                                            <p className="text-slate-400 text-sm">Posts attached only to decking boards (instead of blocking/joists) will wobble and fail load tests.</p>
+                                        </div>
+                                        <div className="border-b border-slate-700 pb-4">
+                                            <strong className="block mb-1 text-lg">⚠ Improper Glass Type</strong>
+                                            <p className="text-slate-400 text-sm">Using non-safety glass is a major violation and a serious safety hazard.</p>
+                                        </div>
+                                        <div>
+                                            <p className="italic text-slate-300">
+                                                "Because we manufacture and install in-house, Aluminum Solutions eliminates these issues before inspection."
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="mt-8 pt-6 border-t border-slate-700 text-center">
+                                        <Link href="/contact" className="inline-block px-8 py-3 bg-brand-copper text-white font-bold rounded hover:bg-orange-700 transition-colors">
+                                            Get a Code-Compliant Quote
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 {/* Local Reviews (Static for now, but structured) */}
                 <section className="py-20 bg-brand-dark text-white">
                     <div className="container mx-auto px-6">
@@ -270,7 +379,7 @@ export default async function LocationPage({ params }: Props) {
                             Latest Insights & Tips
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            {blogPosts.slice(0, 3).map((post) => (
+                            {(await getBlogPosts()).slice(0, 3).map((post) => (
                                 <Link key={post.slug} href={`/blog/${post.slug}`} className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
                                     <div className="h-48 relative overflow-hidden bg-slate-200">
                                         {post.imageUrl && (

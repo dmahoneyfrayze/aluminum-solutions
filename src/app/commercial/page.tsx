@@ -1,5 +1,6 @@
 import CommercialContent from "./CommercialContent";
 import { Metadata } from "next";
+import { getBlogPosts } from "@/lib/blog-rss";
 
 export const metadata: Metadata = {
     title: "Commercial Aluminum Railings & Glass Partitions | Toronto Contractors",
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     },
 };
 
-export default function CommercialPage() {
-    return <CommercialContent />;
+export default async function CommercialPage() {
+    const posts = await getBlogPosts();
+    return <CommercialContent initialPosts={posts} />;
 }

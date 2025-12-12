@@ -11,7 +11,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getUTMParams } from "@/lib/utm";
 import RelatedArticles from "@/components/blog/RelatedArticles";
-import { blogPosts } from "@/data/blog";
+import { BlogPost } from "@/lib/blog-rss";
 
 const builderFormSchema = z.object({
     firstName: z.string().min(2, "First name is required"),
@@ -24,7 +24,11 @@ const builderFormSchema = z.object({
 
 type BuilderFormData = z.infer<typeof builderFormSchema>;
 
-export default function CommercialContent() {
+interface Props {
+    initialPosts: BlogPost[];
+}
+
+export default function CommercialContent({ initialPosts }: Props) {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
 
@@ -444,9 +448,11 @@ export default function CommercialContent() {
 
                 {/* B2B Related Articles */}
                 <RelatedArticles
-                    posts={blogPosts.filter(post =>
+                    posts={initialPosts.filter(post =>
                         ['ontario-building-code-railing-safety', 'landlord-liability-railing-safety', '2025-outdoor-design-trends'].includes(post.slug)
-                    )}
+                    ).length > 0 ? initialPosts.filter(post =>
+                        ['ontario-building-code-railing-safety', 'landlord-liability-railing-safety', '2025-outdoor-design-trends'].includes(post.slug)
+                    ) : initialPosts.slice(0, 3)}
                     title="Commercial Industry Insights"
                 />
             </main>

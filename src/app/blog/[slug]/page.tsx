@@ -2,7 +2,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Link from "next/link";
 import Image from "next/image";
-import { getBlogPostBySlug, getBlogPosts } from "@/lib/blog-rss";
+import { getPostBySlug, getBlogPosts } from "@/lib/blog-rss";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
@@ -13,7 +13,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { slug } = await params;
-    const post = await getBlogPostBySlug(slug);
+    const post = await getPostBySlug(slug);
 
     if (!post) {
         return {
@@ -42,7 +42,7 @@ export async function generateStaticParams() {
 
 export default async function BlogPostPage({ params }: Props) {
     const { slug } = await params;
-    const post = await getBlogPostBySlug(slug);
+    const post = await getPostBySlug(slug);
 
     if (!post) {
         notFound();
