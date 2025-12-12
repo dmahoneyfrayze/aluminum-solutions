@@ -26,7 +26,7 @@ export default function GlassWallsPage() {
                     subtitle="Redefine your space with sleek, modern glass solutions. Perfect for offices, home gyms, and wine cellars."
                     ctaText="Get a Quote"
                     ctaLink="/contact"
-                    backgroundImage="/images/projects/glass-office-partition-modern.webp"
+                    backgroundImage="/images/projects/glass-office-partition-modern.jpg"
                 />
 
                 {/* Lead Magnet: Planning Guide */}
@@ -83,7 +83,7 @@ export default function GlassWallsPage() {
                             <div className="w-full md:w-1/2">
                                 <div className="aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden relative shadow-lg">
                                     <Image
-                                        src="/images/projects/glass-wall-meeting-room.webp"
+                                        src="/images/projects/glass-wall-meeting-room.jpg"
                                         alt="Glass Office Partition"
                                         fill
                                         className="object-cover"

@@ -2,26 +2,23 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import Hero from "@/components/ui/Hero";
 import ManufacturingHighlight from "@/components/ui/ManufacturingHighlight";
 
 export default function AboutContent() {
     return (
-        <div className="min-h-screen flex flex-col pt-24">
-            {/* Hero Section */}
-            <div className="bg-slate-900 text-white relative py-20">
-                <div className="absolute inset-0 overflow-hidden opacity-30">
-                    <div
-                        className="absolute inset-0 bg-cover bg-center"
-                        style={{ backgroundImage: "url('/images/generated/railing_hero_detail_1764312850877.webp')" }}
-                    />
-                </div>
-                <div className="container mx-auto px-6 relative z-10 text-center">
-                    <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">About Aluminum Solutions</h1>
-                    <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-                        Precision engineering. Local manufacturing. Dedicated craftsmanship.
-                    </p>
-                </div>
-            </div>
+        <div className="min-h-screen flex flex-col">
+            <Header />
+
+            <Hero
+                title="About Aluminum Solutions"
+                subtitle="Precision engineering. Local manufacturing. Dedicated craftsmanship."
+                ctaText="Get a Free Quote"
+                ctaLink="/contact"
+                backgroundImage="/images/generated/railing_hero_detail_1764312850877.webp"
+            />
 
             <main className="flex-grow">
                 {/* Story Section */}
@@ -42,7 +39,7 @@ export default function AboutContent() {
                             </div>
                             <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
                                 <Image
-                                    src="/images/projects/deck-glass-railing-privacy.webp"
+                                    src="/images/projects/deck-glass-railing-privacy.jpg"
                                     alt="Aluminum Solutions Workshop"
                                     fill
                                     className="object-cover"
@@ -92,6 +89,7 @@ export default function AboutContent() {
                     </div>
                 </section>
             </main>
+            <Footer />
         </div>
     );
 }

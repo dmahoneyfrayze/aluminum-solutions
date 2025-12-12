@@ -47,7 +47,7 @@ export default function RailingsPage() {
                     subtitle="The perfect blend of safety, style, and durability. Maintenance-free solutions for your <Link href='/services/porch-enclosures' className='underline hover:text-brand-copper'>porch</Link>, deck, or balcony."
                     ctaText="Get a Quote"
                     ctaLink="/contact"
-                    backgroundImage="/images/projects/railing-aluminum-deck-toronto.webp"
+                    backgroundImage="/images/projects/railing-aluminum-deck-toronto.jpg"
                 />
 
                 {/* Overview */}
@@ -76,7 +76,7 @@ export default function RailingsPage() {
                         </div>
                         <div className="h-[500px] bg-slate-100 relative rounded-sm overflow-hidden shadow-2xl">
                             <Image
-                                src="/images/projects/railing-aluminum-brown-glass.webp"
+                                src="/images/projects/railing-aluminum-brown-glass.jpg"
                                 alt="High-quality aluminum railing installation"
                                 fill
                                 className="object-cover"
@@ -133,7 +133,7 @@ export default function RailingsPage() {
                             <div className="flex flex-col md:flex-row gap-12 items-center">
                                 <div className="w-full md:w-1/2">
                                     <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg">
-                                        <Image src="/images/projects/railing-aluminum-deck-toronto.webp" alt="Aluminum Deck Railings Toronto" fill className="object-cover" />
+                                        <Image src="/images/projects/railing-aluminum-deck-toronto.jpg" alt="Aluminum Deck Railings Toronto" fill className="object-cover" />
                                     </div>
                                 </div>
                                 <div className="w-full md:w-1/2">
@@ -151,7 +151,7 @@ export default function RailingsPage() {
                             <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
                                 <div className="w-full md:w-1/2">
                                     <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg">
-                                        <Image src="/images/projects/glass-enclosure-porch-front.webp" alt="Aluminum Porch Railings GTA" fill className="object-cover" />
+                                        <Image src="/images/projects/glass-enclosure-porch-front.jpg" alt="Aluminum Porch Railings GTA" fill className="object-cover" />
                                     </div>
                                 </div>
                                 <div className="w-full md:w-1/2">
@@ -169,7 +169,7 @@ export default function RailingsPage() {
                             <div className="flex flex-col md:flex-row gap-12 items-center">
                                 <div className="w-full md:w-1/2">
                                     <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg">
-                                        <Image src="/images/projects/railing-balcony-apartment-replacement.webp" alt="Aluminum Balcony Railings" fill className="object-cover" />
+                                        <Image src="/images/projects/railing-balcony-apartment-replacement.jpg" alt="Aluminum Balcony Railings" fill className="object-cover" />
                                     </div>
                                 </div>
                                 <div className="w-full md:w-1/2">
@@ -490,7 +490,7 @@ export default function RailingsPage() {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div className="aspect-square relative rounded-lg overflow-hidden shadow-md group">
                                 <Image
-                                    src="/images/projects/deck-glass-railing-pergola.webp"
+                                    src="/images/projects/deck-glass-railing-pergola.jpg"
                                     alt="Deck with glass railing and pergola"
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -498,7 +498,7 @@ export default function RailingsPage() {
                             </div>
                             <div className="aspect-square relative rounded-lg overflow-hidden shadow-md group">
                                 <Image
-                                    src="/images/projects/deck-glass-railing-privacy.webp"
+                                    src="/images/projects/deck-glass-railing-privacy.jpg"
                                     alt="Deck with privacy screen"
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-105"

@@ -22,14 +22,14 @@ const styles = [
         id: "enclosures",
         name: "Glass Enclosures",
         description: "Wind protection & views. Perfect for porches and sunrooms.",
-        image: "/images/porch-glass-enclosures2.webp",
+        image: "/images/porch-glass-enclosures2.jpg",
         features: ["3-Season Use", "Wind Protection", "Custom Fit"]
     },
     {
         id: "showers",
         name: "Showers",
         description: "Spa-like luxury. Custom frameless glass shower enclosures.",
-        image: "/images/projects/frameless-glass-shower-custom.webp",
+        image: "/images/projects/frameless-glass-shower-custom.jpg",
         features: ["Easy Clean", "Luxury Feel", "Custom Hardware"]
     }
 ];

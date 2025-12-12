@@ -17,7 +17,7 @@ export default function PoolFencesContent() {
                     subtitle="Secure your outdoor oasis with high-quality, durable railings that meet all local safety codes without compromising on style."
                     ctaText="Get a Free Estimate"
                     ctaLink="/contact"
-                    backgroundImage="/images/projects/pool-fence-glass-guards.webp"
+                    backgroundImage="/images/projects/pool-fence-glass-guards.jpg"
                 />
 
                 {/* Intro / Safety First */}
@@ -46,7 +46,7 @@ export default function PoolFencesContent() {
                             <div className="w-full md:w-1/2">
                                 <div className="aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden relative shadow-lg">
                                     <Image
-                                        src="/images/projects/pool-fence-glass-guards.webp"
+                                        src="/images/projects/pool-fence-glass-guards.jpg"
                                         alt="Safe and stylish glass pool fence"
                                         fill
                                         className="object-cover"

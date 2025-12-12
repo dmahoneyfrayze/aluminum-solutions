@@ -54,7 +54,7 @@ export default function SafetyFocus() {
                     <div className="w-full lg:w-1/2 relative">
                         <div className="relative aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-white/10">
                             <Image
-                                src="/images/Frameless-Glass.webp"
+                                src="/images/Frameless-Glass.jpg"
                                 alt="Premium Safe Glass Railing"
                                 fill
                                 className="object-cover"

@@ -60,7 +60,7 @@ export default function Home() {
           subtitle="Factory Direct. Specializing in Aluminum Railings, Exterior Glass, Interior Partitions & Showers."
           ctaText="Get a Free Estimate"
           ctaLink="/contact"
-          backgroundImage="/images/hero-final-update.webp"
+          backgroundImage="/images/hero-final-update.jpg"
         />
 
         <TrustSection />
@@ -170,7 +170,7 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/Frameless-Glass.webp"
+                    src="/images/Frameless-Glass.jpg"
                     alt="Glass / Frameless Railings"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -186,7 +186,7 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/Glass-Enclosures-and-Offices.webp"
+                    src="/images/Glass-Enclosures-and-Offices.jpg"
                     alt="Glass Enclosures & Offices"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -202,7 +202,7 @@ export default function Home() {
               <div className="group text-center">
                 <div className="h-64 bg-slate-100 mb-6 overflow-hidden relative rounded-lg shadow-md">
                   <Image
-                    src="/images/projects/frameless-glass-shower-custom.webp"
+                    src="/images/projects/frameless-glass-shower-custom.jpg"
                     alt="Frameless Showers"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
