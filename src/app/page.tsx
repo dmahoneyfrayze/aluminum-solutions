@@ -8,6 +8,8 @@ import dynamic from "next/dynamic";
 // Critical Components (Keep Static)
 import Hero from "@/components/ui/Hero";
 import TrustSection from "@/components/ui/TrustSection";
+import IntentJumpBar from "@/components/ui/IntentJumpBar";
+import BrandClarity from "@/components/ui/BrandClarity";
 
 // Lazy Loaded Components
 const ProcessSteps = dynamic(() => import("@/components/ui/ProcessSteps"));
@@ -20,12 +22,13 @@ const StyleExplorer = dynamic(() => import("@/components/tools/StyleExplorer"));
 const SafetyFocus = dynamic(() => import("@/components/ui/SafetyFocus"));
 const PremiumFeatures = dynamic(() => import("@/components/ui/PremiumFeatures"));
 const ServiceMap = dynamic(() => import("@/components/ui/ServiceMap"));
+const HomepageFAQ = dynamic(() => import("@/components/ui/HomepageFAQ"));
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Aluminum Solutions | Factory Direct Railings & Glass in Toronto",
-  description: "Upgrade your home with premium aluminum railings, glass porch enclosures, and frameless showers. Factory direct pricing and expert installation in the GTA.",
+  title: "Factory Direct Aluminum & Glass Railings | Toronto & GTA",
+  description: "Premium aluminum railings, glass systems, and frameless showers. Manufactured in the GTA and installed by certified experts. 24-hour quote turnaround.",
 };
 
 export default function Home() {
@@ -56,13 +59,24 @@ export default function Home() {
 
       <main className="flex-grow">
         <Hero
-          title="Premium Aluminum, Glass & Custom Showers"
-          subtitle="Factory Direct. Specializing in Aluminum Railings, Exterior Glass, Interior Partitions & Showers."
-          ctaText="Get a Free Estimate"
+          title="Factory-Direct Aluminum & Glass Railings in Toronto"
+          subtitle={
+            <>
+              Premium aluminum railings, glass systems, and frameless showers — manufactured in the GTA and installed by certified experts.
+              <br className="hidden md:block" />
+              <span className="block mt-4 text-lg text-slate-200 font-medium">Trusted by leading builders, architects, and homeowners across the GTA.</span>
+            </>
+          }
+          ctaText="Get a Free Quote (24-Hour Turnaround)"
           ctaLink="/contact"
+          secondaryCtaText="View Gallery"
+          secondaryCtaLink="/gallery"
+          showSecondaryCta={true}
           backgroundImage="/images/hero-final-update.jpg"
         />
 
+        <IntentJumpBar />
+        <BrandClarity />
         <TrustSection />
 
         {/* NEW: Style Explorer (Visualizer Gap) */}
@@ -117,6 +131,18 @@ export default function Home() {
 
         <MaterialComparison />
 
+        {/* Conversion Bridge */}
+        <div className="bg-slate-50 py-10 text-center border-b border-slate-200">
+          <div className="container mx-auto px-6">
+            <p className="text-xl text-slate-800 font-medium mb-4">
+              For most GTA homeowners and builders, aluminum offers the best balance of longevity, safety, and long-term value.
+            </p>
+            <Link href="/services/railings" className="text-brand-copper font-bold text-lg hover:underline flex items-center justify-center gap-2">
+              See Aluminum Railing Options <span>&rarr;</span>
+            </Link>
+          </div>
+        </div>
+
         <SafetyFocus />
 
         <QuoteCalculator />
@@ -131,7 +157,7 @@ export default function Home() {
 
         <ReputationWidget />
 
-
+        <HomepageFAQ />
 
         {/* Services Overview */}
         <section className="py-20 bg-white">
@@ -142,9 +168,6 @@ export default function Home() {
               </h2>
               <p className="text-slate-600 max-w-2xl mx-auto">
                 Engineered for safety, designed for elegance. If you're looking for "<Link href="/services/railings" className="text-brand-copper hover:underline">aluminum railings near me</Link>" in the GTA, you've found the factory-direct source.
-              </p>
-              <p className="text-slate-500 text-sm mt-2">
-                Building on the legacy of Global Aluminum Solutions.
               </p>
             </div>
 
@@ -242,3 +265,5 @@ export default function Home() {
     </div >
   );
 }
+
+
