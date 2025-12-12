@@ -203,7 +203,7 @@ export default function CommercialPage() {
 
                 {/* Dealer Program Section - NEW for Distro/Manufacturing */}
                 <section className="py-24 bg-brand-navy text-white relative overflow-hidden">
-                    <div className="absolute inset-0 bg-[url('/images/pattern.png')] opacity-10 bg-repeat" />
+                    <div className="absolute inset-0 bg-brand-navy" />
                     <div className="container mx-auto px-6 relative z-10">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                             <div>

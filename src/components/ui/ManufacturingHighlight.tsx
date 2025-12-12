@@ -63,7 +63,7 @@ export default function ManufacturingHighlight() {
                 {/* Visual Proof Section */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center bg-slate-900 rounded-3xl p-8 md:p-12 overflow-hidden relative">
                     {/* Background Pattern */}
-                    <div className="absolute inset-0 opacity-10 bg-[url('/images/pattern.png')] bg-repeat" />
+                    <div className="absolute inset-0 opacity-10 bg-brand-dark" />
 
                     <div className="relative z-10">
                         <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-6">

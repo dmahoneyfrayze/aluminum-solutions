@@ -1,21 +1,25 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import Hero from "@/components/ui/Hero";
-import TrustBadges from "@/components/ui/TrustBadges";
-import ProcessSteps from "@/components/ui/ProcessSteps";
-import ManufacturingHighlight from "@/components/ui/ManufacturingHighlight";
-import MaterialComparison from "@/components/ui/MaterialComparison";
-import MiniCaseStudies from "@/components/ui/MiniCaseStudies";
-import ReputationWidget from "@/components/ui/ReputationWidget";
-import QuoteCalculator from "@/components/tools/QuoteCalculator";
-import StyleExplorer from "@/components/tools/StyleExplorer";
 import Link from "next/link";
 import Image from "next/image";
-import TrustSection from "@/components/ui/TrustSection";
-import SafetyFocus from "@/components/ui/SafetyFocus";
-import PremiumFeatures from "@/components/ui/PremiumFeatures";
-import ServiceMap from "@/components/ui/ServiceMap";
 import JsonLd from "@/components/seo/JsonLd";
+import dynamic from "next/dynamic";
+
+// Critical Components (Keep Static)
+import Hero from "@/components/ui/Hero";
+import TrustSection from "@/components/ui/TrustSection";
+
+// Lazy Loaded Components
+const ProcessSteps = dynamic(() => import("@/components/ui/ProcessSteps"));
+const ManufacturingHighlight = dynamic(() => import("@/components/ui/ManufacturingHighlight"));
+const MaterialComparison = dynamic(() => import("@/components/ui/MaterialComparison"));
+const MiniCaseStudies = dynamic(() => import("@/components/ui/MiniCaseStudies"));
+const ReputationWidget = dynamic(() => import("@/components/ui/ReputationWidget"));
+const QuoteCalculator = dynamic(() => import("@/components/tools/QuoteCalculator"));
+const StyleExplorer = dynamic(() => import("@/components/tools/StyleExplorer"));
+const SafetyFocus = dynamic(() => import("@/components/ui/SafetyFocus"));
+const PremiumFeatures = dynamic(() => import("@/components/ui/PremiumFeatures"));
+const ServiceMap = dynamic(() => import("@/components/ui/ServiceMap"));
 
 import { Metadata } from "next";
 
@@ -152,13 +156,14 @@ export default function Home() {
                     src="/images/projects/aluminum-railing-pickets-black.png"
                     alt="Aluminum Railings - Pickets"
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <h3 className="text-xl font-bold mb-2 font-serif">Aluminum Railings - Pickets</h3>
                 <p className="text-slate-600 text-sm mb-4">Maintenance-free durability.</p>
-                <Link href="/services/railings" aria-label="Learn more about Aluminum Railings" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
-                  Learn More
+                <Link href="/services/railings" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                  View Railing Details
                 </Link>
               </div>
               {/* Service 2 */}
@@ -167,14 +172,14 @@ export default function Home() {
                   <Image
                     src="/images/Frameless-Glass.jpg"
                     alt="Glass / Frameless Railings"
-                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <h3 className="text-xl font-bold mb-2 font-serif">Glass / Frameless Railings</h3>
                 <p className="text-slate-600 text-sm mb-4">Frameless, Stand-offs, Base shoe.</p>
-                <Link href="/services/glass-railings" aria-label="Learn more about Glass Railings" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
-                  Learn More
+                <Link href="/services/glass-railings" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                  View Glass Options
                 </Link>
               </div>
               {/* Service 3 */}
@@ -183,14 +188,14 @@ export default function Home() {
                   <Image
                     src="/images/Glass-Enclosures-and-Offices.jpg"
                     alt="Glass Enclosures & Offices"
-                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <h3 className="text-xl font-bold mb-2 font-serif">Glass Enclosures & Offices</h3>
                 <p className="text-slate-600 text-sm mb-4">Wind protection & views.</p>
-                <Link href="/services/glass-enclosures" aria-label="Learn more about Glass Enclosures" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
-                  Learn More
+                <Link href="/services/glass-enclosures" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                  View Enclosures
                 </Link>
               </div>
               {/* Service 4 */}
@@ -199,14 +204,14 @@ export default function Home() {
                   <Image
                     src="/images/projects/frameless-glass-shower-custom.jpg"
                     alt="Frameless Showers"
-                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <h3 className="text-xl font-bold mb-2 font-serif">Frameless Showers</h3>
                 <p className="text-slate-600 text-sm mb-4">Spa-like luxury glass.</p>
-                <Link href="/services/showers" aria-label="Learn more about Frameless Showers" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
-                  Learn More
+                <Link href="/services/showers" className="text-slate-900 font-bold text-sm border-b border-slate-900 pb-1 hover:text-slate-600 hover:border-slate-600 transition-colors">
+                  View Shower Models
                 </Link>
               </div>
 

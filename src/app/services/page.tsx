@@ -103,6 +103,7 @@ export default function ServicesPage() {
                                             src={service.image}
                                             alt={service.title}
                                             fill
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                             className="object-cover group-hover:scale-105 transition-transform duration-700"
                                         />
                                     </div>
@@ -121,7 +122,7 @@ export default function ServicesPage() {
                                             className="inline-block w-full text-center py-3 bg-white border border-slate-900 text-slate-900 font-bold text-sm uppercase tracking-wider hover:bg-slate-900 hover:text-white transition-colors rounded-sm"
                                             aria-label={`View details about ${service.title}`}
                                         >
-                                            View Details
+                                            View {service.title}
                                         </Link>
                                     </div>
                                 </div>
@@ -147,6 +148,7 @@ export default function ServicesPage() {
                                             src={service.image}
                                             alt={service.title}
                                             fill
+                                            sizes="(max-width: 768px) 100vw, 50vw"
                                             className="object-cover group-hover:scale-105 transition-transform duration-700"
                                         />
                                     </div>
@@ -165,7 +167,7 @@ export default function ServicesPage() {
                                             className="inline-block w-full text-center py-3 bg-white border border-slate-900 text-slate-900 font-bold text-sm uppercase tracking-wider hover:bg-slate-900 hover:text-white transition-colors rounded-sm"
                                             aria-label={`View details about ${service.title}`}
                                         >
-                                            View Details
+                                            View {service.title}
                                         </Link>
                                     </div>
                                 </div>

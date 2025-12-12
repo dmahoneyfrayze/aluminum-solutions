@@ -19,7 +19,7 @@ export default function ChatWidget() {
             script.setAttribute("data-widget-id", "69293c9ed47c13330714ef23");
             script.async = true;
             document.body.appendChild(script);
-        }, 5000); // Defer by 5 seconds to prioritize LCP and TTI
+        }, 8000); // Defer by 8 seconds to prioritize LCP and TTI
 
         return () => {
             clearTimeout(timer);

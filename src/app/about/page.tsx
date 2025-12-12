@@ -71,7 +71,7 @@ export default function AboutPage() {
                 {/* Founder's Message */}
                 <section className="py-24 bg-brand-navy text-white relative overflow-hidden">
                     {/* Background Pattern */}
-                    <div className="absolute inset-0 opacity-5 bg-[url('/images/pattern.png')] bg-repeat" />
+                    <div className="absolute inset-0 opacity-5 bg-brand-dark" />
 
                     <div className="container mx-auto px-6 relative z-10">
                         <div className="flex flex-col md:flex-row items-center gap-16">

@@ -54,6 +54,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://appcdn.leadconnectorhq.com" />
+        <link rel="preconnect" href="https://services.leadconnectorhq.com" />
+      </head>
       <body
         className={`${montserrat.variable} ${playfair.variable} antialiased font-sans bg-gray-50 text-slate-900`}
       >
