@@ -89,7 +89,7 @@ export default function ManufacturingHighlight() {
 
                     <div className="relative h-64 md:h-80 rounded-xl overflow-hidden border border-white/10 shadow-2xl">
                         <Image
-                            src="/images/migrated/manufacturing-glass.webp"
+                            src="/images/migrated/manufacturing-glass.jpg"
                             alt="Aluminum Solutions Factory"
                             fill
                             className="object-cover"

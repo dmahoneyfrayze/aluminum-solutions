@@ -17,7 +17,7 @@ const steps = [
         number: "02",
         title: "Design & manufacturing",
         description: "Once approved, your project moves to our local manufacturing facility. We precision-cut high-grade aluminum and temper our own glass to ensure perfect fit and finish.",
-        image: "/images/migrated/manufacturing-glass.webp"
+        image: "/images/migrated/manufacturing-glass.jpg"
     },
     {
         number: "03",

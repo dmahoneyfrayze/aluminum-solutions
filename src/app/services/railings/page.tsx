@@ -44,11 +44,39 @@ export default function RailingsPage() {
             <main className="flex-grow">
                 <Hero
                     title="Custom Aluminum Railings in Toronto"
-                    subtitle="The perfect blend of safety, style, and durability. Maintenance-free solutions for your <Link href='/services/porch-enclosures' className='underline hover:text-brand-copper'>porch</Link>, deck, or balcony."
+                    subtitle={
+                        <>
+                            The perfect blend of safety, style, and durability. Maintenance-free solutions for your{" "}
+                            <Link href="/services/porch-enclosures" className="underline hover:text-brand-copper">
+                                porch
+                            </Link>, deck, or balcony.
+                        </>
+                    }
                     ctaText="Get a Quote"
                     ctaLink="/contact"
                     backgroundImage="/images/projects/railing-aluminum-deck-toronto.jpg"
                 />
+
+                {/* Quick Navigation Bar */}
+                <div className="bg-slate-50 border-b border-slate-200 sticky top-0 md:relative z-30">
+                    <div className="container mx-auto px-6 py-4 overflow-x-auto">
+                        <div className="flex flex-nowrap md:justify-center gap-4 text-sm font-bold whitespace-nowrap">
+                            <span className="text-slate-400 hidden md:inline">Quick Links:</span>
+                            <Link href="/services/glass-railings" className="px-4 py-2 bg-white rounded-full border border-slate-200 text-slate-700 hover:border-brand-copper hover:text-brand-copper transition-colors shadow-sm">
+                                ✨ Glass Railings
+                            </Link>
+                            <Link href="/services/porch-enclosures" className="px-4 py-2 bg-white rounded-full border border-slate-200 text-slate-700 hover:border-brand-copper hover:text-brand-copper transition-colors shadow-sm">
+                                🏠 Porch Enclosures
+                            </Link>
+                            <Link href="/gallery?category=Railings" className="px-4 py-2 bg-white rounded-full border border-slate-200 text-slate-700 hover:border-brand-copper hover:text-brand-copper transition-colors shadow-sm">
+                                🖼️ View Gallery
+                            </Link>
+                            <Link href="/process" className="px-4 py-2 bg-white rounded-full border border-slate-200 text-slate-700 hover:border-brand-copper hover:text-brand-copper transition-colors shadow-sm">
+                                ⚙️ Our Process
+                            </Link>
+                        </div>
+                    </div>
+                </div>
 
                 {/* Overview */}
                 <section className="py-24 bg-white">

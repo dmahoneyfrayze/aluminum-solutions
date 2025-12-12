@@ -27,7 +27,7 @@ const projects = [
     { id: 14, category: "Enclosures", title: "Premium Gatsby Enclosure", location: "King City", image: "/images/projects/glass-enclosure-gatsby.png" },
     { id: 15, category: "Showers", title: "Corner Glass Shower", location: "Newmarket", image: "/images/projects/corner-glass-shower-enclosure.jpg" },
     { id: 16, category: "Walls", title: "Boardroom Glass Wall", location: "Mississauga", image: "/images/projects/glass-wall-meeting-room.jpg" },
-    { id: 17, category: "Fences", title: "Pool Safety Fence", location: "Oakville", image: "/images/projects/pool-fence-glass-new.png" },
+    { id: 17, category: "Fences", title: "Pool Safety Fence", location: "Oakville", image: "/images/projects/pool-fence-glass-guards.jpg" },
     { id: 18, category: "Fences", title: "Glass Swimming Guard", location: "Vaughan", image: "/images/projects/pool-fence-glass-swimming.jpg" },
     { id: 19, category: "Privacy", title: "Deck Privacy Screen", location: "Toronto", image: "/images/projects/privacy-screen-deck.jpg" },
     { id: 20, category: "Railings", title: "Modern Picket Railing", location: "Toronto", image: "/images/projects/aluminum-railing-pickets-black.webp" },

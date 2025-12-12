@@ -52,22 +52,14 @@ export default function AboutContent() {
                 {/* Founder's Message */}
                 <section className="py-20 bg-slate-50">
                     <div className="container mx-auto px-6">
-                        <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-slate-100 relative overflow-hidden">
-                            <div className="relative z-10 flex flex-col md:flex-row gap-8 items-center">
-                                <div className="w-32 h-32 md:w-48 md:h-48 flex-shrink-0 relative rounded-full overflow-hidden border-4 border-slate-50 shadow-md">
-                                    <Image
-                                        src="/images/generated/founder_portrait_1764313198224.webp"
-                                        alt="Founder"
-                                        fill
-                                        className="object-cover"
-                                    />
-                                </div>
+                        <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-slate-100 relative overflow-hidden text-center">
+                            <div className="relative z-10 flex flex-col items-center">
                                 <div>
                                     <h2 className="text-2xl font-serif font-bold text-slate-900 mb-4">A Message from the Owner</h2>
-                                    <p className="text-slate-600 italic mb-4">
+                                    <p className="text-slate-600 italic mb-4 text-lg leading-relaxed">
                                         "We don't just build railings; we build peace of mind. Every product that leaves our factory is something I would be proud to install in my own home. That's my personal guarantee to you."
                                     </p>
-                                    <div className="font-bold text-brand-dark">– Founder, Aluminum Solutions</div>
+                                    <div className="font-bold text-brand-dark text-xl">– Founder, Aluminum Solutions</div>
                                 </div>
                             </div>
                         </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 interface HeroProps {
     title: string;
-    subtitle: string;
+    subtitle: string | React.ReactNode;
     ctaText?: string;
     ctaLink?: string;
     backgroundImage?: string;
