@@ -10,6 +10,7 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import PremiumFeatures from "@/components/ui/PremiumFeatures";
 import GlassRailingsFAQ from "@/components/ui/GlassRailingsFAQ";
+import ServiceAreasList from "@/components/ui/ServiceAreasList";
 
 export const metadata: Metadata = {
     title: "Glass Railing Systems Toronto & GTA | Frameless & Custom",
@@ -277,7 +278,7 @@ export default function GlassRailingsPage() {
                         <div className="w-full md:w-2/3">
                             <h2 className="text-3xl font-serif font-bold mb-4">Commercial Glass Railing Systems</h2>
                             <p className="text-slate-300 text-lg mb-8 leading-relaxed">
-                                We specialize in high-traffic, code-engineered glass systems for condos, restaurants, and office buildings across the GTA. From rooftop patios to mezzanine stairwells, we deliver on time and to spec.
+                                We specialize in high-traffic, code-engineered <Link href="/services/glass-railings" className="text-brand-copper hover:underline font-bold">glass systems</Link> for condos, restaurants, and office buildings across the GTA. From rooftop patios to mezzanine stairwells, we deliver on time and to spec.
                             </p>
                             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                                 <li className="flex items-center gap-2"><span className="text-brand-copper">✓</span> Condos & Multi-Unit Buildings</li>
@@ -373,6 +374,8 @@ export default function GlassRailingsPage() {
                     )}
                     title="Glass Railing Insights"
                 />
+
+                <ServiceAreasList />
             </main>
 
             <Footer />

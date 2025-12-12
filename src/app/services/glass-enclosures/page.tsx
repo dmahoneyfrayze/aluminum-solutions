@@ -8,6 +8,7 @@ import { blogPosts } from "@/data/blog";
 import RelatedArticles from "@/components/blog/RelatedArticles";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
+import ServiceAreasList from "@/components/ui/ServiceAreasList";
 
 export const metadata: Metadata = {
     title: "Glass Porch Enclosures & Sunrooms Toronto | Aluminum Solutions",
@@ -344,6 +345,8 @@ export default function EnclosuresPage() {
                         </Link>
                     </div>
                 </section>
+
+                <ServiceAreasList />
             </main>
 
             <Footer />

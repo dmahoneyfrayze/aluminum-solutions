@@ -10,6 +10,8 @@ import Hero from "@/components/ui/Hero";
 import Link from "next/link";
 import Image from "next/image";
 import { getUTMParams } from "@/lib/utm";
+import RelatedArticles from "@/components/blog/RelatedArticles";
+import { blogPosts } from "@/data/blog";
 
 const builderFormSchema = z.object({
     firstName: z.string().min(2, "First name is required"),
@@ -439,6 +441,14 @@ export default function CommercialContent() {
                         </div>
                     </div>
                 </section>
+
+                {/* B2B Related Articles */}
+                <RelatedArticles
+                    posts={blogPosts.filter(post =>
+                        ['ontario-building-code-railing-safety', 'landlord-liability-railing-safety', '2025-outdoor-design-trends'].includes(post.slug)
+                    )}
+                    title="Commercial Industry Insights"
+                />
             </main>
 
             <Footer />

@@ -11,6 +11,7 @@ import JsonLd from "@/components/seo/JsonLd";
 import PremiumFeatures from "@/components/ui/PremiumFeatures";
 import RailingsWhoThisIsFor from "@/components/ui/RailingsWhoThisIsFor";
 import RailingsFAQ from "@/components/ui/RailingsFAQ";
+import ServiceAreasList from "@/components/ui/ServiceAreasList";
 
 export const metadata: Metadata = {
     title: "Aluminum Railings Toronto | Custom Porch & Deck Railings",
@@ -652,6 +653,8 @@ export default function RailingsPage() {
                         </Link>
                     </div>
                 </section>
+
+                <ServiceAreasList />
             </main>
 
             <Footer />
