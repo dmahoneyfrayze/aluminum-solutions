@@ -56,7 +56,7 @@ export default function GlassWallsPage() {
                     ctaLink="/contact"
                     secondaryCtaText="View Gallery"
                     secondaryCtaLink="/gallery?category=Glass%20Walls"
-                    backgroundImage="/images/projects/glass-office-partition-modern.jpg"
+                    backgroundImage="/images/projects/glass-office-divider-system.jpg"
                 />
 
                 {/* Trust Strip */}
