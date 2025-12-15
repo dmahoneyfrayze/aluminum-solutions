@@ -261,7 +261,7 @@ export default function CommercialContent({ initialPosts }: Props) {
 
                             <div className="relative h-[500px] rounded-xl overflow-hidden border border-white/10 shadow-2xl bg-slate-800">
                                 <Image
-                                    src="/images/migrated/manufacturing-glass.webp"
+                                    src="/images/work-vehicle.jpg"
                                     alt="Aluminum Solutions Factory Shipping"
                                     fill
                                     className="object-cover opacity-80"
