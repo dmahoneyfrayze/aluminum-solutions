@@ -197,7 +197,7 @@ export default function PorchEnclosuresPage() {
                             <div className="w-full md:w-1/2">
                                 <div className="relative h-[500px] rounded-xl overflow-hidden shadow-2xl">
                                     <Image
-                                        src="/images/projects/porch-enclosure-glass.jpg"
+                                        src="/images/projects/porch-enclosure-glass-black.jpg"
                                         alt="Professionally installed glass porch enclosure"
                                         fill
                                         className="object-cover"

@@ -88,7 +88,7 @@ export default function RailingsPage() {
                     }
                     ctaText="Get a Quote"
                     ctaLink="/contact"
-                    backgroundImage="/images/projects/railing-aluminum-deck-toronto.jpg"
+                    backgroundImage="/images/projects/black-aluminum-railing-stone.png"
                 />
 
                 {/* Quick Navigation Bar */}
@@ -198,7 +198,7 @@ export default function RailingsPage() {
                             <div className="flex flex-col md:flex-row gap-12 items-center">
                                 <div className="w-full md:w-1/2">
                                     <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg">
-                                        <Image src="/images/projects/railing-aluminum-deck-toronto.jpg" alt="Aluminum Deck Railings Toronto" fill className="object-cover" />
+                                        <Image src="/images/projects/aluminum-railing-pickets-black.webp" alt="Aluminum Deck Railings Toronto" fill className="object-cover" />
                                     </div>
                                 </div>
                                 <div className="w-full md:w-1/2">
@@ -216,7 +216,7 @@ export default function RailingsPage() {
                             <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
                                 <div className="w-full md:w-1/2">
                                     <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg">
-                                        <Image src="/images/projects/glass-enclosure-porch-front.jpg" alt="Aluminum Porch Railings GTA" fill className="object-cover" />
+                                        <Image src="/images/projects/aluminum-columns-glass-railing.jpg" alt="Aluminum Porch Railings GTA" fill className="object-cover" />
                                     </div>
                                 </div>
                                 <div className="w-full md:w-1/2">
@@ -252,7 +252,7 @@ export default function RailingsPage() {
                             <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
                                 <div className="w-full md:w-1/2">
                                     <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg">
-                                        <Image src="/images/generated/pool_fence_glass_detail_1764312810331.png" alt="Restaurant Patio Railings Toronto" fill className="object-cover" />
+                                        <Image src="/images/projects/DSC_0037.JPG" alt="Restaurant Patio Railings Toronto" fill className="object-cover" />
                                     </div>
                                 </div>
                                 <div className="w-full md:w-1/2">

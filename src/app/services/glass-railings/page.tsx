@@ -308,31 +308,15 @@ export default function GlassRailingsPage() {
                             </p>
                         </div>
 
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                            {/* Stand-offs */}
-                            <div className="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 shadow-sm flex flex-col">
-                                <div className="h-64 relative bg-white p-6">
-                                    <Image src="/images/projects/glass-railing-standoffs.jpg" alt="Stand-off Hardware" fill className="object-contain" />
-                                </div>
-                                <div className="p-8 flex-grow">
-                                    <h3 className="text-xl font-bold text-brand-dark mb-2">Stand-offs</h3>
-                                    <p className="text-brand-copper font-bold text-sm uppercase tracking-wider mb-4">Point-supported system</p>
-                                    <ul className="space-y-2 text-slate-600 text-sm">
-                                        <li className="flex gap-2"><span>•</span> High-grade 316 stainless steel</li>
-                                        <li className="flex gap-2"><span>•</span> For 12mm+ tempered glass</li>
-                                        <li className="flex gap-2"><span>•</span> Mounts to concrete, steel, or wood</li>
-                                    </ul>
-                                </div>
-                            </div>
-
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             {/* Baseshoe */}
                             <div className="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 shadow-sm flex flex-col">
                                 <div className="h-64 relative bg-white p-6">
                                     <Image src="/images/projects/glass-railing-baseshoe.jpg" alt="Baseshoe Hardware" fill className="object-contain" />
                                 </div>
                                 <div className="p-8 flex-grow">
-                                    <h3 className="text-xl font-bold text-brand-dark mb-2">Baseshoe</h3>
-                                    <p className="text-brand-copper font-bold text-sm uppercase tracking-wider mb-4">Continuous track system</p>
+                                    <h3 className="text-xl font-bold text-brand-dark mb-2">Base Shoe</h3>
+                                    <p className="text-brand-copper font-bold text-sm uppercase tracking-wider mb-4">Continuous Track</p>
                                     <ul className="space-y-2 text-slate-600 text-sm">
                                         <li className="flex gap-2"><span>•</span> Heavy-duty aluminum channel</li>
                                         <li className="flex gap-2"><span>•</span> Can be recessed or surface mounted</li>
@@ -340,10 +324,57 @@ export default function GlassRailingsPage() {
                                     </ul>
                                 </div>
                             </div>
+
+                            {/* Mini-Posts */}
+                            <div className="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 shadow-sm flex flex-col">
+                                <div className="h-64 relative bg-white p-6">
+                                    <Image src="/images/projects/glass-railing-mini-posts.jpg" alt="Mini-Post Hardware" fill className="object-contain" />
+                                </div>
+                                <div className="p-8 flex-grow">
+                                    <h3 className="text-xl font-bold text-brand-dark mb-2">Mini-Posts (Spigots)</h3>
+                                    <p className="text-brand-copper font-bold text-sm uppercase tracking-wider mb-4">Clamp System</p>
+                                    <ul className="space-y-2 text-slate-600 text-sm">
+                                        <li className="flex gap-2"><span>•</span> Marine-grade stainless steel</li>
+                                        <li className="flex gap-2"><span>•</span> Non-intrusive low profile design</li>
+                                        <li className="flex gap-2"><span>•</span> Ideal for pool surrounds</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            {/* Tall Posts */}
+                            <div className="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 shadow-sm flex flex-col">
+                                <div className="h-64 relative bg-white p-6">
+                                    <Image src="/images/projects/glass-railing-tall-posts.jpg" alt="Tall Post Hardware" fill className="object-contain" />
+                                </div>
+                                <div className="p-8 flex-grow">
+                                    <h3 className="text-xl font-bold text-brand-dark mb-2">Tall Posts</h3>
+                                    <p className="text-brand-copper font-bold text-sm uppercase tracking-wider mb-4">Structural Support</p>
+                                    <ul className="space-y-2 text-slate-600 text-sm">
+                                        <li className="flex gap-2"><span>•</span> Classic aluminum post design</li>
+                                        <li className="flex gap-2"><span>•</span> Maximum wind protection</li>
+                                        <li className="flex gap-2"><span>•</span> Cost-effective glass solution</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            {/* Stand-offs */}
+                            <div className="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 shadow-sm flex flex-col">
+                                <div className="h-64 relative bg-white p-6">
+                                    <Image src="/images/projects/glass-railing-standoffs.jpg" alt="Stand-off Hardware" fill className="object-contain" />
+                                </div>
+                                <div className="p-8 flex-grow">
+                                    <h3 className="text-xl font-bold text-brand-dark mb-2">Stand-offs</h3>
+                                    <p className="text-brand-copper font-bold text-sm uppercase tracking-wider mb-4">Point-Supported</p>
+                                    <ul className="space-y-2 text-slate-600 text-sm">
+                                        <li className="flex gap-2"><span>•</span> Solid 316 stainless steel pins</li>
+                                        <li className="flex gap-2"><span>•</span> Side-mounted for floating effect</li>
+                                        <li className="flex gap-2"><span>•</span> Custom adjustable depth</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
 
                         <div className="text-center mt-12">
-                            <p className="text-slate-500 italic mb-4">Mini-posts (spigots) and tall post options also available.</p>
                             <PremiumFeatures />
                         </div>
                     </div>

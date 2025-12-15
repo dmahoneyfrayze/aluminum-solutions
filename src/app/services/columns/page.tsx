@@ -55,7 +55,7 @@ export default function ColumnsPage() {
                     ctaLink="/contact"
                     secondaryCtaText="View Gallery"
                     secondaryCtaLink="/gallery?category=Columns"
-                    backgroundImage="/images/generated/railing_hero_detail_1764312850877.webp"
+                    backgroundImage="/images/projects/aluminum-columns-glass-railing.jpg"
                 />
 
                 {/* Trust Strip */}
@@ -101,7 +101,7 @@ export default function ColumnsPage() {
                         <div className="h-[500px] bg-slate-100 relative rounded-xl overflow-hidden shadow-2xl">
                             {/* Ideally this would be a before/after shot or a close up of a column base */}
                             <Image
-                                src="/images/generated/railing_hero_detail_1764312850877.webp"
+                                src="/images/projects/aluminum-columns-glass-railing.jpg"
                                 alt="Structural aluminum column details"
                                 fill
                                 className="object-cover"

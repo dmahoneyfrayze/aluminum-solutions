@@ -115,7 +115,7 @@ export default function PoolFencesPage() {
                             <div className="w-full md:w-1/2">
                                 <div className="relative rounded-xl overflow-hidden shadow-2xl border border-slate-100">
                                     <Image
-                                        src="/images/projects/pool-fence-glass-guards.jpg"
+                                        src="/images/projects/pool-fence-glass-swimming.jpg"
                                         alt="Code compliant glass pool fence Toronto"
                                         width={800}
                                         height={600}
