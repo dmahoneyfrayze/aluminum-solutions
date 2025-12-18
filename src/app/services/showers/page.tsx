@@ -127,7 +127,7 @@ export default function ShowersPage() {
                                 Estimated supply and installation costs for 10mm clear tempered glass.
                             </p>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
                             {/* Tub Screen */}
                             <div className="bg-white p-8 text-center rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                                 <h3 className="font-bold text-xl text-slate-900 mb-2">Tub Screen / Shield</h3>
@@ -136,22 +136,30 @@ export default function ShowersPage() {
                                 <p className="text-sm text-slate-600 mb-6">A single fixed or pivoting panel on a bathtub. Modern alternative to shower curtains.</p>
                                 <Link href="/contact" className="text-brand-navy font-bold text-sm hover:underline">Get Exact Quote &rarr;</Link>
                             </div>
-                            {/* Corner Shower */}
+                            {/* Standard In-line Shower */}
                             <div className="bg-white p-8 text-center rounded-xl shadow-lg border-2 border-brand-navy relative transform md:-translate-y-2">
-                                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-brand-navy text-white px-3 py-1 text-xs font-bold uppercase rounded-full">Best Seller</div>
-                                <h3 className="font-bold text-xl text-slate-900 mb-2">Corner Enclosure</h3>
-                                <div className="text-3xl font-bold text-brand-copper mb-2">$1,800 - $3,500</div>
+                                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-brand-navy text-white px-3 py-1 text-xs font-bold uppercase rounded-full">Most Popular</div>
+                                <h3 className="font-bold text-xl text-slate-900 mb-2">Standard In-line Shower</h3>
+                                <div className="text-3xl font-bold text-brand-copper mb-2">$1,100 - $1,700</div>
                                 <div className="text-sm text-slate-500 mb-6">Installed</div>
-                                <p className="text-sm text-slate-600 mb-6">Glass on two sides (e.g. door and return panel). 90-degree or neo-angle configurations.</p>
+                                <p className="text-sm text-slate-600 mb-6">Standard In-line shower, sliding or pivoting doors.</p>
                                 <Link href="/contact" className="inline-block px-6 py-2 bg-brand-copper text-white text-sm font-bold rounded hover:bg-white hover:text-brand-copper border border-brand-copper transition-colors">Get Shower Quote</Link>
                             </div>
                             {/* Custom / Steam */}
                             <div className="bg-white p-8 text-center rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                                <h3 className="font-bold text-xl text-slate-900 mb-2">Steam & Complex</h3>
-                                <div className="text-3xl font-bold text-brand-copper mb-2">$4,000+</div>
+                                <h3 className="font-bold text-xl text-slate-900 mb-2">Corner Enclosure & Complex</h3>
+                                <div className="text-3xl font-bold text-brand-copper mb-2">$1,800 - $3,500+</div>
                                 <div className="text-sm text-slate-500 mb-6">Installed</div>
-                                <p className="text-sm text-slate-600 mb-6">Floor-to-ceiling glass with operable transoms for steam showers, or large multi-panel units.</p>
+                                <p className="text-sm text-slate-600 mb-6">Glass on two sides (e.g. door and return panel), as well as transoms, custom shapes, etc.</p>
                                 <Link href="/contact" className="text-brand-navy font-bold text-sm hover:underline">Request Consultation &rarr;</Link>
+                            </div>
+                            {/* Mirrors */}
+                            <div className="bg-white p-8 text-center rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                                <h3 className="font-bold text-xl text-slate-900 mb-2">Custom Mirrors</h3>
+                                <div className="text-3xl font-bold text-brand-copper mb-2">$17 - $28</div>
+                                <div className="text-sm text-slate-500 mb-6">per sq. ft.</div>
+                                <p className="text-sm text-slate-600 mb-6">High-quality 5mm or 6mm silver mirror. Polished edges, custom cut-outs for outlets/lights.</p>
+                                <Link href="/contact" className="text-brand-navy font-bold text-sm hover:underline">Get Mirror Quote &rarr;</Link>
                             </div>
                         </div>
                     </div>

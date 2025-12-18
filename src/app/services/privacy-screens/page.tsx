@@ -128,19 +128,11 @@ export default function PrivacyScreensPage() {
                             </p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                            {/* Aluminum Picket */}
-                            <div className="bg-white p-8 text-center rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                                <h3 className="font-bold text-xl text-slate-900 mb-2">Aluminum Picket Screen</h3>
-                                <div className="text-3xl font-bold text-brand-copper mb-2">$90 - $140</div>
-                                <div className="text-sm text-slate-500 mb-6">per linear foot</div>
-                                <p className="text-sm text-slate-600 mb-6">Angled louvers or close-spaced pickets. Allows airflow while blocking direct sightlines.</p>
-                                <Link href="/contact" className="text-brand-navy font-bold text-sm hover:underline">Get Picket Quote &rarr;</Link>
-                            </div>
-                            {/* Frosted Glass */}
+
                             <div className="bg-white p-8 text-center rounded-xl shadow-lg border-2 border-brand-navy relative transform md:-translate-y-2">
                                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-brand-navy text-white px-3 py-1 text-xs font-bold uppercase rounded-full">Most Popular</div>
                                 <h3 className="font-bold text-xl text-slate-900 mb-2">Frosted Glass Screen</h3>
-                                <div className="text-3xl font-bold text-brand-copper mb-2">$140 - $220+</div>
+                                <div className="text-3xl font-bold text-brand-copper mb-2">$170 - $240</div>
                                 <div className="text-sm text-slate-500 mb-6">per linear foot</div>
                                 <p className="text-sm text-slate-600 mb-6">Solid privacy with maximum light transmission. 10mm or 12mm acid-etched safety glass.</p>
                                 <Link href="/contact" className="inline-block px-6 py-2 bg-brand-copper text-white text-sm font-bold rounded hover:bg-white hover:text-brand-copper border border-brand-copper transition-colors">Get Glass Screen Quote</Link>

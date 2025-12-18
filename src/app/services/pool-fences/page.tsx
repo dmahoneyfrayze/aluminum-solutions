@@ -83,7 +83,7 @@ export default function PoolFencesPage() {
                                         <div className="w-6 h-6 bg-green-100 text-green-700 rounded-full flex items-center justify-center font-bold text-xs mt-1">✓</div>
                                         <div>
                                             <span className="font-bold text-slate-800">Minimum Height:</span>
-                                            <p className="text-sm text-slate-600">Must be at least 1.2m (48 inches) high (5ft in some municipalities).</p>
+                                            <p className="text-sm text-slate-600">Must be at least 1.2m (48 inches) high.</p>
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">

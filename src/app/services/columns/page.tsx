@@ -200,14 +200,14 @@ export default function ColumnsPage() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                             {/* Decorative/Light Load */}
                             <div className="bg-white p-8 text-center rounded-xl shadow-sm border border-slate-100">
-                                <h3 className="font-bold text-xl text-slate-900 mb-2">Standard Structural Columns</h3>
-                                <div className="text-3xl font-bold text-brand-copper mb-2">$1,200 - $2,500</div>
+                                <h3 className="font-bold text-xl text-slate-900 mb-2">Standard Wrapped Columns</h3>
+                                <div className="text-3xl font-bold text-brand-copper mb-2">$300 - $650</div>
                                 <div className="text-sm text-slate-500 mb-6">per column, installed</div>
                                 <ul className="text-left space-y-3 mb-8 text-slate-600 text-sm max-w-xs mx-auto">
-                                    <li>✓ Removal of old wood column</li>
+                                    <li>✓ No structure inside</li>
+                                    <li>✓ Structural work not included</li>
                                     <li>✓ Standard heights (8' - 10')</li>
                                     <li>✓ Round or Square styles</li>
-                                    <li>✓ Includes cap & base</li>
                                 </ul>
                                 <Link href="/contact" className="text-brand-navy font-bold text-sm hover:underline">Get a Quote &rarr;</Link>
                             </div>
@@ -215,13 +215,13 @@ export default function ColumnsPage() {
                             <div className="bg-white p-8 text-center rounded-xl shadow-lg border-2 border-brand-copper relative transform md:-translate-y-2">
                                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-brand-copper text-white px-3 py-1 text-xs font-bold uppercase rounded-full">Heavy Duty</div>
                                 <h3 className="font-bold text-xl text-slate-900 mb-2">Large Load-Bearing Columns</h3>
-                                <div className="text-3xl font-bold text-brand-copper mb-2">$2,500 - $5,000+</div>
+                                <div className="text-3xl font-bold text-brand-copper mb-2">$1,500 - $2,700</div>
                                 <div className="text-sm text-slate-500 mb-6">per column, installed</div>
                                 <ul className="text-left space-y-3 mb-8 text-slate-600 text-sm max-w-xs mx-auto">
                                     <li>✓ Heavy roof load support</li>
                                     <li>✓ Custom heights & diameters</li>
                                     <li>✓ Structural shoring required</li>
-                                    <li>✓ Engineering verification</li>
+                                    <li>✓ Engineering support available</li>
                                 </ul>
                                 <Link href="/contact" className="inline-block px-6 py-2 bg-brand-navy text-white text-sm font-bold rounded hover:bg-slate-700 transition-colors">Get Heavy Duty Quote</Link>
                             </div>

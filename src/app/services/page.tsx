@@ -51,7 +51,7 @@ const exteriorServices = [
         description: "Acid-etched glass and aluminum screens to create a private oasis in urban settings.",
         link: "/services/privacy-screens",
         features: ["Frosted glass", "Custom heights", "Wind reduction"],
-        image: "/images/projects/privacy-screen-etched-glass.jpg",
+        image: "/images/projects/privacy-screen-service-card.webp",
         cta: "See Privacy Options"
     },
     {

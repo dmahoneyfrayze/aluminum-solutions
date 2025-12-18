@@ -113,7 +113,7 @@ export default function PorchEnclosuresPage() {
                                 Choose Your Enclosure Style
                             </h2>
                             <p className="text-slate-600 max-w-2xl mx-auto">
-                                From basic vestibules to fully insulated living spaces.
+                                From basic vestibules to fully insulated living spaces. Typical pricing ranges from $30 - $50 / sq.ft.
                             </p>
                         </div>
 
@@ -127,8 +127,7 @@ export default function PorchEnclosuresPage() {
                                 </p>
                                 <ul className="text-sm text-slate-600 space-y-3 mb-8">
                                     <li className="flex gap-2"><span>✓</span> Single-pane tempered glass</li>
-                                    <li className="flex gap-2"><span>✓</span> Heavy-duty aluminum frame</li>
-                                    <li className="flex gap-2"><span>✓</span> Retractable screens for airflow</li>
+                                    <li className="flex gap-2"><span>✓</span> Aluminum frame</li>
                                 </ul>
                                 <Link href="/contact" className="block w-full text-center py-3 border-2 border-brand-navy text-brand-navy font-bold rounded hover:bg-brand-navy hover:text-white transition-colors">
                                     Get 3-Season Quote
@@ -148,7 +147,6 @@ export default function PorchEnclosuresPage() {
                                 <ul className="text-sm text-slate-600 space-y-3 mb-8">
                                     <li className="flex gap-2"><span>✓</span> Double-pane Low-E insulated glass</li>
                                     <li className="flex gap-2"><span>✓</span> Thermally broken insulated frames</li>
-                                    <li className="flex gap-2"><span>✓</span> Integrated HVAC capability</li>
                                 </ul>
                                 <Link href="/contact" className="block w-full text-center py-3 bg-brand-navy text-white font-bold rounded hover:bg-brand-copper transition-colors">
                                     Get 4-Season Quote
@@ -163,7 +161,6 @@ export default function PorchEnclosuresPage() {
                                     Immersive glass structures with glass roofs. Perfect for indoor gardens or stargazing from the comfort of indoors.
                                 </p>
                                 <ul className="text-sm text-slate-600 space-y-3 mb-8">
-                                    <li className="flex gap-2"><span>✓</span> Curved or straight eave glass</li>
                                     <li className="flex gap-2"><span>✓</span> Architectural glass designs</li>
                                     <li className="flex gap-2"><span>✓</span> Panoramic floor-to-ceiling views</li>
                                 </ul>

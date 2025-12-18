@@ -220,10 +220,10 @@ export default function GlassRailingsPage() {
                             {/* Post-Mounted */}
                             <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 text-center relative">
                                 <h3 className="font-bold text-xl text-brand-dark mb-2">Post-Mounted Systems</h3>
-                                <div className="text-3xl font-bold text-brand-copper mb-2">$100 - $140</div>
+                                <div className="text-3xl font-bold text-brand-copper mb-2">$160 - $230</div>
                                 <div className="text-sm text-slate-500 mb-6">per linear foot</div>
                                 <ul className="text-left space-y-3 text-slate-600 mb-8 text-sm">
-                                    <li className="flex items-center">✓ 8mm or 10mm Tempered Glass</li>
+                                    <li className="flex items-center">✓ 8mm Tempered Glass</li>
                                     <li className="flex items-center">✓ Aluminum or Steel Posts</li>
                                     <li className="flex items-center">✓ Cost-Effective Glass Option</li>
                                 </ul>

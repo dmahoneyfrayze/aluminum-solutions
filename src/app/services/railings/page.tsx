@@ -287,11 +287,11 @@ export default function RailingsPage() {
                             {/* Standard Picket */}
                             <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 text-center">
                                 <h3 className="font-bold text-xl text-brand-dark mb-2">Standard Picket Railing</h3>
-                                <div className="text-4xl font-bold text-brand-copper mb-2">$60 - $80</div>
+                                <div className="text-4xl font-bold text-brand-copper mb-2">$70 - $85</div>
                                 <div className="text-sm text-slate-500 mb-6">per linear foot</div>
                                 <ul className="text-left space-y-3 text-slate-600 mb-8 text-sm">
-                                    <li className="flex items-center">✓ Standard Black or White</li>
-                                    <li className="flex items-center">✓ 42&quot; Height</li>
+                                    <li className="flex items-center">✓ Standard colors: Black, Grey, White, Beige, Commercial Brown</li>
+                                    <li className="flex items-center">✓ 36-48" heights</li>
                                     <li className="flex items-center">✓ Professional Installation</li>
                                 </ul>
                                 <Link href="/contact" className="block w-full py-3 bg-white border border-brand-copper text-brand-copper font-bold rounded hover:bg-brand-copper hover:text-white transition-colors">
@@ -305,10 +305,10 @@ export default function RailingsPage() {
                                     Most Popular
                                 </div>
                                 <h3 className="font-bold text-xl text-brand-dark mb-2">Glass Railing</h3>
-                                <div className="text-4xl font-bold text-brand-copper mb-2">$100 - $150</div>
+                                <div className="text-4xl font-bold text-brand-copper mb-2">$75 - $105</div>
                                 <div className="text-sm text-slate-500 mb-6">per linear foot</div>
                                 <ul className="text-left space-y-3 text-slate-600 mb-8 text-sm">
-                                    <li className="flex items-center">✓ 6mm or 10mm Tempered Glass</li>
+                                    <li className="flex items-center">✓ 6mm tempered glass</li>
                                     <li className="flex items-center">✓ Clear or Tinted Options</li>
                                     <li className="flex items-center">✓ Unobstructed Views</li>
                                 </ul>
@@ -323,7 +323,7 @@ export default function RailingsPage() {
                                 <div className="text-4xl font-bold text-brand-copper mb-2">Contact Us</div>
                                 <div className="text-sm text-slate-500 mb-6">for project quote</div>
                                 <ul className="text-left space-y-3 text-slate-600 mb-8 text-sm">
-                                    <li className="flex items-center">✓ Custom Colors & Heights</li>
+                                    <li className="flex items-center">✓ Standard color palette</li>
                                     <li className="flex items-center">✓ Volume Discounts</li>
                                     <li className="flex items-center">✓ Architectural Specs</li>
                                 </ul>
