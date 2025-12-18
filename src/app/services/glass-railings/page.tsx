@@ -15,6 +15,11 @@ import ServiceAreasList from "@/components/ui/ServiceAreasList";
 export const metadata: Metadata = {
     title: "Glass Railing Systems Toronto & GTA | Frameless & Custom",
     description: "Premium glass railing systems for decks, porches, and pools. Frameless, post-mounted, and shoe designs. Ontario Building Code compliant. Get a free quote.",
+    openGraph: {
+        title: "Glass Railing Systems Toronto & GTA | Frameless & Custom",
+        description: "Premium glass railing systems for decks, porches, and pools. Frameless, post-mounted, and shoe designs.",
+        images: ['/images/projects/glass-railing-stairs-hero.jpg'],
+    },
 };
 
 export default function GlassRailingsPage() {

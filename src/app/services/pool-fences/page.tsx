@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Pool Fences Toronto | Glass & Aluminum Safety Fences",
         description: "Code-compliant swimming pool fences in Toronto & GTA. Frameless glass and aluminum options with self-closing gates. Get a free safety quote.",
+        images: ['/images/projects/pool-fence-glass-guards.jpg'],
     },
 };
 

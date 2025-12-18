@@ -29,18 +29,27 @@ export const metadata: Metadata = {
     siteName: "Aluminum Solutions",
     title: "Aluminum Solutions | Premium Railings & Enclosures",
     description: "Factory-direct aluminum railings, glass showers, and porch enclosures. Installed in 4 weeks.",
+    images: [
+      {
+        url: '/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Aluminum Solutions'
+      }
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Aluminum Solutions",
     description: "Premium aluminum railings and glass enclosures in Toronto.",
+    images: ['/opengraph-image.png'],
   },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
+      index: true,
+      follow: true,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,

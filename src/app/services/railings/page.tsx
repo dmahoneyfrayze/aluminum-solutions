@@ -16,6 +16,11 @@ import ServiceAreasList from "@/components/ui/ServiceAreasList";
 export const metadata: Metadata = {
     title: "Aluminum Railings Toronto | Custom Porch & Deck Railings",
     description: "High-quality aluminum railings for porches, balconies, and decks. Rust-free, maintenance-free, and professionally installed in Toronto & GTA.",
+    openGraph: {
+        title: "Aluminum Railings Toronto | Custom Porch & Deck Railings",
+        description: "High-quality aluminum railings for porches, balconies, and decks. Rust-free, maintenance-free, and professionally installed.",
+        images: ['/images/projects/black-aluminum-railing-stone.png'],
+    },
 };
 
 export default function RailingsPage() {
