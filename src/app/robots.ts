@@ -7,10 +7,6 @@ export default function robots(): MetadataRoute.Robots {
                 userAgent: "*",
                 allow: "/",
                 disallow: ["/private/", "/api/"],
-            },
-            {
-                userAgent: ["GPTBot", "ChatGPT-User", "Google-Extended", "CCBot", "ClaudeBot", "FacebookBot", "anthropic-ai", "Bytespider", "Amazonbot"],
-                disallow: "/",
             }
         ],
         sitemap: "https://aluminumsolutions.ca/sitemap.xml",
