@@ -223,8 +223,8 @@ export default function GlassRailingsPage() {
                                 <div className="text-3xl font-bold text-brand-copper mb-2">$160 - $230</div>
                                 <div className="text-sm text-slate-500 mb-6">per linear foot</div>
                                 <ul className="text-left space-y-3 text-slate-600 mb-8 text-sm">
-                                    <li className="flex items-center">✓ 8mm Tempered Glass</li>
-                                    <li className="flex items-center">✓ Aluminum or Steel Posts</li>
+                                    <li className="flex items-center">✓ 10mm Tempered Glass</li>
+                                    <li className="flex items-center">✓ Steel Posts</li>
                                     <li className="flex items-center">✓ Cost-Effective Glass Option</li>
                                 </ul>
                                 <Link href="/contact" className="block w-full py-3 bg-white border border-brand-copper text-brand-copper font-bold rounded hover:bg-brand-copper hover:text-white transition-colors">

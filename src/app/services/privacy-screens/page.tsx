@@ -127,7 +127,7 @@ export default function PrivacyScreensPage() {
                                 Estimated supply and installation costs per linear foot.
                             </p>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
 
                             <div className="bg-white p-8 text-center rounded-xl shadow-lg border-2 border-brand-navy relative transform md:-translate-y-2">
                                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-brand-navy text-white px-3 py-1 text-xs font-bold uppercase rounded-full">Most Popular</div>

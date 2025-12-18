@@ -113,7 +113,7 @@ export default function PorchEnclosuresPage() {
                                 Choose Your Enclosure Style
                             </h2>
                             <p className="text-slate-600 max-w-2xl mx-auto">
-                                From basic vestibules to fully insulated living spaces. Typical pricing ranges from $30 - $50 / sq.ft.
+                                From basic vestibules to fully insulated living spaces.
                             </p>
                         </div>
 
@@ -127,7 +127,8 @@ export default function PorchEnclosuresPage() {
                                 </p>
                                 <ul className="text-sm text-slate-600 space-y-3 mb-8">
                                     <li className="flex gap-2"><span>✓</span> Single-pane tempered glass</li>
-                                    <li className="flex gap-2"><span>✓</span> Aluminum frame</li>
+                                    <li className="flex gap-2"><span>✓</span> Light aluminum frame</li>
+                                    <li className="flex gap-2"><span>✓</span> Operational windows for airflow</li>
                                 </ul>
                                 <Link href="/contact" className="block w-full text-center py-3 border-2 border-brand-navy text-brand-navy font-bold rounded hover:bg-brand-navy hover:text-white transition-colors">
                                     Get 3-Season Quote
@@ -163,6 +164,7 @@ export default function PorchEnclosuresPage() {
                                 <ul className="text-sm text-slate-600 space-y-3 mb-8">
                                     <li className="flex gap-2"><span>✓</span> Architectural glass designs</li>
                                     <li className="flex gap-2"><span>✓</span> Panoramic floor-to-ceiling views</li>
+                                    <li className="flex gap-2"><span>✓</span> Low-Iron super clear glass</li>
                                 </ul>
                                 <Link href="/contact" className="block w-full text-center py-3 border-2 border-brand-navy text-brand-navy font-bold rounded hover:bg-brand-navy hover:text-white transition-colors">
                                     Get Solarium Quote
