@@ -1,8 +1,6 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/ui/Hero";
-import Link from "next/link";
-import Image from "next/image";
 import { getBlogPosts } from "@/lib/blog-rss";
 // import { blogPosts } from "@/data/blog"; // Local data disabled
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
