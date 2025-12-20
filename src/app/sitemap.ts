@@ -21,7 +21,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         '/privacy-policy',
         '/terms',
     ].map((route) => ({
-        url: `${baseUrl}${route}`,
+        url: `${baseUrl}${route}/`,
         lastModified: new Date(),
         changeFrequency: 'monthly' as const,
         priority: route === '' ? 1 : 0.8,
@@ -39,7 +39,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         '/services/columns',
         '/services/glass-walls',
     ].map((route) => ({
-        url: `${baseUrl}${route}`,
+        url: `${baseUrl}${route}/`,
         lastModified: new Date(),
         changeFrequency: 'weekly' as const,
         priority: 0.9,
@@ -48,7 +48,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Dynamic Blog posts from RSS
     const posts = await getBlogPosts();
     const blogRoutes = posts.map((post) => ({
-        url: `${baseUrl}/blog/${post.slug}`,
+        url: `${baseUrl}/blog/${post.slug}/`,
         lastModified: new Date(post.date),
         changeFrequency: 'monthly' as const,
         priority: 0.7,
@@ -56,7 +56,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     // Location pages
     const locationRoutes = locations.map((location) => ({
-        url: `${baseUrl}/locations/${location.slug}`,
+        url: `${baseUrl}/locations/${location.slug}/`,
         lastModified: new Date(),
         changeFrequency: 'monthly' as const,
         priority: 0.8,

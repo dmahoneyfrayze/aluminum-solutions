@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Structural Aluminum Columns Toronto | Load-Bearing & Decorative",
         description: "Replace rotting wood porch columns with engineered structural aluminum columns. Load-bearing, code-compliant, and maintenance-free. Made in GTA.",
-        images: ['/images/generated/railing_hero_detail_1764312850877.webp'],
+        images: ['/images/projects/aluminum-columns-glass-railing.jpg'],
     },
 };
 

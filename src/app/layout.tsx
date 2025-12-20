@@ -17,6 +17,9 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aluminumsolutions.ca"),
+  alternates: {
+    canonical: './',
+  },
   title: {
     default: "Aluminum Solutions | Premium Railings & Enclosures in Toronto & GTA",
     template: "%s | Aluminum Solutions",
