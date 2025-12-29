@@ -31,7 +31,7 @@ export default function TermsPage() {
                             <p>For help, reply “HELP” or contact us:</p>
                             <ul>
                                 <li>Email: <a href="mailto:info@aluminumsolutions.ca">info@aluminumsolutions.ca</a></li>
-                                <li>Phone: <a href="tel:9057803088">(905) 780-3088</a></li>
+                                <li>Phone: <a href="tel:16474902424">1 647-490-2424</a></li>
                             </ul>
 
                             <h3>4. Carrier Liability</h3>
@@ -140,7 +140,7 @@ export default function TermsPage() {
                             <p>For questions regarding these Terms of Service:</p>
                             <address className="not-italic bg-slate-50 p-6 rounded-lg border border-slate-200">
                                 <strong>Global Aluminum Solutions Inc</strong><br />
-                                Phone: <a href="tel:9057803088" className="text-brand-copper hover:underline">(905) 780-3088</a><br />
+                                Phone: <a href="tel:16474902424" className="text-brand-copper hover:underline">1 647-490-2424</a><br />
                                 Email: <a href="mailto:info@aluminumsolutions.ca" className="text-brand-copper hover:underline">info@aluminumsolutions.ca</a><br />
                                 Website: <a href="https://aluminumsolutions.ca/" className="text-brand-copper hover:underline">aluminumsolutions.ca</a>
                             </address>

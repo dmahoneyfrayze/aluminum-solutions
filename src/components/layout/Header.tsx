@@ -87,8 +87,8 @@ export default function Header() {
 
                     <div className="h-8 w-px bg-slate-200 mx-2" />
 
-                    <a href="tel:9057803088" className="text-sm font-bold text-slate-900 hover:text-brand-copper transition-colors whitespace-nowrap">
-                        (905) 780-3088
+                    <a href="tel:16474902424" className="text-sm font-bold text-slate-900 hover:text-brand-copper transition-colors whitespace-nowrap">
+                        1 647-490-2424
                     </a>
                     <Link href="/contact" className="px-6 py-2.5 bg-brand-navy text-white text-sm font-bold hover:bg-brand-copper transition-colors shadow-lg rounded-sm whitespace-nowrap">
                         Get a Quote
@@ -157,8 +157,8 @@ export default function Header() {
                             </div>
                         ))}
                         <div className="pt-6 mt-6 border-t border-slate-100">
-                            <a href="tel:9057803088" className="block text-center text-xl font-bold text-slate-900 mb-4">
-                                (905) 780-3088
+                            <a href="tel:16474902424" className="block text-center text-xl font-bold text-slate-900 mb-4">
+                                1 647-490-2424
                             </a>
                             <Link
                                 href="/contact"

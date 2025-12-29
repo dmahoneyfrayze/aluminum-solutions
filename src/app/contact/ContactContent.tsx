@@ -163,7 +163,7 @@ export default function ContactContent() {
                                     Vaughan, ON, L4K 3P8
                                 </p>
                                 <p className="text-slate-600 text-sm">
-                                    <strong>Tel:</strong> (905) 780-3088<br />
+                                    <strong>Tel:</strong> 1 647-490-2424<br />
                                     <strong>Email:</strong> info@aluminumsolutions.ca
                                 </p>
 
