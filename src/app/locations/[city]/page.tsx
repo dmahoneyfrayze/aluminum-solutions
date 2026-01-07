@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             description: location.metaDescription,
             images: [
                 {
-                    url: "/images/og-default.webp",
+                    url: location.heroImage || "/images/global-aluminum-solutions-logo.png",
                     alt: `Aluminum Railings & Glass Enclosures in ${location.name}`,
                 }
             ],
