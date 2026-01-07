@@ -33,7 +33,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Factory Direct Aluminum & Glass Railings | Toronto & GTA",
     description: "Premium aluminum railings, glass systems, and frameless showers. Manufactured in the GTA.",
-    images: ['/images/hero-final-update.jpg'],
+    images: [
+      {
+        url: '/images/hero-final-update.jpg',
+        alt: 'Factory Direct Aluminum & Glass Railings'
+      }
+    ],
   },
 };
 

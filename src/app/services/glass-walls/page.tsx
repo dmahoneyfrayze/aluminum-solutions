@@ -17,7 +17,12 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Glass Walls & Office Partitions Toronto | Custom Office Dividers",
         description: "Custom frameless glass walls and office partitions in Toronto & GTA. Acoustic soundproofing for offices, home gyms, and clinics. Get a free quote.",
-        images: ['/images/projects/glass-office-partition-modern.jpg'],
+        images: [
+            {
+                url: '/images/projects/glass-office-partition-modern.jpg',
+                alt: 'Glass Office Partitions Toronto'
+            }
+        ],
     },
 };
 

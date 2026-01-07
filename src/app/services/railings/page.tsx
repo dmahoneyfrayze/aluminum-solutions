@@ -20,7 +20,12 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Aluminum Railings Toronto | Custom Porch & Deck Railings",
         description: "High-quality aluminum railings for porches, balconies, and decks. Rust-free, maintenance-free, and professionally installed.",
-        images: ['/images/projects/black-aluminum-railing-stone.png'],
+        images: [
+            {
+                url: '/images/projects/black-aluminum-railing-stone.png',
+                alt: 'Custom Aluminum Railings in Toronto'
+            }
+        ],
     },
 };
 

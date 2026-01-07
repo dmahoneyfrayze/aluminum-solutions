@@ -13,6 +13,16 @@ import ServiceAreasList from "@/components/ui/ServiceAreasList";
 export const metadata: Metadata = {
     title: "Glass Porch Enclosures & Sunrooms Toronto | Aluminum Solutions",
     description: "Custom glass enclosures for porches, patios, and balconies. Extend your outdoor season with our wind-protection systems.",
+    openGraph: {
+        title: "Glass Porch Enclosures & Sunrooms Toronto | Aluminum Solutions",
+        description: "Custom glass enclosures for porches, patios, and balconies. Extend your outdoor season with our wind-protection systems.",
+        images: [
+            {
+                url: '/images/projects/glass-enclosure-porch-front.jpg',
+                alt: 'Glass Porch Enclosures Toronto'
+            }
+        ],
+    },
 };
 
 export default function EnclosuresPage() {

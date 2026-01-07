@@ -17,7 +17,12 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Custom Glass Showers Toronto | Frameless Shower Enclosures",
         description: "Premium custom glass shower enclosures, steam showers, and tub shields in Toronto & GTA. 10mm tempered safety glass, leak-proof guarantee. Get a quote.",
-        images: ['/images/projects/frameless-glass-shower-custom.jpg'],
+        images: [
+            {
+                url: '/images/projects/frameless-glass-shower-custom.jpg',
+                alt: 'Custom Glass Showers Toronto'
+            }
+        ],
     },
 };
 

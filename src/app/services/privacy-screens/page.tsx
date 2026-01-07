@@ -17,7 +17,12 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Privacy Screens Toronto | Aluminum & Frosted Glass Dividers",
         description: "Custom aluminum and frosted glass privacy screens for decks, balconies, and patios in Toronto & GTA. High-quality, wind-resistant, and maintenance-free.",
-        images: ['/images/projects/privacy-screen-black-aluminum.jpg'],
+        images: [
+            {
+                url: '/images/projects/privacy-screen-black-aluminum.jpg',
+                alt: 'Aluminum Privacy Screens Toronto'
+            }
+        ],
     },
 };
 

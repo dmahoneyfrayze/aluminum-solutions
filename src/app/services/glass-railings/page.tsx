@@ -18,7 +18,12 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Glass Railing Systems Toronto & GTA | Frameless & Custom",
         description: "Premium glass railing systems for decks, porches, and pools. Frameless, post-mounted, and shoe designs.",
-        images: ['/images/projects/glass-railing-stairs-hero.jpg'],
+        images: [
+            {
+                url: '/images/projects/glass-railing-stairs-hero.jpg',
+                alt: 'Glass Railing Systems Toronto'
+            }
+        ],
     },
 };
 

@@ -16,7 +16,12 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Porch Enclosures Toronto | Glass Enclosures & Sunrooms",
         description: "Custom glass porch enclosures and sunrooms in Toronto & GTA. 3-season and 4-season vestibules. Keep cold out and add value. Free quotes.",
-        images: ['/images/generated/glass_enclosure_project_1764312838961.webp'],
+        images: [
+            {
+                url: '/images/generated/glass_enclosure_project_1764312838961.webp',
+                alt: 'Glass Porch Enclosures Toronto'
+            }
+        ],
     },
 };
 
