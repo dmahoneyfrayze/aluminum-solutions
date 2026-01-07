@@ -1,0 +1,90 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: var(--font-montserrat);
+  --font-serif: var(--font-playfair);
+
+  --color-brand-dark: #1a1a1a;
+  /* Charcoal/Black */
+  --color-brand-navy: #0f172a;
+  /* Deep Navy */
+  --color-brand-copper: #c2410c;
+  /* Darker Orange/Copper for AA Contrast */
+  --color-brand-grey: #f8f9fa;
+  /* Off-white */
+}
+
+:root {
+  /* Premium Palette */
+  --color-primary: #0f172a;
+  /* Slate 900 - Deep Navy/Charcoal */
+  --color-secondary: #64748b;
+  /* Slate 500 - Cool Grey */
+  --color-accent: #b45309;
+  /* Amber 700 - Muted Bronze/Gold */
+  --color-background: #f8fafc;
+  /* Slate 50 - Off-white */
+  --color-surface: #ffffff;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif text-slate-900;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass-panel {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-lg;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+  }
+
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

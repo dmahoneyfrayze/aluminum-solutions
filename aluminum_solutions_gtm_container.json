@@ -1,0 +1,246 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2025-11-28T08:30:00.000Z",
+    "containerVersion": {
+        "path": "accounts/0000000000/containers/00000000/versions/0",
+        "accountId": "0000000000",
+        "containerId": "00000000",
+        "containerVersionId": "0",
+        "name": "Aluminum Solutions Clean Setup",
+        "tag": [
+            {
+                "tagId": "1",
+                "name": "GA4 Configuration",
+                "type": "googtag",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "tagId",
+                        "value": "G-EBYSGT31GD"
+                    }
+                ],
+                "firingTriggerId": [
+                    "99"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "tagId": "2",
+                "name": "Custom HTML - LeadConnector Chat Widget",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  (function() {\n    var div = document.createElement(\"div\");\n    div.setAttribute(\"data-chat-widget\", \"\");\n    div.setAttribute(\"data-widget-id\", \"69293c9ed47c13330714ef23\");\n    div.setAttribute(\"data-location-id\", \"hos0jUKT6DAHGRD0nBoP\");\n    document.body.appendChild(div);\n\n    var script = document.createElement(\"script\");\n    script.src = \"https://beta.leadconnectorhq.com/loader.js\";\n    script.setAttribute(\"data-resources-url\", \"https://beta.leadconnectorhq.com/chat-widget/loader.js\");\n    script.setAttribute(\"data-widget-id\", \"69293c9ed47c13330714ef23\");\n    script.async = true;\n    document.body.appendChild(script);\n  })();\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "firingTriggerId": [
+                    "99"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "tagId": "3",
+                "name": "Custom HTML - External Tracking Script",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  var script = document.createElement(\"script\");\n  script.src = \"https://links.aluminumsolutions.ca/js/external-tracking.js\";\n  script.setAttribute(\"data-tracking-id\", \"tk_5fec4856317d4dad88a1d4db46b284ad\");\n  script.async = true;\n  document.body.appendChild(script);\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "firingTriggerId": [
+                    "99"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "tagId": "4",
+                "name": "GA4 Event - Generate Lead",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "1"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "generate_lead"
+                    }
+                ],
+                "firingTriggerId": [
+                    "10"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "tagId": "5",
+                "name": "GA4 Event - Phone Click",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "1"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "phone_click"
+                    }
+                ],
+                "firingTriggerId": [
+                    "11"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "tagId": "6",
+                "name": "GA4 Event - Email Click",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "1"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "email_click"
+                    }
+                ],
+                "firingTriggerId": [
+                    "12"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            }
+        ],
+        "trigger": [
+            {
+                "triggerId": "99",
+                "name": "All Pages Custom",
+                "type": "PAGEVIEW"
+            },
+            {
+                "triggerId": "10",
+                "name": "Custom Event - Form Submission",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "form_submission"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "triggerId": "11",
+                "name": "Link Click - Phone",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "tel:"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "true"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "true"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                }
+            },
+            {
+                "triggerId": "12",
+                "name": "Link Click - Email",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "mailto:"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                }
+            }
+        ],
+        "variable": [],
+        "builtInVariable": [
+            {
+                "type": "CLICK_URL",
+                "name": "Click URL"
+            },
+            {
+                "type": "CLICK_TEXT",
+                "name": "Click Text"
+            },
+            {
+                "type": "FORM_ID",
+                "name": "Form ID"
+            },
+            {
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ]
+    }
+}
