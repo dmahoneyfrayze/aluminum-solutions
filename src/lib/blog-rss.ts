@@ -9,6 +9,7 @@ export interface BlogPost {
     date: string; // From pubDate
     category: string; // From category
     imageUrl: string; // From enclosure or media:content
+    altText: string;
     content: string; // From content:encoded
     author?: string;
 }
@@ -76,6 +77,7 @@ export async function getBlogPosts(): Promise<BlogPost[]> {
                 }),
                 category: item.category || "General",
                 imageUrl,
+                altText: item.title, // Use title as fallback alt text
                 content,
                 author: "Aluminum Solutions"
             };
